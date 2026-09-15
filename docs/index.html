@@ -35,7 +35,8 @@
   .card.amber h3 { color: var(--accent-soft); }
   .card.ink { background: var(--ink-panel); border-color: var(--ink-line); }
   .card .tag { display: inline-block; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin-bottom: 8px; }
-  .diagram { width: 100%; height: auto; margin-top: 18px; display: block; }
+  .diagram-wrap { overflow-x: auto; margin-top: 18px; -webkit-overflow-scrolling: touch; }
+  .diagram { width: 100%; min-width: 760px; height: auto; display: block; }
   .diagram text { font-family: inherit; }
   .steps { list-style: none; counter-reset: s; margin-top: 18px; display: grid; gap: 10px; }
   .steps li { counter-increment: s; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px 14px 58px; position: relative; color: var(--dim); font-size: 15.5px; }
@@ -99,7 +100,7 @@
 <section id="shape">
   <h2>How it fits together</h2>
   <p>Two halves. The grey half is deterministic: every question with one right answer (parsing, time zones, "is this a real fixture") is answered by a small tool, the same way every week. The amber half is judgment: a written policy the agent follows. Keeping the halves apart is the whole design.</p>
-  <svg class="diagram" viewBox="0 0 1500 640" role="img" aria-label="Diagram: preferences and ten schedule repos feed one local tool; the tool feeds the agent; a written policy sits above the agent and a weekly clock below; the agent sends one message to the phone">
+  <div class="diagram-wrap"><svg class="diagram" viewBox="0 0 1500 640" role="img" aria-label="Diagram: preferences and ten schedule repos feed one local tool; the tool feeds the agent; a written policy sits above the agent and a weekly clock below; the agent sends one message to the phone">
     <defs>
       <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8b95a5"/></marker>
       <marker id="arrA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ffb648"/></marker>
@@ -152,7 +153,7 @@
     <line x1="335" y1="310" x2="384" y2="310" stroke="#8b95a5" stroke-width="2.5" marker-end="url(#arr)"/>
     <line x1="665" y1="310" x2="724" y2="310" stroke="#8b95a5" stroke-width="2.5" marker-end="url(#arr)"/>
     <line x1="1075" y1="310" x2="1134" y2="310" stroke="#8b95a5" stroke-width="2.5" marker-end="url(#arr)"/>
-  </svg>
+  </svg></div>
   <p style="margin-top:14px">Grey is the deterministic half and already existed or is plain scripting. Amber is the only thing that had to be authored with care: a policy, written in prose, that says what counts, what to ignore, and what one message looks like.</p>
 </section>
 
@@ -225,7 +226,7 @@ Nothing this week from the Nuggets or Spurs: Spurs return Tuesday, Oct 20 at 6:3
 
 <section id="try">
   <h2>Try it yourself</h2>
-  <p>You need Node, git, and the Claude Code CLI signed in. There is nothing else to install. Four commands, and the fourth takes about 90 seconds.</p>
+  <p>You need a Mac or Linux machine with Node, git, and the Claude Code CLI signed in. There is nothing else to install; the schedule data is fetched from the public repos behind the sports sites. Four commands, and the fourth takes about 90 seconds.</p>
 <pre class="cmd"><span class="c"># get the kit and the schedule data</span>
 git clone https://github.com/ismayc/never-miss-a-game.git
 cd never-miss-a-game &amp;&amp; ./clone-viewers.sh

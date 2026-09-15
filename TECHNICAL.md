@@ -81,7 +81,7 @@ Every entry carries a sport because abbreviations collide across sports. A wrong
 
 ## Put it on a schedule
 
-Replace the two placeholders in `game-day-concierge.plist` (`/PATH/TO/never-miss-a-game` and `/Users/YOUR-USER`; launchd does not expand `~`), then:
+This part is macOS only; on Linux, a cron entry or a systemd timer that runs `run-concierge.sh` does the same job (mind the PATH, as below). Replace the two placeholders in `game-day-concierge.plist` (`/PATH/TO/never-miss-a-game` and `/Users/YOUR-USER`; launchd does not expand `~`), then:
 
 ```bash
 mkdir -p ~/Library/Logs/game-day-concierge

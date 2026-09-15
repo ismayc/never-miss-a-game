@@ -27,7 +27,7 @@ Two halves. Everything with one right answer (parsing, time zones, "is this a re
 
 ## Try it
 
-You need Node 18 or newer, git, and the Claude Code CLI (`claude`) installed and signed in. Nothing to install beyond that.
+You need a Mac or Linux machine with Node 18 or newer, git, and the Claude Code CLI (`claude`) installed and signed in. Nothing to install beyond that. The schedule data comes from the public repos behind https://ismayc.github.io/sports-trackers/, fetched by the first command below; nothing here depends on the author's computer.
 
 ```bash
 git clone https://github.com/ismayc/never-miss-a-game.git
