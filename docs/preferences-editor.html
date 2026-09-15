@@ -53,6 +53,8 @@
   label.f { display: flex; flex-direction: column; gap: 4px; font-size: 14px; color: var(--dim); }
   label.f input, label.f select { font: inherit; font-size: 16px; padding: 7px 9px;
     border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink); }
+  label.f #tzNote { color: var(--warn); font-weight: 600; }
+  label.f input.bad { border-color: var(--warn); }
   .snark { grid-column: 1 / -1; }
   .snark input[type=range] { width: 100%; accent-color: var(--accent); }
   .snark ol { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 2px; }
@@ -133,8 +135,8 @@
     <div class="card">
       <h2>Settings</h2>
       <div class="settings">
-        <label class="f">Time zone (IANA)
-          <input id="timezone" list="tzs" placeholder="America/Phoenix">
+        <label class="f">Time zone (IANA, type to search) <span id="tzNote"></span>
+          <input id="timezone" list="tzs" placeholder="America/Phoenix" spellcheck="false">
           <datalist id="tzs">
             <option value="America/Phoenix"><option value="America/Los_Angeles"><option value="America/Denver">
             <option value="America/Chicago"><option value="America/New_York"><option value="Europe/London">
@@ -266,6 +268,24 @@ const openSports = new Set();   // leagues the user has expanded; everything sta
 
 if (!hasFS) { $('nofs').hidden = false; $('save').hidden = true; }
 
+// Time zones: any IANA name is accepted (the tool passes it to the Date API). The list
+// offers every zone this browser knows, common ones first; a name the browser does not
+// recognize is flagged, not blocked.
+const TZ_ALL = (typeof Intl.supportedValuesOf === 'function') ? Intl.supportedValuesOf('timeZone') : [];
+(function fillZones() {
+  const dl = $('tzs'); const have = new Set([...dl.options].map((o) => o.value));
+  for (const z of TZ_ALL) if (!have.has(z)) { const o = document.createElement('option'); o.value = z; dl.appendChild(o); }
+})();
+function zoneKnown(z) {
+  if (!z) return true;
+  try { new Intl.DateTimeFormat('en-US', { timeZone: z }); return true; } catch (e) { return false; }
+}
+function checkZone() {
+  const el = $('timezone'); const ok = zoneKnown(el.value.trim());
+  el.classList.toggle('bad', !ok);
+  $('tzNote').textContent = ok ? '' : 'not a zone this browser knows';
+}
+
 function esc(s) { return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
 
 // All five levels, the current one highlighted. Runs on every slider move, file or no file.
@@ -304,6 +324,7 @@ function render() {
     if (prefs[k] !== undefined) el.value = prefs[k];
   }
   showSnark($('snark').value);
+  checkZone();
   const unk = prefs ? unknownFollows(prefs) : [];
   $('other').hidden = unk.length === 0;
   $('otherRows').innerHTML = unk.map(({ f, i }) =>
@@ -415,6 +436,7 @@ $('form').addEventListener('change', (e) => {
 $('form').addEventListener('input', (e) => {
   const el = e.target;
   if (el.id === 'snark') showSnark(el.value);      // live, with or without a file open
+  if (el.id === 'timezone') checkZone();
   if (!prefs) return;
   if (el.classList.contains('why')) { setWhy(prefs, el.dataset.key, el.value); $('json').textContent = serializePrefs(prefs); status(); }
 });
