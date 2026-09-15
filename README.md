@@ -26,6 +26,8 @@ flowchart TD
 
 Two halves. Everything with one right answer (parsing, time zones, "is this a real fixture") lives in a small tool. Only what has no single right answer (which games matter, and why) lives in a written policy that the agent follows. Listing games is a script; deciding which four matter, and saying "nothing this week" when that is true, is judgment.
 
+For one of the ten sources, end to end: the WNBA site's repo commits its season as one JSON object per game (`tip` in UTC, `home` and `away` as abbreviations, a `score` once the game is played), plus a team file that says ATL is the Atlanta Dream. The tool imports both files as modules, looks the abbreviations up, moves the tip to your clock and your calendar day, marks the game scheduled, final, or past with no result, and writes the one record shape every source shares. The other nine differ only in field names and in which of two shapes they use. "One repo, end to end" in `TECHNICAL.md` shows the actual rows.
+
 ## Try it
 
 You need a Mac or Linux machine with Node 18 or newer, git, and the Claude Code CLI (`claude`) installed and signed in. Nothing to install beyond that. The schedule data comes from the public repos behind https://ismayc.github.io/sports-trackers/, fetched by the first command below; nothing here depends on the author's computer.
@@ -45,7 +47,7 @@ The message prints in the terminal and is saved to disk. `examples/` shows what 
 
 Edit the `followed` list in `preferences.json`: the sport, the team's abbreviation, its name, and a line on why you care. Run the data layer again and check your team appears under `Following` by full name. Then run the agent. That file is the only thing the agent knows about you.
 
-The form can also run the tool for you. `python3 serve.py` serves this folder on your own machine and opens the form with one more button, "Read this week's schedules", which runs `read-schedules.mjs` and shows the week on the page, Following line included. A page opened from disk cannot run a program, which is all the little server is for; nothing installs, and the agent never uses it.
+The form can also show you the week without a shell. Its "Read this week's schedules" button fetches a read that this repo's own GitHub Actions workflow (`.github/workflows/read-schedules.yml`) produces every few hours: the same `read-schedules.mjs`, run on GitHub's machines with the same flags as the policy's tool line, committed under `docs/reads/`, and served by GitHub Pages. The page checks the teams you have ticked against that read, lists each one's games under a Following line, and can hand you the week as text, JSON, or CSV. Nothing runs on your computer for that, and the agent never uses it: your own run reads your own clone.
 
 To have the message reach your phone, install the free ntfy app, pick a long random topic name, and export it as `NTFY_TOPIC` before the run. "The phone" in `TECHNICAL.md` has the three steps and a one-line test. Without it, the message prints in the terminal and is saved to disk, and nothing leaves your machine.
 

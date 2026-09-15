@@ -1,0 +1,81 @@
+# Read schedules: the concierge's data layer, run on GitHub's machines.
+#
+# The preferences form (preferences-editor.html) has a "Read this week's schedules"
+# button. A page cannot run a program, and nothing should have to run on the viewer's
+# computer to see the week, so this workflow runs the same tool the agent runs,
+# read-schedules.mjs, with the same flags as the policy's tool line (plus --all, and
+# once more with --json), and commits what it prints under docs/reads/. GitHub Pages
+# serves that folder, so the button fetches two static files:
+#
+#   https://ismayc.github.io/never-miss-a-game/reads/schedule-read.txt
+#   https://ismayc.github.io/never-miss-a-game/reads/schedule-read.json
+#
+# This is the deterministic half only. No Claude call, no API key, no secret: the
+# agent itself still runs on your own machine from run-concierge.sh, against your own
+# clone of the schedule repos.
+#
+# Runs every six hours, once more at 13:00 UTC (6:00 a.m. Pacific, so the read on a
+# Wednesday morning is that morning's), and by hand from the Actions tab. It commits
+# only when the read changed, which is about once a day (the window moves) plus
+# whenever a schedule repo commits a result. Because it commits to main, pull before
+# you push.
+
+name: Read schedules
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: read-schedules
+  cancel-in-progress: false
+
+jobs:
+  read:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch the schedule repos (next to this checkout, where the tool looks)
+        run: ./clone-viewers.sh
+
+      - name: Run the tool, text and JSON
+        run: |
+          mkdir -p docs/reads
+          node read-schedules.mjs --days 7 --tz America/Phoenix --prefs preferences.json --all > docs/reads/schedule-read.txt
+          node read-schedules.mjs --days 7 --tz America/Phoenix --prefs preferences.json --all --json > docs/reads/schedule-read.json
+          head -5 docs/reads/schedule-read.txt
+
+      - name: Commit the read if it changed
+        run: |
+          # The generated timestamp differs every run; commit only when the read itself did.
+          strip() { sed -E 's/generated [0-9T:.Z-]+//; /"generatedAt"/d; /"root":/d; /"path":/d'; }
+          changed=0
+          for f in docs/reads/schedule-read.txt docs/reads/schedule-read.json; do
+            if git cat-file -e "HEAD:$f" 2>/dev/null && diff -q <(git show "HEAD:$f" | strip) <(strip < "$f") >/dev/null; then
+              :
+            else
+              changed=1
+            fi
+          done
+          if [ "$changed" = 0 ]; then
+            echo "The read has not changed since the last commit; nothing to push."
+            git checkout -- docs/reads
+            exit 0
+          fi
+          window="$(node -e 'const j=require("./docs/reads/schedule-read.json");console.log(j.window.from+" to "+j.window.to)')"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/reads
+          git commit -m "reads: schedule read, $window"
+          git pull --rebase origin main
+          git push origin HEAD:main

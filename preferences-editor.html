@@ -69,9 +69,21 @@
   .snark li.on { background: #fff; color: var(--ink); font-weight: 600; border: 1px solid var(--line); }
   .snark li.on b { color: var(--accent); }
   .readout { margin: 0 0 16px; }
-  .readout summary { cursor: pointer; display: flex; gap: 12px; align-items: baseline; }
+  .readout summary { cursor: pointer; display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
   .readout summary .t { font-weight: 600; }
   .readout summary .n { color: var(--dim); font-size: 13px; }
+  .readout .readbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 10px 0 0; }
+  .readout .readbar button { font-size: 14px; padding: 6px 12px; }
+  .readout .readbar .n { color: var(--dim); font-size: 13px; }
+  .following { margin: 10px 0 0; background: #fff; border: 1px solid var(--line); border-radius: 8px;
+    padding: 10px 12px; font-size: 15px; }
+  .following h3 { margin: 0 0 6px; font-size: 16px; }
+  .following ul { margin: 0; padding-left: 20px; }
+  .following li { margin: 2px 0; }
+  .following li .sport { color: var(--dim); font-size: 13px; }
+  .following .none { color: var(--dim); }
+  .following .unk { color: var(--warn); }
+  .following .none p { margin: 0; }
   .readout pre { margin: 10px 0 0; padding: 10px 12px; background: var(--panel); border: 1px solid var(--line);
     border-radius: 8px; white-space: pre-wrap; word-break: break-word; font-size: 12.5px; line-height: 1.45;
     max-height: 60vh; overflow: auto; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
@@ -139,15 +151,25 @@
   <button id="save" disabled>Save</button>
   <button id="download" disabled>Download</button>
   <button id="demo" class="quiet">Try the example</button>
-  <button id="read" class="primary" hidden title="Runs node read-schedules.mjs on this machine and shows what it prints">Read this week's schedules</button>
+  <button id="read" class="primary" title="Shows the read GitHub ran this morning with the same tool the agent runs, node read-schedules.mjs, and checks the teams ticked here against it">Read this week's schedules</button>
   <div class="status" id="status">No file open.</div>
 </div>
 
-<!-- Only when served by serve.py on this machine: the page cannot run a program
-     from disk, so the button appears only on a loopback http page. -->
-<details class="card readout" id="readout" hidden open>
+<!-- The read is not produced on the viewer's machine. A GitHub Actions workflow in
+     the attendee repo (.github/workflows/read-schedules.yml) runs read-schedules.mjs
+     every few hours and commits what it prints under docs/reads/, which GitHub Pages
+     serves; the button fetches that. No server anywhere, nothing runs here. -->
+<details class="card readout" id="readout" open>
   <summary><span class="t">This week's schedules</span><span class="n" id="readmeta"></span></summary>
-  <pre id="readpre">Click "Read this week's schedules". It runs the same local tool the agent runs, node read-schedules.mjs, and shows what it prints: every source, every followed team, every game in the window.</pre>
+  <div class="readbar" id="readbar" hidden>
+    <span class="n">Save the read as</span>
+    <button id="saveTxt" class="quiet">text</button>
+    <button id="saveJson" class="quiet">JSON</button>
+    <button id="saveCsv" class="quiet">CSV</button>
+    <span class="n">(the CSV is one row per game, with a yours column for the teams ticked here)</span>
+  </div>
+  <div class="following" id="following" hidden></div>
+  <pre id="readpre">Click "Read this week's schedules". It shows the read GitHub ran this morning from this repo with the same local tool the agent runs, node read-schedules.mjs (America/Phoenix, seven days, every game), and checks the teams ticked here against it: every source, every followed team, every game in the window.</pre>
 </details>
 
 <div class="cols">
@@ -193,7 +215,7 @@
   <div class="preview">
     <div class="head"><h2>preferences.json</h2><span class="n" id="count"></span><button id="copy">Copy JSON</button></div>
     <pre id="json">{ }</pre>
-    <p class="note">Save writes this text to the file you opened, in place. Download hands you the same text as a file named preferences.json. Either way, run the tool read afterwards and check your team appears under <b>Following</b> by full name. That check reads the file on disk, so it proves the save landed.</p>
+    <p class="note">Save writes this text to the file you opened, in place. Download hands you the same text as a file named preferences.json. Either way, run the tool read afterwards and check your team appears under <b>Following</b> by full name. That check reads the file on disk, so it proves the save landed. The Read button above does the same check against the published week, without a shell.</p>
   </div>
 </div>
 
@@ -209,6 +231,10 @@ const SNARK_LEVELS = {
   5: 'over-the-top snark: roast the fixtures, the broadcasters, and your choices',
 };
 const SETTINGS = ['timezone', 'clock', 'windowDays', 'maxLines', 'snark'];
+// Where the attendee repo's workflow publishes the tool's read (text and JSON), on
+// GitHub Pages. Absolute, so the page works from ismayc.github.io and from a
+// double-clicked copy alike; Pages answers with access-control-allow-origin: *.
+const READS = 'https://ismayc.github.io/never-miss-a-game/reads/';
 
 function parsePrefs(text) {
   const p = JSON.parse(text);
@@ -270,9 +296,54 @@ function unknownFollows(p) {
   return p.followed.map((f, i) => ({ f, i })).filter(({ f }) => !known.has(followKey(f)));
 }
 function snarkText(v) { const n = Number(v); return SNARK_LEVELS[n] || SNARK_LEVELS[1]; }
+
+// A follow matches a game the way read-schedules.mjs matches it: within its own sport
+// (abbreviations collide across sports), by the data's abbreviation for a league team,
+// or by team-name substring for a tournament follow.
+function matchesFollow(game, f) {
+  if (f.sport !== game.sport) return false;
+  if (f.abbr != null) { const x = game.extra || {}; return x.homeAbbr === f.abbr || x.awayAbbr === f.abbr; }
+  if (f.team != null) {
+    const n = String(f.team).toLowerCase();
+    return String(game.homeLabel).toLowerCase().includes(n) || String(game.awayLabel).toLowerCase().includes(n);
+  }
+  return false;
+}
+// The Following check, done here against a published read instead of on disk: every
+// follow the data knows, by full name, with its games in the read's window; a follow the
+// data does not know is listed apart, the way the tool leaves it off its Following line.
+// Placeholder rows (a bracket slot, not a team) never count.
+function followingReport(p, read) {
+  const known = knownKeys();
+  const games = (read && Array.isArray(read.games)) ? read.games : [];
+  const following = [], unknown = [];
+  for (const f of p.followed) {
+    const k = known.get(followKey(f));
+    if (!k) { unknown.push(f); continue; }
+    const mine = games.filter((g) => g.status !== 'placeholder' && matchesFollow(g, f));
+    following.push({ f, label: k.team.label, sportName: k.league.name, games: mine });
+  }
+  const gameIds = new Set(following.flatMap((t) => t.games.map((g) => g.id)));
+  const line = 'Following ' + following.length + (following.length ? ': ' + following.map((t) => t.label).join(', ') : '');
+  return { following, unknown, line, gameIds };
+}
+function csvCell(v) {
+  const s = Array.isArray(v) ? v.join('; ') : (v == null ? '' : String(v));
+  return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+}
+// One row per game in the read, in the read's own order (by day, then time). The yours
+// column marks a game one of the followed teams plays.
+function gamesCsv(read, gameIds) {
+  const head = ['day', 'time', 'sport', 'away', 'home', 'tv', 'status', 'yours'];
+  const ids = gameIds || new Set();
+  const rows = ((read && read.games) || []).map((g) => [g.localWeekday, g.localTimeUser, g.sportName,
+    g.awayLabel, g.homeLabel, g.tv, g.status, ids.has(g.id) ? 'yes' : 'no']);
+  return [head, ...rows].map((r) => r.map(csvCell).join(',')).join('\n') + '\n';
+}
 if (typeof module !== 'undefined') {
-  module.exports = { LEAGUES, DEMO_PREFS, parsePrefs, serializePrefs, teamKey, followKey, setField,
-    setFollow, setWhy, removeFollow, unknownFollows, findFollow, snarkText };
+  module.exports = { LEAGUES, DEMO_PREFS, READS, parsePrefs, serializePrefs, teamKey, followKey, setField,
+    setFollow, setWhy, removeFollow, unknownFollows, findFollow, snarkText, matchesFollow, followingReport,
+    gamesCsv };
 }
 </script>
 
@@ -285,6 +356,8 @@ let handle = null;       // FileSystemFileHandle when opened with the picker
 let fileName = '';
 let lastSaved = '';      // text as last written or opened
 const openSports = new Set();   // leagues the user has expanded; everything starts collapsed
+let read = null;         // the published read, parsed JSON, once fetched
+let readText = '';       // the same read as the tool printed it
 
 if (!hasFS) { $('nofs').hidden = false; $('save').hidden = true; }
 
@@ -356,6 +429,7 @@ function render() {
   $('json').textContent = text;
   $('count').textContent = prefs ? `Following ${prefs.followed.length}` : '';
   $('save').disabled = !prefs;
+  showFollowing();     // the check tracks the ticked teams, so it is live after a read
   status();
 }
 
@@ -415,14 +489,18 @@ async function save() {
     status('Saved ' + t.toLocaleTimeString(), 'saved');
   } catch (e) { if (e.name !== 'AbortError') status('save failed: ' + e.message, 'err'); }
 }
-// The local-file path for any browser: hand the JSON over as preferences.json.
+// Hand the browser a file to save: the local-file path for preferences.json in any
+// browser, and the three formats of the read.
+function saveBlob(name, text, type) {
+  const url = URL.createObjectURL(new Blob([text], { type }));
+  const a = document.createElement('a');
+  a.href = url; a.download = name; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
 function download() {
   if (!prefs) return;
   const text = serializePrefs(prefs);
-  const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
-  const a = document.createElement('a');
-  a.href = url; a.download = 'preferences.json'; document.body.appendChild(a); a.click(); a.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  saveBlob('preferences.json', text, 'application/json');
   lastSaved = text;
   status('downloaded preferences.json; put it over the one in your checkout', 'saved');
 }
@@ -475,32 +553,74 @@ $('form').addEventListener('click', (e) => {
 });
 addEventListener('beforeunload', (e) => { if (prefs && serializePrefs(prefs) !== lastSaved) { e.preventDefault(); e.returnValue = ''; } });
 
-render();
-if (new URLSearchParams(location.search).has('demo')) $('demo').click();
-
-// Served by serve.py on this machine (a loopback http page): the Read button appears
-// and POSTs to /read; the server runs node read-schedules.mjs and returns its text.
-// From disk or from the public site there is no server, so nothing is shown.
-const served = location.protocol === 'http:' && /^(127\.0\.0\.1|localhost)$/.test(location.hostname);
-if (served) { $('read').hidden = false; $('readout').hidden = false; }
+// ---- The Read button. Nothing runs on this machine: a workflow in the attendee repo
+// runs read-schedules.mjs on GitHub's machines every few hours and commits what it
+// prints, text and JSON, under docs/reads/; GitHub Pages serves those two files and this
+// fetches them. The Following check is then done here, against the teams ticked on this
+// page, so a team ticked a second ago shows up without a save or a shell.
+async function fetchRead() {
+  const bust = '?t=' + Date.now();      // Pages caches for ten minutes; ask for the latest
+  const [t, j] = await Promise.all([
+    fetch(READS + 'schedule-read.txt' + bust, { cache: 'no-store' }),
+    fetch(READS + 'schedule-read.json' + bust, { cache: 'no-store' }),
+  ]);
+  if (!t.ok || !j.ok) throw new Error('the published read is not there (HTTP ' + (t.ok ? j.status : t.status) + ')');
+  readText = await t.text();
+  read = await j.json();
+}
+function whenGenerated() {
+  if (!read || !read.generatedAt) return 'generated time unknown';
+  try {
+    return 'generated ' + new Date(read.generatedAt).toLocaleString('en-US', { timeZone: read.tz || undefined,
+      weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' ' + (read.tz || '');
+  } catch (e) { return 'generated ' + read.generatedAt; }
+}
+function showFollowing() {
+  const box = $('following');
+  if (!read) { box.hidden = true; return; }
+  box.hidden = false;
+  if (!prefs) {
+    box.innerHTML = '<div class="none"><p>Open your preferences.json, or click Try the example, and the teams ticked here are checked against this read.</p></div>';
+    return;
+  }
+  const r = followingReport(prefs, read);
+  const li = r.following.map((t) => {
+    const games = t.games.length
+      ? t.games.map((g) => `${esc(g.localWeekday)} ${esc(g.localTimeUser)}, ${esc(g.awayLabel)} at ${esc(g.homeLabel)}${g.tv && g.tv.length ? ' (' + esc(g.tv.join(', ')) + ')' : ''}`).join('; ')
+      : '<span class="none">nothing in this window</span>';
+    return `<li><b>${esc(t.label)}</b> <span class="sport">${esc(t.sportName)}</span>: ${games}</li>`;
+  }).concat(r.unknown.map((f) =>
+    `<li class="unk"><code>${esc(JSON.stringify(f))}</code>: not a team the data knows by that key; the tool will not list it</li>`));
+  box.innerHTML = `<h3>${esc(r.line)}</h3><ul>${li.join('')}</ul>`;
+}
 $('read').addEventListener('click', async () => {
   const btn = $('read'); btn.disabled = true;
-  $('readmeta').textContent = 'reading...';
+  $('readmeta').textContent = 'fetching the published read...';
   try {
-    const body = { tz: $('timezone').value || '', days: Number($('windowDays').value) || 7 };
-    const r = await fetch('/read', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
-    const d = await r.json();
-    if (!d.ok) throw new Error(d.error || 'the tool failed');
-    $('readpre').textContent = d.output;
+    await fetchRead();
+    $('readpre').textContent = readText;
     $('readout').open = true;
-    $('readmeta').textContent = `${d.command} · ${d.seconds} s`;
-    const fol = d.output.split('\n').find((l) => l.startsWith('Following'));
-    status(fol ? fol.split(':')[0] + ' on disk' : 'read done', 'saved');
+    $('readbar').hidden = false;
+    const w = read.window ? `${read.window.from} to ${read.window.to}` : '';
+    $('readmeta').textContent = `${whenGenerated()} on GitHub · ${w}`;
+    showFollowing();
+    const r = prefs ? followingReport(prefs, read) : null;
+    status(r ? r.line.split(':')[0] + ' against the published read' : 'read fetched', 'saved');
   } catch (e) {
     $('readmeta').textContent = 'failed';
     status('read failed: ' + e.message, 'err');
   } finally { btn.disabled = false; }
 });
+$('saveTxt').addEventListener('click', () => { if (read) saveBlob('schedule-read.txt', readText, 'text/plain'); });
+$('saveJson').addEventListener('click', () => { if (read) saveBlob('schedule-read.json', JSON.stringify(read, null, 2) + '\n', 'application/json'); });
+$('saveCsv').addEventListener('click', () => {
+  if (!read) return;
+  const ids = prefs ? followingReport(prefs, read).gameIds : new Set();
+  saveBlob('schedule-read.csv', gamesCsv(read, ids), 'text/csv');
+});
+
+render();
+if (new URLSearchParams(location.search).has('demo')) $('demo').click();
 </script>
 </body>
 </html>

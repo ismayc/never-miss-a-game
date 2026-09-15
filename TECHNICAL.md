@@ -8,7 +8,7 @@ The operational detail behind `README.md`: what each file does, what one run loo
 | --- | --- | --- |
 | `preferences.json` | input | The teams you follow, keyed by `{sport, abbr}`, each with a `why` note. The only file you need to edit. |
 | `preferences-editor.html` | input, optional | A form over `preferences.json`. Opens the file through the browser's file picker (Chrome or Edge), lists every team the ten repos know by the data's own abbreviation, and writes the file back in place. Nothing in the run reads it. |
-| `serve.py` | input, optional | Serves this folder on 127.0.0.1 and opens the form with a "Read this week's schedules" button, which runs `read-schedules.mjs` and shows its output on the page. A page opened from disk cannot run a program; this is the smallest thing that can. Stdlib only, loopback only, and never on when the agent runs unattended. |
+| `.github/workflows/read-schedules.yml` | input, optional | GitHub Actions. Every six hours, and at 13:00 UTC, it runs `read-schedules.mjs` on GitHub's machines with the policy's flags and commits the text and JSON output under `docs/reads/`, which GitHub Pages serves. The form's "Read this week's schedules" button fetches that, so seeing the week needs nothing running on your computer. The deterministic half only: no Claude call, no key. It commits to `main`, so pull before you push. |
 | `read-schedules.mjs` | deterministic | Reads ten repos, normalizes two data shapes into one game record, buckets by your calendar day, prints the week. |
 | `concierge.md` | judgment | The policy. An outline on `main`; the finished text on the `complete` branch. |
 | `notify.sh` | delivery | stdout, a macOS banner, an archive file on disk, and an optional phone push. |
@@ -54,6 +54,49 @@ The form is not in this picture on purpose: `preferences-editor.html` runs befor
 
 Variations: `--tz Europe/London` moves every time in the digest; `--days 14` widens the window when the calendar is quiet; `--json` gives the machine-readable form. `CONCIERGE_NOW=2026-09-16 ./run-concierge.sh` runs for another date, which is how `examples/` was made.
 
+## One repo, end to end: the WNBA
+
+Every source works the same way, so here is one of the ten, from the file on disk to the record the agent sees.
+
+The WNBA site's repo commits its whole season to `src/data/schedule.js`: 333 games in 2026, one JSON object per line, written by the repo's own refresh job from ESPN twice a day (the commits named "Refresh schedule, results, and player stats from ESPN"). One row, the first game of the week in the September 16 read:
+
+```js
+{"id":"401857190","tip":"2026-09-17T23:30:00.000Z","seasonType":"regular","home":"ATL","away":"CON",
+ "venue":"Gateway Center","city":"College Park","state":"GA",
+ "broadcast":["WNBA League Pass","Atlanta News First","NBC Sports BO","Victory+ ATL"]}
+```
+
+Three things to notice. `tip` is UTC. `home` and `away` are abbreviations, not names. There is no `score` yet; a played game gets `"score":[106,75]` on the next refresh, and a postponed one gets `"postponed":true` with a note. Next to it, `src/data/teams.js` says what ATL means:
+
+```js
+{ "abbr": "ATL", "name": "Dream", "location": "Atlanta", "displayName": "Atlanta Dream", ... }
+export const TEAM_BY_ABBR = Object.fromEntries(TEAMS.map((t) => [t.abbr, t]))
+```
+
+`read-schedules.mjs` has one catalogue entry per source. The WNBA's says which file, which export, which field is the start time, which field is the TV list, and where the team lookup lives (abridged):
+
+```js
+{ id: 'wnba', name: 'WNBA', family: 'A', repo: 'the-wnba-schedule',
+  file: 'src/data/schedule.js', exportName: 'GAMES', dateField: 'tip', tvField: 'broadcast',
+  teamsFile: 'src/data/teams.js', weekStartDow: 0, commitsScores: true }
+```
+
+The tool imports the two files as ES modules (`await import(pathToFileURL(file))`), so the committed data parses itself; nothing is scraped with a regular expression. For each row it looks the abbreviations up in `TEAM_BY_ABBR`, turns `tip` into an instant, gives the game one of the four statuses in the next section (a score committed: `final`; no score and the tip has passed: `past-unresolved`; otherwise `scheduled`; a bracket-slot label, which a league schedule never has: `placeholder`), and writes it in the shape every source shares:
+
+```json
+{ "sport": "wnba", "id": "401857190", "startUtc": "2026-09-17T23:30:00.000Z",
+  "homeLabel": "Atlanta Dream", "awayLabel": "Connecticut Sun",
+  "venue": "Gateway Center, College Park",
+  "tv": ["WNBA League Pass", "Atlanta News First", "NBC Sports BO", "Victory+ ATL"],
+  "status": "scheduled", "localDay": "2026-09-17", "localWeekday": "Thursday, Sep 17",
+  "localTime": "4:30 PM", "localTimeUser": "4:30 PM",
+  "extra": { "homeAbbr": "ATL", "awayAbbr": "CON" } }
+```
+
+`localDay` is the day you see it, in your time zone: 23:30Z on the 17th is 4:30 PM in Phoenix on the 17th, but a 5:20 PM Phoenix kickoff is 00:20Z on the next day, and bucketing by the UTC date names the wrong evening. A follow in `preferences.json` is `{"sport": "wnba", "abbr": "ATL"}`, and it matches a game within its own sport by `homeAbbr` or `awayAbbr`. That is why the abbreviation has to be the data's own, and why the form's checkboxes come from `teams.js`.
+
+The NFL and NBA repos have the same shape (`GAMES`, `tip`), and the Premier League repo is the odd one out twice (the export is `FIXTURES`, the date field is `ko`); those differences live in the catalogue entry, not in the code. The two March Madness repos are this family too, with ESPN's college codes. The four tournament viewers (World Cup, Women's World Cup, Euros, Copa América) are the second family: full team names, an explicit offset in the kickoff, and a venue id resolved through `venues.js`. Ten catalogue entries, two code paths, one record.
+
 ## What the tool protects the agent from
 
 ```mermaid
@@ -81,7 +124,7 @@ flowchart TD
     W --> E
 ```
 
-Every entry carries a sport because abbreviations collide across sports. A wrong abbreviation fails silently at run time and visibly here, so check here. With `python3 serve.py` running, the form's "Read this week's schedules" button is this same check without the shell: it runs the tool and shows the Following line. The form (`preferences-editor.html`, also at https://ismayc.github.io/never-miss-a-game/preferences-editor.html) closes off the wrong-abbreviation branch: its checkboxes are built from the repos' own team files, keyed the way the tool matches, and an entry it does not recognize is flagged on the page rather than written silently. Run the check anyway; it reads the file on disk, which is what proves the save landed.
+Every entry carries a sport because abbreviations collide across sports. A wrong abbreviation fails silently at run time and visibly here, so check here. The form's "Read this week's schedules" button is this same check without a shell: it fetches the read the repo's workflow published (see the table above) and lists each ticked team's games under a Following line of its own, live, before you save. The form (`preferences-editor.html`, also at https://ismayc.github.io/never-miss-a-game/preferences-editor.html) closes off the wrong-abbreviation branch: its checkboxes are built from the repos' own team files, keyed the way the tool matches, and an entry it does not recognize is flagged on the page rather than written silently. Run the check anyway; it reads the file on disk, which is what proves the save landed.
 
 ## Put it on a schedule
 

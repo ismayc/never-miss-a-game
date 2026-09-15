@@ -70,6 +70,7 @@ The line between the halves is the one question: does this have one right answer
 | The window | 7 days | 14 days | In season a week is a briefing and a fortnight is a phone book. The 14 came from a dead August. |
 | A quiet week | Two honest sentences, then stop | Fill the space | The title promises never missing a game you care about, which is exactly why the agent has to be willing to send a short message. |
 | How you edit your teams | A one-file form (`preferences-editor.html`) that writes `preferences.json` back in place | Editing the JSON by hand, or a settings database | The JSON stays the only thing the agent reads, so nothing about the run changes. The form removes the two ways a hand edit fails: a stray comma, and an abbreviation the data does not use (GS, not GSW). It runs in the browser with no server and nothing installed. |
+| How the form shows the week | A GitHub Actions workflow in this repo runs the tool every few hours and commits its output under `docs/reads/`; the page fetches that static file and checks the ticked teams against it | A small local server that ran the tool when the page asked | A page cannot run a program, and a local helper meant a public page reaching a program on the viewer's computer. Running the same tool on GitHub's machines keeps the page static, the agent untouched, and nothing on anyone's computer. The costs: the read is up to a few hours old, and the workflow commits to `main`, so pull before you push. |
 
 ## Where to look
 
