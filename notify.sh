@@ -62,9 +62,11 @@ if command -v osascript >/dev/null 2>&1; then
 fi
 
 # 3. ntfy.sh — push to a phone. Opt-in via env var so the default run is fully offline.
-# The phone apps render plain text only (ntfy's Markdown header is web-app only), so the
-# day headings and the "Editor's pick:" label are set in bold Unicode letters for this
-# channel alone. stdout and the archive keep the plain text.
+# The phone apps render plain text only (ntfy's Markdown header is web-app only), so for
+# this channel alone the day headings and the "Editor's pick:" label are set in bold
+# Unicode letters and each game line under a day gets a bullet. A day block is the
+# heading and the lines up to the next blank line, so the opening sentence and the
+# closing line stay as they are. stdout and the archive keep the plain text.
 if [ -n "${NTFY_TOPIC:-}" ]; then
   PHONE_BODY="$(NOTIFY_BODY="$BODY" node -e '
     const bold = (s) => [...s].map((c) => {
@@ -73,10 +75,15 @@ if [ -n "${NTFY_TOPIC:-}" ]; then
       if (n >= 97 && n <= 122) return String.fromCodePoint(0x1D5EE + n - 97);  // a-z
       return c;
     }).join("");
-    const days = /^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)$/gm;
-    process.stdout.write(process.env.NOTIFY_BODY
-      .replace(days, (d) => bold(d))
-      .replace(/Editor.s pick:/g, (m) => bold(m)));
+    const day = /^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)$/;
+    let inDay = false;
+    const out = process.env.NOTIFY_BODY.split("\n").map((line) => {
+      if (day.test(line)) { inDay = true; return bold(line); }
+      if (line.trim() === "") { inDay = false; return line; }
+      const l = line.replace(/Editor.s pick:/g, (m) => bold(m));
+      return inDay ? "• " + l : l;
+    });
+    process.stdout.write(out.join("\n"));
   ' 2>/dev/null || printf '%s' "$BODY")"
   if curl -fsS \
       -H "Title: $TITLE" \
