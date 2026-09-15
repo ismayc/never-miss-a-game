@@ -9,7 +9,7 @@ The session this kit comes from spent most of its thirty minutes on shape, not c
 flowchart TB
     subgraph had["Already there"]
         direction LR
-        h1["ten sports-tracker sites<br/>schedules committed to disk,<br/>refreshed nightly"]
+        h1["ten sports-tracker sites<br/>schedules committed to disk,<br/>refreshed twice a day"]
         h2["Claude Code CLI<br/>claude -p: prompt in,<br/>tool calls, exit"]
         h3["launchd<br/>the Mac's own scheduler"]
         h4["ntfy.sh<br/>one POST to a topic<br/>lands on a phone"]
@@ -23,11 +23,8 @@ flowchart TB
         b4["run-concierge.sh"]
         b5["game-day-concierge.plist"]
     end
-    h1 --> b1
+    had -- "used as they are: the sites by read-schedules.mjs, claude -p by run-concierge.sh, launchd by the plist, ntfy.sh by notify.sh" --> built
     b6 -. "writes preferences.json" .-> b1
-    h2 --> b4
-    h3 --> b5
-    h4 --> b3
     b1 --> b2 --> b3
     b4 -- "runs" --> b2
     b5 -- "fires" --> b4
@@ -53,10 +50,10 @@ flowchart TD
         j2["why I care, in nine words"]
         j3["is this week worth a message at all"]
     end
-    det -- "7 KB summary" --> jud
+    det -- "8 KB summary" --> jud
 ```
 
-The line between the halves is the one question: does this have one right answer? If yes, it goes in the tool, where it is computed once and the same way every week. If no, it goes in the policy, where a rule can bound it. An agent that parses 1.6 MB of JavaScript itself is expensive and wrong in a new way every run. An agent that reads a 7 KB summary and decides is cheap and wrong in ways you can write a rule about.
+The line between the halves is the one question: does this have one right answer? If yes, it goes in the tool, where it is computed once and the same way every week. If no, it goes in the policy, where a rule can bound it. An agent that parses 1.6 MB of JavaScript itself is expensive and wrong in a new way every run. An agent that reads an 8 KB summary and decides is cheap and wrong in ways you can write a rule about.
 
 ## The decisions, with the road not taken
 

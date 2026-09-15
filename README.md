@@ -7,19 +7,19 @@ One message a week about what is worth watching, built from schedules that alrea
 Every sport I follow has a site that is good at its own game. None of them knows about my week. I wanted one message on my phone, only about games I care about, and quiet when there is nothing worth watching.
 
 ```mermaid
-%%{init: {"flowchart": {"nodeSpacing": 50, "rankSpacing": 70, "padding": 16}}}%%
+%%{init: {"flowchart": {"nodeSpacing": 50, "rankSpacing": 60, "padding": 16}}}%%
 flowchart TD
     F["preferences-editor.html<br/>a form over that file, optional"] -. "writes" .-> P
-    P["preferences.json<br/>the teams you follow"] --> T
-    R[("ten schedule repos<br/>committed data on disk")] --> T
+    P["preferences.json<br/>the teams you follow"] --> det
+    R[("ten schedule repos<br/>committed data on disk")] --> det
     subgraph det["Deterministic: questions with one right answer"]
         T["read-schedules.mjs<br/>reads the schedules, prints the week<br/>0.3 s, zero dependencies"]
     end
-    T -- "a 7 KB summary of the week" --> A
+    det -- "an 8 KB plain-text summary of the week" --> jud
     subgraph jud["Judgment: what is worth your evening"]
         M["concierge.md<br/>the policy, written as a job description"] --> A["the agent<br/>claude -p with a read-only allowlist"]
     end
-    L["launchd<br/>Wednesdays, 7:00"] -. "fires the run weekly" .-> A
+    L["launchd<br/>Wednesdays, 7:00"] -. "fires the run weekly" .-> jud
     A -- "ONE message" --> N["notify.sh<br/>delivers it, and writes it to disk"]
     N --> PH[("your phone")]
 ```

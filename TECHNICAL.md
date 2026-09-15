@@ -31,7 +31,7 @@ sequenceDiagram
     L->>S: Wednesday, 07:00
     S->>C: prompt = concierge.md<br/>allowlist = two scripts + Read
     C->>T: node ./read-schedules.mjs --days 7 ...
-    T-->>C: the week, every caveat flagged (7 KB)
+    T-->>C: the week, every caveat flagged (8 KB)
     Note over C: judgment: what counts, what to skip,<br/>one "why I care" per line
     C->>N: ./notify.sh "This week in sports" "..."
     N->>D: digest-YYYY-MM-DD.md, and a push<br/>if NTFY_TOPIC is set
@@ -100,7 +100,7 @@ The NFL and NBA repos have the same shape (`GAMES`, `tip`), and the Premier Leag
 ## What the tool protects the agent from
 
 ```mermaid
-%%{init: {"flowchart": {"nodeSpacing": 40, "rankSpacing": 70, "padding": 16}}}%%
+%%{init: {"flowchart": {"nodeSpacing": 40, "rankSpacing": 70, "padding": 16, "curve": "linear"}}}%%
 flowchart TD
     G["a row in a schedule file"] --> Q1{"team label is a bracket slot?<br/>'Winner Group C', '3rd A/B/C/D/F'"}
     Q1 -- yes --> S1["placeholder<br/>never a fixture, never in a digest"]
@@ -113,17 +113,17 @@ flowchart TD
     Q3 -- no --> S4["scheduled<br/>genuinely upcoming"]
 ```
 
-Read literally, the World Cup repo is 104 unplayed matches, a third of them between teams that do not exist, because results load at page time and are never committed. The four league repos are the opposite case: each commits scores through its own ESPN refresh twice a day, so `past-unresolved` there means only that a result is a few hours behind, and a clone that has not been pulled shows more of them than the repo has. The tool marks every row with one of the five states above, buckets games by the day you see (a 5:20 PM Phoenix kickoff is 00:20Z the next day, and a naive read names the wrong evening), and prints its warnings instead of hiding them. The policy names the same traps anyway, so the rules survive a change to the tool.
+Read literally, the World Cup repo is 104 unplayed matches, a third of them between teams that do not exist, because results load at page time and are never committed. The league repos are the opposite case: each commits scores through its own ESPN refresh twice a day once its season is playing, so `past-unresolved` there means only that a result is a few hours behind, and a clone that has not been pulled shows more of them than the repo has. The tool marks every row with one of the five states above, buckets games by the day you see (a 5:20 PM Phoenix kickoff is 00:20Z the next day, and a naive read names the wrong evening), and prints its warnings instead of hiding them. The policy names the same traps anyway, so the rules survive a change to the tool.
 
 ## Checking a follow
 
 ```mermaid
-%%{init: {"flowchart": {"nodeSpacing": 40, "rankSpacing": 70, "padding": 16}}}%%
+%%{init: {"flowchart": {"nodeSpacing": 60, "rankSpacing": 70, "padding": 16, "curve": "linear"}}}%%
 flowchart TD
     E["edit the followed list in preferences.json<br/>by hand, or tick teams in preferences-editor.html"] --> C["node read-schedules.mjs --prefs preferences.json<br/>| grep Following"]
-    C -- "your team listed by full name" --> R["./run-concierge.sh"]
+    C -- "listed by full name" --> R["./run-concierge.sh"]
     C -- "not listed" --> W["wrong abbreviation:<br/>the Warriors are GS, not GSW;<br/>MIN is both the Lynx and the Vikings"]
-    W --> E
+    W -- "fix it" --> E
 ```
 
 Every entry carries a sport because abbreviations collide across sports. A wrong abbreviation fails silently at run time and visibly here, so check here. The form's "Read this week's schedules" button is this same check without a shell: it fetches the read the repo's workflow published (see the table above) and lists each ticked team's games under a Following line of its own, live, before you save. The form (`preferences-editor.html`, also at https://ismayc.github.io/never-miss-a-game/preferences-editor.html) closes off the wrong-abbreviation branch: its checkboxes are built from the repos' own team files, keyed the way the tool matches, and an entry it does not recognize is flagged on the page rather than written silently. Run the check anyway; it reads the file on disk, which is what proves the save landed.
