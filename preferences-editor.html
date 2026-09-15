@@ -159,7 +159,7 @@
         </label>
         <div class="snark">
           <label class="f">Snark, 1 to 5
-            <input id="snark" type="range" min="1" max="5" step="1">
+            <input id="snark" type="range" min="1" max="5" step="1" value="1">
           </label>
           <ol id="snarkLvl"></ol>
         </div>
@@ -328,6 +328,9 @@ function render() {
     const el = $(k); if (!prefs) continue;
     if (prefs[k] !== undefined) el.value = prefs[k];
   }
+  // The policy's own rule: a missing or out-of-range snark means 1, the plain
+  // concierge. A range input with no value sits at its midpoint, which is not that.
+  if (prefs && !(Number(prefs.snark) >= 1 && Number(prefs.snark) <= 5)) $('snark').value = 1;
   showSnark($('snark').value);
   checkZone();
   const unk = prefs ? unknownFollows(prefs) : [];
