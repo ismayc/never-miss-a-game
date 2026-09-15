@@ -8,6 +8,7 @@ The operational detail behind `README.md`: what each file does, what one run loo
 | --- | --- | --- |
 | `preferences.json` | input | The teams you follow, keyed by `{sport, abbr}`, each with a `why` note. The only file you need to edit. |
 | `preferences-editor.html` | input, optional | A form over `preferences.json`. Opens the file through the browser's file picker (Chrome or Edge), lists every team the ten repos know by the data's own abbreviation, and writes the file back in place. Nothing in the run reads it. |
+| `serve.py` | input, optional | Serves this folder on 127.0.0.1 and opens the form with a "Read this week's schedules" button, which runs `read-schedules.mjs` and shows its output on the page. A page opened from disk cannot run a program; this is the smallest thing that can. Stdlib only, loopback only, and never on when the agent runs unattended. |
 | `read-schedules.mjs` | deterministic | Reads ten repos, normalizes two data shapes into one game record, buckets by your calendar day, prints the week. |
 | `concierge.md` | judgment | The policy. An outline on `main`; the finished text on the `complete` branch. |
 | `notify.sh` | delivery | stdout, a macOS banner, an archive file on disk, and an optional phone push. |
@@ -80,7 +81,7 @@ flowchart TD
     W --> E
 ```
 
-Every entry carries a sport because abbreviations collide across sports. A wrong abbreviation fails silently at run time and visibly here, so check here. The form (`preferences-editor.html`, also at https://ismayc.github.io/never-miss-a-game/preferences-editor.html) closes off the wrong-abbreviation branch: its checkboxes are built from the repos' own team files, keyed the way the tool matches, and an entry it does not recognize is flagged on the page rather than written silently. Run the check anyway; it reads the file on disk, which is what proves the save landed.
+Every entry carries a sport because abbreviations collide across sports. A wrong abbreviation fails silently at run time and visibly here, so check here. With `python3 serve.py` running, the form's "Read this week's schedules" button is this same check without the shell: it runs the tool and shows the Following line. The form (`preferences-editor.html`, also at https://ismayc.github.io/never-miss-a-game/preferences-editor.html) closes off the wrong-abbreviation branch: its checkboxes are built from the repos' own team files, keyed the way the tool matches, and an entry it does not recognize is flagged on the page rather than written silently. Run the check anyway; it reads the file on disk, which is what proves the save landed.
 
 ## Put it on a schedule
 

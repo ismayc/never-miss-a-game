@@ -68,6 +68,13 @@
   .snark li b { width: 1.2em; flex: none; color: var(--dim); }
   .snark li.on { background: #fff; color: var(--ink); font-weight: 600; border: 1px solid var(--line); }
   .snark li.on b { color: var(--accent); }
+  .readout { margin: 0 0 16px; }
+  .readout summary { cursor: pointer; display: flex; gap: 12px; align-items: baseline; }
+  .readout summary .t { font-weight: 600; }
+  .readout summary .n { color: var(--dim); font-size: 13px; }
+  .readout pre { margin: 10px 0 0; padding: 10px 12px; background: var(--panel); border: 1px solid var(--line);
+    border-radius: 8px; white-space: pre-wrap; word-break: break-word; font-size: 12.5px; line-height: 1.45;
+    max-height: 60vh; overflow: auto; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
 
   details.league { padding: 0; }
   details.league summary { list-style: none; cursor: pointer; padding: 12px 16px; display: flex;
@@ -132,8 +139,16 @@
   <button id="save" disabled>Save</button>
   <button id="download" disabled>Download</button>
   <button id="demo" class="quiet">Try the example</button>
+  <button id="read" class="primary" hidden title="Runs node read-schedules.mjs on this machine and shows what it prints">Read this week's schedules</button>
   <div class="status" id="status">No file open.</div>
 </div>
+
+<!-- Only when served by serve.py on this machine: the page cannot run a program
+     from disk, so the button appears only on a loopback http page. -->
+<details class="card readout" id="readout" hidden open>
+  <summary><span class="t">This week's schedules</span><span class="n" id="readmeta"></span></summary>
+  <pre id="readpre">Click "Read this week's schedules". It runs the same local tool the agent runs, node read-schedules.mjs, and shows what it prints: every source, every followed team, every game in the window.</pre>
+</details>
 
 <div class="cols">
   <div id="form">
@@ -462,6 +477,30 @@ addEventListener('beforeunload', (e) => { if (prefs && serializePrefs(prefs) !==
 
 render();
 if (new URLSearchParams(location.search).has('demo')) $('demo').click();
+
+// Served by serve.py on this machine (a loopback http page): the Read button appears
+// and POSTs to /read; the server runs node read-schedules.mjs and returns its text.
+// From disk or from the public site there is no server, so nothing is shown.
+const served = location.protocol === 'http:' && /^(127\.0\.0\.1|localhost)$/.test(location.hostname);
+if (served) { $('read').hidden = false; $('readout').hidden = false; }
+$('read').addEventListener('click', async () => {
+  const btn = $('read'); btn.disabled = true;
+  $('readmeta').textContent = 'reading...';
+  try {
+    const body = { tz: $('timezone').value || '', days: Number($('windowDays').value) || 7 };
+    const r = await fetch('/read', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+    const d = await r.json();
+    if (!d.ok) throw new Error(d.error || 'the tool failed');
+    $('readpre').textContent = d.output;
+    $('readout').open = true;
+    $('readmeta').textContent = `${d.command} · ${d.seconds} s`;
+    const fol = d.output.split('\n').find((l) => l.startsWith('Following'));
+    status(fol ? fol.split(':')[0] + ' on disk' : 'read done', 'saved');
+  } catch (e) {
+    $('readmeta').textContent = 'failed';
+    status('read failed: ' + e.message, 'err');
+  } finally { btn.disabled = false; }
+});
 </script>
 </body>
 </html>
