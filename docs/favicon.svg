@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Never Miss a Game">
+  <rect width="64" height="64" rx="14" fill="#10141c"/>
+  <!-- one message: a speech bubble -->
+  <path d="M14 15h36a5 5 0 0 1 5 5v20a5 5 0 0 1-5 5H29l-10 9v-9h-5a5 5 0 0 1-5-5V20a5 5 0 0 1 5-5z" fill="#1a2130" stroke="#8b95a5" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- three lines of digest, the middle one amber: the one game that matters -->
+  <rect x="19" y="23" width="20" height="3.5" rx="1.75" fill="#8b95a5"/>
+  <rect x="19" y="30" width="27" height="3.5" rx="1.75" fill="#ffb648"/>
+  <rect x="19" y="37" width="16" height="3.5" rx="1.75" fill="#8b95a5"/>
+  <!-- the notification dot -->
+  <circle cx="51" cy="15" r="7" fill="#ffb648" stroke="#10141c" stroke-width="2.5"/>
+</svg>

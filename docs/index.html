@@ -5,6 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Never Miss a Game: how the sports concierge agent was built</title>
 <meta name="description" content="A beginner's walk through a small, real agent: one message a week about what is worth watching, built from schedules already on disk. What existed, what was built, what one run looks like, and what the process taught.">
+<meta name="author" content="Chester Ismay">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Never Miss a Game">
+<meta property="og:title" content="Never Miss a Game: how a small sports concierge agent was built">
+<meta property="og:description" content="One message a week about what is worth watching, built from schedules already on disk. What existed, what was built, what one run looks like, and what the process taught. By Chester Ismay, for someone who has never built an agent.">
+<meta property="og:url" content="https://ismayc.github.io/never-miss-a-game/">
+<meta property="og:image" content="https://ismayc.github.io/never-miss-a-game/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Never Miss a Game. A site for every sport. None of them knew about my week. Chester Ismay, O'Reilly Zero to Agent in 30 Minutes.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Never Miss a Game: how a small sports concierge agent was built">
+<meta name="twitter:description" content="One message a week about what is worth watching. What existed, what was built, what one run looks like, and what the process taught. By Chester Ismay.">
+<meta name="twitter:image" content="https://ismayc.github.io/never-miss-a-game/og-image.png">
 <style>
   :root {
     --bg: #10141c; --ink: #f4f6f8; --dim: #8b95a5; --dimmer: #6b7686;
@@ -18,16 +35,16 @@
     font-family: -apple-system, "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif;
     line-height: 1.55; padding: 0 20px;
   }
-  main { max-width: 1240px; margin: 0 auto; padding-block: 48px 80px; }
+  main { max-width: 1640px; margin: 0 auto; padding-block: 48px 80px; }
   .kicker { color: var(--accent); font-size: 13px; letter-spacing: .3em; text-transform: uppercase; font-weight: 700; margin-bottom: 14px; }
-  h1 { font-size: clamp(30px, 4.6vw, 50px); line-height: 1.12; font-weight: 700; max-width: 30ch; }
+  h1 { font-size: clamp(30px, 4.6vw, 54px); line-height: 1.12; font-weight: 700; max-width: 40ch; }
   h1 .quiet { color: var(--dim); font-weight: 400; display: block; margin-top: 8px; font-size: .62em; }
   h2 { font-size: clamp(22px, 3vw, 30px); font-weight: 700; margin: 0 0 14px; line-height: 1.2; }
   h3 { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
-  p { color: var(--dim); max-width: 90ch; font-size: 16.5px; }
+  p { color: var(--dim); max-width: none; font-size: 17px; }
   p strong, li strong { color: var(--ink); font-weight: 600; }
   section { margin-top: 64px; }
-  .lead { color: var(--dim); font-size: 19px; margin-top: 22px; max-width: 80ch; }
+  .lead { color: var(--dim); font-size: 20px; margin-top: 22px; max-width: none; }
   @media (max-width: 700px) { p { font-size: 16px; } .lead { font-size: 17px; } }
   .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-top: 18px; }
   .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px 18px 16px; }
@@ -68,7 +85,7 @@
   .links a.amber { background: var(--amber-panel); border-color: var(--accent); }
   a { color: var(--accent-soft); }
   footer { margin-top: 70px; color: var(--dimmer); font-size: 13px; border-top: 1px solid var(--line); padding-top: 18px; }
-  .note { border-left: 3px solid var(--accent); padding: 4px 0 4px 16px; margin-top: 18px; color: var(--dim); font-size: 16.5px; max-width: 86ch; }
+  .note { border-left: 3px solid var(--accent); padding: 4px 0 4px 16px; margin-top: 18px; color: var(--dim); font-size: 17px; max-width: none; }
 </style>
 </head>
 <body>
