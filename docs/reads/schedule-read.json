@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T20:32:33.921Z",
+  "generatedAt": "2026-09-15T20:45:00.824Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-15",
@@ -271,7 +271,8 @@
         "final": 302,
         "scheduled": 30,
         "placeholder": 0,
-        "pastUnresolved": 1,
+        "postponed": 1,
+        "pastUnresolved": 0,
         "inWindow": 18,
         "inWindowReal": 18,
         "inWindowFollowed": 7
@@ -304,12 +305,13 @@
       },
       "locale": "en-GB",
       "hour12": false,
-      "commitsScores": false,
+      "commitsScores": true,
       "counts": {
         "total": 380,
         "final": 40,
         "scheduled": 340,
         "placeholder": 0,
+        "postponed": 0,
         "pastUnresolved": 0,
         "inWindow": 10,
         "inWindowReal": 10,
@@ -324,7 +326,7 @@
       "nextGameLabel": "Chelsea at Brentford",
       "daysUntilNextGame": 3,
       "notes": [
-        "No score field is committed for fixtures; results are resolved live in the app."
+        "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
     },
     {
@@ -345,12 +347,13 @@
       },
       "locale": "en-US",
       "hour12": true,
-      "commitsScores": false,
+      "commitsScores": true,
       "counts": {
         "total": 272,
         "final": 16,
         "scheduled": 256,
         "placeholder": 0,
+        "postponed": 0,
         "pastUnresolved": 0,
         "inWindow": 16,
         "inWindowReal": 16,
@@ -365,7 +368,7 @@
       "nextGameLabel": "Detroit Lions at Buffalo Bills",
       "daysUntilNextGame": 2,
       "notes": [
-        "Schedule only — no score field is committed."
+        "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
     },
     {
@@ -393,6 +396,7 @@
         "final": 0,
         "scheduled": 1200,
         "placeholder": 0,
+        "postponed": 0,
         "pastUnresolved": 0,
         "inWindow": 0,
         "inWindowReal": 0,
@@ -432,6 +436,7 @@
         "final": 67,
         "scheduled": 0,
         "placeholder": 0,
+        "postponed": 0,
         "pastUnresolved": 0,
         "inWindow": 0,
         "inWindowReal": 0,
@@ -471,6 +476,7 @@
         "final": 67,
         "scheduled": 0,
         "placeholder": 0,
+        "postponed": 0,
         "pastUnresolved": 0,
         "inWindow": 0,
         "inWindowReal": 0,
@@ -510,6 +516,7 @@
         "final": 0,
         "scheduled": 0,
         "placeholder": 32,
+        "postponed": 0,
         "pastUnresolved": 72,
         "inWindow": 0,
         "inWindowReal": 0,
@@ -553,6 +560,7 @@
         "final": 64,
         "scheduled": 0,
         "placeholder": 0,
+        "postponed": 0,
         "pastUnresolved": 0,
         "inWindow": 0,
         "inWindowReal": 0,
@@ -594,6 +602,7 @@
         "final": 51,
         "scheduled": 0,
         "placeholder": 0,
+        "postponed": 0,
         "pastUnresolved": 0,
         "inWindow": 0,
         "inWindowReal": 0,
@@ -635,6 +644,7 @@
         "final": 32,
         "scheduled": 0,
         "placeholder": 0,
+        "postponed": 0,
         "pastUnresolved": 0,
         "inWindow": 0,
         "inWindowReal": 0,
@@ -659,6 +669,7 @@
     "gamesInWindow": 44,
     "realGamesInWindow": 44,
     "placeholdersInWindow": 0,
+    "postponedInWindow": 0,
     "followedGamesInWindow": 12
   },
   "games": [
