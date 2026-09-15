@@ -68,12 +68,21 @@
   .snark li b { width: 1.2em; flex: none; color: var(--dim); }
   .snark li.on { background: #fff; color: var(--ink); font-weight: 600; border: 1px solid var(--line); }
   .snark li.on b { color: var(--accent); }
-  /* The two steps: read the week, then set up the preferences. */
-  .step { margin: 0 0 30px; padding-top: 18px; border-top: 2px solid var(--line); }
-  .step h2 { font-size: 24px; margin: 0 0 6px; display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
-  .step h2 .stepn { color: var(--accent); font-size: 13px; letter-spacing: .3em; text-transform: uppercase;
+  /* The two steps, one visible at a time: set up the preferences, then read the week. */
+  .tabs { display: flex; gap: 6px; border-bottom: 2px solid var(--line); margin: 0 0 18px; flex-wrap: wrap; }
+  .tabs .tab { background: transparent; border: 1px solid transparent; border-bottom: 0; margin-bottom: -2px;
+    border-radius: 10px 10px 0 0; padding: 10px 16px 12px; font-size: 18px; font-weight: 600; color: var(--dim);
+    display: flex; gap: 10px; align-items: baseline; cursor: pointer; }
+  .tabs .tab:hover { color: var(--ink); border-color: transparent; }
+  .tabs .tab.on { background: var(--panel); border-color: var(--line); color: var(--ink);
+    box-shadow: 0 2px 0 0 var(--panel); }
+  .stepn { color: var(--accent); font-size: 13px; letter-spacing: .3em; text-transform: uppercase;
     font-weight: 600; white-space: nowrap; }
+  .tabs .badge { background: var(--ok); color: #fff; border-radius: 999px; padding: 2px 10px; font-size: 13px;
+    font-weight: 600; letter-spacing: 0; }
+  .step { margin: 0 0 30px; }
   .step .lead { color: var(--dim); margin: 0 0 14px; max-width: 78ch; }
+  .step .next { margin: 4px 0 0; }
   .step .lead b { color: var(--ink); font-weight: 600; }
   .readout .bar .n { color: var(--dim); font-size: 14px; }
   .readout .readbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 10px; }
@@ -148,9 +157,13 @@
 <h1>Your teams, as a form</h1>
 <p class="sub">Two steps, in the order the agent uses them. <b>Step 1</b> is your <b>preferences.json</b>: open it, tick your teams, turn the dial, and Save writes the same file back. <b>Step 2</b> reads this week's schedules, the same read the agent gets, and shows which of the week's games are yours.</p>
 
+<nav class="tabs" role="tablist">
+  <button class="tab on" type="button" role="tab" aria-selected="true" data-tab="step1"><span class="stepn">Step 1</span> Set up your preferences</button>
+  <button class="tab" type="button" role="tab" aria-selected="false" data-tab="step2"><span class="stepn">Step 2</span> Read this week's schedules <span class="badge" id="tabBadge" hidden></span></button>
+</nav>
+
 <section class="step" id="step1">
-  <h2><span class="stepn">Step 1</span> Set up your preferences</h2>
-  <p class="lead">The agent reads <b>preferences.json</b> and nothing else about you. Open that file (or try the example), tick your teams and turn the dial, and Save writes the same file back. The JSON on the right is exactly what gets saved.</p>
+  <p class="lead">The agent reads <b>preferences.json</b> and nothing else about you. Open that file (or try the example), tick your teams and turn the dial, and Save writes the same file back. The JSON on the right is exactly what gets saved. Then go to step 2 to see which of this week's games are yours.</p>
 
   <div class="nofs" id="nofs" hidden>This browser cannot write a file in place (Chrome and Edge can). You can still open your preferences.json, edit it here, and <b>Download</b> the result; put that file over preferences.json in your checkout.</div>
 
@@ -209,15 +222,15 @@
     <p class="note">Save writes this text to the file you opened, in place. Download hands you the same text as a file named preferences.json. Either way, run the tool read afterwards and check your team appears under <b>Following</b> by full name. That check reads the file on disk, so it proves the save landed. Step 2 does the same check against the published week, without a shell.</p>
   </div>
 </div>
+<p class="next"><button type="button" class="primary" data-tab="step2">Next: Step 2, read this week's schedules</button></p>
 </section>
 
 <!-- Step 2. The read is not produced on the viewer's machine. A GitHub Actions
      workflow in the attendee repo (.github/workflows/read-schedules.yml) runs
      read-schedules.mjs every few hours and commits what it prints under docs/reads/,
      which GitHub Pages serves; the button fetches that. No server anywhere. -->
-<section class="step readout" id="step2">
-  <h2><span class="stepn">Step 2</span> Read this week's schedules</h2>
-  <p class="lead">The agent's whole data layer is one local script, <b>node read-schedules.mjs</b>, which reads ten schedule repos and your preferences and prints the week. GitHub runs that same script from this repo a few times a day and publishes what it prints; this button fetches it, and the box under it checks the teams you ticked in step 1 against that week. Nothing runs on your computer.</p>
+<section class="step readout" id="step2" hidden>
+  <p class="lead">The agent's whole data layer is one local script, <b>node read-schedules.mjs</b>, which reads ten schedule repos and your preferences and prints the week. GitHub runs that same script from this repo a few times a day and publishes what it prints; this button fetches it, and the box under it checks the teams you ticked in step 1 against that week. Nothing runs on your computer. To change teams, go back to step 1; the box here follows.</p>
   <div class="bar">
     <button id="read" class="primary" title="Shows the read GitHub ran this morning with the same tool the agent runs, node read-schedules.mjs">Read this week's schedules</button>
     <span class="n" id="readmeta">Not read yet.</span>
@@ -231,6 +244,7 @@
     <span class="n">(the CSV is one row per game, with a yours column for the teams ticked in step 1)</span>
   </div>
   <pre id="readpre">Click "Read this week's schedules". The panel fills with what the tool printed (America/Phoenix, seven days, every game): every source and its state, every followed team from the committed preferences, then every game in the window by day.</pre>
+<p class="next"><button type="button" class="quiet" data-tab="step1">Back to Step 1, your preferences</button></p>
 </section>
 
 <script id="core">
@@ -364,6 +378,21 @@ if (typeof module !== 'undefined') {
 <script>
 // ---- The page.
 const $ = (id) => document.getElementById(id);
+
+// The two tabs. One step on screen at a time; #step2 in the URL opens on the read.
+function showTab(id) {
+  for (const s of document.querySelectorAll('section.step')) s.hidden = s.id !== id;
+  for (const b of document.querySelectorAll('.tabs .tab')) {
+    const on = b.dataset.tab === id;
+    b.classList.toggle('on', on); b.setAttribute('aria-selected', on ? 'true' : 'false');
+  }
+  try { history.replaceState(null, '', '#' + id); } catch (e) { /* file:// may refuse; harmless */ }
+  window.scrollTo({ top: 0 });
+}
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('button[data-tab]'); if (b) showTab(b.dataset.tab);
+});
+if (location.hash === '#step2') showTab('step2');
 const hasFS = typeof window.showOpenFilePicker === 'function';
 let prefs = null;        // the live object
 let handle = null;       // FileSystemFileHandle when opened with the picker
@@ -594,6 +623,9 @@ function whenGenerated() {
 function showFollowing() {
   const box = $('following');
   const head = '<h3>Your teams this week</h3>';
+  const badge = $('tabBadge');
+  badge.hidden = !(read && prefs);
+  if (read && prefs) badge.textContent = followingReport(prefs, read).line.split(':')[0];
   if (!read) {
     box.innerHTML = head + '<div class="none"><p>Click "Read this week\'s schedules" and this box lists which of the week\'s games are yours'
       + (prefs ? ' (' + prefs.followed.length + ' teams ticked in step 1).' : '. Open your preferences.json in step 1 first, or click Try the example.') + '</p></div>';

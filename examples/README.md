@@ -16,17 +16,17 @@ flowchart TD
     subgraph have["Before the run (main)"]
         direction TB
         f1["01-preferences.json<br/>INPUT: the teams you follow"] --> f2
-        f2["02-schedule-read.txt<br/>TOOL: what read-schedules.mjs prints, 0.3 s. The agent reads this."]
-        f2 -.-> f3["03-schedule-read.json<br/>TOOL: the same run with --json, for when structure matters"]
-        f2 --> f4["04-the-policy.md<br/>POLICY: a map of the part written in the session"]
+        f2["02-schedule-read.txt<br/>TOOL: what read-schedules.mjs prints, 0.3 s.<br/>The agent reads this."]
+        f2 -.-> f3["03-schedule-read.json<br/>TOOL: the same run with --json,<br/>for when structure matters"]
+        f2 --> f4["04-the-policy.md<br/>POLICY: a map of the part<br/>written in the session"]
     end
     subgraph get["What the run produces (complete)"]
         direction TB
-        f5["05-run-transcript.log<br/>AGENT: one tool call, then judgment, then the message repeated verbatim"]
-        f5 --> f6["06-digest.md<br/>MESSAGE: the archive copy notify.sh writes. This is what lands on the phone."]
-        f5 -.-> f7["07-notify-output.txt<br/>DELIVERY: what notify.sh printed while delivering it"]
+        f5["05-run-transcript.log<br/>AGENT: one tool call, then judgment,<br/>then the message repeated verbatim"]
+        f5 --> f6["06-digest.md<br/>MESSAGE: the archive copy notify.sh writes.<br/>This is what lands on the phone."]
+        f5 -.-> f7["07-notify-output.txt<br/>DELIVERY: what notify.sh printed<br/>while delivering it"]
     end
-    f4 --> f5
+    have -- "the run: 04 is its prompt" --> get
 ```
 
 | # | File | Branch | What it is | What to look at |
