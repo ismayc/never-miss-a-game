@@ -72,5 +72,5 @@ The line between the halves is the one question: does this have one right answer
 
 - `README.md`: the idea in one picture, and how to try it.
 - `TECHNICAL.md`: the files, one run step by step, the tool's four states, scheduling, the allowlist.
-- `examples/README.md`, on the `complete` branch: the chain, file by file, from one real run.
+- `examples/README.md`: the chain, file by file, from one real run. Inputs on `main`, outputs on `complete`.
 - `WRITING-THE-POLICY.md`: the structure of the policy file and the practice behind each section.

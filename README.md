@@ -38,7 +38,7 @@ git checkout complete                                            # the finished 
 ./run-concierge.sh                                               # the whole agent, 90 to 160 seconds
 ```
 
-The message prints in the terminal and is saved to disk. The `complete` branch also carries `examples/`: what every step of that run looks like, from the preferences file to the delivered message, so you can read along before running anything.
+The message prints in the terminal and is saved to disk. `examples/` shows what every step looks like: on `main`, what exists before the run (the preferences file and the tool's output); on `complete`, what the run produces (the transcript, the message, the delivery). Read along there before running anything.
 
 ## Make it yours
 
@@ -46,7 +46,7 @@ Edit the `followed` list in `preferences.json`: the sport, the team's abbreviati
 
 ## Read next
 
-- `examples/README.md`, on the `complete` branch: one real run, file by file.
+- `examples/README.md`: one real run, file by file. Inputs on `main`, outputs on `complete`.
 - `HOW-IT-FITS-TOGETHER.md`: what already existed, what was built, and each decision with its road not taken.
 - `WRITING-THE-POLICY.md`: how the policy file is structured, the practice behind each section, and a checklist for your own.
 - `TECHNICAL.md`: the files, what happens in one run, the data traps the tool handles, scheduling, the phone, and the safety boundary.
