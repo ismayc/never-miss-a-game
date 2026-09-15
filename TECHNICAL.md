@@ -97,7 +97,24 @@ Fire once: `launchctl kickstart -p gui/$(id -u)/local.game-day-concierge`. Remov
 
 ## The phone
 
-Install the ntfy app, subscribe to a long random topic string, and set `NTFY_TOPIC` to that string in the plist's `EnvironmentVariables` (or export it in the shell that runs the agent). Anyone who knows the topic can read it, so treat it as a password and never commit it. With it unset, the run is fully offline: terminal, banner, and the archive file.
+The push goes through [ntfy.sh](https://ntfy.sh), a free service where a message posted to a topic name reaches every phone subscribed to that name. There is no account and nothing to install on the Mac: `notify.sh` posts with `curl`. The topic string is the only link between the two, so:
+
+1. Install the ntfy app (iOS or Android, linked from ntfy.sh) and subscribe to a long random topic, for example `game-day-` followed by twenty random letters. Anyone who knows the string can read the topic, so treat it as a password and never commit it.
+2. Export it in the shell that runs the agent, or set it in the plist's `EnvironmentVariables` for the scheduled run:
+
+```bash
+export NTFY_TOPIC=your-long-random-topic
+```
+
+3. Test the delivery path once, with the archive pointed at a scratch folder so the real one stays clean:
+
+```bash
+CONCIERGE_LOG_DIR=/tmp/concierge-test ./notify.sh "Concierge test" "delivery works"
+```
+
+The message should land on the phone within a few seconds, and `notify.sh` prints `pushed to ntfy.sh/...`. On the phone the day headings are bold and each game is a bullet with its reason on an indented line under it; the terminal copy and the archive stay plain text, because the phone apps render plain text only and the formatting is done in `notify.sh` for that channel alone.
+
+With `NTFY_TOPIC` unset, the run is fully offline: terminal, banner, and the archive file, and the notifier says it skipped the push.
 
 ## Why it is safe to leave running
 
