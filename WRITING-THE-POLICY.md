@@ -63,7 +63,7 @@ Seven headings, in the order the agent has to decide: facts before judgment, jud
 
 - `README.md` answers "what is this and how do I try it", for a general reader, in one screen: the idea, one picture, four commands, where to read next. Nothing operational, nothing about why.
 - `TECHNICAL.md` answers "how does it run": the files, one run step by step, the data traps, scheduling, the phone, the safety boundary.
-- `examples/README.md` answers "what does it look like": the chain in order, from one real run, with what to look at in each file.
+- `examples/README.md`, on the `complete` branch, answers "what does it look like": the chain in order, from one real run, with what to look at in each file.
 - `HOW-IT-FITS-TOGETHER.md` answers "why this shape": the problem, the resources, the decisions and the roads not taken.
 - This file answers "how is the policy built".
 

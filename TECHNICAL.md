@@ -13,7 +13,7 @@ The operational detail behind `README.md`: what each file does, what one run loo
 | `run-concierge.sh` | the run | `claude -p` with the allowlist, then checks that a digest file exists. |
 | `game-day-concierge.plist` | the clock | launchd, Wednesdays at 7:00. Not installed by anything here. |
 | `clone-viewers.sh` | setup | Fetches the ten schedule repos, plus the hub's helper modules, into the folder the tool expects. |
-| `examples/` | see it | Every link of the chain from one real run: preferences in, message out. |
+| `examples/` | see it | Every link of the chain from one real run: preferences in, message out. On the `complete` branch only. |
 
 ## What happens in one run
 
@@ -116,5 +116,5 @@ With `--permission-mode default`, anything off the list is refused instead of si
 
 ## Branches
 
-- `main`: the kit with `concierge.md` as an outline, for writing the policy yourself.
-- `complete`: the same kit with the finished policy, the one that produced `examples/`.
+- `main`: the starting point. The kit with `concierge.md` as an outline, for writing the policy yourself.
+- `complete`: the built-out result. The finished policy, and `examples/` with every file the workflow produced from it: preferences in, tool read, transcript, digest, delivery.
