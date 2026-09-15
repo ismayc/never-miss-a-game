@@ -44,7 +44,7 @@ flowchart TD
         direction TB
         d1["parse two data shapes"]
         d2["bucket by the viewer's calendar day"]
-        d3["mark placeholder / final /<br/>past-unresolved / scheduled"]
+        d3["mark placeholder / postponed / final /<br/>past-unresolved / scheduled"]
         d4["days until each followed<br/>team's next game"]
     end
     subgraph jud["Judgment: the policy"]
@@ -75,6 +75,6 @@ The line between the halves is the one question: does this have one right answer
 ## Where to look
 
 - `README.md`: the idea in one picture, and how to try it.
-- `TECHNICAL.md`: the files, one run step by step, the tool's four states, scheduling, the allowlist.
+- `TECHNICAL.md`: the files, one run step by step, one repo end to end, the tool's five states, scheduling, the allowlist.
 - `examples/README.md`: the chain, file by file, from one real run. Inputs on `main`, outputs on `complete`.
 - `WRITING-THE-POLICY.md`: the structure of the policy file and the practice behind each section.

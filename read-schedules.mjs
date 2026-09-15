@@ -87,8 +87,8 @@ const SOURCES = [
     locale: 'en-GB',
     hour12: false, // football is 24-hour
     weekStartDow: 1, // Premier League weeks run Monday–Sunday
-    commitsScores: false,
-    notes: ['No score field is committed for fixtures; results are resolved live in the app.'],
+    commitsScores: true,
+    notes: ["Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."],
   },
   {
     id: 'nfl',
@@ -105,8 +105,8 @@ const SOURCES = [
     locale: 'en-US',
     hour12: true,
     weekStartDow: 0,
-    commitsScores: false,
-    notes: ['Schedule only — no score field is committed.'],
+    commitsScores: true,
+    notes: ["Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."],
   },
   {
     id: 'nba',
@@ -404,11 +404,21 @@ async function loadHubTooling(root) {
 //   final        — a result is committed for this game
 //   scheduled    — in the future, genuinely upcoming
 //   placeholder  — a knockout slot with a fake team label; NOT a fixture
-//   past-unresolved — in the past, but this repo commits no results (do not call it upcoming)
+//   postponed    — the repo itself marks the row postponed (the WNBA feed does, with a
+//                  makeup note); never upcoming, never "missing a result"
+//   past-unresolved — in the past with no committed result: a repo that commits none
+//                  (the World Cup viewer), or a result the repo's refresh has not reached
+//                  yet (the four league repos refresh twice a day). Do not call it upcoming.
 // ---------------------------------------------------------------------------
 
-function statusFor(src, { hasScore, isPlaceholder, startUtc, nowMs }) {
+// A row that can be watched or reported on: not a bracket slot, not postponed.
+function isReal(g) {
+  return g.status !== 'placeholder' && g.status !== 'postponed'
+}
+
+function statusFor(src, { hasScore, isPlaceholder, isPostponed, startUtc, nowMs }) {
   if (isPlaceholder) return 'placeholder'
+  if (isPostponed) return 'postponed'
   if (hasScore) return 'final'
   if (new Date(startUtc).getTime() < nowMs) return 'past-unresolved'
   return 'scheduled'
@@ -448,6 +458,7 @@ async function loadSource(src, root, nowMs) {
     if (src.family === 'A') {
       const startUtc = new Date(row[src.dateField]).toISOString()
       const hasScore = Array.isArray(row.score) && row.score.length === 2
+      const isPostponed = row.postponed === true
       return {
         sport: src.id,
         sportName: src.name,
@@ -458,11 +469,12 @@ async function loadSource(src, root, nowMs) {
         awayLabel: label(row.away),
         venue: [row.venue, row.city].filter(Boolean).join(', '),
         tv: row[src.tvField] || [], // WNBA has at least one game with no broadcast at all
-        status: statusFor(src, { hasScore, isPlaceholder: false, startUtc, nowMs }),
+        status: statusFor(src, { hasScore, isPlaceholder: false, isPostponed, startUtc, nowMs }),
         seasonType: row.seasonType || (row.round ? 'tournament' : 'regular'),
         extra: {
           homeAbbr: row.home,
           awayAbbr: row.away,
+          ...(isPostponed ? { postponed: true, ...(row.note ? { note: row.note } : {}) } : {}),
           ...(row.week != null ? { week: row.week } : {}),
           ...(row.round ? { round: row.round, region: row.region } : {}),
           ...(row.homeSeed != null ? { homeSeed: row.homeSeed, awaySeed: row.awaySeed } : {}),
@@ -672,10 +684,11 @@ async function main() {
         final: all.filter((g) => g.status === 'final').length,
         scheduled: all.filter((g) => g.status === 'scheduled').length,
         placeholder: all.filter((g) => g.status === 'placeholder').length,
+        postponed: all.filter((g) => g.status === 'postponed').length,
         pastUnresolved: all.filter((g) => g.status === 'past-unresolved').length,
         inWindow: inWindow.length,
-        inWindowReal: inWindow.filter((g) => g.status !== 'placeholder').length,
-        inWindowFollowed: inWindow.filter((g) => follows.some((f) => matchesFollow(g, f))).length,
+        inWindowReal: inWindow.filter((g) => isReal(g)).length,
+        inWindowFollowed: inWindow.filter((g) => isReal(g) && follows.some((f) => matchesFollow(g, f))).length,
       },
       dataRange: { first: kos[0] || null, last: kos[kos.length - 1] || null },
       nextGameUtc: nextGame?.startUtc || null,
@@ -702,7 +715,7 @@ async function main() {
     if (opener && s.counts.final === 0) opener.extra.seasonOpener = true
   }
 
-  const followedGames = games.filter((g) => g.followed)
+  const followedGames = games.filter((g) => g.followed && isReal(g))
 
   // Per-followed-team rollup. A team with NOTHING in the window still gets a next-game
   // answer drawn from the committed schedule (or an explicit null when its league has no
@@ -718,7 +731,7 @@ async function main() {
       return { ...f, label, sourceStatus: 'missing', inWindow: 0, nextGameUtc: null, note: 'source unavailable' }
     const mine = src.games.filter((g) => matchesFollow(g, f)).sort((a, b) => a.startUtc.localeCompare(b.startUtc))
     const upcoming = mine.filter((g) => g.status === 'scheduled')
-    const inWindow = mine.filter((g) => windowSet.has(dayKey(g.startUtc, tz)) && g.status !== 'placeholder')
+    const inWindow = mine.filter((g) => windowSet.has(dayKey(g.startUtc, tz)) && isReal(g))
     const next = upcoming[0] || null
     return {
       sport: f.sport,
@@ -769,8 +782,9 @@ async function main() {
       sourcesOk: sources.filter((s) => s.status === 'ok').length,
       sourcesMissing: sources.filter((s) => s.status === 'missing').length,
       gamesInWindow: games.length,
-      realGamesInWindow: games.filter((g) => g.status !== 'placeholder').length,
+      realGamesInWindow: games.filter((g) => isReal(g)).length,
       placeholdersInWindow: games.filter((g) => g.status === 'placeholder').length,
+      postponedInWindow: games.filter((g) => g.status === 'postponed').length,
       followedGamesInWindow: followedGames.length,
     },
     games,
@@ -821,6 +835,8 @@ function printSummary(p, { all }) {
       L.push(`      ⚠ ${s.counts.placeholder} placeholder matches in this repo (not real fixtures)`)
     if (s.counts.pastUnresolved)
       L.push(`      ⚠ ${s.counts.pastUnresolved} past matches with no committed result`)
+    if (s.counts.postponed)
+      L.push(`      · ${s.counts.postponed} postponed by the league (the repo marks it; not upcoming, not a missing result)`)
     for (const n of s.notes) L.push(`      · ${n}`)
   }
 
@@ -848,10 +864,10 @@ function printSummary(p, { all }) {
   )
 
   const show = all
-    ? p.games.filter((g) => g.status !== 'placeholder')
+    ? p.games.filter((g) => isReal(g))
     : p.preferences
-      ? p.games.filter((g) => g.followed)
-      : p.games.filter((g) => g.status !== 'placeholder')
+      ? p.games.filter((g) => g.followed && isReal(g))
+      : p.games.filter((g) => isReal(g))
 
   let day = null
   for (const g of show) {

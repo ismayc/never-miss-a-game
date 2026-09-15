@@ -312,7 +312,7 @@ function matchesFollow(game, f) {
 // The Following check, done here against a published read instead of on disk: every
 // follow the data knows, by full name, with its games in the read's window; a follow the
 // data does not know is listed apart, the way the tool leaves it off its Following line.
-// Placeholder rows (a bracket slot, not a team) never count.
+// Placeholder rows (a bracket slot, not a team) and postponed rows never count.
 function followingReport(p, read) {
   const known = knownKeys();
   const games = (read && Array.isArray(read.games)) ? read.games : [];
@@ -320,7 +320,7 @@ function followingReport(p, read) {
   for (const f of p.followed) {
     const k = known.get(followKey(f));
     if (!k) { unknown.push(f); continue; }
-    const mine = games.filter((g) => g.status !== 'placeholder' && matchesFollow(g, f));
+    const mine = games.filter((g) => g.status !== 'placeholder' && g.status !== 'postponed' && matchesFollow(g, f));
     following.push({ f, label: k.team.label, sportName: k.league.name, games: mine });
   }
   const gameIds = new Set(following.flatMap((t) => t.games.map((g) => g.id)));

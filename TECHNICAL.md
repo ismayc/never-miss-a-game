@@ -81,7 +81,7 @@ export const TEAM_BY_ABBR = Object.fromEntries(TEAMS.map((t) => [t.abbr, t]))
   teamsFile: 'src/data/teams.js', weekStartDow: 0, commitsScores: true }
 ```
 
-The tool imports the two files as ES modules (`await import(pathToFileURL(file))`), so the committed data parses itself; nothing is scraped with a regular expression. For each row it looks the abbreviations up in `TEAM_BY_ABBR`, turns `tip` into an instant, gives the game one of the four statuses in the next section (a score committed: `final`; no score and the tip has passed: `past-unresolved`; otherwise `scheduled`; a bracket-slot label, which a league schedule never has: `placeholder`), and writes it in the shape every source shares:
+The tool imports the two files as ES modules (`await import(pathToFileURL(file))`), so the committed data parses itself; nothing is scraped with a regular expression. For each row it looks the abbreviations up in `TEAM_BY_ABBR`, turns `tip` into an instant, gives the game one of the five statuses in the next section (a score committed: `final`; the repo's own `postponed` flag: `postponed`; no score and the tip has passed: `past-unresolved`; otherwise `scheduled`; a bracket-slot label, which a league schedule never has: `placeholder`), and writes it in the shape every source shares:
 
 ```json
 { "sport": "wnba", "id": "401857190", "startUtc": "2026-09-17T23:30:00.000Z",
@@ -104,14 +104,16 @@ The NFL and NBA repos have the same shape (`GAMES`, `tip`), and the Premier Leag
 flowchart TD
     G["a row in a schedule file"] --> Q1{"team label is a bracket slot?<br/>'Winner Group C', '3rd A/B/C/D/F'"}
     Q1 -- yes --> S1["placeholder<br/>never a fixture, never in a digest"]
-    Q1 -- no --> Q2{"score committed?"}
+    Q1 -- no --> Q0{"the repo marks it postponed?"}
+    Q0 -- yes --> S0["postponed<br/>the repo says so; never upcoming,<br/>never a missing result"]
+    Q0 -- no --> Q2{"score committed?"}
     Q2 -- yes --> S2["final"]
     Q2 -- no --> Q3{"kickoff already past?"}
     Q3 -- yes --> S3["past-unresolved<br/>'we do not have the result',<br/>never 'this has not happened yet'"]
     Q3 -- no --> S4["scheduled<br/>genuinely upcoming"]
 ```
 
-Read literally, the World Cup repo is 104 unplayed matches, a third of them between teams that do not exist, because results load at page time and are never committed. The tool marks every row with one of the four states above, buckets games by the day you see (a 5:20 PM Phoenix kickoff is 00:20Z the next day, and a naive read names the wrong evening), and prints its warnings instead of hiding them. The policy names the same traps anyway, so the rules survive a change to the tool.
+Read literally, the World Cup repo is 104 unplayed matches, a third of them between teams that do not exist, because results load at page time and are never committed. The four league repos are the opposite case: each commits scores through its own ESPN refresh twice a day, so `past-unresolved` there means only that a result is a few hours behind, and a clone that has not been pulled shows more of them than the repo has. The tool marks every row with one of the five states above, buckets games by the day you see (a 5:20 PM Phoenix kickoff is 00:20Z the next day, and a naive read names the wrong evening), and prints its warnings instead of hiding them. The policy names the same traps anyway, so the rules survive a change to the tool.
 
 ## Checking a follow
 
