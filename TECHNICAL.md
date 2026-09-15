@@ -7,6 +7,7 @@ The operational detail behind `README.md`: what each file does, what one run loo
 | File | Half | What it does |
 | --- | --- | --- |
 | `preferences.json` | input | The teams you follow, keyed by `{sport, abbr}`, each with a `why` note. The only file you need to edit. |
+| `preferences-editor.html` | input, optional | A form over `preferences.json`. Opens the file through the browser's file picker (Chrome or Edge), lists every team the ten repos know by the data's own abbreviation, and writes the file back in place. Nothing in the run reads it. |
 | `read-schedules.mjs` | deterministic | Reads ten repos, normalizes two data shapes into one game record, buckets by your calendar day, prints the week. |
 | `concierge.md` | judgment | The policy. An outline on `main`; the finished text on the `complete` branch. |
 | `notify.sh` | delivery | stdout, a macOS banner, an archive file on disk, and an optional phone push. |

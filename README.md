@@ -44,6 +44,8 @@ The message prints in the terminal and is saved to disk. `examples/` shows what 
 
 Edit the `followed` list in `preferences.json`: the sport, the team's abbreviation, its name, and a line on why you care. Run the data layer again and check your team appears under `Following` by full name. Then run the agent. That file is the only thing the agent knows about you.
 
+If you would rather not edit JSON by hand, use the form at https://ismayc.github.io/never-miss-a-game/preferences-editor.html (the same page is `preferences-editor.html` in this repo; double-click it). Click Open and pick your `preferences.json`, tick your teams, type a line for each, set the snark slider, and Save. Chrome and Edge write the file back in place through the browser's file picker; any other browser downloads a `preferences.json` to put over the one in your checkout. It lists every team the ten repos know by the abbreviation the data uses. No server, nothing to install, and nothing leaves your machine. The agent never sees the page; it reads the file.
+
 ## Read next
 
 - https://ismayc.github.io/never-miss-a-game/: the whole story on one page, for someone who has never built an agent.

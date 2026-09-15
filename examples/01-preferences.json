@@ -5,6 +5,8 @@
   "clock": "12-hour",
   "windowDays": 7,
   "maxLines": 18,
+  "_snark_note": "Tone dial, 1 to 5. 1 is the plain concierge, 3 needles once a day, 5 is over-the-top snark. Changes the reasons, never the facts.",
+  "snark": 1,
   "followed": [
     {
       "sport": "wnba",

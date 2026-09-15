@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Never Miss a Game — preferences editor</title>
+<style>
+  /* GENERATED from _tools/preferences-editor.template.html by
+     _tools/build_prefs_editor.mjs. Do not hand-edit; re-run the builder.
+     A form over preferences.json. The agent never sees this page: it reads the
+     JSON file, and this page writes that same file. Same palette as the light
+     slide deck. */
+  :root {
+    --bg: #fbfaf6; --ink: #16202c; --dim: #58637a; --accent: #b25d00;
+    --panel: #f1efe9; --line: #d3d7de; --ok: #1f7a4d; --warn: #b42318;
+    --amber-bg: #fff1d6;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px; line-height: 1.45; }
+  body { padding-block: 24px 48px; padding-inline: 24px; }
+  .kicker { color: var(--accent); font-size: 13px; letter-spacing: .35em;
+    text-transform: uppercase; font-weight: 600; margin: 0 0 6px; }
+  h1 { font-size: 30px; margin: 0 0 6px; line-height: 1.15; }
+  .sub { color: var(--dim); margin: 0 0 18px; max-width: 70ch; }
+  .sub b { color: var(--ink); font-weight: 600; }
+
+  .bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    padding: 12px 14px; margin-bottom: 20px; }
+  button { font: inherit; font-size: 16px; font-weight: 600; padding: 9px 16px;
+    border-radius: 9px; border: 1px solid var(--line); background: #fff; color: var(--ink);
+    cursor: pointer; }
+  button:hover { border-color: var(--dim); }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  button.primary[disabled] { opacity: .45; cursor: default; }
+  button.quiet { background: transparent; }
+  .status { margin-left: auto; color: var(--dim); font-size: 15px; }
+  .status .file { color: var(--ink); font-weight: 600; }
+  .status .dirty { color: var(--accent); font-weight: 600; }
+  .status .saved { color: var(--ok); font-weight: 600; }
+  .status .err { color: var(--warn); font-weight: 600; }
+
+  .cols { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 20px; }
+  @media (max-width: 1000px) { .cols { grid-template-columns: 1fr; } }
+
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 16px; }
+  .card h2 { font-size: 20px; margin: 0 0 10px; display: flex; align-items: baseline; gap: 10px; }
+  .card h2 .n { color: var(--dim); font-weight: 400; font-size: 15px; }
+  .settings { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+  label.f { display: flex; flex-direction: column; gap: 4px; font-size: 14px; color: var(--dim); }
+  label.f input, label.f select { font: inherit; font-size: 16px; padding: 7px 9px;
+    border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink); }
+  .snark { grid-column: 1 / -1; }
+  .snark input[type=range] { width: 100%; accent-color: var(--accent); }
+  .snark ol { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 2px; }
+  .snark li { display: flex; gap: 10px; padding: 4px 8px; border-radius: 7px; color: var(--dim);
+    font-size: 15px; cursor: pointer; }
+  .snark li b { width: 1.2em; flex: none; color: var(--dim); }
+  .snark li.on { background: #fff; color: var(--ink); font-weight: 600; border: 1px solid var(--line); }
+  .snark li.on b { color: var(--accent); }
+
+  details.league { padding: 0; }
+  details.league summary { list-style: none; cursor: pointer; padding: 12px 16px; display: flex;
+    flex-wrap: wrap; align-items: baseline; gap: 4px 12px; border-radius: 12px; }
+  details.league summary::-webkit-details-marker { display: none; }
+  details.league summary::before { content: "▸"; color: var(--dim); width: 1em; flex: none; }
+  details.league[open] summary::before { content: "▾"; }
+  details.league summary:hover { background: #fff; }
+  details.league[open] summary { border-radius: 12px 12px 0 0; border-bottom: 1px solid var(--line); }
+  details.league summary .t { font-size: 20px; font-weight: 600; }
+  details.league summary .n { color: var(--dim); font-size: 15px; }
+  details.league summary .fol { flex-basis: 100%; padding-left: calc(1em + 12px); color: var(--dim); font-size: 15px; }
+  details.league summary .fol b { color: var(--ink); font-weight: 500; }
+  details.league .teams { padding: 10px 16px 14px; }
+  h3.divider { color: var(--dim); font-size: 15px; font-weight: 600; margin: 22px 0 10px; }
+  .teams { display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); gap: 4px 12px; }
+  .team { display: flex; flex-direction: column; }
+  .team label { display: flex; align-items: center; gap: 8px; padding: 5px 6px; border-radius: 7px;
+    cursor: pointer; }
+  .team label:hover { background: #fff; }
+  .team input[type=checkbox] { width: 18px; height: 18px; accent-color: var(--accent); flex: none; }
+  .team .abbr { color: var(--dim); font-size: 13px; margin-left: auto; letter-spacing: .05em; }
+  .team.on { grid-column: 1 / -1; background: #fff; border: 1px solid var(--line);
+    border-radius: 9px; padding: 4px 6px 8px; margin: 2px 0 4px; }
+  .team.on label { font-weight: 600; }
+  .team .why { display: none; margin: 2px 6px 0 32px; font: inherit; font-size: 15px;
+    padding: 6px 9px; border: 1px solid var(--line); border-radius: 8px; width: calc(100% - 38px); }
+  .team.on .why { display: block; }
+  .team .why::placeholder { color: #9aa3b2; }
+  .other .row { display: flex; gap: 10px; align-items: center; padding: 6px 0;
+    border-top: 1px solid var(--line); }
+  .other .row:first-of-type { border-top: 0; }
+  .other code { font-size: 14px; background: #fff; padding: 2px 6px; border-radius: 5px; }
+  .other .warnt { color: var(--warn); font-size: 14px; }
+
+  .preview { position: sticky; top: 16px; }
+  .preview pre { margin: 0; background: #fff; border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px; font-size: 13.5px; line-height: 1.4; overflow: auto; max-height: 82vh;
+    white-space: pre-wrap; word-break: break-word; }
+  .preview .head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .preview .head h2 { margin: 0; font-size: 18px; }
+  .preview .head .n { color: var(--dim); font-size: 15px; }
+  .preview .head button { margin-left: auto; font-size: 14px; padding: 6px 12px; }
+  .note { color: var(--dim); font-size: 14px; margin-top: 10px; }
+  .note b { color: var(--ink); }
+  .nofs { background: var(--amber-bg); border: 1px solid var(--accent); color: var(--ink);
+    border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; font-size: 15px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+
+<p class="kicker">Never Miss a Game</p>
+<h1>Your teams, as a form</h1>
+<p class="sub">The agent reads <b>preferences.json</b> and nothing else about you. This page opens that file, lets you tick teams and turn the dial, and writes the same file back. The JSON on the right is exactly what gets saved.</p>
+
+<div class="nofs" id="nofs" hidden>This browser cannot write a file in place (Chrome and Edge can). You can still open your preferences.json, edit it here, and <b>Download</b> the result; put that file over preferences.json in your checkout.</div>
+
+<div class="bar">
+  <button id="open" class="primary">Open preferences.json</button>
+  <input id="openFallback" type="file" accept=".json,application/json" hidden>
+  <button id="save" disabled>Save</button>
+  <button id="download" disabled>Download</button>
+  <button id="demo" class="quiet">Try the example</button>
+  <div class="status" id="status">No file open.</div>
+</div>
+
+<div class="cols">
+  <div id="form">
+    <div class="card">
+      <h2>Settings</h2>
+      <div class="settings">
+        <label class="f">Time zone (IANA)
+          <input id="timezone" list="tzs" placeholder="America/Phoenix">
+          <datalist id="tzs">
+            <option value="America/Phoenix"><option value="America/Los_Angeles"><option value="America/Denver">
+            <option value="America/Chicago"><option value="America/New_York"><option value="Europe/London">
+            <option value="Europe/Berlin"><option value="Australia/Sydney">
+          </datalist>
+        </label>
+        <label class="f">Clock
+          <select id="clock"><option value="12-hour">12-hour</option><option value="24-hour">24-hour</option></select>
+        </label>
+        <label class="f">Days ahead
+          <input id="windowDays" type="number" min="1" max="31">
+        </label>
+        <label class="f">Max lines
+          <input id="maxLines" type="number" min="1" max="60">
+        </label>
+        <div class="snark">
+          <label class="f">Snark, 1 to 5
+            <input id="snark" type="range" min="1" max="5" step="1">
+          </label>
+          <ol id="snarkLvl"></ol>
+        </div>
+      </div>
+    </div>
+    <div id="leagues"></div>
+    <h3 class="divider">Finished tournaments: nothing to follow until the next edition</h3>
+    <div id="tournaments"></div>
+    <div class="card other" id="other" hidden>
+      <h2>Other entries <span class="n">kept as written</span></h2>
+      <div id="otherRows"></div>
+      <p class="note">These follows are not teams the data knows by that key. The tool's Following line will not list them. Fix the abbreviation in the JSON or remove the entry.</p>
+    </div>
+  </div>
+
+  <div class="preview">
+    <div class="head"><h2>preferences.json</h2><span class="n" id="count"></span><button id="copy">Copy JSON</button></div>
+    <pre id="json">{ }</pre>
+    <p class="note">Save writes this text to the file you opened, in place. Download hands you the same text as a file named preferences.json. Either way, run the tool read afterwards and check your team appears under <b>Following</b> by full name. That check reads the file on disk, so it proves the save landed.</p>
+  </div>
+</div>
+
+<script id="core">
+// ---- Pure logic. No DOM in this block: tests/test_prefs_editor.py extracts it and runs it in Node.
+const LEAGUES = [{"sport":"wnba","name":"WNBA","emoji":"🏀","recurring":true,"teams":[{"abbr":"ATL","label":"Atlanta Dream"},{"abbr":"CHI","label":"Chicago Sky"},{"abbr":"CON","label":"Connecticut Sun"},{"abbr":"DAL","label":"Dallas Wings"},{"abbr":"GS","label":"Golden State Valkyries"},{"abbr":"IND","label":"Indiana Fever"},{"abbr":"LV","label":"Las Vegas Aces"},{"abbr":"LA","label":"Los Angeles Sparks"},{"abbr":"MIN","label":"Minnesota Lynx"},{"abbr":"NY","label":"New York Liberty"},{"abbr":"PHX","label":"Phoenix Mercury"},{"abbr":"POR","label":"Portland Fire"},{"abbr":"SEA","label":"Seattle Storm"},{"abbr":"TOR","label":"Toronto Tempo"},{"abbr":"WSH","label":"Washington Mystics"}]},{"sport":"nfl","name":"NFL","emoji":"🏈","recurring":true,"teams":[{"abbr":"ARI","label":"Arizona Cardinals"},{"abbr":"ATL","label":"Atlanta Falcons"},{"abbr":"BAL","label":"Baltimore Ravens"},{"abbr":"BUF","label":"Buffalo Bills"},{"abbr":"CAR","label":"Carolina Panthers"},{"abbr":"CHI","label":"Chicago Bears"},{"abbr":"CIN","label":"Cincinnati Bengals"},{"abbr":"CLE","label":"Cleveland Browns"},{"abbr":"DAL","label":"Dallas Cowboys"},{"abbr":"DEN","label":"Denver Broncos"},{"abbr":"DET","label":"Detroit Lions"},{"abbr":"GB","label":"Green Bay Packers"},{"abbr":"HOU","label":"Houston Texans"},{"abbr":"IND","label":"Indianapolis Colts"},{"abbr":"JAX","label":"Jacksonville Jaguars"},{"abbr":"KC","label":"Kansas City Chiefs"},{"abbr":"LV","label":"Las Vegas Raiders"},{"abbr":"LAC","label":"Los Angeles Chargers"},{"abbr":"LAR","label":"Los Angeles Rams"},{"abbr":"MIA","label":"Miami Dolphins"},{"abbr":"MIN","label":"Minnesota Vikings"},{"abbr":"NE","label":"New England Patriots"},{"abbr":"NO","label":"New Orleans Saints"},{"abbr":"NYG","label":"New York Giants"},{"abbr":"NYJ","label":"New York Jets"},{"abbr":"PHI","label":"Philadelphia Eagles"},{"abbr":"PIT","label":"Pittsburgh Steelers"},{"abbr":"SF","label":"San Francisco 49ers"},{"abbr":"SEA","label":"Seattle Seahawks"},{"abbr":"TB","label":"Tampa Bay Buccaneers"},{"abbr":"TEN","label":"Tennessee Titans"},{"abbr":"WSH","label":"Washington Commanders"}]},{"sport":"epl","name":"Premier League","emoji":"⚽","recurring":true,"teams":[{"abbr":"BOU","label":"AFC Bournemouth"},{"abbr":"ARS","label":"Arsenal"},{"abbr":"AVL","label":"Aston Villa"},{"abbr":"BRE","label":"Brentford"},{"abbr":"BHA","label":"Brighton & Hove Albion"},{"abbr":"CHE","label":"Chelsea"},{"abbr":"COV","label":"Coventry City"},{"abbr":"CRY","label":"Crystal Palace"},{"abbr":"EVE","label":"Everton"},{"abbr":"FUL","label":"Fulham"},{"abbr":"HUL","label":"Hull City"},{"abbr":"IPS","label":"Ipswich Town"},{"abbr":"LEE","label":"Leeds United"},{"abbr":"LIV","label":"Liverpool"},{"abbr":"MNC","label":"Manchester City"},{"abbr":"MAN","label":"Manchester United"},{"abbr":"NEW","label":"Newcastle United"},{"abbr":"NFO","label":"Nottingham Forest"},{"abbr":"SUN","label":"Sunderland"},{"abbr":"TOT","label":"Tottenham Hotspur"}]},{"sport":"nba","name":"NBA","emoji":"🏀","recurring":true,"teams":[{"abbr":"ATL","label":"Atlanta Hawks"},{"abbr":"BOS","label":"Boston Celtics"},{"abbr":"BKN","label":"Brooklyn Nets"},{"abbr":"CHA","label":"Charlotte Hornets"},{"abbr":"CHI","label":"Chicago Bulls"},{"abbr":"CLE","label":"Cleveland Cavaliers"},{"abbr":"DAL","label":"Dallas Mavericks"},{"abbr":"DEN","label":"Denver Nuggets"},{"abbr":"DET","label":"Detroit Pistons"},{"abbr":"GS","label":"Golden State Warriors"},{"abbr":"HOU","label":"Houston Rockets"},{"abbr":"IND","label":"Indiana Pacers"},{"abbr":"LAC","label":"LA Clippers"},{"abbr":"LAL","label":"Los Angeles Lakers"},{"abbr":"MEM","label":"Memphis Grizzlies"},{"abbr":"MIA","label":"Miami Heat"},{"abbr":"MIL","label":"Milwaukee Bucks"},{"abbr":"MIN","label":"Minnesota Timberwolves"},{"abbr":"NO","label":"New Orleans Pelicans"},{"abbr":"NY","label":"New York Knicks"},{"abbr":"OKC","label":"Oklahoma City Thunder"},{"abbr":"ORL","label":"Orlando Magic"},{"abbr":"PHI","label":"Philadelphia 76ers"},{"abbr":"PHX","label":"Phoenix Suns"},{"abbr":"POR","label":"Portland Trail Blazers"},{"abbr":"SAC","label":"Sacramento Kings"},{"abbr":"SA","label":"San Antonio Spurs"},{"abbr":"TOR","label":"Toronto Raptors"},{"abbr":"UTAH","label":"Utah Jazz"},{"abbr":"WSH","label":"Washington Wizards"}]},{"sport":"mens-mm","name":"Men's March Madness","emoji":"🏀","recurring":false,"teams":[{"abbr":"AKR","label":"Akron Zips"},{"abbr":"ALA","label":"Alabama Crimson Tide"},{"abbr":"ARIZ","label":"Arizona Wildcats"},{"abbr":"ARK","label":"Arkansas Razorbacks"},{"abbr":"BYU","label":"BYU Cougars"},{"abbr":"CBU","label":"California Baptist Lancers"},{"abbr":"CLEM","label":"Clemson Tigers"},{"abbr":"DUKE","label":"Duke Blue Devils"},{"abbr":"FLA","label":"Florida Gators"},{"abbr":"FUR","label":"Furman Paladins"},{"abbr":"UGA","label":"Georgia Bulldogs"},{"abbr":"GONZ","label":"Gonzaga Bulldogs"},{"abbr":"HAW","label":"Hawai'i Rainbow Warriors"},{"abbr":"HPU","label":"High Point Panthers"},{"abbr":"HOF","label":"Hofstra Pride"},{"abbr":"HOU","label":"Houston Cougars"},{"abbr":"HOW","label":"Howard Bison"},{"abbr":"IDHO","label":"Idaho Vandals"},{"abbr":"ILL","label":"Illinois Fighting Illini"},{"abbr":"IOWA","label":"Iowa Hawkeyes"},{"abbr":"ISU","label":"Iowa State Cyclones"},{"abbr":"KU","label":"Kansas Jayhawks"},{"abbr":"KENN","label":"Kennesaw State Owls"},{"abbr":"UK","label":"Kentucky Wildcats"},{"abbr":"LEH","label":"Lehigh Mountain Hawks"},{"abbr":"LIU","label":"Long Island University Sharks"},{"abbr":"LOU","label":"Louisville Cardinals"},{"abbr":"MCN","label":"McNeese Cowboys"},{"abbr":"M-OH","label":"Miami (OH) RedHawks"},{"abbr":"MIA","label":"Miami Hurricanes"},{"abbr":"MSU","label":"Michigan State Spartans"},{"abbr":"MICH","label":"Michigan Wolverines"},{"abbr":"MIZ","label":"Missouri Tigers"},{"abbr":"NCSU","label":"NC State Wolfpack"},{"abbr":"NEB","label":"Nebraska Cornhuskers"},{"abbr":"UNC","label":"North Carolina Tar Heels"},{"abbr":"NDSU","label":"North Dakota State Bison"},{"abbr":"UNI","label":"Northern Iowa Panthers"},{"abbr":"OSU","label":"Ohio State Buckeyes"},{"abbr":"PENN","label":"Pennsylvania Quakers"},{"abbr":"PV","label":"Prairie View A&M Panthers"},{"abbr":"PUR","label":"Purdue Boilermakers"},{"abbr":"QUC","label":"Queens University Royals"},{"abbr":"SLU","label":"Saint Louis Billikens"},{"abbr":"SMC","label":"Saint Mary's Gaels"},{"abbr":"SCU","label":"Santa Clara Broncos"},{"abbr":"SIE","label":"Siena Saints"},{"abbr":"SMU","label":"SMU Mustangs"},{"abbr":"USF","label":"South Florida Bulls"},{"abbr":"SJU","label":"St. John's Red Storm"},{"abbr":"TCU","label":"TCU Horned Frogs"},{"abbr":"TNST","label":"Tennessee State Tigers"},{"abbr":"TENN","label":"Tennessee Volunteers"},{"abbr":"TA&M","label":"Texas A&M Aggies"},{"abbr":"TEX","label":"Texas Longhorns"},{"abbr":"TTU","label":"Texas Tech Red Raiders"},{"abbr":"TROY","label":"Troy Trojans"},{"abbr":"UCF","label":"UCF Knights"},{"abbr":"UCLA","label":"UCLA Bruins"},{"abbr":"CONN","label":"UConn Huskies"},{"abbr":"UMBC","label":"UMBC Retrievers"},{"abbr":"USU","label":"Utah State Aggies"},{"abbr":"VAN","label":"Vanderbilt Commodores"},{"abbr":"VCU","label":"VCU Rams"},{"abbr":"VILL","label":"Villanova Wildcats"},{"abbr":"UVA","label":"Virginia Cavaliers"},{"abbr":"WIS","label":"Wisconsin Badgers"},{"abbr":"WRST","label":"Wright State Raiders"}]},{"sport":"womens-mm","name":"Women's March Madness","emoji":"🏀","recurring":false,"teams":[{"abbr":"ALA","label":"Alabama Crimson Tide"},{"abbr":"ASU","label":"Arizona State Sun Devils"},{"abbr":"BAY","label":"Baylor Bears"},{"abbr":"CBU","label":"California Baptist Lancers"},{"abbr":"COFC","label":"Charleston Cougars"},{"abbr":"CLEM","label":"Clemson Tigers"},{"abbr":"COLO","label":"Colorado Buffaloes"},{"abbr":"CSU","label":"Colorado State Rams"},{"abbr":"DUKE","label":"Duke Blue Devils"},{"abbr":"FAIR","label":"Fairfield Stags"},{"abbr":"FDU","label":"Fairleigh Dickinson Knights"},{"abbr":"UGA","label":"Georgia Lady Bulldogs"},{"abbr":"GONZ","label":"Gonzaga Bulldogs"},{"abbr":"GB","label":"Green Bay Phoenix"},{"abbr":"HPU","label":"High Point Panthers"},{"abbr":"HC","label":"Holy Cross Crusaders"},{"abbr":"HOW","label":"Howard Bison"},{"abbr":"IDHO","label":"Idaho Vandals"},{"abbr":"ILL","label":"Illinois Fighting Illini"},{"abbr":"IOWA","label":"Iowa Hawkeyes"},{"abbr":"ISU","label":"Iowa State Cyclones"},{"abbr":"JAX","label":"Jacksonville Dolphins"},{"abbr":"JMU","label":"James Madison Dukes"},{"abbr":"UK","label":"Kentucky Wildcats"},{"abbr":"LOU","label":"Louisville Cardinals"},{"abbr":"LSU","label":"LSU Tigers"},{"abbr":"MD","label":"Maryland Terrapins"},{"abbr":"M-OH","label":"Miami (OH) RedHawks"},{"abbr":"MSU","label":"Michigan State Spartans"},{"abbr":"MICH","label":"Michigan Wolverines"},{"abbr":"MINN","label":"Minnesota Golden Gophers"},{"abbr":"MOST","label":"Missouri State Lady Bears"},{"abbr":"MUR","label":"Murray State Racers"},{"abbr":"NCSU","label":"NC State Wolfpack"},{"abbr":"NEB","label":"Nebraska Cornhuskers"},{"abbr":"UNC","label":"North Carolina Tar Heels"},{"abbr":"ND","label":"Notre Dame Fighting Irish"},{"abbr":"OSU","label":"Ohio State Buckeyes"},{"abbr":"OU","label":"Oklahoma Sooners"},{"abbr":"OKST","label":"Oklahoma State Cowgirls"},{"abbr":"MISS","label":"Ole Miss Rebels"},{"abbr":"ORE","label":"Oregon Ducks"},{"abbr":"PRIN","label":"Princeton Tigers"},{"abbr":"URI","label":"Rhode Island Rams"},{"abbr":"RICH","label":"Richmond Spiders"},{"abbr":"SAM","label":"Samford Bulldogs"},{"abbr":"SC","label":"South Carolina Gamecocks"},{"abbr":"SDST","label":"South Dakota State Jackrabbits"},{"abbr":"SOU","label":"Southern Jaguars"},{"abbr":"SFA","label":"Stephen F. Austin Ladyjacks"},{"abbr":"SYR","label":"Syracuse Orange"},{"abbr":"TCU","label":"TCU Horned Frogs"},{"abbr":"TENN","label":"Tennessee Lady Volunteers"},{"abbr":"TEX","label":"Texas Longhorns"},{"abbr":"TTU","label":"Texas Tech Lady Raiders"},{"abbr":"UCSD","label":"UC San Diego Tritons"},{"abbr":"UCLA","label":"UCLA Bruins"},{"abbr":"CONN","label":"UConn Huskies"},{"abbr":"USC","label":"USC Trojans"},{"abbr":"UTSA","label":"UTSA Roadrunners"},{"abbr":"VAN","label":"Vanderbilt Commodores"},{"abbr":"UVM","label":"Vermont Catamounts"},{"abbr":"VILL","label":"Villanova Wildcats"},{"abbr":"UVA","label":"Virginia Cavaliers"},{"abbr":"VT","label":"Virginia Tech Hokies"},{"abbr":"WASH","label":"Washington Huskies"},{"abbr":"WVU","label":"West Virginia Mountaineers"},{"abbr":"WIU","label":"Western Illinois Leathernecks"}]},{"sport":"worldcup","name":"World Cup","emoji":"⚽","recurring":false,"teams":[{"team":"Algeria","label":"Algeria"},{"team":"Argentina","label":"Argentina"},{"team":"Australia","label":"Australia"},{"team":"Austria","label":"Austria"},{"team":"Belgium","label":"Belgium"},{"team":"Bosnia & Herzegovina","label":"Bosnia & Herzegovina"},{"team":"Brazil","label":"Brazil"},{"team":"Canada","label":"Canada"},{"team":"Cape Verde","label":"Cape Verde"},{"team":"Colombia","label":"Colombia"},{"team":"Croatia","label":"Croatia"},{"team":"Curaçao","label":"Curaçao"},{"team":"Czechia","label":"Czechia"},{"team":"DR Congo","label":"DR Congo"},{"team":"Ecuador","label":"Ecuador"},{"team":"Egypt","label":"Egypt"},{"team":"England","label":"England"},{"team":"France","label":"France"},{"team":"Germany","label":"Germany"},{"team":"Ghana","label":"Ghana"},{"team":"Haiti","label":"Haiti"},{"team":"Iran","label":"Iran"},{"team":"Iraq","label":"Iraq"},{"team":"Ivory Coast","label":"Ivory Coast"},{"team":"Japan","label":"Japan"},{"team":"Jordan","label":"Jordan"},{"team":"Mexico","label":"Mexico"},{"team":"Morocco","label":"Morocco"},{"team":"Netherlands","label":"Netherlands"},{"team":"New Zealand","label":"New Zealand"},{"team":"Norway","label":"Norway"},{"team":"Panama","label":"Panama"},{"team":"Paraguay","label":"Paraguay"},{"team":"Portugal","label":"Portugal"},{"team":"Qatar","label":"Qatar"},{"team":"Saudi Arabia","label":"Saudi Arabia"},{"team":"Scotland","label":"Scotland"},{"team":"Senegal","label":"Senegal"},{"team":"South Africa","label":"South Africa"},{"team":"South Korea","label":"South Korea"},{"team":"Spain","label":"Spain"},{"team":"Sweden","label":"Sweden"},{"team":"Switzerland","label":"Switzerland"},{"team":"Tunisia","label":"Tunisia"},{"team":"Türkiye","label":"Türkiye"},{"team":"Uruguay","label":"Uruguay"},{"team":"USA","label":"USA"},{"team":"Uzbekistan","label":"Uzbekistan"}]},{"sport":"wwc","name":"Women's World Cup","emoji":"⚽","recurring":false,"teams":[{"team":"Argentina","label":"Argentina"},{"team":"Australia","label":"Australia"},{"team":"Brazil","label":"Brazil"},{"team":"Canada","label":"Canada"},{"team":"China","label":"China"},{"team":"Colombia","label":"Colombia"},{"team":"Costa Rica","label":"Costa Rica"},{"team":"Denmark","label":"Denmark"},{"team":"England","label":"England"},{"team":"France","label":"France"},{"team":"Germany","label":"Germany"},{"team":"Haiti","label":"Haiti"},{"team":"Italy","label":"Italy"},{"team":"Jamaica","label":"Jamaica"},{"team":"Japan","label":"Japan"},{"team":"Morocco","label":"Morocco"},{"team":"Netherlands","label":"Netherlands"},{"team":"New Zealand","label":"New Zealand"},{"team":"Nigeria","label":"Nigeria"},{"team":"Norway","label":"Norway"},{"team":"Panama","label":"Panama"},{"team":"Philippines","label":"Philippines"},{"team":"Portugal","label":"Portugal"},{"team":"Republic of Ireland","label":"Republic of Ireland"},{"team":"South Africa","label":"South Africa"},{"team":"South Korea","label":"South Korea"},{"team":"Spain","label":"Spain"},{"team":"Sweden","label":"Sweden"},{"team":"Switzerland","label":"Switzerland"},{"team":"United States","label":"United States"},{"team":"Vietnam","label":"Vietnam"},{"team":"Zambia","label":"Zambia"}]},{"sport":"euros","name":"Euros","emoji":"⚽","recurring":false,"teams":[{"team":"Albania","label":"Albania"},{"team":"Austria","label":"Austria"},{"team":"Belgium","label":"Belgium"},{"team":"Croatia","label":"Croatia"},{"team":"Czechia","label":"Czechia"},{"team":"Denmark","label":"Denmark"},{"team":"England","label":"England"},{"team":"France","label":"France"},{"team":"Georgia","label":"Georgia"},{"team":"Germany","label":"Germany"},{"team":"Hungary","label":"Hungary"},{"team":"Italy","label":"Italy"},{"team":"Netherlands","label":"Netherlands"},{"team":"Poland","label":"Poland"},{"team":"Portugal","label":"Portugal"},{"team":"Romania","label":"Romania"},{"team":"Scotland","label":"Scotland"},{"team":"Serbia","label":"Serbia"},{"team":"Slovakia","label":"Slovakia"},{"team":"Slovenia","label":"Slovenia"},{"team":"Spain","label":"Spain"},{"team":"Switzerland","label":"Switzerland"},{"team":"Türkiye","label":"Türkiye"},{"team":"Ukraine","label":"Ukraine"}]},{"sport":"copa","name":"Copa América","emoji":"⚽","recurring":false,"teams":[{"team":"Argentina","label":"Argentina"},{"team":"Bolivia","label":"Bolivia"},{"team":"Brazil","label":"Brazil"},{"team":"Canada","label":"Canada"},{"team":"Chile","label":"Chile"},{"team":"Colombia","label":"Colombia"},{"team":"Costa Rica","label":"Costa Rica"},{"team":"Ecuador","label":"Ecuador"},{"team":"Jamaica","label":"Jamaica"},{"team":"Mexico","label":"Mexico"},{"team":"Panama","label":"Panama"},{"team":"Paraguay","label":"Paraguay"},{"team":"Peru","label":"Peru"},{"team":"United States","label":"United States"},{"team":"Uruguay","label":"Uruguay"},{"team":"Venezuela","label":"Venezuela"}]}];
+const DEMO_PREFS = {"_comment":"The teams the concierge follows. These are the presenter's real follows as of August 11, 2026, the ones used in the September 16 session. Replace them with yours: this file is the only thing the agent knows about you.","_abbr_note":"Abbreviations COLLIDE across sports: MIN is both the Lynx and the Vikings, POR is both the Fire and the Trail Blazers, SEA is both the Storm and the Seahawks, NY is both the Liberty and (as NYG/NYJ) New York's NFL teams. Every follow is therefore keyed by {sport, abbr}, never by abbr alone. The abbreviation must be the one the data uses (the Warriors are GS, not GSW); run the tool read and check your team appears under Following by full name.","timezone":"America/Phoenix","clock":"12-hour","windowDays":7,"maxLines":18,"_snark_note":"Tone dial, 1 to 5. 1 is the plain concierge, 3 needles once a day, 5 is over-the-top snark. Changes the reasons, never the facts.","snark":1,"followed":[{"sport":"wnba","abbr":"MIN","label":"Minnesota Lynx","why":"Olivia Miles, and the offense generally — the most fun team in the league to actually sit and watch."},{"sport":"wnba","abbr":"NY","label":"New York Liberty","why":"JJ and Stewie. Two of the best players in the world on the same floor."},{"sport":"wnba","abbr":"POR","label":"Portland Fire","why":"The grit, and a coach with genuinely interesting ideas about how practice should work."},{"sport":"nfl","abbr":"ARI","label":"Arizona Cardinals","why":"NFC West. My neighbor is a big Cardinals fan, so knowing this score is how the conversation starts."},{"sport":"nfl","abbr":"SEA","label":"Seattle Seahawks","why":"NFC West — following the whole division keeps the standings picture legible."},{"sport":"nfl","abbr":"SF","label":"San Francisco 49ers","why":"NFC West — following the whole division keeps the standings picture legible."},{"sport":"nfl","abbr":"LAR","label":"Los Angeles Rams","why":"NFC West — following the whole division keeps the standings picture legible."},{"sport":"epl","abbr":"MNC","label":"Manchester City","why":"Erling Haaland. Worth rearranging a morning for."},{"sport":"epl","abbr":"LIV","label":"Liverpool","why":"Szoboszlai is my favorite footballer, full stop."},{"sport":"nba","abbr":"DEN","label":"Denver Nuggets","why":"Jokic and Murray. Nothing else in basketball looks like that two-man game."},{"sport":"nba","abbr":"SA","label":"San Antonio Spurs","why":"Gotta support the Alien."}]};
+const SNARK_LEVELS = {
+  1: 'the plain concierge: warm, direct, no jokes',
+  2: 'one dry aside in the whole message',
+  3: 'the why-I-care lines may needle, one aside per day at most',
+  4: 'most lines carry a jab and the framing sentence has an attitude',
+  5: 'over-the-top snark: roast the fixtures, the broadcasters and your choices',
+};
+const SETTINGS = ['timezone', 'clock', 'windowDays', 'maxLines', 'snark'];
+
+function parsePrefs(text) {
+  const p = JSON.parse(text);
+  if (!p || typeof p !== 'object' || Array.isArray(p)) throw new Error('preferences.json must be a JSON object');
+  if (!Array.isArray(p.followed)) p.followed = [];
+  return p;
+}
+function serializePrefs(p) { return JSON.stringify(p, null, 2) + '\n'; }
+
+function teamKey(sport, t) { return sport + '|' + (t.abbr != null ? 'abbr:' + t.abbr : 'team:' + t.team); }
+function followKey(f) {
+  if (f.abbr != null) return f.sport + '|abbr:' + f.abbr;
+  if (f.team != null) return f.sport + '|team:' + f.team;
+  return f.sport + '|?';
+}
+function knownKeys() {
+  const m = new Map();
+  for (const lg of LEAGUES) for (const t of lg.teams) m.set(teamKey(lg.sport, t), { league: lg, team: t });
+  return m;
+}
+function findFollow(p, key) { return p.followed.find((f) => followKey(f) === key); }
+
+// Set a top-level setting, keeping the file's key order. A key the file does not have yet
+// goes just before "followed" so the file still reads settings first, teams last.
+function setField(p, name, value) {
+  if (Object.prototype.hasOwnProperty.call(p, name)) { p[name] = value; return p; }
+  const out = {};
+  let placed = false;
+  for (const k of Object.keys(p)) {
+    if (k === 'followed' && !placed) { out[name] = value; placed = true; }
+    out[k] = p[k];
+  }
+  if (!placed) out[name] = value;
+  for (const k of Object.keys(p)) delete p[k];
+  Object.assign(p, out);
+  return p;
+}
+
+// Tick or untick a known team. New follows are appended, in the same four-key shape the
+// file already uses; unticking removes the entry.
+function setFollow(p, league, team, on) {
+  const key = teamKey(league.sport, team);
+  const have = findFollow(p, key);
+  if (on && !have) {
+    const entry = { sport: league.sport };
+    if (team.abbr != null) entry.abbr = team.abbr; else entry.team = team.team;
+    entry.label = team.label;
+    entry.why = '';
+    p.followed.push(entry);
+  } else if (!on && have) {
+    p.followed = p.followed.filter((f) => f !== have);
+  }
+  return p;
+}
+function setWhy(p, key, why) { const f = findFollow(p, key); if (f) f.why = why; return p; }
+function removeFollow(p, index) { p.followed.splice(index, 1); return p; }
+function unknownFollows(p) {
+  const known = knownKeys();
+  return p.followed.map((f, i) => ({ f, i })).filter(({ f }) => !known.has(followKey(f)));
+}
+function snarkText(v) { const n = Number(v); return SNARK_LEVELS[n] || SNARK_LEVELS[1]; }
+if (typeof module !== 'undefined') {
+  module.exports = { LEAGUES, DEMO_PREFS, parsePrefs, serializePrefs, teamKey, followKey, setField,
+    setFollow, setWhy, removeFollow, unknownFollows, findFollow, snarkText };
+}
+</script>
+
+<script>
+// ---- The page.
+const $ = (id) => document.getElementById(id);
+const hasFS = typeof window.showOpenFilePicker === 'function';
+let prefs = null;        // the live object
+let handle = null;       // FileSystemFileHandle when opened with the picker
+let fileName = '';
+let lastSaved = '';      // text as last written or opened
+const openSports = new Set();   // leagues the user has expanded; everything starts collapsed
+
+if (!hasFS) { $('nofs').hidden = false; $('save').hidden = true; }
+
+function esc(s) { return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
+
+// All five levels, the current one highlighted. Runs on every slider move, file or no file.
+function showSnark(v) {
+  const cur = Number(v) || 1;
+  $('snarkLvl').innerHTML = [1, 2, 3, 4, 5].map((n) =>
+    `<li class="${n === cur ? 'on' : ''}" data-snark="${n}"><b>${n}</b><span>${esc(snarkText(n))}</span></li>`).join('');
+}
+
+function leagueCard(lg) {
+  const on = (t) => !!(prefs && prefs.followed.find((f) => followKey(f) === teamKey(lg.sport, t)));
+  const picked = lg.teams.filter(on);
+  const n = picked.length;
+  const rows = lg.teams.map((t) => {
+    const key = teamKey(lg.sport, t);
+    const f = prefs && prefs.followed.find((x) => followKey(x) === key);
+    return `<div class="team${f ? ' on' : ''}" data-key="${esc(key)}">
+      <label><input type="checkbox" data-sport="${esc(lg.sport)}" data-idx="${lg.teams.indexOf(t)}" ${f ? 'checked' : ''}>
+        <span>${esc(t.label)}</span>${t.abbr != null ? `<span class="abbr">${esc(t.abbr)}</span>` : ''}</label>
+      <input class="why" placeholder="why you care, in a line (the agent rewrites it, never quotes it)" data-key="${esc(key)}" value="${esc(f ? f.why || '' : '')}">
+    </div>`;
+  }).join('');
+  const fol = n ? `following <b>${esc(picked.map((t) => t.label).join(', '))}</b>` : 'open to choose teams';
+  return `<details class="card league" data-sport="${esc(lg.sport)}"${openSports.has(lg.sport) ? ' open' : ''}>
+    <summary><span class="t">${esc(lg.emoji)} ${esc(lg.name)}</span><span class="n">${n ? n + ' followed' : ''}</span><span class="fol">${fol}</span></summary>
+    <div class="teams">${rows}</div></details>`;
+}
+
+function render() {
+  const rec = LEAGUES.filter((l) => l.recurring), tour = LEAGUES.filter((l) => !l.recurring);
+  $('leagues').innerHTML = rec.map(leagueCard).join('');
+  $('tournaments').innerHTML = tour.map(leagueCard).join('');
+  $('download').disabled = !prefs;
+  for (const k of SETTINGS) {
+    const el = $(k); if (!prefs) continue;
+    if (prefs[k] !== undefined) el.value = prefs[k];
+  }
+  showSnark($('snark').value);
+  const unk = prefs ? unknownFollows(prefs) : [];
+  $('other').hidden = unk.length === 0;
+  $('otherRows').innerHTML = unk.map(({ f, i }) =>
+    `<div class="row"><code>${esc(JSON.stringify(f))}</code><button data-remove="${i}" class="quiet">Remove</button></div>`).join('');
+  const text = prefs ? serializePrefs(prefs) : '{ }';
+  $('json').textContent = text;
+  $('count').textContent = prefs ? `Following ${prefs.followed.length}` : '';
+  $('save').disabled = !prefs;
+  status();
+}
+
+function status(msg, cls) {
+  const dirty = prefs && serializePrefs(prefs) !== lastSaved;
+  const file = fileName ? `<span class="file">${esc(fileName)}</span>` : 'No file open.';
+  const extra = msg ? ` <span class="${cls || ''}">${esc(msg)}</span>` : (dirty ? ' <span class="dirty">unsaved changes</span>' : '');
+  $('status').innerHTML = file + extra;
+}
+
+function load(text, name, h) {
+  try { prefs = parsePrefs(text); } catch (e) { status('could not read: ' + e.message, 'err'); return; }
+  handle = h || null; fileName = name; lastSaved = serializePrefs(prefs);
+  openSports.clear();          // a fresh file starts with every league collapsed
+  render();
+}
+
+$('open').addEventListener('click', async () => {
+  if (hasFS) {
+    try {
+      const [h] = await window.showOpenFilePicker({ types: [{ description: 'JSON', accept: { 'application/json': ['.json'] } }] });
+      const file = await h.getFile();
+      load(await file.text(), file.name, h);
+    } catch (e) { if (e.name !== 'AbortError') status(e.message, 'err'); }
+  } else {
+    $('openFallback').click();
+  }
+});
+$('openFallback').addEventListener('change', async (ev) => {
+  const file = ev.target.files[0]; if (!file) return;
+  load(await file.text(), file.name, null);
+});
+$('demo').addEventListener('click', () => {
+  if (!DEMO_PREFS) return;
+  load(serializePrefs(DEMO_PREFS), 'example (not a file; save writes a copy)', null);
+});
+
+async function save() {
+  if (!prefs) return;
+  const text = serializePrefs(prefs);
+  try {
+    if (handle) {
+      const w = await handle.createWritable();
+      await w.write(text); await w.close();
+    } else if (hasFS) {
+      handle = await window.showSaveFilePicker({ suggestedName: 'preferences.json',
+        types: [{ description: 'JSON', accept: { 'application/json': ['.json'] } }] });
+      const w = await handle.createWritable();
+      await w.write(text); await w.close();
+      fileName = handle.name;
+    } else {
+      download();
+      return;
+    }
+    lastSaved = text;
+    const t = new Date();
+    status('Saved ' + t.toLocaleTimeString(), 'saved');
+  } catch (e) { if (e.name !== 'AbortError') status('save failed: ' + e.message, 'err'); }
+}
+// The local-file path for any browser: hand the JSON over as preferences.json.
+function download() {
+  if (!prefs) return;
+  const text = serializePrefs(prefs);
+  const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
+  const a = document.createElement('a');
+  a.href = url; a.download = 'preferences.json'; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  lastSaved = text;
+  status('downloaded preferences.json; put it over the one in your checkout', 'saved');
+}
+$('save').addEventListener('click', save);
+$('download').addEventListener('click', download);
+// Remember which leagues the user opened, so a re-render keeps them open. toggle does
+// not bubble, so listen in the capture phase.
+$('form').addEventListener('toggle', (e) => {
+  const d = e.target; if (!(d instanceof HTMLDetailsElement) || !d.dataset.sport) return;
+  if (d.open) openSports.add(d.dataset.sport); else openSports.delete(d.dataset.sport);
+}, true);
+addEventListener('keydown', (e) => {
+  if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 's') { e.preventDefault(); save(); }
+});
+$('copy').addEventListener('click', async () => {
+  await navigator.clipboard.writeText($('json').textContent);
+  status('JSON copied', 'saved');
+});
+
+$('form').addEventListener('change', (e) => {
+  const el = e.target; if (!prefs) return;
+  if (el.type === 'checkbox' && el.dataset.sport) {
+    const lg = LEAGUES.find((l) => l.sport === el.dataset.sport);
+    setFollow(prefs, lg, lg.teams[Number(el.dataset.idx)], el.checked);
+    openSports.add(lg.sport);   // the league being edited stays open across the re-render
+    render();
+    if (el.checked) { const w = document.querySelector(`.why[data-key="${CSS.escape(teamKey(lg.sport, lg.teams[Number(el.dataset.idx)]))}"]`); if (w) w.focus(); }
+  } else if (SETTINGS.includes(el.id)) {
+    const v = (el.type === 'number' || el.type === 'range') ? Number(el.value) : el.value;
+    setField(prefs, el.id, v);
+    render();
+  }
+});
+$('form').addEventListener('input', (e) => {
+  const el = e.target;
+  if (el.id === 'snark') showSnark(el.value);      // live, with or without a file open
+  if (!prefs) return;
+  if (el.classList.contains('why')) { setWhy(prefs, el.dataset.key, el.value); $('json').textContent = serializePrefs(prefs); status(); }
+});
+$('form').addEventListener('click', (e) => {
+  const lvl = e.target.closest('li[data-snark]');
+  if (lvl) {                                           // clicking a level sets the slider
+    $('snark').value = lvl.dataset.snark;
+    if (prefs) { setField(prefs, 'snark', Number(lvl.dataset.snark)); render(); } else showSnark(lvl.dataset.snark);
+    return;
+  }
+  const b = e.target.closest('button[data-remove]'); if (!b || !prefs) return;
+  removeFollow(prefs, Number(b.dataset.remove)); render();
+});
+addEventListener('beforeunload', (e) => { if (prefs && serializePrefs(prefs) !== lastSaved) { e.preventDefault(); e.returnValue = ''; } });
+
+render();
+if (new URLSearchParams(location.search).has('demo')) $('demo').click();
+</script>
+</body>
+</html>

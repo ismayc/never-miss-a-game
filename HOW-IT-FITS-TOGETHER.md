@@ -67,6 +67,7 @@ The line between the halves is the one question: does this have one right answer
 | The clock | launchd | cron | Asleep at 7:00, launchd runs at the next wake; cron misses the week. launchd also needs a real PATH in the plist, failure mode number one. |
 | The window | 7 days | 14 days | In season a week is a briefing and a fortnight is a phone book. The 14 came from a dead August. |
 | A quiet week | Two honest sentences, then stop | Fill the space | The title promises never missing a game you care about, which is exactly why the agent has to be willing to send a short message. |
+| How you edit your teams | A one-file form (`preferences-editor.html`) that writes `preferences.json` back in place | Editing the JSON by hand, or a settings database | The JSON stays the only thing the agent reads, so nothing about the run changes. The form removes the two ways a hand edit fails: a stray comma, and an abbreviation the data does not use (GS, not GSW). It runs in the browser with no server and nothing installed. |
 
 ## Where to look
 

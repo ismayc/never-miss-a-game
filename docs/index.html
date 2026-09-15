@@ -96,6 +96,7 @@
   <h1>A site for every sport. None of them knew about my week.
     <span class="quiet">So I built a small agent that sends me one message. Here is how, for someone who has never built one.</span></h1>
   <p class="lead">This page is the short version of a 30-minute O'Reilly session, <em>Zero to Agent in 30 Minutes</em>. It skips the code and keeps the shape: what already existed, what had to be built, what one run looks like, and what the process taught. Everything on it is real: the data, the run, the message.</p>
+  <div class="note"><strong>In one minute.</strong> Once a week, an agent reads the schedules for every sport I follow and sends my phone one message: the games worth my evening, each with a reason, and nothing when there is nothing. The schedule data and the small tool that reads it already existed. The one thing built for this is a written policy, a job description the agent follows, plus a short list of what it may run. One run takes about a minute. Four commands at the bottom of this page reproduce it on your machine with your teams.</div>
 </header>
 
 <section id="problem">
@@ -137,16 +138,17 @@
       <text x="175" y="445" fill="#8b95a5" font-size="20" text-anchor="middle" font-style="italic">plus preferences.json: your teams</text>
     </g>
     <g>
-      <rect x="390" y="230" width="270" height="160" rx="14" fill="#1a2130" stroke="#2c3648"/>
-      <text x="525" y="290" fill="#8b95a5" font-size="30" font-weight="600" text-anchor="middle">one local tool</text>
-      <text x="525" y="328" fill="#8b95a5" font-size="22" text-anchor="middle">read-schedules.mjs</text>
-      <text x="525" y="360" fill="#6b7686" font-size="20" text-anchor="middle">0.3 s, zero deps, read-only</text>
+      <rect x="390" y="218" width="270" height="184" rx="14" fill="#1a2130" stroke="#2c3648"/>
+      <text x="525" y="276" fill="#8b95a5" font-size="30" font-weight="600" text-anchor="middle">one local tool</text>
+      <text x="525" y="313" fill="#8b95a5" font-size="22" text-anchor="middle">read-schedules.mjs</text>
+      <text x="525" y="349" fill="#6b7686" font-size="19" text-anchor="middle">0.3 s, nothing to install</text>
+      <text x="525" y="378" fill="#6b7686" font-size="19" text-anchor="middle">read-only</text>
     </g>
     <g>
       <rect x="730" y="200" width="340" height="220" rx="14" fill="#232c40" stroke="#5b6b85" stroke-width="2"/>
       <text x="900" y="262" fill="#f4f6f8" font-size="32" font-weight="700" text-anchor="middle">the agent</text>
-      <text x="900" y="300" fill="#8b95a5" font-size="22" text-anchor="middle">claude -p, headless</text>
-      <text x="900" y="332" fill="#8b95a5" font-size="22" text-anchor="middle">allowlist: 2 scripts + read</text>
+      <text x="900" y="300" fill="#8b95a5" font-size="22" text-anchor="middle">Claude Code, run unattended</text>
+      <text x="900" y="332" fill="#8b95a5" font-size="22" text-anchor="middle">may run 2 scripts, read 1 file</text>
       <text x="900" y="376" fill="#ffb648" font-size="20" font-weight="600" text-anchor="middle">"if nothing's worth watching,</text>
       <text x="900" y="402" fill="#ffb648" font-size="20" font-weight="600" text-anchor="middle">say so, don't pad"</text>
     </g>
@@ -222,7 +224,7 @@ Nothing this week from the Nuggets or Spurs: Spurs return Tuesday, Oct 20 at 6:3
     <div class="sec"><b>Your sources, in order</b><span>Exactly one tool call. Its output is the truth. Never open the raw files. If a source is missing, say so and move on.</span></div>
     <div class="sec"><b>What counts as worth watching</b><span>Every game with a followed team goes in, no exceptions. Up to two extra picks, only with real stakes. Zero is a fine answer.</span></div>
     <div class="sec"><b>Sports that are not really there</b><span>The traps in the data, named: bracket placeholders, finished tournaments with no scores, an offseason league, a badge that disagrees with the schedule.</span></div>
-    <div class="sec"><b>The output contract</b><span>One message, one clock, one line per game with a reason, a length cap with a cut order, and permission to say "nothing this week".</span></div>
+    <div class="sec"><b>The output contract</b><span>One message, one clock, one line per game with a reason, a length cap with a cut order, permission to say "nothing this week", and a snark dial from 1 to 5 that changes the tone and never the facts.</span></div>
     <div class="sec"><b>Delivery</b><span>One call to the notifier, then repeat the message in the final reply, because a tool's output never reaches the log.</span></div>
     <div class="sec"><b>Tools you may use</b><span>Two scripts and Read. No writing, no editing, no git. If the job cannot be done, report that; never invent a schedule to cover it.</span></div>
   </div>
@@ -253,7 +255,7 @@ cd never-miss-a-game &amp;&amp; ./clone-viewers.sh
 <span class="c"># the data layer on its own, then the whole agent with the finished policy</span>
 node read-schedules.mjs --days 7 --prefs preferences.json --all
 git checkout complete &amp;&amp; ./run-concierge.sh</pre>
-  <p style="margin-top:14px">Then edit <code>preferences.json</code>: your teams, and a line on why you care about each. That file is the only thing the agent knows about you.</p>
+  <p style="margin-top:14px">Then edit <code>preferences.json</code>: your teams, and a line on why you care about each. That file is the only thing the agent knows about you. If you would rather not edit JSON by hand, use <a href="preferences-editor.html">the form</a>: open your preferences.json in it, tick teams, and it writes the same file back (Chrome or Edge save it in place; any browser can download it).</p>
   <div class="links">
     <a class="amber" href="https://github.com/ismayc/never-miss-a-game">The repository<small>Branch <code>main</code> is the starting point; branch <code>complete</code> is the built-out result with the finished policy and every file the run produced.</small></a>
     <a href="https://github.com/ismayc/never-miss-a-game/blob/main/HOW-IT-FITS-TOGETHER.md">How it fits together<small>What existed, what was built, and each decision with its road not taken.</small></a>
