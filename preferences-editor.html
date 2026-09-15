@@ -68,23 +68,28 @@
   .snark li b { width: 1.2em; flex: none; color: var(--dim); }
   .snark li.on { background: #fff; color: var(--ink); font-weight: 600; border: 1px solid var(--line); }
   .snark li.on b { color: var(--accent); }
-  .readout { margin: 0 0 16px; }
-  .readout summary { cursor: pointer; display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
-  .readout summary .t { font-weight: 600; }
-  .readout summary .n { color: var(--dim); font-size: 13px; }
-  .readout .readbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 10px 0 0; }
+  /* The two steps: read the week, then set up the preferences. */
+  .step { margin: 0 0 30px; padding-top: 18px; border-top: 2px solid var(--line); }
+  .step h2 { font-size: 24px; margin: 0 0 6px; display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+  .step h2 .stepn { color: var(--accent); font-size: 13px; letter-spacing: .3em; text-transform: uppercase;
+    font-weight: 600; white-space: nowrap; }
+  .step .lead { color: var(--dim); margin: 0 0 14px; max-width: 78ch; }
+  .step .lead b { color: var(--ink); font-weight: 600; }
+  .readout .bar .n { color: var(--dim); font-size: 14px; }
+  .readout .readbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 10px; }
   .readout .readbar button { font-size: 14px; padding: 6px 12px; }
   .readout .readbar .n { color: var(--dim); font-size: 13px; }
-  .following { margin: 10px 0 0; background: #fff; border: 1px solid var(--line); border-radius: 8px;
-    padding: 10px 12px; font-size: 15px; }
-  .following h3 { margin: 0 0 6px; font-size: 16px; }
+  .following { margin: 0 0 20px; background: #fff; border: 1px solid var(--line); border-radius: 12px;
+    padding: 12px 14px; font-size: 15px; }
+  .following h3 { margin: 0 0 6px; font-size: 17px; }
+  .following .line { font-weight: 600; margin: 0 0 6px; }
   .following ul { margin: 0; padding-left: 20px; }
   .following li { margin: 2px 0; }
   .following li .sport { color: var(--dim); font-size: 13px; }
   .following .none { color: var(--dim); }
   .following .unk { color: var(--warn); }
   .following .none p { margin: 0; }
-  .readout pre { margin: 10px 0 0; padding: 10px 12px; background: var(--panel); border: 1px solid var(--line);
+  .readout pre { margin: 0; padding: 10px 12px; background: var(--panel); border: 1px solid var(--line);
     border-radius: 8px; white-space: pre-wrap; word-break: break-word; font-size: 12.5px; line-height: 1.45;
     max-height: 60vh; overflow: auto; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
 
@@ -141,36 +146,22 @@
 
 <p class="kicker">Never Miss a Game</p>
 <h1>Your teams, as a form</h1>
-<p class="sub">The agent reads <b>preferences.json</b> and nothing else about you. This page opens that file, lets you tick teams and turn the dial, and writes the same file back. The JSON on the right is exactly what gets saved.</p>
+<p class="sub">Two steps, in the order the agent uses them. <b>Step 1</b> is your <b>preferences.json</b>: open it, tick your teams, turn the dial, and Save writes the same file back. <b>Step 2</b> reads this week's schedules, the same read the agent gets, and shows which of the week's games are yours.</p>
 
-<div class="nofs" id="nofs" hidden>This browser cannot write a file in place (Chrome and Edge can). You can still open your preferences.json, edit it here, and <b>Download</b> the result; put that file over preferences.json in your checkout.</div>
+<section class="step" id="step1">
+  <h2><span class="stepn">Step 1</span> Set up your preferences</h2>
+  <p class="lead">The agent reads <b>preferences.json</b> and nothing else about you. Open that file (or try the example), tick your teams and turn the dial, and Save writes the same file back. The JSON on the right is exactly what gets saved.</p>
 
-<div class="bar">
-  <button id="open" class="primary">Open preferences.json</button>
-  <input id="openFallback" type="file" accept=".json,application/json" hidden>
-  <button id="save" disabled>Save</button>
-  <button id="download" disabled>Download</button>
-  <button id="demo" class="quiet">Try the example</button>
-  <button id="read" class="primary" title="Shows the read GitHub ran this morning with the same tool the agent runs, node read-schedules.mjs, and checks the teams ticked here against it">Read this week's schedules</button>
-  <div class="status" id="status">No file open.</div>
-</div>
+  <div class="nofs" id="nofs" hidden>This browser cannot write a file in place (Chrome and Edge can). You can still open your preferences.json, edit it here, and <b>Download</b> the result; put that file over preferences.json in your checkout.</div>
 
-<!-- The read is not produced on the viewer's machine. A GitHub Actions workflow in
-     the attendee repo (.github/workflows/read-schedules.yml) runs read-schedules.mjs
-     every few hours and commits what it prints under docs/reads/, which GitHub Pages
-     serves; the button fetches that. No server anywhere, nothing runs here. -->
-<details class="card readout" id="readout" open>
-  <summary><span class="t">This week's schedules</span><span class="n" id="readmeta"></span></summary>
-  <div class="readbar" id="readbar" hidden>
-    <span class="n">Save the read as</span>
-    <button id="saveTxt" class="quiet">text</button>
-    <button id="saveJson" class="quiet">JSON</button>
-    <button id="saveCsv" class="quiet">CSV</button>
-    <span class="n">(the CSV is one row per game, with a yours column for the teams ticked here)</span>
+  <div class="bar">
+    <button id="open" class="primary">Open preferences.json</button>
+    <input id="openFallback" type="file" accept=".json,application/json" hidden>
+    <button id="save" disabled>Save</button>
+    <button id="download" disabled>Download</button>
+    <button id="demo" class="quiet">Try the example</button>
+    <div class="status" id="status">No file open.</div>
   </div>
-  <div class="following" id="following" hidden></div>
-  <pre id="readpre">Click "Read this week's schedules". It shows the read GitHub ran this morning from this repo with the same local tool the agent runs, node read-schedules.mjs (America/Phoenix, seven days, every game), and checks the teams ticked here against it: every source, every followed team, every game in the window.</pre>
-</details>
 
 <div class="cols">
   <div id="form">
@@ -215,9 +206,32 @@
   <div class="preview">
     <div class="head"><h2>preferences.json</h2><span class="n" id="count"></span><button id="copy">Copy JSON</button></div>
     <pre id="json">{ }</pre>
-    <p class="note">Save writes this text to the file you opened, in place. Download hands you the same text as a file named preferences.json. Either way, run the tool read afterwards and check your team appears under <b>Following</b> by full name. That check reads the file on disk, so it proves the save landed. The Read button above does the same check against the published week, without a shell.</p>
+    <p class="note">Save writes this text to the file you opened, in place. Download hands you the same text as a file named preferences.json. Either way, run the tool read afterwards and check your team appears under <b>Following</b> by full name. That check reads the file on disk, so it proves the save landed. Step 2 does the same check against the published week, without a shell.</p>
   </div>
 </div>
+</section>
+
+<!-- Step 2. The read is not produced on the viewer's machine. A GitHub Actions
+     workflow in the attendee repo (.github/workflows/read-schedules.yml) runs
+     read-schedules.mjs every few hours and commits what it prints under docs/reads/,
+     which GitHub Pages serves; the button fetches that. No server anywhere. -->
+<section class="step readout" id="step2">
+  <h2><span class="stepn">Step 2</span> Read this week's schedules</h2>
+  <p class="lead">The agent's whole data layer is one local script, <b>node read-schedules.mjs</b>, which reads ten schedule repos and your preferences and prints the week. GitHub runs that same script from this repo a few times a day and publishes what it prints; this button fetches it, and the box under it checks the teams you ticked in step 1 against that week. Nothing runs on your computer.</p>
+  <div class="bar">
+    <button id="read" class="primary" title="Shows the read GitHub ran this morning with the same tool the agent runs, node read-schedules.mjs">Read this week's schedules</button>
+    <span class="n" id="readmeta">Not read yet.</span>
+  </div>
+  <div class="following" id="following"></div>
+  <div class="readbar" id="readbar" hidden>
+    <span class="n">Save the read as</span>
+    <button id="saveTxt" class="quiet">text</button>
+    <button id="saveJson" class="quiet">JSON</button>
+    <button id="saveCsv" class="quiet">CSV</button>
+    <span class="n">(the CSV is one row per game, with a yours column for the teams ticked in step 1)</span>
+  </div>
+  <pre id="readpre">Click "Read this week's schedules". The panel fills with what the tool printed (America/Phoenix, seven days, every game): every source and its state, every followed team from the committed preferences, then every game in the window by day.</pre>
+</section>
 
 <script id="core">
 // ---- Pure logic. No DOM in this block: tests/test_prefs_editor.py extracts it and runs it in Node.
@@ -575,12 +589,18 @@ function whenGenerated() {
       weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' ' + (read.tz || '');
   } catch (e) { return 'generated ' + read.generatedAt; }
 }
+// The bridge between the two steps: the teams ticked in step 2 against the week
+// read in step 1. Always on the page, so a beginner sees what it is waiting for.
 function showFollowing() {
   const box = $('following');
-  if (!read) { box.hidden = true; return; }
-  box.hidden = false;
+  const head = '<h3>Your teams this week</h3>';
+  if (!read) {
+    box.innerHTML = head + '<div class="none"><p>Click "Read this week\'s schedules" and this box lists which of the week\'s games are yours'
+      + (prefs ? ' (' + prefs.followed.length + ' teams ticked in step 1).' : '. Open your preferences.json in step 1 first, or click Try the example.') + '</p></div>';
+    return;
+  }
   if (!prefs) {
-    box.innerHTML = '<div class="none"><p>Open your preferences.json, or click Try the example, and the teams ticked here are checked against this read.</p></div>';
+    box.innerHTML = head + '<div class="none"><p>Open your preferences.json in step 1, or click Try the example, and the teams you tick are checked against this week.</p></div>';
     return;
   }
   const r = followingReport(prefs, read);
@@ -591,7 +611,7 @@ function showFollowing() {
     return `<li><b>${esc(t.label)}</b> <span class="sport">${esc(t.sportName)}</span>: ${games}</li>`;
   }).concat(r.unknown.map((f) =>
     `<li class="unk"><code>${esc(JSON.stringify(f))}</code>: not a team the data knows by that key; the tool will not list it</li>`));
-  box.innerHTML = `<h3>${esc(r.line)}</h3><ul>${li.join('')}</ul>`;
+  box.innerHTML = `${head}<p class="line">${esc(r.line)}</p><ul>${li.join('')}</ul>`;
 }
 $('read').addEventListener('click', async () => {
   const btn = $('read'); btn.disabled = true;
@@ -599,7 +619,6 @@ $('read').addEventListener('click', async () => {
   try {
     await fetchRead();
     $('readpre').textContent = readText;
-    $('readout').open = true;
     $('readbar').hidden = false;
     const w = read.window ? `${read.window.from} to ${read.window.to}` : '';
     $('readmeta').textContent = `${whenGenerated()} on GitHub · ${w}`;
