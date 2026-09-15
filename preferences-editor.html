@@ -50,9 +50,11 @@
   .card h2 { font-size: 20px; margin: 0 0 10px; display: flex; align-items: baseline; gap: 10px; }
   .card h2 .n { color: var(--dim); font-weight: 400; font-size: 15px; }
   .settings { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
-  label.f { display: flex; flex-direction: column; gap: 4px; font-size: 14px; color: var(--dim); }
-  label.f input, label.f select { font: inherit; font-size: 16px; padding: 7px 9px;
-    border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink); }
+  label.f { display: flex; flex-direction: column; justify-content: flex-end; gap: 4px;
+    font-size: 14px; color: var(--dim); white-space: nowrap; }
+  label.f input, label.f select { font: inherit; font-size: 16px; padding: 0 9px; height: 38px;
+    box-sizing: border-box; border: 1px solid var(--line); border-radius: 8px; background: #fff;
+    color: var(--ink); }
   label.f #tzNote { color: var(--warn); font-weight: 600; }
   label.f input.bad { border-color: var(--warn); }
   .snark { grid-column: 1 / -1; }
@@ -135,8 +137,8 @@
     <div class="card">
       <h2>Settings</h2>
       <div class="settings">
-        <label class="f">Time zone (IANA, type to search) <span id="tzNote"></span>
-          <input id="timezone" list="tzs" placeholder="America/Phoenix" spellcheck="false">
+        <label class="f"><span>Time zone <span id="tzNote"></span></span>
+          <input id="timezone" list="tzs" placeholder="type to search, e.g. America/Phoenix" spellcheck="false">
           <datalist id="tzs">
             <option value="America/Phoenix"><option value="America/Los_Angeles"><option value="America/Denver">
             <option value="America/Chicago"><option value="America/New_York"><option value="Europe/London">
@@ -283,7 +285,7 @@ function zoneKnown(z) {
 function checkZone() {
   const el = $('timezone'); const ok = zoneKnown(el.value.trim());
   el.classList.toggle('bad', !ok);
-  $('tzNote').textContent = ok ? '' : 'not a zone this browser knows';
+  $('tzNote').textContent = ok ? '' : '(unknown zone)';
 }
 
 function esc(s) { return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
