@@ -12,7 +12,7 @@ The operational detail behind `README.md`: what each file does, what one run loo
 | `read-schedules.mjs` | deterministic | Reads ten repos, normalizes two data shapes into one game record, buckets by your calendar day, prints the week. |
 | `concierge.md` | judgment | The policy. An outline on `main`; the finished text on the `complete` branch. |
 | `notify.sh` | delivery | stdout, a macOS banner, an archive file on disk, and an optional phone push. |
-| `run-concierge.sh` | the run | `claude -p` with the allowlist, then checks that a digest file exists. |
+| `run-concierge.sh` | the run | `claude -p` with the allowlist, then checks that a digest file exists. While it waits it shows a progress line on the terminal (elapsed time against a typical two minutes; "digest written" once `notify.sh` lands the file). The line is stderr only and only when a person is watching, so a launchd log is unchanged; `CONCIERGE_PROGRESS=0` silences it. |
 | `game-day-concierge.plist` | the clock | launchd, Wednesdays at 7:00. Not installed by anything here. |
 | `clone-viewers.sh` | setup | Fetches the ten schedule repos, plus the hub's helper modules, into the folder the tool expects. |
 | `examples/` | see it | Every link of the chain from one real run. The inputs (preferences, tool reads, policy map) on `main`; the outputs (transcript, digest, delivery) join them on `complete`. |

@@ -12,6 +12,9 @@
 #       examples/ were produced this way, so a run on any later day can be compared.
 #   CONCIERGE_LOG_DIR=/some/dir ./run-concierge.sh
 #       Where the transcript and the digest land. Default ~/Library/Logs/game-day-concierge
+#   CONCIERGE_PROGRESS=0 ./run-concierge.sh
+#       Silence the progress line. It only appears when stderr is a terminal anyway, so a
+#       launchd run never prints it.
 
 set -uo pipefail
 
@@ -68,15 +71,55 @@ echo "run-concierge.sh: starting $(date -Iseconds)"
 # --permission-mode default means anything NOT on this list is refused rather than silently
 # escalated; in a headless run there is nobody to approve a prompt, so an off-list tool call
 # fails loudly in the log, which is exactly what we want.
-claude -p "$PROMPT" \
-  --allowedTools \
-    "Bash(node ./read-schedules.mjs:*)" \
-    "Bash(./notify.sh:*)" \
-    "Read" \
-  --permission-mode default \
-  2>&1 | tee "$TRANSCRIPT"
+#
+# The agent runs in the background and writes straight to the transcript. `claude -p`
+# prints nothing until it has finished, so streaming it would show nothing anyway; the
+# transcript is printed in full once the run ends, exactly as before.
+MARK="$(mktemp -t concierge-mark)"           # its mtime is "when this run started"
+STATUS_FILE="$(mktemp -t concierge-status)"
+(
+  claude -p "$PROMPT" \
+    --allowedTools \
+      "Bash(node ./read-schedules.mjs:*)" \
+      "Bash(./notify.sh:*)" \
+      "Read" \
+    --permission-mode default \
+    >"$TRANSCRIPT" 2>&1
+  echo "$?" >"$STATUS_FILE"
+) &
+AGENT=$!
 
-STATUS="${PIPESTATUS[0]}"
+# Progress, on stderr, only while a person is watching. The bar fills toward a typical
+# two-minute run (September rehearsals: 53 to 130 s) and the label changes on the one
+# thing this script can see from outside: the digest file, which notify.sh writes when the
+# agent delivers. A digest newer than this run's start means the message is out and the
+# agent is only writing its build notes.
+if [ -t 2 ] && [ "${CONCIERGE_PROGRESS:-1}" != "0" ]; then
+  T0="$(date +%s)"; TYPICAL=120; WIDTH=30
+  while kill -0 "$AGENT" 2>/dev/null; do
+    el=$(( $(date +%s) - T0 ))
+    fill=$(( el * WIDTH / TYPICAL )); [ "$fill" -gt "$WIDTH" ] && fill=$WIDTH
+    bar="$(printf '%*s' "$fill" '' | tr ' ' '#')$(printf '%*s' $(( WIDTH - fill )) '' | tr ' ' '.')"
+    if [ -s "$DIGEST" ] && [ "$DIGEST" -nt "$MARK" ]; then
+      phase="digest written, agent finishing its notes"
+    elif [ "$el" -lt 8 ]; then
+      phase="starting Claude Code"
+    elif [ "$el" -gt 160 ]; then
+      phase="past the usual budget, still running"
+    else
+      phase="one tool call, then judgment (typically 1 to 2 min)"
+    fi
+    printf '\r  [%s] %d:%02d  %s' "$bar" $(( el / 60 )) $(( el % 60 )) "$phase" >&2
+    sleep 2
+  done
+  printf '\r%*s\r' 100 '' >&2                # wipe the bar before the transcript prints
+fi
+
+wait "$AGENT"
+STATUS="$(cat "$STATUS_FILE" 2>/dev/null || echo 1)"
+rm -f "$STATUS_FILE" "$MARK"
+cat "$TRANSCRIPT"
+
 echo "run-concierge.sh: finished $(date -Iseconds) with status $STATUS"
 echo "run-concierge.sh: transcript at $TRANSCRIPT"
 
