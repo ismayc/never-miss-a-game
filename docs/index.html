@@ -18,19 +18,21 @@
     font-family: -apple-system, "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif;
     line-height: 1.55; padding: 0 20px;
   }
-  main { max-width: 960px; margin: 0 auto; padding-block: 48px 80px; }
+  main { max-width: 1240px; margin: 0 auto; padding-block: 48px 80px; }
   .kicker { color: var(--accent); font-size: 13px; letter-spacing: .3em; text-transform: uppercase; font-weight: 700; margin-bottom: 14px; }
-  h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.12; font-weight: 700; max-width: 22ch; }
+  h1 { font-size: clamp(30px, 4.6vw, 50px); line-height: 1.12; font-weight: 700; max-width: 30ch; }
   h1 .quiet { color: var(--dim); font-weight: 400; display: block; margin-top: 8px; font-size: .62em; }
-  h2 { font-size: clamp(22px, 3vw, 28px); font-weight: 700; margin: 0 0 14px; line-height: 1.2; }
+  h2 { font-size: clamp(22px, 3vw, 30px); font-weight: 700; margin: 0 0 14px; line-height: 1.2; }
   h3 { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
-  p { color: var(--dim); max-width: 68ch; }
+  p { color: var(--dim); max-width: 90ch; font-size: 16.5px; }
   p strong, li strong { color: var(--ink); font-weight: 600; }
   section { margin-top: 64px; }
-  .lead { color: var(--dim); font-size: 18px; margin-top: 22px; max-width: 60ch; }
+  .lead { color: var(--dim); font-size: 19px; margin-top: 22px; max-width: 80ch; }
+  @media (max-width: 700px) { p { font-size: 16px; } .lead { font-size: 17px; } }
   .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-top: 18px; }
   .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px 18px 16px; }
-  .card p { font-size: 15px; }
+  .card p { font-size: 15.5px; }
+  .cards { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
   .card.amber { background: var(--amber-panel); border-color: var(--accent); }
   .card.amber h3 { color: var(--accent-soft); }
   .card.ink { background: var(--ink-panel); border-color: var(--ink-line); }
@@ -39,7 +41,7 @@
   .diagram { width: 100%; min-width: 760px; height: auto; display: block; }
   .diagram text { font-family: inherit; }
   .steps { list-style: none; counter-reset: s; margin-top: 18px; display: grid; gap: 10px; }
-  .steps li { counter-increment: s; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px 14px 58px; position: relative; color: var(--dim); font-size: 15.5px; }
+  .steps li { counter-increment: s; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px 14px 58px; position: relative; color: var(--dim); font-size: 16px; }
   .steps li::before { content: counter(s); position: absolute; left: 16px; top: 12px; width: 28px; height: 28px; border-radius: 50%; background: var(--ink-panel); border: 1px solid var(--ink-line); color: var(--ink); font-weight: 700; font-size: 14px; display: grid; place-items: center; }
   .steps li.amber { background: var(--amber-panel); border-color: var(--accent); }
   .steps li.amber::before { background: var(--accent); color: #10141c; border-color: var(--accent); }
@@ -49,10 +51,10 @@
   .msg .app { color: var(--dim); font-size: 11px; letter-spacing: .15em; text-transform: uppercase; margin-bottom: 8px; }
   .msg .body { color: #dde3ec; font-size: 13.5px; line-height: 1.5; white-space: pre-wrap; }
   .msg .body b { color: var(--accent); font-weight: 600; }
-  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; margin-top: 18px; }
+  .two { display: grid; grid-template-columns: 3fr 2fr; gap: 36px; align-items: start; margin-top: 18px; }
   @media (max-width: 700px) { .two { grid-template-columns: 1fr; } }
   .sections { display: grid; gap: 8px; margin-top: 18px; }
-  .sec { display: grid; grid-template-columns: minmax(180px, 34%) 1fr; gap: 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; font-size: 15px; }
+  .sec { display: grid; grid-template-columns: minmax(180px, 28%) 1fr; gap: 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; font-size: 15.5px; }
   .sec:first-child { background: var(--amber-panel); border-color: var(--accent); }
   .sec b { color: var(--accent-soft); font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-weight: 600; font-size: 14px; }
   .sec span { color: var(--dim); }
@@ -66,7 +68,7 @@
   .links a.amber { background: var(--amber-panel); border-color: var(--accent); }
   a { color: var(--accent-soft); }
   footer { margin-top: 70px; color: var(--dimmer); font-size: 13px; border-top: 1px solid var(--line); padding-top: 18px; }
-  .note { border-left: 3px solid var(--accent); padding: 4px 0 4px 16px; margin-top: 18px; color: var(--dim); font-size: 15.5px; max-width: 64ch; }
+  .note { border-left: 3px solid var(--accent); padding: 4px 0 4px 16px; margin-top: 18px; color: var(--dim); font-size: 16.5px; max-width: 86ch; }
 </style>
 </head>
 <body>
