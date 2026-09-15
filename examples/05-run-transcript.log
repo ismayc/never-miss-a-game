@@ -1,0 +1,42 @@
+Sent. The message, verbatim:
+
+NFL Week 2 lands on top of a WNBA stretch where all three of your teams play three or four times, so Sunday runs from a 6 AM kickoff to the Fire's late-afternoon tip.
+
+Thursday, Sep 17
+Phoenix Mercury at Portland Fire, 7:00 PM, Fox 12: Fire's grit test, first of four this week.
+Detroit Lions at Buffalo Bills, 5:15 PM, Prime Video: editor's pick, the only football on Thursday.
+
+Friday, Sep 18
+New York Liberty at Minnesota Lynx, 4:30 PM, ION: JJ and Stewie versus Miles' offense, week's best.
+Portland Fire at Golden State Valkyries, 7:00 PM, ION: back-to-back road night, that practice plan gets tested.
+
+Sunday, Sep 20
+Sunderland at Manchester City, 6:00 AM: Haaland at home, worth the early alarm.
+Liverpool at AFC Bournemouth, 6:00 AM: Szoboszlai on the second screen, same kickoff.
+Minnesota Lynx at Connecticut Sun, 10:00 AM, League Pass: Lynx offense on the road two days later.
+New York Liberty at Toronto Tempo, 12:00 PM, League Pass: Stewie's crew north of the border, quick turnaround.
+Miami Dolphins at San Francisco 49ers, 1:25 PM, FOX: Niners' first read on the division race.
+Seattle Seahawks at Arizona Cardinals, 1:25 PM, FOX: division game between two of yours, neighbor asks.
+Portland Fire at Los Angeles Sparks, 4:00 PM, USA Net: third game in four days, depth check.
+
+Monday, Sep 21
+Atlanta Dream at New York Liberty, 5:00 PM, Peacock: JJ home after Toronto, third in four.
+New York Giants at Los Angeles Rams, 5:15 PM, ESPN: Rams close out your division's Week 2.
+
+Tuesday, Sep 22
+Minnesota Lynx at Indiana Fever, 5:00 PM, ESPN: Miles' offense on national TV, midweek.
+Golden State Valkyries at Portland Fire, 7:00 PM, Fox 12: Friday's rematch, Fire at home this time.
+
+Nothing this week from the Nuggets or Spurs: Spurs return Tuesday, Oct 20 at 6:30 PM local, Nuggets Thursday, Oct 22 at 6:30 PM local.
+
+---
+
+Build notes, kept out of the message:
+
+- **Sources:** all 10 readable, none missing. Seven are dormant (NBA preseason, both March Madness repos, World Cup, Women's World Cup, Euros, Copa América) and contribute nothing to the window.
+- **Line count and length:** 14 followed-team lines plus 1 editor's pick, 15 total, under the 20-line cap and the preferences file's 18. Estimated length is about 1,850 characters, under the 2,000 cap, so nothing was cut.
+- **Editor's pick:** one taken, Lions at Bills, on the grounds that it is the only NFL game on Thursday. Sunday night's Colts at Chiefs was passed over as the weaker second pick.
+- **Badge versus schedule:** the NBA source badge says "Starts in 35d" while the Nuggets' own next game is 36 days out and the Spurs' is 34. The digest quotes the per-team dates from the FOLLOWED TEAMS block, as instructed.
+- **Unresolved past matches:** WNBA, Premier League, and NFL each report past fixtures with no committed result. None were reported as upcoming or scored.
+- **Delivery:** notify.sh printed to stdout and archived a copy, but reported that NTFY_TOPIC is unset, so no phone push went out. That is an environment setting on this machine, not a data problem.
+- **Two Sunday soccer lines share a 6:00 AM kickoff.** Both were kept as separate lines rather than merged, per the one-game-per-line rule.

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Game-day concierge: Wednesdays at 07:00 local time, via launchd.
+
+  NOT INSTALLED by anything in this repo. See README.md for the `launchctl bootstrap`
+  command; installing a scheduled job is your call.
+
+  BEFORE INSTALLING, replace the two placeholders below (launchd does not expand ~ or
+  $HOME, so the paths must be absolute):
+    /PATH/TO/never-miss-a-game     where you cloned this repo
+    /Users/YOUR-USER               your home directory
+
+  Notes that matter:
+    - StartCalendarInterval with Weekday 3 = Wednesday. Weekday 0 and 7 both mean Sunday,
+      so Monday is 1. Changing the day is one integer.
+    - RunAtLoad is false on purpose: bootstrapping this should not fire a digest instantly.
+    - If the Mac is asleep at 07:00, launchd runs the job at the next wake. That is the
+      correct behavior for a weekly digest and it is why this is not a cron entry.
+    - EnvironmentVariables carries a real PATH because launchd's default one has neither
+      Homebrew nor a Node version manager on it. run-concierge.sh re-exports the same PATH
+      defensively; both belt and braces, because this is failure mode number one.
+    - Set NTFY_TOPIC here to have the weekly digest land on a phone. Anyone who knows the
+      topic string can read it, so use a long random one.
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>local.game-day-concierge</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-lc</string>
+        <string>/PATH/TO/never-miss-a-game/run-concierge.sh</string>
+    </array>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Weekday</key>
+        <integer>3</integer>
+        <key>Hour</key>
+        <integer>7</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>WorkingDirectory</key>
+    <string>/PATH/TO/never-miss-a-game</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/YOUR-USER/Library/Logs/game-day-concierge/launchd.out.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/YOUR-USER/Library/Logs/game-day-concierge/launchd.err.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>CONCIERGE_LOG_DIR</key>
+        <string>/Users/YOUR-USER/Library/Logs/game-day-concierge</string>
+        <!-- <key>NTFY_TOPIC</key><string>put-a-long-random-topic-here</string> -->
+    </dict>
+
+    <key>ProcessType</key>
+    <string>Background</string>
+</dict>
+</plist>
