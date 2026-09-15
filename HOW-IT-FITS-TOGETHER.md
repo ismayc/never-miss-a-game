@@ -1,10 +1,11 @@
 # How it fits together
 
-The session is thirty minutes and most of it is about shape, not code. This page is the shape: what existed before, what was built, and why each piece is where it is. `README.md` has the run-time diagrams; `examples/` shows every file in use.
+The session this kit comes from spent most of its thirty minutes on shape, not code. This page is the shape: what existed before, what was built, and why each piece is where it is. `README.md` has the run-time diagrams; `examples/` shows every file in use.
 
 ## What existed before the session, and what was built
 
 ```mermaid
+%%{init: {"flowchart": {"nodeSpacing": 30, "rankSpacing": 80, "padding": 16}}}%%
 flowchart TB
     subgraph had["Already there"]
         direction LR
@@ -35,7 +36,8 @@ Nothing on the top row was made for the session. The build is the connections. T
 ## The two halves
 
 ```mermaid
-flowchart LR
+%%{init: {"flowchart": {"nodeSpacing": 40, "rankSpacing": 70, "padding": 16}}}%%
+flowchart TD
     subgraph det["Deterministic: the tool"]
         direction TB
         d1["parse two data shapes"]
@@ -68,6 +70,7 @@ The line between the halves is the one question: does this have one right answer
 
 ## Where to look
 
-- `README.md`: the chain, one run, the tool's four states, the allowlist. Diagrams first.
+- `README.md`: the idea in one picture, and how to try it.
+- `TECHNICAL.md`: the files, one run step by step, the tool's four states, scheduling, the allowlist.
 - `examples/README.md`: the chain, file by file, from one real run.
 - `WRITING-THE-POLICY.md`: the structure of the policy file and the practice behind each section.

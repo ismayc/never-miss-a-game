@@ -6,9 +6,10 @@ Everything the concierge touches, in the order the data moves. All of it was pro
 CONCIERGE_NOW=2026-09-16 ./run-concierge.sh
 ```
 
-Committed schedules keep changing underneath these files (a Premier League fixture moved by a day between two rehearsals), so a run on a later date will differ. That is the point of reading the schedule on the morning it matters instead of trusting a saved copy.
+Committed schedules keep changing underneath these files (a Premier League fixture moved by a day between two runs twelve days apart), so a run on a later date will differ. That is the point of reading the schedule on the morning it matters instead of trusting a saved copy.
 
 ```mermaid
+%%{init: {"flowchart": {"nodeSpacing": 40, "rankSpacing": 50, "padding": 16}}}%%
 flowchart TD
     f1["01-preferences.json<br/>INPUT: the teams you follow"] --> f2
     f2["02-schedule-read.txt<br/>TOOL: what read-schedules.mjs prints, 0.3 s. The agent reads this."]
@@ -29,4 +30,4 @@ flowchart TD
 | 06 | `06-digest.md` | The message. Written by `notify.sh` as its archive copy, with a title and a delivery timestamp on top. | One framing sentence. Fifteen lines, every one with a reason. Seahawks at Cardinals is ONE line because both teams are followed. The Nuggets and Spurs, who have nothing this week, get one closing line with their return dates. 1,891 bytes, under the 2,000-character cap. |
 | 07 | `07-notify-output.txt` | Delivery. What `notify.sh` printed while delivering 06: the boxed stdout copy, the archive line, and the phone push it skipped. The macOS banner it also raised leaves no trace in text. | This output is a tool result: the agent sees it, the job log never does. That is why the policy makes the agent repeat the message, and why `notify.sh` writes 06 to disk itself. |
 
-The run behind these files took 89 seconds. Rehearsals of the same window measured 86 to 159 seconds, so budget up to two and a half minutes of silence between the tool call and the message.
+The run behind these files took 89 seconds. Other runs of the same window have taken between 86 and 159 seconds, almost all of it between the tool call and the finished message.

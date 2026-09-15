@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # notify.sh — deliver the finished digest. Three channels, no dependencies.
 #
-#   1. stdout          — always. The terminal is the channel that never fails on stage.
+#   1. stdout          — always. The terminal is the channel that never fails.
 #   2. macOS banner    — always, via osascript. Truncated: a notification is a nudge.
 #   3. ntfy.sh topic   — only when NTFY_TOPIC is set. This is the one that lands on a phone.
 #
