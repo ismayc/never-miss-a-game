@@ -62,11 +62,26 @@ if command -v osascript >/dev/null 2>&1; then
 fi
 
 # 3. ntfy.sh — push to a phone. Opt-in via env var so the default run is fully offline.
+# The phone apps render plain text only (ntfy's Markdown header is web-app only), so the
+# day headings and the "Editor's pick:" label are set in bold Unicode letters for this
+# channel alone. stdout and the archive keep the plain text.
 if [ -n "${NTFY_TOPIC:-}" ]; then
+  PHONE_BODY="$(NOTIFY_BODY="$BODY" node -e '
+    const bold = (s) => [...s].map((c) => {
+      const n = c.codePointAt(0);
+      if (n >= 65 && n <= 90) return String.fromCodePoint(0x1D5D4 + n - 65);   // A-Z
+      if (n >= 97 && n <= 122) return String.fromCodePoint(0x1D5EE + n - 97);  // a-z
+      return c;
+    }).join("");
+    const days = /^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)$/gm;
+    process.stdout.write(process.env.NOTIFY_BODY
+      .replace(days, (d) => bold(d))
+      .replace(/Editor.s pick:/g, (m) => bold(m)));
+  ' 2>/dev/null || printf '%s' "$BODY")"
   if curl -fsS \
       -H "Title: $TITLE" \
       -H "Tags: sports_medal" \
-      -d "$BODY" \
+      -d "$PHONE_BODY" \
       "https://ntfy.sh/${NTFY_TOPIC}" >/dev/null; then
     echo "notify.sh: pushed to ntfy.sh/${NTFY_TOPIC}"
   else
