@@ -101,6 +101,7 @@ Read literally, the World Cup repo is 104 unplayed matches, a third of them betw
 You need Node 18 or newer, git, and the Claude Code CLI (`claude`) installed and signed in. Nothing to `npm install`.
 
 ```bash
+git clone https://github.com/ismayc/never-miss-a-game.git
 cd never-miss-a-game
 ./clone-viewers.sh        # eleven shallow clones into ../sports-trackers
 
