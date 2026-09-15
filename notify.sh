@@ -77,7 +77,9 @@ if [ -n "${NTFY_TOPIC:-}" ]; then
       if (n >= 97 && n <= 122) return String.fromCodePoint(0x1D5EE + n - 97);  // a-z
       return c;
     }).join("");
-    const day = /^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)$/;
+    // A day heading in any form the digests have used: "Thursday", "Thursday, Sep 17",
+    // "Thu 9/17". A game line never starts with a weekday, so a leading weekday is enough.
+    const day = /^(Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*(?:,?\s+[A-Za-z]{3,9}\.?\s+\d{1,2}|\s+\d{1,2}\/\d{1,2})?\s*$/;
     // The game part ends at the first sentence end after the time and the channel.
     const game = /^(.*?\d{1,2}:\d{2} [AP]M(?:,[^.]*?)?)\.\s+(.+)$/;
     let inDay = false;
