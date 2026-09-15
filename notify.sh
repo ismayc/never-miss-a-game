@@ -64,7 +64,9 @@ fi
 # 3. ntfy.sh — push to a phone. Opt-in via env var so the default run is fully offline.
 # The phone apps render plain text only (ntfy's Markdown header is web-app only), so for
 # this channel alone the day headings and the "Editor's pick:" label are set in bold
-# Unicode letters and each game line under a day gets a bullet. A day block is the
+# Unicode letters, each game line under a day gets a bullet, and the "why I care"
+# sentence moves to an indented line under the game (plain text has no hanging indent,
+# so this is the one that reads the same at any phone text size). A day block is the
 # heading and the lines up to the next blank line, so the opening sentence and the
 # closing line stay as they are. stdout and the archive keep the plain text.
 if [ -n "${NTFY_TOPIC:-}" ]; then
@@ -76,12 +78,16 @@ if [ -n "${NTFY_TOPIC:-}" ]; then
       return c;
     }).join("");
     const day = /^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)$/;
+    // The game part ends at the first sentence end after the time and the channel.
+    const game = /^(.*?\d{1,2}:\d{2} [AP]M(?:,[^.]*?)?)\.\s+(.+)$/;
     let inDay = false;
-    const out = process.env.NOTIFY_BODY.split("\n").map((line) => {
-      if (day.test(line)) { inDay = true; return bold(line); }
-      if (line.trim() === "") { inDay = false; return line; }
+    const out = process.env.NOTIFY_BODY.split("\n").flatMap((line) => {
+      if (day.test(line)) { inDay = true; return [bold(line)]; }
+      if (line.trim() === "") { inDay = false; return [line]; }
       const l = line.replace(/Editor.s pick:/g, (m) => bold(m));
-      return inDay ? "• " + l : l;
+      if (!inDay) return [l];
+      const m = l.match(game);
+      return m ? ["• " + m[1] + ".", "    " + m[2]] : ["• " + l];
     });
     process.stdout.write(out.join("\n"));
   ' 2>/dev/null || printf '%s' "$BODY")"
