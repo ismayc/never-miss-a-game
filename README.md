@@ -9,6 +9,7 @@ Every sport I follow has a site that is good at its own game. None of them knows
 ```mermaid
 %%{init: {"flowchart": {"nodeSpacing": 50, "rankSpacing": 70, "padding": 16}}}%%
 flowchart TD
+    F["preferences-editor.html<br/>a form over that file, optional"] -. "writes" .-> P
     P["preferences.json<br/>the teams you follow"] --> T
     R[("ten schedule repos<br/>committed data on disk")] --> T
     subgraph det["Deterministic: questions with one right answer"]
@@ -38,7 +39,7 @@ git checkout complete                                            # the finished 
 ./run-concierge.sh                                               # the whole agent, 90 to 160 seconds
 ```
 
-The message prints in the terminal and is saved to disk. `examples/` shows what every step looks like: on `main`, what exists before the run (the preferences file and the tool's output); on `complete`, what the run produces (the transcript, the message, the delivery). Read along there before running anything.
+The message prints in the terminal and is saved to disk. `examples/` shows what every step looks like: on `main`, what exists before the run (the preferences file and the tool's output); on `complete`, what the run produces (the transcript, the message, the delivery). Read along there before running anything. To see the preferences file as a form before you clone anything, open https://ismayc.github.io/never-miss-a-game/preferences-editor.html and click "Try the example".
 
 ## Make it yours
 
@@ -49,6 +50,7 @@ If you would rather not edit JSON by hand, use the form at https://ismayc.github
 ## Read next
 
 - https://ismayc.github.io/never-miss-a-game/: the whole story on one page, for someone who has never built an agent.
+- https://ismayc.github.io/never-miss-a-game/preferences-editor.html: the preferences form, with the session's own file one click away.
 - `examples/README.md`: one real run, file by file. Inputs on `main`, outputs on `complete`.
 - `HOW-IT-FITS-TOGETHER.md`: what already existed, what was built, and each decision with its road not taken.
 - `WRITING-THE-POLICY.md`: how the policy file is structured, the practice behind each section, and a checklist for your own.

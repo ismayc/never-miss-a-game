@@ -49,6 +49,8 @@ claude --allowedTools "Bash(node ./read-schedules.mjs:*)" "Bash(./notify.sh:*)" 
 
 The `:*` after each script is load-bearing: "this exact script, any arguments". Without it the agent cannot pass `--days 7` and the run dies on its first tool call. Run these commands in a plain terminal, never inside an open `claude` session.
 
+The form is not in this picture on purpose: `preferences-editor.html` runs before a run, in a browser, and only writes `preferences.json`. The agent reads the file and never knows the page exists.
+
 Variations: `--tz Europe/London` moves every time in the digest; `--days 14` widens the window when the calendar is quiet; `--json` gives the machine-readable form. `CONCIERGE_NOW=2026-09-16 ./run-concierge.sh` runs for another date, which is how `examples/` was made.
 
 ## What the tool protects the agent from
@@ -72,13 +74,13 @@ Read literally, the World Cup repo is 104 unplayed matches, a third of them betw
 ```mermaid
 %%{init: {"flowchart": {"nodeSpacing": 40, "rankSpacing": 70, "padding": 16}}}%%
 flowchart TD
-    E["edit the followed list<br/>in preferences.json"] --> C["node read-schedules.mjs --prefs preferences.json<br/>| grep Following"]
+    E["edit the followed list in preferences.json<br/>by hand, or tick teams in preferences-editor.html"] --> C["node read-schedules.mjs --prefs preferences.json<br/>| grep Following"]
     C -- "your team listed by full name" --> R["./run-concierge.sh"]
     C -- "not listed" --> W["wrong abbreviation:<br/>the Warriors are GS, not GSW;<br/>MIN is both the Lynx and the Vikings"]
     W --> E
 ```
 
-Every entry carries a sport because abbreviations collide across sports. A wrong abbreviation fails silently at run time and visibly here, so check here.
+Every entry carries a sport because abbreviations collide across sports. A wrong abbreviation fails silently at run time and visibly here, so check here. The form (`preferences-editor.html`, also at https://ismayc.github.io/never-miss-a-game/preferences-editor.html) closes off the wrong-abbreviation branch: its checkboxes are built from the repos' own team files, keyed the way the tool matches, and an entry it does not recognize is flagged on the page rather than written silently. Run the check anyway; it reads the file on disk, which is what proves the save landed.
 
 ## Put it on a schedule
 

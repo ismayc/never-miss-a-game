@@ -14,8 +14,9 @@ flowchart TB
         h3["launchd<br/>the Mac's own scheduler"]
         h4["ntfy.sh<br/>one POST to a topic<br/>lands on a phone"]
     end
-    subgraph built["Built: four files and a plist"]
+    subgraph built["Built: five files and a plist"]
         direction LR
+        b6["preferences-editor.html<br/>a form over preferences.json"]
         b1["read-schedules.mjs"]
         b2["concierge.md"]
         b3["notify.sh"]
@@ -23,6 +24,7 @@ flowchart TB
         b5["game-day-concierge.plist"]
     end
     h1 --> b1
+    b6 -. "writes preferences.json" .-> b1
     h2 --> b4
     h3 --> b5
     h4 --> b3
@@ -31,7 +33,7 @@ flowchart TB
     b5 -- "fires" --> b4
 ```
 
-Nothing on the top row was made for the session. The build is the connections. The hub that lists the sites is https://ismayc.github.io/sports-trackers/.
+Nothing on the top row was made for the session. The build is the connections. The hub that lists the sites is https://ismayc.github.io/sports-trackers/. The form was the last file built, the day before the session, and it sits outside the run: it writes the preferences file that the tool reads, and nothing else touches it. It is also served at https://ismayc.github.io/never-miss-a-game/preferences-editor.html.
 
 ## The two halves
 
