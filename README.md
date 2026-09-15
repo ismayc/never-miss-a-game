@@ -46,6 +46,7 @@ Edit the `followed` list in `preferences.json`: the sport, the team's abbreviati
 
 ## Read next
 
+- https://ismayc.github.io/never-miss-a-game/: the whole story on one page, for someone who has never built an agent.
 - `examples/README.md`: one real run, file by file. Inputs on `main`, outputs on `complete`.
 - `HOW-IT-FITS-TOGETHER.md`: what already existed, what was built, and each decision with its road not taken.
 - `WRITING-THE-POLICY.md`: how the policy file is structured, the practice behind each section, and a checklist for your own.

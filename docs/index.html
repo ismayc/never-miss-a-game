@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Never Miss a Game: how the sports concierge agent was built</title>
+<meta name="description" content="A beginner's walk through a small, real agent: one message a week about what is worth watching, built from schedules already on disk. What existed, what was built, what one run looks like, and what the process taught.">
+<style>
+  :root {
+    --bg: #10141c; --ink: #f4f6f8; --dim: #8b95a5; --dimmer: #6b7686;
+    --accent: #ffb648; --accent-soft: #ffcf87; --panel: #1a2130; --line: #2c3648;
+    --ink-panel: #232c40; --ink-line: #5b6b85; --amber-panel: #2a2415;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: -apple-system, "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.55; padding: 0 20px;
+  }
+  main { max-width: 960px; margin: 0 auto; padding-block: 48px 80px; }
+  .kicker { color: var(--accent); font-size: 13px; letter-spacing: .3em; text-transform: uppercase; font-weight: 700; margin-bottom: 14px; }
+  h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.12; font-weight: 700; max-width: 22ch; }
+  h1 .quiet { color: var(--dim); font-weight: 400; display: block; margin-top: 8px; font-size: .62em; }
+  h2 { font-size: clamp(22px, 3vw, 28px); font-weight: 700; margin: 0 0 14px; line-height: 1.2; }
+  h3 { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
+  p { color: var(--dim); max-width: 68ch; }
+  p strong, li strong { color: var(--ink); font-weight: 600; }
+  section { margin-top: 64px; }
+  .lead { color: var(--dim); font-size: 18px; margin-top: 22px; max-width: 60ch; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-top: 18px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px 18px 16px; }
+  .card p { font-size: 15px; }
+  .card.amber { background: var(--amber-panel); border-color: var(--accent); }
+  .card.amber h3 { color: var(--accent-soft); }
+  .card.ink { background: var(--ink-panel); border-color: var(--ink-line); }
+  .card .tag { display: inline-block; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin-bottom: 8px; }
+  .diagram { width: 100%; height: auto; margin-top: 18px; display: block; }
+  .diagram text { font-family: inherit; }
+  .steps { list-style: none; counter-reset: s; margin-top: 18px; display: grid; gap: 10px; }
+  .steps li { counter-increment: s; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px 14px 58px; position: relative; color: var(--dim); font-size: 15.5px; }
+  .steps li::before { content: counter(s); position: absolute; left: 16px; top: 12px; width: 28px; height: 28px; border-radius: 50%; background: var(--ink-panel); border: 1px solid var(--ink-line); color: var(--ink); font-weight: 700; font-size: 14px; display: grid; place-items: center; }
+  .steps li.amber { background: var(--amber-panel); border-color: var(--accent); }
+  .steps li.amber::before { background: var(--accent); color: #10141c; border-color: var(--accent); }
+  .steps code, p code, li code, td code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .92em; color: var(--ink); background: rgba(255,255,255,.06); padding: 1px 5px; border-radius: 4px; }
+  .phone { background: #000; border: 6px solid #2a2f3a; border-radius: 34px; padding: 22px 12px 16px; max-width: 360px; margin: 22px auto 0; box-shadow: 0 18px 50px rgba(0,0,0,.5); }
+  .msg { background: #121722; border-radius: 14px; padding: 14px; }
+  .msg .app { color: var(--dim); font-size: 11px; letter-spacing: .15em; text-transform: uppercase; margin-bottom: 8px; }
+  .msg .body { color: #dde3ec; font-size: 13.5px; line-height: 1.5; white-space: pre-wrap; }
+  .msg .body b { color: var(--accent); font-weight: 600; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; margin-top: 18px; }
+  @media (max-width: 700px) { .two { grid-template-columns: 1fr; } }
+  .sections { display: grid; gap: 8px; margin-top: 18px; }
+  .sec { display: grid; grid-template-columns: minmax(180px, 34%) 1fr; gap: 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; font-size: 15px; }
+  .sec:first-child { background: var(--amber-panel); border-color: var(--accent); }
+  .sec b { color: var(--accent-soft); font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-weight: 600; font-size: 14px; }
+  .sec span { color: var(--dim); }
+  @media (max-width: 560px) { .sec { grid-template-columns: 1fr; gap: 4px; } }
+  pre.cmd { background: #0b0e14; border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; overflow-x: auto; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 14px; line-height: 1.6; color: var(--ink); margin-top: 16px; }
+  pre.cmd .c { color: var(--dimmer); }
+  .links { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin-top: 18px; }
+  .links a { display: block; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; color: var(--ink); text-decoration: none; font-size: 15px; }
+  .links a small { display: block; color: var(--dim); margin-top: 4px; font-size: 13px; }
+  .links a:hover { border-color: var(--accent); }
+  .links a.amber { background: var(--amber-panel); border-color: var(--accent); }
+  a { color: var(--accent-soft); }
+  footer { margin-top: 70px; color: var(--dimmer); font-size: 13px; border-top: 1px solid var(--line); padding-top: 18px; }
+  .note { border-left: 3px solid var(--accent); padding: 4px 0 4px 16px; margin-top: 18px; color: var(--dim); font-size: 15.5px; max-width: 64ch; }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <div class="kicker">Never Miss a Game</div>
+  <h1>A site for every sport. None of them knew about my week.
+    <span class="quiet">So I built a small agent that sends me one message. Here is how, for someone who has never built one.</span></h1>
+  <p class="lead">This page is the short version of a 30-minute O'Reilly session, <em>Zero to Agent in 30 Minutes</em>. It skips the code and keeps the shape: what already existed, what had to be built, what one run looks like, and what the process taught. Everything on it is real: the data, the run, the message.</p>
+</header>
+
+<section id="problem">
+  <h2>The problem</h2>
+  <p>I had built a website for each sport I follow: the World Cup first, then the WNBA, the NFL, the NBA, the Premier League, and more. Each one is good at its own game: every fixture in my time zone, on the channel I actually have. Then I had a new problem. I did not want that many tabs open. A hub that lists them all helped. What none of the sites could do was answer the only question I had on a Wednesday morning:</p>
+  <div class="note"><strong>What, out of everything on this week, is worth my evening?</strong> And, when the honest answer is "nothing", to say so instead of padding.</div>
+  <p style="margin-top:16px">Listing games is a script. Deciding which four matter is judgment. Judgment is what the agent is for.</p>
+</section>
+
+<section id="existed">
+  <h2>What already existed</h2>
+  <p>Nothing on this list was made for the agent. The build was the connections between them.</p>
+  <div class="cards">
+    <div class="card"><span class="tag">Data</span><h3>Ten schedule sites</h3><p>Each commits its full schedule to disk as a data file and refreshes nightly. No API to call, no key, no scraping.</p></div>
+    <div class="card"><span class="tag">Runtime</span><h3>Claude Code CLI</h3><p>One command reads a prompt, calls only the tools it is allowed to call, and exits. There is no server to write.</p></div>
+    <div class="card"><span class="tag">Clock</span><h3>launchd</h3><p>The Mac's own scheduler. One file, one integer for the weekday. If the Mac is asleep, it runs at the next wake.</p></div>
+    <div class="card"><span class="tag">Phone</span><h3>ntfy.sh</h3><p>One web request to a topic lands as a push notification. Opt-in through a single environment variable.</p></div>
+  </div>
+</section>
+
+<section id="shape">
+  <h2>How it fits together</h2>
+  <p>Two halves. The grey half is deterministic: every question with one right answer (parsing, time zones, "is this a real fixture") is answered by a small tool, the same way every week. The amber half is judgment: a written policy the agent follows. Keeping the halves apart is the whole design.</p>
+  <svg class="diagram" viewBox="0 0 1500 640" role="img" aria-label="Diagram: preferences and ten schedule repos feed one local tool; the tool feeds the agent; a written policy sits above the agent and a weekly clock below; the agent sends one message to the phone">
+    <defs>
+      <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8b95a5"/></marker>
+      <marker id="arrA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ffb648"/></marker>
+    </defs>
+    <g>
+      <rect x="20" y="150" width="310" height="320" rx="14" fill="#1a2130" stroke="#2c3648"/>
+      <text x="175" y="195" fill="#8b95a5" font-size="30" font-weight="600" text-anchor="middle">schedule repos</text>
+      <text x="175" y="232" fill="#8b95a5" font-size="22" text-anchor="middle">committed to disk</text>
+      <g fill="#8b95a5" font-size="17">
+        <text x="48" y="285">wnba</text><text x="192" y="285">nfl</text>
+        <text x="48" y="322">premier lg</text><text x="192" y="322">nba</text>
+        <text x="48" y="359">world cup</text><text x="192" y="359">euros</text>
+        <text x="48" y="396">madness x2</text><text x="192" y="396">copa</text>
+      </g>
+      <text x="175" y="445" fill="#8b95a5" font-size="20" text-anchor="middle" font-style="italic">plus preferences.json: your teams</text>
+    </g>
+    <g>
+      <rect x="390" y="230" width="270" height="160" rx="14" fill="#1a2130" stroke="#2c3648"/>
+      <text x="525" y="290" fill="#8b95a5" font-size="30" font-weight="600" text-anchor="middle">one local tool</text>
+      <text x="525" y="328" fill="#8b95a5" font-size="22" text-anchor="middle">read-schedules.mjs</text>
+      <text x="525" y="360" fill="#6b7686" font-size="20" text-anchor="middle">0.3 s, zero deps, read-only</text>
+    </g>
+    <g>
+      <rect x="730" y="200" width="340" height="220" rx="14" fill="#232c40" stroke="#5b6b85" stroke-width="2"/>
+      <text x="900" y="262" fill="#f4f6f8" font-size="32" font-weight="700" text-anchor="middle">the agent</text>
+      <text x="900" y="300" fill="#8b95a5" font-size="22" text-anchor="middle">claude -p, headless</text>
+      <text x="900" y="332" fill="#8b95a5" font-size="22" text-anchor="middle">allowlist: 2 scripts + read</text>
+      <text x="900" y="376" fill="#ffb648" font-size="20" font-weight="600" text-anchor="middle">"if nothing's worth watching,</text>
+      <text x="900" y="402" fill="#ffb648" font-size="20" font-weight="600" text-anchor="middle">say so, don't pad"</text>
+    </g>
+    <g>
+      <rect x="735" y="12" width="330" height="128" rx="14" fill="#2a2415" stroke="#ffb648" stroke-width="2.5"/>
+      <text x="900" y="44" fill="#ffb648" font-size="18" font-weight="700" letter-spacing="2" text-anchor="middle">THE PART THAT DECIDES</text>
+      <text x="900" y="82" fill="#f4f6f8" font-size="27" font-weight="700" text-anchor="middle">written policy</text>
+      <text x="900" y="112" fill="#ffcf87" font-size="19" text-anchor="middle">concierge.md, a job description</text>
+      <line x1="900" y1="140" x2="900" y2="196" stroke="#ffb648" stroke-width="2.8" marker-end="url(#arrA)"/>
+    </g>
+    <g>
+      <rect x="770" y="490" width="260" height="90" rx="14" fill="#1a2130" stroke="#2c3648"/>
+      <text x="900" y="528" fill="#8b95a5" font-size="26" font-weight="600" text-anchor="middle">launchd</text>
+      <text x="900" y="560" fill="#8b95a5" font-size="21" text-anchor="middle">Wednesdays, 7:00 am</text>
+      <line x1="900" y1="486" x2="900" y2="426" stroke="#8b95a5" stroke-width="2.5" marker-end="url(#arr)"/>
+    </g>
+    <g>
+      <rect x="1140" y="230" width="240" height="160" rx="14" fill="#1a2130" stroke="#2c3648"/>
+      <text x="1260" y="292" fill="#8b95a5" font-size="30" font-weight="600" text-anchor="middle">one message</text>
+      <text x="1260" y="330" fill="#8b95a5" font-size="22" text-anchor="middle">notify.sh to phone</text>
+      <text x="1260" y="362" fill="#8b95a5" font-size="22" text-anchor="middle">+ archived to a file</text>
+    </g>
+    <line x1="335" y1="310" x2="384" y2="310" stroke="#8b95a5" stroke-width="2.5" marker-end="url(#arr)"/>
+    <line x1="665" y1="310" x2="724" y2="310" stroke="#8b95a5" stroke-width="2.5" marker-end="url(#arr)"/>
+    <line x1="1075" y1="310" x2="1134" y2="310" stroke="#8b95a5" stroke-width="2.5" marker-end="url(#arr)"/>
+  </svg>
+  <p style="margin-top:14px">Grey is the deterministic half and already existed or is plain scripting. Amber is the only thing that had to be authored with care: a policy, written in prose, that says what counts, what to ignore, and what one message looks like.</p>
+</section>
+
+<section id="run">
+  <h2>What one run looks like</h2>
+  <div class="two">
+    <div>
+      <ol class="steps">
+        <li><strong>The clock fires.</strong> Wednesday, 7:00. launchd starts a shell script; nobody is at the keyboard.</li>
+        <li><strong>The script starts the agent</strong> with the policy as its prompt and a short allowlist: it may run two scripts and read one file. Nothing else.</li>
+        <li><strong>One tool call.</strong> The agent runs the schedule reader. A third of a second later it has the week: every game, every caveat flagged, about 7 KB of text.</li>
+        <li class="amber"><strong>Judgment.</strong> Sixty to ninety seconds of quiet. Which games involve teams I follow (all of them go in), which one or two others are genuinely worth it, and one "why I care" per line, nine words or fewer.</li>
+        <li><strong>One delivery call.</strong> The notifier prints the message, raises a banner, writes it to disk, and pushes it to the phone.</li>
+        <li><strong>The check.</strong> The script looks for the file on disk. If it is not there, the run fails, whatever the agent said. Verify the effect, not the report.</li>
+      </ol>
+    </div>
+    <div>
+      <div class="phone"><div class="msg"><div class="app">This week in sports</div><div class="body">NFL Week 2 lands on top of a WNBA stretch where all three of your teams play three or four times, so Sunday runs from a 6 AM kickoff to the Fire's late-afternoon tip.
+
+<b>Thu 9/17</b>
+Mercury at Fire, 7:00 PM, Fox 12: Fire's grit test, first of four this week.
+
+<b>Fri 9/18</b>
+Liberty at Lynx, 4:30 PM, ION: JJ and Stewie versus Miles' offense, week's best.
+
+<b>Sun 9/20</b>
+Sunderland at Man City, 6:00 AM: Haaland at home, worth the early alarm.
+Seahawks at Cardinals, 1:25 PM, FOX: division game between two of yours, neighbor asks.
+
+<b>Mon 9/21</b>
+Giants at Rams, 5:15 PM, ESPN: Rams close out your division's Week 2.
+
+<b>Tue 9/22</b>
+Lynx at Fever, 5:00 PM, ESPN: Miles' offense on national TV, midweek.
+
+Nothing this week from the Nuggets or Spurs: Spurs return Tuesday, Oct 20 at 6:30 PM local, Nuggets Thursday, Oct 22 at 6:30 PM local.</div></div></div>
+      <p style="text-align:center;font-size:13px;margin-top:10px;color:var(--dimmer)">A real message from a real run on September 14, 2026, abridged to fit. The full one is in the repo.</p>
+    </div>
+  </div>
+</section>
+
+<section id="policy">
+  <h2>The policy, in seven sections</h2>
+  <p>The policy is a Markdown file, about 1,100 words, written like a job description for a person at a desk who already knows what I like. Its headings run in the order the agent has to decide, and that order is the first best practice: facts before judgment, judgment before output, and the security boundary last.</p>
+  <div class="sections">
+    <div class="sec"><b>Job description</b><span>Who you are, how often you run, and your ONE output. Two paragraphs that set the voice.</span></div>
+    <div class="sec"><b>Your sources, in order</b><span>Exactly one tool call. Its output is the truth. Never open the raw files. If a source is missing, say so and move on.</span></div>
+    <div class="sec"><b>What counts as worth watching</b><span>Every game with a followed team goes in, no exceptions. Up to two extra picks, only with real stakes. Zero is a fine answer.</span></div>
+    <div class="sec"><b>Sports that are not really there</b><span>The traps in the data, named: bracket placeholders, finished tournaments with no scores, an offseason league, a badge that disagrees with the schedule.</span></div>
+    <div class="sec"><b>The output contract</b><span>One message, one clock, one line per game with a reason, a length cap with a cut order, and permission to say "nothing this week".</span></div>
+    <div class="sec"><b>Delivery</b><span>One call to the notifier, then repeat the message in the final reply, because a tool's output never reaches the log.</span></div>
+    <div class="sec"><b>Tools you may use</b><span>Two scripts and Read. No writing, no editing, no git. If the job cannot be done, report that; never invent a schedule to cover it.</span></div>
+  </div>
+</section>
+
+<section id="lessons">
+  <h2>What the process taught</h2>
+  <p>Every rule in the policy was paid for by something going wrong first. These are the ones worth carrying to your own agent.</p>
+  <div class="cards">
+    <div class="card amber"><h3>Give the agent one door to the data</h3><p>Read literally, the World Cup file is 104 unplayed matches, a third of them between teams that do not exist. A small deterministic tool absorbs that once. The agent reads a summary and decides.</p></div>
+    <div class="card amber"><h3>Write the policy as prose, not settings</h3><p>A config can say "max 20 lines". It cannot say "zero picks is better than two weak ones" or define real stakes. The reader reasons like a person; write to it like one.</p></div>
+    <div class="card amber"><h3>Name the traps anyway</h3><p>The tool already handles the placeholders. The policy names them too, with examples, so the rule survives a change to the tool.</p></div>
+    <div class="card amber"><h3>Verify the effect, not the report</h3><p>A run once exited cleanly saying "sent" and left no message anywhere, because a tool's output never reaches the log. Now the notifier writes the message to disk and the runner checks for the file.</p></div>
+    <div class="card amber"><h3>A UTC timestamp names the wrong day</h3><p>A 5:20 PM Phoenix kickoff is stamped 00:20Z the next day. An early run reported the wrong evening. The tool now hands over the local date as a sentence, and the policy forbids reading dates off raw timestamps.</p></div>
+    <div class="card amber"><h3>An honest empty week is a good week</h3><p>The title promises never missing a game you care about. That is exactly why the agent must be willing to send two sentences and stop. Padding is the worst thing this job can do.</p></div>
+    <div class="card ink"><h3>Keep the allowlist exact and read-only</h3><p>Two scripts by name, plus Read. Not "any Node command", which would allow arbitrary code. The schedule sites stay untouchable, which is what makes the job safe to schedule.</p></div>
+    <div class="card ink"><h3>Two runs will differ, and that is fine</h3><p>On identical data, one run took an editor's pick and one did not. Both are inside the contract. A run that differs because the prompt drifted is not, so the policy is frozen and tested against the real thing.</p></div>
+  </div>
+</section>
+
+<section id="try">
+  <h2>Try it yourself</h2>
+  <p>You need Node, git, and the Claude Code CLI signed in. There is nothing else to install. Four commands, and the fourth takes about 90 seconds.</p>
+<pre class="cmd"><span class="c"># get the kit and the schedule data</span>
+git clone https://github.com/ismayc/never-miss-a-game.git
+cd never-miss-a-game &amp;&amp; ./clone-viewers.sh
+
+<span class="c"># the data layer on its own, then the whole agent with the finished policy</span>
+node read-schedules.mjs --days 7 --prefs preferences.json --all
+git checkout complete &amp;&amp; ./run-concierge.sh</pre>
+  <p style="margin-top:14px">Then edit <code>preferences.json</code>: your teams, and a line on why you care about each. That file is the only thing the agent knows about you.</p>
+  <div class="links">
+    <a class="amber" href="https://github.com/ismayc/never-miss-a-game">The repository<small>Branch <code>main</code> is the starting point; branch <code>complete</code> is the built-out result with the finished policy and every file the run produced.</small></a>
+    <a href="https://github.com/ismayc/never-miss-a-game/blob/main/HOW-IT-FITS-TOGETHER.md">How it fits together<small>What existed, what was built, and each decision with its road not taken.</small></a>
+    <a href="https://github.com/ismayc/never-miss-a-game/blob/main/WRITING-THE-POLICY.md">Writing the policy<small>The seven sections, the practice behind each, and a checklist for your own.</small></a>
+    <a href="https://github.com/ismayc/never-miss-a-game/blob/complete/examples/README.md">One real run, file by file<small>Preferences in, tool read, transcript, message, delivery.</small></a>
+    <a href="https://github.com/ismayc/never-miss-a-game/blob/main/TECHNICAL.md">Technical notes<small>Scheduling, the phone, the safety boundary, the data traps.</small></a>
+    <a href="https://ismayc.github.io/sports-trackers/">The sports trackers<small>The sites the agent reads, all public.</small></a>
+  </div>
+</section>
+
+<footer>Never Miss a Game: Build a Sports Concierge Agent. O'Reilly, Zero to Agent in 30 Minutes, September 16, 2026. The data, the run, and the message on this page are real; the message is abridged to fit.</footer>
+
+</main>
+</body>
+</html>
