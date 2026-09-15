@@ -13,3 +13,5 @@
 | Tools you may use | Read-only. Exactly two scripts and Read. No write, no edit, no git. If the job cannot be done, report that; never invent a schedule to cover it. |
 
 Two of these rules were paid for by real failures. The UTC-date rule exists because an early run named the wrong evening: a 5:20 PM kickoff is stamped 00:20Z the next day. The repeat-the-message rule exists because a run exited 0 saying "sent" and left a log with no message in it.
+
+The practice behind each section, and a checklist for writing your own policy, is in `../WRITING-THE-POLICY.md`.

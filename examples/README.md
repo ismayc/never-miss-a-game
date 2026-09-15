@@ -8,22 +8,15 @@ CONCIERGE_NOW=2026-09-16 ./run-concierge.sh
 
 Committed schedules keep changing underneath these files (a Premier League fixture moved by a day between two rehearsals), so a run on a later date will differ. That is the point of reading the schedule on the morning it matters instead of trusting a saved copy.
 
-```
-01-preferences.json           INPUT       the teams you follow
-        |
-        v
-02-schedule-read.txt          TOOL        what read-schedules.mjs prints, ~0.3 s (the agent reads this)
-03-schedule-read.json         TOOL        the same run with --json, for when structure matters
-        |
-        v
-04-the-policy.md              POLICY      the part written live: what counts, what to ignore, the shape of one message
-        |
-        v
-05-run-transcript.log         AGENT       one tool call, then judgment, then the message repeated verbatim
-        |
-        v
-06-digest.md                  MESSAGE     the archive copy notify.sh writes; this is what lands on the phone
-07-notify-output.txt          DELIVERY    what notify.sh printed while delivering it
+```mermaid
+flowchart TD
+    f1["01-preferences.json<br/>INPUT: the teams you follow"] --> f2
+    f2["02-schedule-read.txt<br/>TOOL: what read-schedules.mjs prints, 0.3 s. The agent reads this."]
+    f2 -.-> f3["03-schedule-read.json<br/>TOOL: the same run with --json, for when structure matters"]
+    f2 --> f4["04-the-policy.md<br/>POLICY: the part written in the session. What counts, what to ignore, the shape of one message."]
+    f4 --> f5["05-run-transcript.log<br/>AGENT: one tool call, then judgment, then the message repeated verbatim"]
+    f5 --> f6["06-digest.md<br/>MESSAGE: the archive copy notify.sh writes. This is what lands on the phone."]
+    f5 -.-> f7["07-notify-output.txt<br/>DELIVERY: what notify.sh printed while delivering it"]
 ```
 
 | # | File | What it is | What to look at |
