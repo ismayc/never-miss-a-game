@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T10:55:25.225Z",
+  "generatedAt": "2026-09-16T17:25:09.910Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-16",
@@ -992,7 +992,9 @@
       "homeLabel": "Everton",
       "awayLabel": "Ipswich Town",
       "venue": "Hill Dickinson Stadium, Liverpool",
-      "tv": [],
+      "tv": [
+        "Peacock"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1016,7 +1018,9 @@
       "homeLabel": "Newcastle United",
       "awayLabel": "Hull City",
       "venue": "St. James' Park, Newcastle-upon-Tyne",
-      "tv": [],
+      "tv": [
+        "Peacock"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1064,7 +1068,9 @@
       "homeLabel": "Nottingham Forest",
       "awayLabel": "Coventry City",
       "venue": "The City Ground, Nottingham",
-      "tv": [],
+      "tv": [
+        "NBC"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1167,7 +1173,9 @@
       "homeLabel": "Manchester City",
       "awayLabel": "Sunderland",
       "venue": "Etihad Stadium, Manchester",
-      "tv": [],
+      "tv": [
+        "Peacock"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1193,7 +1201,9 @@
       "homeLabel": "Leeds United",
       "awayLabel": "Crystal Palace",
       "venue": "Elland Road, Leeds",
-      "tv": [],
+      "tv": [
+        "Peacock"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1243,7 +1253,9 @@
       "homeLabel": "Fulham",
       "awayLabel": "Manchester United",
       "venue": "Craven Cottage, London",
-      "tv": [],
+      "tv": [
+        "NBC"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {

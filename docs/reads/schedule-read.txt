@@ -1,7 +1,7 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Wednesday, Sep 16 through Tuesday, Sep 22 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-09-16T10:55:24.846Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-09-16T17:25:09.491Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
@@ -58,19 +58,19 @@ IN WINDOW: 49 real games, 14 involving a followed team
 
   Saturday, Sep 19
     4:30 AM  ⚽ Aston Villa at Tottenham Hotspur              
-    7:00 AM  ⚽ Ipswich Town at Everton                       
-    7:00 AM  ⚽ Hull City at Newcastle United                 
+    7:00 AM  ⚽ Ipswich Town at Everton                        · Peacock
+    7:00 AM  ⚽ Hull City at Newcastle United                  · Peacock
     7:00 AM  ⚽ Arsenal at Brighton & Hove Albion             
-    9:30 AM  ⚽ Coventry City at Nottingham Forest            
+    9:30 AM  ⚽ Coventry City at Nottingham Forest             · NBC
     10:00 AM 🏀 Phoenix Mercury at Dallas Wings                · CBS/Paramount+
     4:00 PM  🏀 Chicago Sky at Atlanta Dream                   · Prime Video
     6:00 PM  🏀 Seattle Storm at Golden State Valkyries        · Prime Video
 
   Sunday, Sep 20
-  ★ 6:00 AM  ⚽ Sunderland at Manchester City                 
-    6:00 AM  ⚽ Crystal Palace at Leeds United                
+  ★ 6:00 AM  ⚽ Sunderland at Manchester City                  · Peacock
+    6:00 AM  ⚽ Crystal Palace at Leeds United                 · Peacock
   ★ 6:00 AM  ⚽ Liverpool at AFC Bournemouth                  
-    8:30 AM  ⚽ Manchester United at Fulham                   
+    8:30 AM  ⚽ Manchester United at Fulham                    · NBC
     10:00 AM 🏈 Carolina Panthers at Atlanta Falcons           · FOX · Week 2
     10:00 AM 🏈 Cincinnati Bengals at Houston Texans           · CBS · Week 2
     10:00 AM 🏈 Cleveland Browns at Tampa Bay Buccaneers       · CBS · Week 2
