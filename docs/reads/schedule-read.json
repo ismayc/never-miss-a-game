@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T11:03:55.244Z",
+  "generatedAt": "2026-09-17T16:20:43.365Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-17",
@@ -858,7 +858,9 @@
       "homeLabel": "Brentford",
       "awayLabel": "Chelsea",
       "venue": "Gtech Community Stadium, Brentford",
-      "tv": [],
+      "tv": [
+        "USA Net"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -969,7 +971,10 @@
       "homeLabel": "Tottenham Hotspur",
       "awayLabel": "Aston Villa",
       "venue": "Tottenham Hotspur Stadium, London",
-      "tv": [],
+      "tv": [
+        "USA Net",
+        "Universo"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1045,7 +1050,10 @@
       "homeLabel": "Brighton & Hove Albion",
       "awayLabel": "Arsenal",
       "venue": "American Express Stadium, Falmer",
-      "tv": [],
+      "tv": [
+        "USA Net",
+        "Tele"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1228,7 +1236,10 @@
       "homeLabel": "AFC Bournemouth",
       "awayLabel": "Liverpool",
       "venue": "Vitality Stadium, Bournemouth",
-      "tv": [],
+      "tv": [
+        "USA Net",
+        "Tele"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1255,7 +1266,8 @@
       "awayLabel": "Manchester United",
       "venue": "Craven Cottage, London",
       "tv": [
-        "NBC"
+        "NBC",
+        "Tele"
       ],
       "status": "scheduled",
       "seasonType": "regular",
