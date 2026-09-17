@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T17:25:09.910Z",
+  "generatedAt": "2026-09-17T03:39:40.478Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-16",
@@ -381,9 +381,9 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 35d",
+        "label": "Starts in 34d",
         "tone": "soon",
-        "days": 35
+        "days": 34
       },
       "week": {
         "start": "2026-09-13",
@@ -1816,8 +1816,7 @@
         "NBCSN",
         "WWOR-TV",
         "Atlanta News First",
-        "Liberty Live",
-        "Victory+ ATL"
+        "Liberty Live"
       ],
       "status": "scheduled",
       "seasonType": "regular",
