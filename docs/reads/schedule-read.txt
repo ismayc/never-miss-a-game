@@ -1,19 +1,19 @@
 
 GAME-DAY CONCIERGE — schedule read
-Window Thursday, Sep 17 through Wednesday, Sep 23 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-09-18T03:25:35.384Z
+Window Friday, Sep 18 through Thursday, Sep 24 (7 days) · times in America/Phoenix
+Sources 10/10 readable · hub tooling: reused · generated 2026-09-18T10:39:48.966Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
-  🏀 WNBA                   In season      25 in window     next game in 1d (2026-09-18 local)
+  🏀 WNBA                   In season      25 in window     next game today
       ⚠ 5 past matches with no committed result
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
-  ⚽ Premier League         In season      10 in window     next game in 1d (2026-09-18 local)
+  ⚽ Premier League         In season      10 in window     next game today
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
-  🏈 NFL                    In season      16 in window     next game in 3d (2026-09-20 local)
+  🏈 NFL                    In season      16 in window     next game in 2d (2026-09-20 local)
       ⚠ 1 past matches with no committed result
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
-  🏀 NBA                    Starts in 33d  0 in window      next game in 33d (2026-10-20 local)
+  🏀 NBA                    Starts in 33d  0 in window      next game in 32d (2026-10-20 local)
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
@@ -30,27 +30,19 @@ SOURCES
       · Copa América 2024, complete. Uniform -04:00 offset.
 
 FOLLOWED TEAMS
-  Minnesota Lynx           WNBA               3 in window    next in 1d, Friday, Sep 18 at 4:30 PM local — New York Liberty at Minnesota Lynx
-  New York Liberty         WNBA               4 in window    next in 1d, Friday, Sep 18 at 4:30 PM local — New York Liberty at Minnesota Lynx
-  Portland Fire            WNBA               4 in window    next in 1d, Friday, Sep 18 at 7:00 PM local — Portland Fire at Golden State Valkyries
-  Arizona Cardinals        NFL                1 in window    next in 3d, Sunday, Sep 20 at 1:25 PM local — Seattle Seahawks at Arizona Cardinals
-  Seattle Seahawks         NFL                1 in window    next in 3d, Sunday, Sep 20 at 1:25 PM local — Seattle Seahawks at Arizona Cardinals
-  San Francisco 49ers      NFL                1 in window    next in 3d, Sunday, Sep 20 at 1:25 PM local — Miami Dolphins at San Francisco 49ers
-  Los Angeles Rams         NFL                1 in window    next in 4d, Monday, Sep 21 at 5:15 PM local — New York Giants at Los Angeles Rams
-  Manchester City          Premier League     1 in window    next in 3d, Sunday, Sep 20 at 6:00 AM local — Sunderland at Manchester City
-  Liverpool                Premier League     1 in window    next in 3d, Sunday, Sep 20 at 6:00 AM local — Liverpool at AFC Bournemouth
-  Denver Nuggets           NBA                0 in window    next in 35d, Thursday, Oct 22 at 6:30 PM local — Denver Nuggets at Oklahoma City Thunder
-  San Antonio Spurs        NBA                0 in window    next in 33d, Tuesday, Oct 20 at 6:30 PM local — Oklahoma City Thunder at San Antonio Spurs
+  Minnesota Lynx           WNBA               4 in window    plays today
+  New York Liberty         WNBA               4 in window    plays today
+  Portland Fire            WNBA               3 in window    plays today
+  Arizona Cardinals        NFL                1 in window    next in 2d, Sunday, Sep 20 at 1:25 PM local — Seattle Seahawks at Arizona Cardinals
+  Seattle Seahawks         NFL                1 in window    next in 2d, Sunday, Sep 20 at 1:25 PM local — Seattle Seahawks at Arizona Cardinals
+  San Francisco 49ers      NFL                1 in window    next in 2d, Sunday, Sep 20 at 1:25 PM local — Miami Dolphins at San Francisco 49ers
+  Los Angeles Rams         NFL                1 in window    next in 3d, Monday, Sep 21 at 5:15 PM local — New York Giants at Los Angeles Rams
+  Manchester City          Premier League     1 in window    next in 2d, Sunday, Sep 20 at 6:00 AM local — Sunderland at Manchester City
+  Liverpool                Premier League     1 in window    next in 2d, Sunday, Sep 20 at 6:00 AM local — Liverpool at AFC Bournemouth
+  Denver Nuggets           NBA                0 in window    next in 34d, Thursday, Oct 22 at 6:30 PM local — Denver Nuggets at Oklahoma City Thunder
+  San Antonio Spurs        NBA                0 in window    next in 32d, Tuesday, Oct 20 at 6:30 PM local — Oklahoma City Thunder at San Antonio Spurs
 
 IN WINDOW: 51 real games, 15 involving a followed team
-
-  Thursday, Sep 17
-    4:30 PM  🏀 Connecticut Sun at Atlanta Dream               · WNBA League Pass/Atlanta News First
-    5:00 PM  🏀 Washington Mystics at Chicago Sky              · WNBA League Pass/CW26
-    5:00 PM  🏀 Los Angeles Sparks at Dallas Wings             · USA Net/KFAA-TV
-    5:15 PM  🏈 Detroit Lions at Buffalo Bills                 · Prime Video · Week 2
-  ★ 7:00 PM  🏀 Phoenix Mercury at Portland Fire               · WNBA League Pass/Fox 12 Plus
-    7:00 PM  🏀 Las Vegas Aces at Seattle Storm                · USA Net/CNBC
 
   Friday, Sep 18
     12:00 PM ⚽ Chelsea at Brentford                           · USA Net
@@ -108,4 +100,12 @@ IN WINDOW: 51 real games, 15 involving a followed team
   Wednesday, Sep 23
   ★ 5:00 PM  🏀 Atlanta Dream at New York Liberty              · USA Net/WWOR-TV
     7:00 PM  🏀 Dallas Wings at Seattle Storm                  · USA Net/CNBC
+
+  Thursday, Sep 24
+    4:00 PM  🏀 Toronto Tempo at Connecticut Sun               · NBA TV/NBC Sports BO
+    4:30 PM  🏀 Chicago Sky at Washington Mystics              · WNBA League Pass/CW26
+  ★ 5:00 PM  🏀 Indiana Fever at Minnesota Lynx                · USA Net
+    5:15 PM  🏈 Atlanta Falcons at Green Bay Packers           · Prime Video · Week 3
+    7:00 PM  🏀 Golden State Valkyries at Los Angeles Sparks   · WNBA League Pass/KPIX+
+    7:00 PM  🏀 Las Vegas Aces at Phoenix Mercury              · USA Net/CNBC
 
