@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T16:20:43.365Z",
+  "generatedAt": "2026-09-18T03:25:35.982Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-17",
@@ -93,11 +93,11 @@
         "401857204",
         "401857212"
       ],
-      "nextGameUtc": "2026-09-18T02:00:00.000Z",
-      "nextGameLocalDay": "2026-09-17",
-      "nextGameLocal": "Thursday, Sep 17 at 7:00 PM",
-      "nextGameLabel": "Phoenix Mercury at Portland Fire",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-09-19T02:00:00.000Z",
+      "nextGameLocalDay": "2026-09-18",
+      "nextGameLocal": "Friday, Sep 18 at 7:00 PM",
+      "nextGameLabel": "Portland Fire at Golden State Valkyries",
+      "daysUntilNextGame": 1,
       "note": null
     },
     {
@@ -272,10 +272,10 @@
       "counts": {
         "total": 333,
         "final": 302,
-        "scheduled": 30,
+        "scheduled": 25,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 0,
+        "pastUnresolved": 5,
         "inWindow": 25,
         "inWindowReal": 25,
         "inWindowFollowed": 10
@@ -284,10 +284,10 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-09-25T02:00:00.000Z"
       },
-      "nextGameUtc": "2026-09-17T23:30:00.000Z",
-      "nextGameLocalDay": "2026-09-17",
-      "nextGameLabel": "Connecticut Sun at Atlanta Dream",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-09-18T23:30:00.000Z",
+      "nextGameLocalDay": "2026-09-18",
+      "nextGameLabel": "Indiana Fever at Toronto Tempo",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -354,10 +354,10 @@
       "counts": {
         "total": 272,
         "final": 16,
-        "scheduled": 256,
+        "scheduled": 255,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 16,
         "inWindowReal": 16,
         "inWindowFollowed": 3
@@ -366,10 +366,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-09-18T00:15:00.000Z",
-      "nextGameLocalDay": "2026-09-17",
-      "nextGameLabel": "Detroit Lions at Buffalo Bills",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-09-20T17:00:00.000Z",
+      "nextGameLocalDay": "2026-09-20",
+      "nextGameLabel": "Carolina Panthers at Atlanta Falcons",
+      "daysUntilNextGame": 3,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -382,9 +382,9 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 34d",
+        "label": "Starts in 33d",
         "tone": "soon",
-        "days": 34
+        "days": 33
       },
       "week": {
         "start": "2026-09-13",
@@ -691,7 +691,7 @@
         "NBC Sports BO",
         "Victory+ ATL"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
@@ -719,7 +719,7 @@
         "CW26",
         "MNMT"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHI",
@@ -747,7 +747,7 @@
         "KFAA-TV",
         "Spectrum Sports Net"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DAL",
@@ -773,7 +773,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BUF",
@@ -803,7 +803,7 @@
         "Merc+",
         "Arizona's Family 3TV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "POR",
@@ -835,7 +835,7 @@
         "Vegas 34",
         "Prime Video-Seattle"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SEA",
