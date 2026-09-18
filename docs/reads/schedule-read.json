@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T10:39:49.387Z",
+  "generatedAt": "2026-09-18T15:55:08.618Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-18",
@@ -271,11 +271,11 @@
       "commitsScores": true,
       "counts": {
         "total": 333,
-        "final": 302,
+        "final": 307,
         "scheduled": 25,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 5,
+        "pastUnresolved": 0,
         "inWindow": 25,
         "inWindowReal": 25,
         "inWindowFollowed": 10
@@ -353,11 +353,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 16,
+        "final": 17,
         "scheduled": 255,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 16,
         "inWindowReal": 16,
         "inWindowFollowed": 3
@@ -1338,7 +1338,8 @@
       "tv": [
         "WNBA League Pass",
         "NBC Sports BO",
-        "Victory+ MIN"
+        "Victory+ MIN",
+        "Fox 9+"
       ],
       "status": "scheduled",
       "seasonType": "regular",
