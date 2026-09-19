@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T10:23:55.354Z",
+  "generatedAt": "2026-09-19T15:27:04.407Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-19",
@@ -268,11 +268,11 @@
       "commitsScores": true,
       "counts": {
         "total": 333,
-        "final": 307,
+        "final": 310,
         "scheduled": 22,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 3,
+        "pastUnresolved": 0,
         "inWindow": 22,
         "inWindowReal": 22,
         "inWindowFollowed": 8
@@ -308,11 +308,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 40,
-        "scheduled": 339,
+        "final": 41,
+        "scheduled": 335,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 4,
         "inWindow": 9,
         "inWindowReal": 9,
         "inWindowFollowed": 2
@@ -321,9 +321,9 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-09-19T11:30:00.000Z",
+      "nextGameUtc": "2026-09-19T16:30:00.000Z",
       "nextGameLocalDay": "2026-09-19",
-      "nextGameLabel": "Aston Villa at Tottenham Hotspur",
+      "nextGameLabel": "Coventry City at Nottingham Forest",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
@@ -686,7 +686,7 @@
         "USA Net",
         "Universo"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TOT",
@@ -712,7 +712,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "EVE",
@@ -738,7 +738,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NEW",
@@ -765,7 +765,7 @@
         "USA Net",
         "Tele"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BHA",
