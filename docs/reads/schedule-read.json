@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T20:28:17.561Z",
+  "generatedAt": "2026-09-19T03:22:01.439Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-18",
@@ -50,11 +50,11 @@
         "401857209",
         "401857217"
       ],
-      "nextGameUtc": "2026-09-18T23:30:00.000Z",
-      "nextGameLocalDay": "2026-09-18",
-      "nextGameLocal": "Friday, Sep 18 at 4:30 PM",
-      "nextGameLabel": "New York Liberty at Minnesota Lynx",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-09-20T17:00:00.000Z",
+      "nextGameLocalDay": "2026-09-20",
+      "nextGameLocal": "Sunday, Sep 20 at 10:00 AM",
+      "nextGameLabel": "Minnesota Lynx at Connecticut Sun",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -72,11 +72,11 @@
         "401857206",
         "401857213"
       ],
-      "nextGameUtc": "2026-09-18T23:30:00.000Z",
-      "nextGameLocalDay": "2026-09-18",
-      "nextGameLocal": "Friday, Sep 18 at 4:30 PM",
-      "nextGameLabel": "New York Liberty at Minnesota Lynx",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-09-20T19:00:00.000Z",
+      "nextGameLocalDay": "2026-09-20",
+      "nextGameLocal": "Sunday, Sep 20 at 12:00 PM",
+      "nextGameLabel": "New York Liberty at Toronto Tempo",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -93,11 +93,11 @@
         "401857204",
         "401857212"
       ],
-      "nextGameUtc": "2026-09-19T02:00:00.000Z",
-      "nextGameLocalDay": "2026-09-18",
-      "nextGameLocal": "Friday, Sep 18 at 7:00 PM",
-      "nextGameLabel": "Portland Fire at Golden State Valkyries",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-09-20T23:00:00.000Z",
+      "nextGameLocalDay": "2026-09-20",
+      "nextGameLocal": "Sunday, Sep 20 at 4:00 PM",
+      "nextGameLabel": "Portland Fire at Los Angeles Sparks",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -272,10 +272,10 @@
       "counts": {
         "total": 333,
         "final": 307,
-        "scheduled": 25,
+        "scheduled": 22,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 0,
+        "pastUnresolved": 3,
         "inWindow": 25,
         "inWindowReal": 25,
         "inWindowFollowed": 10
@@ -284,10 +284,10 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-09-25T02:00:00.000Z"
       },
-      "nextGameUtc": "2026-09-18T23:30:00.000Z",
-      "nextGameLocalDay": "2026-09-18",
-      "nextGameLabel": "Indiana Fever at Toronto Tempo",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-09-19T17:00:00.000Z",
+      "nextGameLocalDay": "2026-09-19",
+      "nextGameLabel": "Phoenix Mercury at Dallas Wings",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -382,9 +382,9 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 33d",
+        "label": "Starts in 32d",
         "tone": "soon",
-        "days": 33
+        "days": 32
       },
       "week": {
         "start": "2026-09-13",
@@ -716,7 +716,7 @@
         "WNBA League Pass",
         "TSN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TOR",
@@ -743,7 +743,7 @@
         "ION",
         "WNBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIN",
@@ -773,7 +773,7 @@
         "ION",
         "WNBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "GS",
