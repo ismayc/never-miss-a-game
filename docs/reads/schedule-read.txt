@@ -1,16 +1,18 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Sunday, Sep 20 through Saturday, Sep 26 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-09-20T15:32:02.096Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-09-20T20:24:11.394Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
   🏀 WNBA                   In season      19 in window     next game today
+      ⚠ 3 past matches with no committed result
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
   ⚽ Premier League         In season      4 in window      next game in 20d (2026-10-10 local)
       ⚠ 4 past matches with no committed result
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
   🏈 NFL                    In season      16 in window     next game today
+      ⚠ 10 past matches with no committed result
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
   🏀 NBA                    Starts in 31d  0 in window      next game in 30d (2026-10-20 local)
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
@@ -29,8 +31,8 @@ SOURCES
       · Copa América 2024, complete. Uniform -04:00 offset.
 
 FOLLOWED TEAMS
-  Minnesota Lynx           WNBA               3 in window    plays today
-  New York Liberty         WNBA               3 in window    plays today
+  Minnesota Lynx           WNBA               3 in window    next in 2d, Tuesday, Sep 22 at 5:00 PM local — Minnesota Lynx at Indiana Fever
+  New York Liberty         WNBA               3 in window    next in 1d, Monday, Sep 21 at 5:00 PM local — Atlanta Dream at New York Liberty
   Portland Fire            WNBA               2 in window    plays today
   Arizona Cardinals        NFL                1 in window    plays today
   Seattle Seahawks         NFL                1 in window    plays today
