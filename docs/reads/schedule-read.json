@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T10:43:25.293Z",
+  "generatedAt": "2026-09-20T15:32:02.420Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-20",
@@ -185,11 +185,11 @@
       "inWindowGameIds": [
         "401879272"
       ],
-      "nextGameUtc": "2026-09-20T13:00:00.000Z",
-      "nextGameLocalDay": "2026-09-20",
-      "nextGameLocal": "Sunday, Sep 20 at 6:00 AM",
-      "nextGameLabel": "Sunderland at Manchester City",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-11T15:30:00.000Z",
+      "nextGameLocalDay": "2026-10-11",
+      "nextGameLocal": "Sunday, Oct 11 at 8:30 AM",
+      "nextGameLabel": "Manchester City at Liverpool",
+      "daysUntilNextGame": 21,
       "note": null
     },
     {
@@ -204,11 +204,11 @@
       "inWindowGameIds": [
         "401879276"
       ],
-      "nextGameUtc": "2026-09-20T13:00:00.000Z",
-      "nextGameLocalDay": "2026-09-20",
-      "nextGameLocal": "Sunday, Sep 20 at 6:00 AM",
-      "nextGameLabel": "Liverpool at AFC Bournemouth",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-11T15:30:00.000Z",
+      "nextGameLocalDay": "2026-10-11",
+      "nextGameLocal": "Sunday, Oct 11 at 8:30 AM",
+      "nextGameLabel": "Manchester City at Liverpool",
+      "daysUntilNextGame": 21,
       "note": null
     },
     {
@@ -268,11 +268,11 @@
       "commitsScores": true,
       "counts": {
         "total": 333,
-        "final": 311,
+        "final": 313,
         "scheduled": 19,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 2,
+        "pastUnresolved": 0,
         "inWindow": 19,
         "inWindowReal": 19,
         "inWindowFollowed": 8
@@ -309,10 +309,10 @@
       "counts": {
         "total": 380,
         "final": 46,
-        "scheduled": 334,
+        "scheduled": 330,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 4,
         "inWindow": 4,
         "inWindowReal": 4,
         "inWindowFollowed": 2
@@ -321,10 +321,10 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-09-20T13:00:00.000Z",
-      "nextGameLocalDay": "2026-09-20",
-      "nextGameLabel": "Sunderland at Manchester City",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-10T11:30:00.000Z",
+      "nextGameLocalDay": "2026-10-10",
+      "nextGameLabel": "Leeds United at Arsenal",
+      "daysUntilNextGame": 20,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -685,7 +685,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MNC",
@@ -713,7 +713,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LEE",
@@ -740,7 +740,7 @@
         "USA Net",
         "Tele"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BOU",
@@ -769,7 +769,7 @@
         "NBC",
         "Tele"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "FUL",
