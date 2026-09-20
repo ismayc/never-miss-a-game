@@ -1,19 +1,18 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Saturday, Sep 19 through Friday, Sep 25 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-09-19T20:07:02.249Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-09-20T03:38:57.152Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
-  🏀 WNBA                   In season      22 in window     next game today
-      ⚠ 1 past matches with no committed result
+  🏀 WNBA                   In season      22 in window     next game in 1d (2026-09-20 local)
+      ⚠ 2 past matches with no committed result
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
   ⚽ Premier League         In season      9 in window      next game in 1d (2026-09-20 local)
-      ⚠ 5 past matches with no committed result
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
   🏈 NFL                    In season      16 in window     next game in 1d (2026-09-20 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
-  🏀 NBA                    Starts in 32d  0 in window      next game in 31d (2026-10-20 local)
+  🏀 NBA                    Starts in 31d  0 in window      next game in 31d (2026-10-20 local)
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data

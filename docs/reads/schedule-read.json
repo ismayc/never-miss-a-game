@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T20:07:02.846Z",
+  "generatedAt": "2026-09-20T03:38:57.543Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-19",
@@ -268,11 +268,11 @@
       "commitsScores": true,
       "counts": {
         "total": 333,
-        "final": 310,
-        "scheduled": 21,
+        "final": 311,
+        "scheduled": 19,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 1,
+        "pastUnresolved": 2,
         "inWindow": 22,
         "inWindowReal": 22,
         "inWindowFollowed": 8
@@ -281,10 +281,10 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-09-25T02:00:00.000Z"
       },
-      "nextGameUtc": "2026-09-19T23:00:00.000Z",
-      "nextGameLocalDay": "2026-09-19",
-      "nextGameLabel": "Chicago Sky at Atlanta Dream",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-09-20T17:00:00.000Z",
+      "nextGameLocalDay": "2026-09-20",
+      "nextGameLabel": "Minnesota Lynx at Connecticut Sun",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -308,11 +308,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 41,
+        "final": 46,
         "scheduled": 334,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 5,
+        "pastUnresolved": 0,
         "inWindow": 9,
         "inWindowReal": 9,
         "inWindowFollowed": 2
@@ -379,9 +379,9 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 32d",
+        "label": "Starts in 31d",
         "tone": "soon",
-        "days": 32
+        "days": 31
       },
       "week": {
         "start": "2026-09-13",
@@ -686,11 +686,15 @@
         "USA Net",
         "Universo"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TOT",
-        "awayAbbr": "AVL"
+        "awayAbbr": "AVL",
+        "score": [
+          2,
+          3
+        ]
       },
       "localDay": "2026-09-19",
       "localWeekday": "Saturday, Sep 19",
@@ -712,11 +716,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "EVE",
-        "awayAbbr": "IPS"
+        "awayAbbr": "IPS",
+        "score": [
+          1,
+          0
+        ]
       },
       "localDay": "2026-09-19",
       "localWeekday": "Saturday, Sep 19",
@@ -738,11 +746,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NEW",
-        "awayAbbr": "HUL"
+        "awayAbbr": "HUL",
+        "score": [
+          2,
+          1
+        ]
       },
       "localDay": "2026-09-19",
       "localWeekday": "Saturday, Sep 19",
@@ -765,11 +777,15 @@
         "USA Net",
         "Tele"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BHA",
-        "awayAbbr": "ARS"
+        "awayAbbr": "ARS",
+        "score": [
+          3,
+          0
+        ]
       },
       "localDay": "2026-09-19",
       "localWeekday": "Saturday, Sep 19",
@@ -791,11 +807,15 @@
       "tv": [
         "NBC"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NFO",
-        "awayAbbr": "COV"
+        "awayAbbr": "COV",
+        "score": [
+          0,
+          1
+        ]
       },
       "localDay": "2026-09-19",
       "localWeekday": "Saturday, Sep 19",
@@ -818,11 +838,15 @@
         "CBS",
         "Paramount+"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DAL",
-        "awayAbbr": "PHX"
+        "awayAbbr": "PHX",
+        "score": [
+          87,
+          82
+        ]
       },
       "localDay": "2026-09-19",
       "localWeekday": "Saturday, Sep 19",
@@ -844,7 +868,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
@@ -870,7 +894,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "GS",
