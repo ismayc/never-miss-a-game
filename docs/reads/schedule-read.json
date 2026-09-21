@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T20:24:11.954Z",
+  "generatedAt": "2026-09-21T03:34:05.379Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-20",
@@ -90,11 +90,11 @@
         "401857204",
         "401857212"
       ],
-      "nextGameUtc": "2026-09-20T23:00:00.000Z",
-      "nextGameLocalDay": "2026-09-20",
-      "nextGameLocal": "Sunday, Sep 20 at 4:00 PM",
-      "nextGameLabel": "Portland Fire at Los Angeles Sparks",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-09-23T02:00:00.000Z",
+      "nextGameLocalDay": "2026-09-22",
+      "nextGameLocal": "Tuesday, Sep 22 at 7:00 PM",
+      "nextGameLabel": "Golden State Valkyries at Portland Fire",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -109,11 +109,11 @@
       "inWindowGameIds": [
         "401872943"
       ],
-      "nextGameUtc": "2026-09-20T20:25:00.000Z",
-      "nextGameLocalDay": "2026-09-20",
-      "nextGameLocal": "Sunday, Sep 20 at 1:25 PM",
-      "nextGameLabel": "Seattle Seahawks at Arizona Cardinals",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-09-27T20:05:00.000Z",
+      "nextGameLocalDay": "2026-09-27",
+      "nextGameLocal": "Sunday, Sep 27 at 1:05 PM",
+      "nextGameLabel": "Arizona Cardinals at San Francisco 49ers",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -128,11 +128,11 @@
       "inWindowGameIds": [
         "401872943"
       ],
-      "nextGameUtc": "2026-09-20T20:25:00.000Z",
-      "nextGameLocalDay": "2026-09-20",
-      "nextGameLocal": "Sunday, Sep 20 at 1:25 PM",
-      "nextGameLabel": "Seattle Seahawks at Arizona Cardinals",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-09-27T17:00:00.000Z",
+      "nextGameLocalDay": "2026-09-27",
+      "nextGameLocal": "Sunday, Sep 27 at 10:00 AM",
+      "nextGameLabel": "Seattle Seahawks at Washington Commanders",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -147,11 +147,11 @@
       "inWindowGameIds": [
         "401872942"
       ],
-      "nextGameUtc": "2026-09-20T20:25:00.000Z",
-      "nextGameLocalDay": "2026-09-20",
-      "nextGameLocal": "Sunday, Sep 20 at 1:25 PM",
-      "nextGameLabel": "Miami Dolphins at San Francisco 49ers",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-09-27T20:05:00.000Z",
+      "nextGameLocalDay": "2026-09-27",
+      "nextGameLocal": "Sunday, Sep 27 at 1:05 PM",
+      "nextGameLabel": "Arizona Cardinals at San Francisco 49ers",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -268,11 +268,11 @@
       "commitsScores": true,
       "counts": {
         "total": 333,
-        "final": 313,
-        "scheduled": 16,
+        "final": 314,
+        "scheduled": 14,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 3,
+        "pastUnresolved": 4,
         "inWindow": 19,
         "inWindowReal": 19,
         "inWindowFollowed": 8
@@ -281,10 +281,10 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-09-25T02:00:00.000Z"
       },
-      "nextGameUtc": "2026-09-20T23:00:00.000Z",
-      "nextGameLocalDay": "2026-09-20",
-      "nextGameLabel": "Portland Fire at Los Angeles Sparks",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-09-22T00:00:00.000Z",
+      "nextGameLocalDay": "2026-09-21",
+      "nextGameLabel": "Atlanta Dream at New York Liberty",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -308,11 +308,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 46,
+        "final": 50,
         "scheduled": 330,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 4,
+        "pastUnresolved": 0,
         "inWindow": 4,
         "inWindowReal": 4,
         "inWindowFollowed": 2
@@ -350,11 +350,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 17,
-        "scheduled": 245,
+        "final": 28,
+        "scheduled": 241,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 10,
+        "pastUnresolved": 3,
         "inWindow": 16,
         "inWindowReal": 16,
         "inWindowFollowed": 3
@@ -363,10 +363,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-09-20T20:25:00.000Z",
-      "nextGameLocalDay": "2026-09-20",
-      "nextGameLabel": "Miami Dolphins at San Francisco 49ers",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-09-22T00:15:00.000Z",
+      "nextGameLocalDay": "2026-09-21",
+      "nextGameLabel": "New York Giants at Los Angeles Rams",
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -379,9 +379,9 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 31d",
+        "label": "Starts in 30d",
         "tone": "soon",
-        "days": 31
+        "days": 30
       },
       "week": {
         "start": "2026-09-20",
@@ -685,11 +685,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MNC",
-        "awayAbbr": "SUN"
+        "awayAbbr": "SUN",
+        "score": [
+          5,
+          3
+        ]
       },
       "localDay": "2026-09-20",
       "localWeekday": "Sunday, Sep 20",
@@ -713,11 +717,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LEE",
-        "awayAbbr": "CRY"
+        "awayAbbr": "CRY",
+        "score": [
+          0,
+          0
+        ]
       },
       "localDay": "2026-09-20",
       "localWeekday": "Sunday, Sep 20",
@@ -740,11 +748,15 @@
         "USA Net",
         "Tele"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BOU",
-        "awayAbbr": "LIV"
+        "awayAbbr": "LIV",
+        "score": [
+          0,
+          1
+        ]
       },
       "localDay": "2026-09-20",
       "localWeekday": "Sunday, Sep 20",
@@ -769,11 +781,15 @@
         "NBC",
         "Tele"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "FUL",
-        "awayAbbr": "MAN"
+        "awayAbbr": "MAN",
+        "score": [
+          1,
+          1
+        ]
       },
       "localDay": "2026-09-20",
       "localWeekday": "Sunday, Sep 20",
@@ -795,12 +811,16 @@
       "tv": [
         "FOX"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
         "awayAbbr": "CAR",
-        "week": 2
+        "week": 2,
+        "score": [
+          3,
+          34
+        ]
       },
       "localDay": "2026-09-20",
       "localWeekday": "Sunday, Sep 20",
@@ -822,12 +842,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HOU",
         "awayAbbr": "CIN",
-        "week": 2
+        "week": 2,
+        "score": [
+          6,
+          20
+        ]
       },
       "localDay": "2026-09-20",
       "localWeekday": "Sunday, Sep 20",
@@ -849,12 +873,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TB",
         "awayAbbr": "CLE",
-        "week": 2
+        "week": 2,
+        "score": [
+          19,
+          23
+        ]
       },
       "localDay": "2026-09-20",
       "localWeekday": "Sunday, Sep 20",
@@ -876,12 +904,16 @@
       "tv": [
         "FOX"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NYJ",
         "awayAbbr": "GB",
-        "week": 2
+        "week": 2,
+        "score": [
+          17,
+          20
+        ]
       },
       "localDay": "2026-09-20",
       "localWeekday": "Sunday, Sep 20",
@@ -903,12 +935,16 @@
       "tv": [
         "FOX"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHI",
         "awayAbbr": "MIN",
-        "week": 2
+        "week": 2,
+        "score": [
+          3,
+          9
+        ]
       },
       "localDay": "2026-09-20",
       "localWeekday": "Sunday, Sep 20",
@@ -930,12 +966,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BAL",
         "awayAbbr": "NO",
-        "week": 2
+        "week": 2,
+        "score": [
+          17,
+          24
+        ]
       },
       "localDay": "2026-09-20",
       "localWeekday": "Sunday, Sep 20",
@@ -957,12 +997,16 @@
       "tv": [
         "FOX"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TEN",
         "awayAbbr": "PHI",
-        "week": 2
+        "week": 2,
+        "score": [
+          20,
+          24
+        ]
       },
       "localDay": "2026-09-20",
       "localWeekday": "Sunday, Sep 20",
@@ -984,12 +1028,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NE",
         "awayAbbr": "PIT",
-        "week": 2
+        "week": 2,
+        "score": [
+          20,
+          3
+        ]
       },
       "localDay": "2026-09-20",
       "localWeekday": "Sunday, Sep 20",
@@ -1014,11 +1062,15 @@
         "Victory+ MIN",
         "Fox 9+"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CON",
-        "awayAbbr": "MIN"
+        "awayAbbr": "MIN",
+        "score": [
+          89,
+          101
+        ]
       },
       "localDay": "2026-09-20",
       "localWeekday": "Sunday, Sep 20",
@@ -1101,12 +1153,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DEN",
         "awayAbbr": "JAX",
-        "week": 2
+        "week": 2,
+        "score": [
+          20,
+          13
+        ]
       },
       "localDay": "2026-09-20",
       "localWeekday": "Sunday, Sep 20",
@@ -1155,7 +1211,7 @@
       "tv": [
         "FOX"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SF",
@@ -1184,12 +1240,16 @@
       "tv": [
         "FOX"
       ],
-      "status": "scheduled",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ARI",
         "awayAbbr": "SEA",
-        "week": 2
+        "week": 2,
+        "score": [
+          7,
+          31
+        ]
       },
       "localDay": "2026-09-20",
       "localWeekday": "Sunday, Sep 20",
@@ -1214,12 +1274,16 @@
       "tv": [
         "FOX"
       ],
-      "status": "scheduled",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DAL",
         "awayAbbr": "WSH",
-        "week": 2
+        "week": 2,
+        "score": [
+          37,
+          20
+        ]
       },
       "localDay": "2026-09-20",
       "localWeekday": "Sunday, Sep 20",
@@ -1243,7 +1307,7 @@
         "Spectrum Sports Net",
         "Fox 12 Plus"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LA",
@@ -1271,7 +1335,7 @@
       "tv": [
         "NBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "KC",
@@ -1302,7 +1366,7 @@
         "CW Seattle",
         "Prime Video-Seattle"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LV",
