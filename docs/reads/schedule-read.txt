@@ -1,19 +1,19 @@
 
 GAME-DAY CONCIERGE — schedule read
-Window Sunday, Sep 20 through Saturday, Sep 26 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-09-21T03:34:04.820Z
+Window Monday, Sep 21 through Sunday, Sep 27 (7 days) · times in America/Phoenix
+Sources 10/10 readable · hub tooling: reused · generated 2026-09-21T12:07:24.867Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
-  🏀 WNBA                   In season      19 in window     next game in 1d (2026-09-21 local)
+  🏀 WNBA                   In season      14 in window     next game today
       ⚠ 4 past matches with no committed result
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
-  ⚽ Premier League         In season      4 in window      next game in 20d (2026-10-10 local)
+  ⚽ Premier League         Int’l break    0 in window      next game in 19d (2026-10-10 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
-  🏈 NFL                    In season      16 in window     next game in 1d (2026-09-21 local)
+  🏈 NFL                    In season      16 in window     next game today
       ⚠ 3 past matches with no committed result
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
-  🏀 NBA                    Starts in 30d  0 in window      next game in 30d (2026-10-20 local)
+  🏀 NBA                    Starts in 30d  0 in window      next game in 29d (2026-10-20 local)
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
@@ -30,44 +30,19 @@ SOURCES
       · Copa América 2024, complete. Uniform -04:00 offset.
 
 FOLLOWED TEAMS
-  Minnesota Lynx           WNBA               3 in window    next in 2d, Tuesday, Sep 22 at 5:00 PM local — Minnesota Lynx at Indiana Fever
-  New York Liberty         WNBA               3 in window    next in 1d, Monday, Sep 21 at 5:00 PM local — Atlanta Dream at New York Liberty
-  Portland Fire            WNBA               2 in window    next in 2d, Tuesday, Sep 22 at 7:00 PM local — Golden State Valkyries at Portland Fire
-  Arizona Cardinals        NFL                1 in window    next in 7d, Sunday, Sep 27 at 1:05 PM local — Arizona Cardinals at San Francisco 49ers
-  Seattle Seahawks         NFL                1 in window    next in 7d, Sunday, Sep 27 at 10:00 AM local — Seattle Seahawks at Washington Commanders
-  San Francisco 49ers      NFL                1 in window    next in 7d, Sunday, Sep 27 at 1:05 PM local — Arizona Cardinals at San Francisco 49ers
-  Los Angeles Rams         NFL                1 in window    next in 1d, Monday, Sep 21 at 5:15 PM local — New York Giants at Los Angeles Rams
-  Manchester City          Premier League     1 in window    next in 21d, Sunday, Oct 11 at 8:30 AM local — Manchester City at Liverpool
-  Liverpool                Premier League     1 in window    next in 21d, Sunday, Oct 11 at 8:30 AM local — Manchester City at Liverpool
-  Denver Nuggets           NBA                0 in window    next in 32d, Thursday, Oct 22 at 6:30 PM local — Denver Nuggets at Oklahoma City Thunder
-  San Antonio Spurs        NBA                0 in window    next in 30d, Tuesday, Oct 20 at 6:30 PM local — Oklahoma City Thunder at San Antonio Spurs
+  Minnesota Lynx           WNBA               2 in window    next in 1d, Tuesday, Sep 22 at 5:00 PM local — Minnesota Lynx at Indiana Fever
+  New York Liberty         WNBA               2 in window    plays today
+  Portland Fire            WNBA               1 in window    next in 1d, Tuesday, Sep 22 at 7:00 PM local — Golden State Valkyries at Portland Fire
+  Arizona Cardinals        NFL                1 in window    next in 6d, Sunday, Sep 27 at 1:05 PM local — Arizona Cardinals at San Francisco 49ers
+  Seattle Seahawks         NFL                1 in window    next in 6d, Sunday, Sep 27 at 10:00 AM local — Seattle Seahawks at Washington Commanders
+  San Francisco 49ers      NFL                1 in window    next in 6d, Sunday, Sep 27 at 1:05 PM local — Arizona Cardinals at San Francisco 49ers
+  Los Angeles Rams         NFL                2 in window    plays today
+  Manchester City          Premier League     0 in window    next in 20d, Sunday, Oct 11 at 8:30 AM local — Manchester City at Liverpool
+  Liverpool                Premier League     0 in window    next in 20d, Sunday, Oct 11 at 8:30 AM local — Manchester City at Liverpool
+  Denver Nuggets           NBA                0 in window    next in 31d, Thursday, Oct 22 at 6:30 PM local — Denver Nuggets at Oklahoma City Thunder
+  San Antonio Spurs        NBA                0 in window    next in 29d, Tuesday, Oct 20 at 6:30 PM local — Oklahoma City Thunder at San Antonio Spurs
 
-IN WINDOW: 39 real games, 13 involving a followed team
-
-  Sunday, Sep 20
-  ★ 6:00 AM  ⚽ Sunderland at Manchester City                  · Peacock
-    6:00 AM  ⚽ Crystal Palace at Leeds United                 · Peacock
-  ★ 6:00 AM  ⚽ Liverpool at AFC Bournemouth                   · USA Net/Tele
-    8:30 AM  ⚽ Manchester United at Fulham                    · NBC/Tele
-    10:00 AM 🏈 Carolina Panthers at Atlanta Falcons           · FOX · Week 2
-    10:00 AM 🏈 Cincinnati Bengals at Houston Texans           · CBS · Week 2
-    10:00 AM 🏈 Cleveland Browns at Tampa Bay Buccaneers       · CBS · Week 2
-    10:00 AM 🏈 Green Bay Packers at New York Jets             · FOX · Week 2
-    10:00 AM 🏈 Minnesota Vikings at Chicago Bears             · FOX · Week 2
-    10:00 AM 🏈 New Orleans Saints at Baltimore Ravens         · CBS · Week 2
-    10:00 AM 🏈 Philadelphia Eagles at Tennessee Titans        · FOX · Week 2
-    10:00 AM 🏈 Pittsburgh Steelers at New England Patriots    · CBS · Week 2
-  ★ 10:00 AM 🏀 Minnesota Lynx at Connecticut Sun              · WNBA League Pass/NBC Sports BO
-  ★ 12:00 PM 🏀 New York Liberty at Toronto Tempo              · WNBA League Pass/WWOR-TV
-    1:00 PM  🏀 Washington Mystics at Indiana Fever            · NBA TV/WTHR Channel 13
-    1:05 PM  🏈 Jacksonville Jaguars at Denver Broncos         · CBS · Week 2
-    1:05 PM  🏈 Las Vegas Raiders at Los Angeles Chargers      · CBS · Week 2
-  ★ 1:25 PM  🏈 Miami Dolphins at San Francisco 49ers          · FOX · Week 2
-  ★ 1:25 PM  🏈 Seattle Seahawks at Arizona Cardinals          · FOX · Week 2
-    1:25 PM  🏈 Washington Commanders at Dallas Cowboys        · FOX · Week 2
-  ★ 4:00 PM  🏀 Portland Fire at Los Angeles Sparks            · USA Net/Spectrum Sports Net
-    5:20 PM  🏈 Indianapolis Colts at Kansas City Chiefs       · NBC · Week 2
-    6:00 PM  🏀 Seattle Storm at Las Vegas Aces                · USA Net/CNBC
+IN WINDOW: 30 real games, 9 involving a followed team
 
   Monday, Sep 21
   ★ 5:00 PM  🏀 Atlanta Dream at New York Liberty              · Peacock/NBCSN
@@ -92,4 +67,20 @@ IN WINDOW: 39 real games, 13 involving a followed team
     5:15 PM  🏈 Atlanta Falcons at Green Bay Packers           · Prime Video · Week 3
     7:00 PM  🏀 Golden State Valkyries at Los Angeles Sparks   · WNBA League Pass/KPIX+
     7:00 PM  🏀 Las Vegas Aces at Phoenix Mercury              · USA Net/CNBC
+
+  Sunday, Sep 27
+    10:00 AM 🏈 Carolina Panthers at Cleveland Browns          · FOX · Week 3
+    10:00 AM 🏈 Cincinnati Bengals at Pittsburgh Steelers      · CBS · Week 3
+    10:00 AM 🏈 Houston Texans at Indianapolis Colts           · CBS · Week 3
+    10:00 AM 🏈 Kansas City Chiefs at Miami Dolphins           · CBS · Week 3
+    10:00 AM 🏈 Los Angeles Chargers at Buffalo Bills          · FOX · Week 3
+    10:00 AM 🏈 New York Jets at Detroit Lions                 · FOX · Week 3
+  ★ 10:00 AM 🏈 Seattle Seahawks at Washington Commanders      · FOX · Week 3
+    10:00 AM 🏈 Tennessee Titans at New York Giants            · CBS · Week 3
+    10:00 AM 🏈 New England Patriots at Jacksonville Jaguars   · CBS · Week 3
+  ★ 1:05 PM  🏈 Arizona Cardinals at San Francisco 49ers       · FOX · Week 3
+    1:05 PM  🏈 Minnesota Vikings at Tampa Bay Buccaneers      · FOX · Week 3
+    1:25 PM  🏈 Baltimore Ravens at Dallas Cowboys             · CBS · Week 3
+    1:25 PM  🏈 Las Vegas Raiders at New Orleans Saints        · CBS · Week 3
+  ★ 5:20 PM  🏈 Los Angeles Rams at Denver Broncos             · NBC · Week 3
 
