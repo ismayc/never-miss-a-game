@@ -1,17 +1,18 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Tuesday, Sep 22 through Monday, Sep 28 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-09-22T16:22:19.302Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-09-23T03:32:49.734Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
-  🏀 WNBA                   In season      12 in window     next game today
+  🏀 WNBA                   In season      12 in window     next game in 1d (2026-09-23 local)
+      ⚠ 5 past matches with no committed result
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
   ⚽ Premier League         Int’l break    0 in window      next game in 18d (2026-10-10 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
   🏈 NFL                    In season      16 in window     next game in 2d (2026-09-24 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
-  🏀 NBA                    Starts in 29d  0 in window      next game in 28d (2026-10-20 local)
+  🏀 NBA                    Starts in 28d  0 in window      next game in 28d (2026-10-20 local)
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
@@ -28,9 +29,9 @@ SOURCES
       · Copa América 2024, complete. Uniform -04:00 offset.
 
 FOLLOWED TEAMS
-  Minnesota Lynx           WNBA               2 in window    plays today
+  Minnesota Lynx           WNBA               2 in window    next in 2d, Thursday, Sep 24 at 5:00 PM local — Indiana Fever at Minnesota Lynx
   New York Liberty         WNBA               1 in window    next in 1d, Wednesday, Sep 23 at 5:00 PM local — Atlanta Dream at New York Liberty
-  Portland Fire            WNBA               1 in window    plays today
+  Portland Fire            WNBA               1 in window    no future games in committed data (offseason)
   Arizona Cardinals        NFL                1 in window    next in 5d, Sunday, Sep 27 at 1:05 PM local — Arizona Cardinals at San Francisco 49ers
   Seattle Seahawks         NFL                1 in window    next in 5d, Sunday, Sep 27 at 10:00 AM local — Seattle Seahawks at Washington Commanders
   San Francisco 49ers      NFL                1 in window    next in 5d, Sunday, Sep 27 at 1:05 PM local — Arizona Cardinals at San Francisco 49ers
