@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T11:11:35.842Z",
+  "generatedAt": "2026-09-24T16:35:28.089Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-24",
@@ -255,11 +255,11 @@
       "commitsScores": true,
       "counts": {
         "total": 333,
-        "final": 325,
+        "final": 327,
         "scheduled": 5,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 2,
+        "pastUnresolved": 0,
         "inWindow": 5,
         "inWindowReal": 5,
         "inWindowFollowed": 1
