@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T10:51:53.250Z",
+  "generatedAt": "2026-09-24T03:23:11.938Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-23",
@@ -66,11 +66,11 @@
       "inWindowGameIds": [
         "401857213"
       ],
-      "nextGameUtc": "2026-09-24T00:00:00.000Z",
-      "nextGameLocalDay": "2026-09-23",
-      "nextGameLocal": "Wednesday, Sep 23 at 5:00 PM",
-      "nextGameLabel": "Atlanta Dream at New York Liberty",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": null,
+      "nextGameLocalDay": null,
+      "nextGameLocal": null,
+      "nextGameLabel": null,
+      "daysUntilNextGame": null,
       "note": null
     },
     {
@@ -258,10 +258,10 @@
       "counts": {
         "total": 333,
         "final": 325,
-        "scheduled": 7,
+        "scheduled": 5,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 0,
+        "pastUnresolved": 2,
         "inWindow": 7,
         "inWindowReal": 7,
         "inWindowFollowed": 2
@@ -270,10 +270,10 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-09-25T02:00:00.000Z"
       },
-      "nextGameUtc": "2026-09-24T00:00:00.000Z",
-      "nextGameLocalDay": "2026-09-23",
-      "nextGameLabel": "Atlanta Dream at New York Liberty",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-09-24T23:00:00.000Z",
+      "nextGameLocalDay": "2026-09-24",
+      "nextGameLabel": "Toronto Tempo at Connecticut Sun",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -368,9 +368,9 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 28d",
+        "label": "Starts in 27d",
         "tone": "soon",
-        "days": 28
+        "days": 27
       },
       "week": {
         "start": "2026-09-20",
@@ -677,7 +677,7 @@
         "Atlanta News First",
         "Liberty Live"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NY",
@@ -709,7 +709,7 @@
         "KFAA-TV",
         "Prime Video-Seattle"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SEA",
