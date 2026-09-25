@@ -1,17 +1,15 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Friday, Sep 25 through Thursday, Oct 1 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-09-25T11:16:22.394Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-09-25T16:39:57.903Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
-  🏀 WNBA                   In season      0 in window      no upcoming games in committed data
-      ⚠ 5 past matches with no committed result
+  🏀 WNBA                   In season      12 in window     next game in 2d (2026-09-27 local)
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
   ⚽ Premier League         Int’l break    0 in window      next game in 15d (2026-10-10 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
   🏈 NFL                    In season      16 in window     next game in 2d (2026-09-27 local)
-      ⚠ 1 past matches with no committed result
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
   🏀 NBA                    Starts in 26d  0 in window      next game in 25d (2026-10-20 local)
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
@@ -30,8 +28,8 @@ SOURCES
       · Copa América 2024, complete. Uniform -04:00 offset.
 
 FOLLOWED TEAMS
-  Minnesota Lynx           WNBA               0 in window    no future games in committed data (offseason)
-  New York Liberty         WNBA               0 in window    no future games in committed data (offseason)
+  Minnesota Lynx           WNBA               3 in window    next in 2d, Sunday, Sep 27 at 11:00 AM local — New York Liberty at Minnesota Lynx
+  New York Liberty         WNBA               3 in window    next in 2d, Sunday, Sep 27 at 11:00 AM local — New York Liberty at Minnesota Lynx
   Portland Fire            WNBA               0 in window    no future games in committed data (offseason)
   Arizona Cardinals        NFL                1 in window    next in 2d, Sunday, Sep 27 at 1:05 PM local — Arizona Cardinals at San Francisco 49ers
   Seattle Seahawks         NFL                1 in window    next in 2d, Sunday, Sep 27 at 10:00 AM local — Seattle Seahawks at Washington Commanders
@@ -42,7 +40,7 @@ FOLLOWED TEAMS
   Denver Nuggets           NBA                0 in window    next in 27d, Thursday, Oct 22 at 6:30 PM local — Denver Nuggets at Oklahoma City Thunder
   San Antonio Spurs        NBA                0 in window    next in 25d, Tuesday, Oct 20 at 6:30 PM local — Oklahoma City Thunder at San Antonio Spurs
 
-IN WINDOW: 16 real games, 3 involving a followed team
+IN WINDOW: 28 real games, 6 involving a followed team
 
   Sunday, Sep 27
     10:00 AM 🏈 Carolina Panthers at Cleveland Browns          · FOX · Week 3
@@ -54,15 +52,31 @@ IN WINDOW: 16 real games, 3 involving a followed team
   ★ 10:00 AM 🏈 Seattle Seahawks at Washington Commanders      · FOX · Week 3
     10:00 AM 🏈 Tennessee Titans at New York Giants            · CBS · Week 3
     10:00 AM 🏈 New England Patriots at Jacksonville Jaguars   · CBS · Week 3
+  ★ 11:00 AM 🏀 New York Liberty at Minnesota Lynx             · ABC
+    1:00 PM  🏀 Indiana Fever at Las Vegas Aces                · ABC
   ★ 1:05 PM  🏈 Arizona Cardinals at San Francisco 49ers       · FOX · Week 3
     1:05 PM  🏈 Minnesota Vikings at Tampa Bay Buccaneers      · FOX · Week 3
     1:25 PM  🏈 Baltimore Ravens at Dallas Cowboys             · CBS · Week 3
     1:25 PM  🏈 Las Vegas Raiders at New Orleans Saints        · CBS · Week 3
+    4:00 PM  🏀 Washington Mystics at Atlanta Dream            · Prime Video
   ★ 5:20 PM  🏈 Los Angeles Rams at Denver Broncos             · NBC · Week 3
+    6:00 PM  🏀 Dallas Wings at Golden State Valkyries         · USA Net
 
   Monday, Sep 28
     5:15 PM  🏈 Philadelphia Eagles at Chicago Bears           · ESPN/ABC · Week 3
 
+  Tuesday, Sep 29
+    3:30 PM  🏀 Las Vegas Aces at Indiana Fever                · Prime Video
+  ★ 5:30 PM  🏀 Minnesota Lynx at New York Liberty             · USA Net
+
+  Wednesday, Sep 30
+    4:00 PM  🏀 Atlanta Dream at Washington Mystics            · ESPN
+    6:00 PM  🏀 Golden State Valkyries at Dallas Wings         · ESPN
+  ★ 9:00 PM  🏀 New York Liberty at Minnesota Lynx            
+    9:00 PM  🏀 Indiana Fever at Las Vegas Aces               
+
   Thursday, Oct 1
     5:15 PM  🏈 Pittsburgh Steelers at Cleveland Browns        · Prime Video · Week 4
+    9:00 PM  🏀 Washington Mystics at Atlanta Dream           
+    9:00 PM  🏀 Dallas Wings at Golden State Valkyries        
 

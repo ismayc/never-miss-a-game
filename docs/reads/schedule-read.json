@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T11:16:22.887Z",
+  "generatedAt": "2026-09-25T16:39:58.395Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-25",
@@ -42,14 +42,18 @@
       "label": "Minnesota Lynx",
       "why": "Olivia Miles, and the offense generally — the most fun team in the league to actually sit and watch.",
       "sourceStatus": "ok",
-      "totalThisSeason": 44,
-      "inWindow": 0,
-      "inWindowGameIds": [],
-      "nextGameUtc": null,
-      "nextGameLocalDay": null,
-      "nextGameLocal": null,
-      "nextGameLabel": null,
-      "daysUntilNextGame": null,
+      "totalThisSeason": 47,
+      "inWindow": 3,
+      "inWindowGameIds": [
+        "401918014",
+        "401918017",
+        "401918021"
+      ],
+      "nextGameUtc": "2026-09-27T18:00:00.000Z",
+      "nextGameLocalDay": "2026-09-27",
+      "nextGameLocal": "Sunday, Sep 27 at 11:00 AM",
+      "nextGameLabel": "New York Liberty at Minnesota Lynx",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -59,14 +63,18 @@
       "label": "New York Liberty",
       "why": "JJ and Stewie. Two of the best players in the world on the same floor.",
       "sourceStatus": "ok",
-      "totalThisSeason": 46,
-      "inWindow": 0,
-      "inWindowGameIds": [],
-      "nextGameUtc": null,
-      "nextGameLocalDay": null,
-      "nextGameLocal": null,
-      "nextGameLabel": null,
-      "daysUntilNextGame": null,
+      "totalThisSeason": 49,
+      "inWindow": 3,
+      "inWindowGameIds": [
+        "401918014",
+        "401918017",
+        "401918021"
+      ],
+      "nextGameUtc": "2026-09-27T18:00:00.000Z",
+      "nextGameLocalDay": "2026-09-27",
+      "nextGameLocal": "Sunday, Sep 27 at 11:00 AM",
+      "nextGameLabel": "New York Liberty at Minnesota Lynx",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -252,24 +260,24 @@
       "hour12": true,
       "commitsScores": true,
       "counts": {
-        "total": 333,
-        "final": 327,
-        "scheduled": 0,
+        "total": 345,
+        "final": 332,
+        "scheduled": 12,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 5,
-        "inWindow": 0,
-        "inWindowReal": 0,
-        "inWindowFollowed": 0
+        "pastUnresolved": 0,
+        "inWindow": 12,
+        "inWindowReal": 12,
+        "inWindowFollowed": 3
       },
       "dataRange": {
         "first": "2026-05-08T23:30:00.000Z",
-        "last": "2026-09-25T02:00:00.000Z"
+        "last": "2026-10-02T04:00:00.000Z"
       },
-      "nextGameUtc": null,
-      "nextGameLocalDay": null,
-      "nextGameLabel": null,
-      "daysUntilNextGame": null,
+      "nextGameUtc": "2026-09-27T18:00:00.000Z",
+      "nextGameLocalDay": "2026-09-27",
+      "nextGameLabel": "New York Liberty at Minnesota Lynx",
+      "daysUntilNextGame": 2,
       "notes": []
     },
     {
@@ -335,11 +343,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 32,
+        "final": 33,
         "scheduled": 239,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 16,
         "inWindowReal": 16,
         "inWindowFollowed": 3
@@ -651,11 +659,11 @@
   "counts": {
     "sourcesOk": 10,
     "sourcesMissing": 0,
-    "gamesInWindow": 16,
-    "realGamesInWindow": 16,
+    "gamesInWindow": 28,
+    "realGamesInWindow": 28,
     "placeholdersInWindow": 0,
     "postponedInWindow": 0,
-    "followedGamesInWindow": 3
+    "followedGamesInWindow": 6
   },
   "games": [
     {
@@ -904,6 +912,63 @@
       "followed": false
     },
     {
+      "sport": "wnba",
+      "sportName": "WNBA",
+      "emoji": "🏀",
+      "id": "401918014",
+      "startUtc": "2026-09-27T18:00:00.000Z",
+      "homeLabel": "Minnesota Lynx",
+      "awayLabel": "New York Liberty",
+      "venue": "Target Center, Minneapolis",
+      "tv": [
+        "ABC"
+      ],
+      "status": "scheduled",
+      "seasonType": "playoffs",
+      "extra": {
+        "homeAbbr": "MIN",
+        "awayAbbr": "NY",
+        "round": "R1"
+      },
+      "localDay": "2026-09-27",
+      "localWeekday": "Sunday, Sep 27",
+      "localTime": "11:00 AM",
+      "localTimeUser": "11:00 AM",
+      "tz": "America/Phoenix",
+      "followedBy": [
+        "Minnesota Lynx",
+        "New York Liberty"
+      ],
+      "followed": true
+    },
+    {
+      "sport": "wnba",
+      "sportName": "WNBA",
+      "emoji": "🏀",
+      "id": "401918015",
+      "startUtc": "2026-09-27T20:00:00.000Z",
+      "homeLabel": "Las Vegas Aces",
+      "awayLabel": "Indiana Fever",
+      "venue": "Michelob ULTRA Arena, Las Vegas",
+      "tv": [
+        "ABC"
+      ],
+      "status": "scheduled",
+      "seasonType": "playoffs",
+      "extra": {
+        "homeAbbr": "LV",
+        "awayAbbr": "IND",
+        "round": "R1"
+      },
+      "localDay": "2026-09-27",
+      "localWeekday": "Sunday, Sep 27",
+      "localTime": "1:00 PM",
+      "localTimeUser": "1:00 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
+    },
+    {
       "sport": "nfl",
       "sportName": "NFL",
       "emoji": "🏈",
@@ -1016,6 +1081,33 @@
       "followed": false
     },
     {
+      "sport": "wnba",
+      "sportName": "WNBA",
+      "emoji": "🏀",
+      "id": "401918013",
+      "startUtc": "2026-09-27T23:00:00.000Z",
+      "homeLabel": "Atlanta Dream",
+      "awayLabel": "Washington Mystics",
+      "venue": "State Farm Arena, Atlanta",
+      "tv": [
+        "Prime Video"
+      ],
+      "status": "scheduled",
+      "seasonType": "playoffs",
+      "extra": {
+        "homeAbbr": "ATL",
+        "awayAbbr": "WSH",
+        "round": "R1"
+      },
+      "localDay": "2026-09-27",
+      "localWeekday": "Sunday, Sep 27",
+      "localTime": "4:00 PM",
+      "localTimeUser": "4:00 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
+    },
+    {
       "sport": "nfl",
       "sportName": "NFL",
       "emoji": "🏈",
@@ -1043,6 +1135,33 @@
         "Los Angeles Rams"
       ],
       "followed": true
+    },
+    {
+      "sport": "wnba",
+      "sportName": "WNBA",
+      "emoji": "🏀",
+      "id": "401918016",
+      "startUtc": "2026-09-28T01:00:00.000Z",
+      "homeLabel": "Golden State Valkyries",
+      "awayLabel": "Dallas Wings",
+      "venue": "Chase Center, San Francisco",
+      "tv": [
+        "USA Net"
+      ],
+      "status": "scheduled",
+      "seasonType": "playoffs",
+      "extra": {
+        "homeAbbr": "GS",
+        "awayAbbr": "DAL",
+        "round": "R1"
+      },
+      "localDay": "2026-09-27",
+      "localWeekday": "Sunday, Sep 27",
+      "localTime": "6:00 PM",
+      "localTimeUser": "6:00 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
     },
     {
       "sport": "nfl",
@@ -1073,6 +1192,170 @@
       "followed": false
     },
     {
+      "sport": "wnba",
+      "sportName": "WNBA",
+      "emoji": "🏀",
+      "id": "401918018",
+      "startUtc": "2026-09-29T22:30:00.000Z",
+      "homeLabel": "Indiana Fever",
+      "awayLabel": "Las Vegas Aces",
+      "venue": "Gainbridge Fieldhouse, Indianapolis",
+      "tv": [
+        "Prime Video"
+      ],
+      "status": "scheduled",
+      "seasonType": "playoffs",
+      "extra": {
+        "homeAbbr": "IND",
+        "awayAbbr": "LV",
+        "round": "R1"
+      },
+      "localDay": "2026-09-29",
+      "localWeekday": "Tuesday, Sep 29",
+      "localTime": "3:30 PM",
+      "localTimeUser": "3:30 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
+    },
+    {
+      "sport": "wnba",
+      "sportName": "WNBA",
+      "emoji": "🏀",
+      "id": "401918017",
+      "startUtc": "2026-09-30T00:30:00.000Z",
+      "homeLabel": "New York Liberty",
+      "awayLabel": "Minnesota Lynx",
+      "venue": "Barclays Center, Brooklyn",
+      "tv": [
+        "USA Net"
+      ],
+      "status": "scheduled",
+      "seasonType": "playoffs",
+      "extra": {
+        "homeAbbr": "NY",
+        "awayAbbr": "MIN",
+        "round": "R1"
+      },
+      "localDay": "2026-09-29",
+      "localWeekday": "Tuesday, Sep 29",
+      "localTime": "5:30 PM",
+      "localTimeUser": "5:30 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [
+        "Minnesota Lynx",
+        "New York Liberty"
+      ],
+      "followed": true
+    },
+    {
+      "sport": "wnba",
+      "sportName": "WNBA",
+      "emoji": "🏀",
+      "id": "401918019",
+      "startUtc": "2026-09-30T23:00:00.000Z",
+      "homeLabel": "Washington Mystics",
+      "awayLabel": "Atlanta Dream",
+      "venue": "CareFirst Arena, Washington",
+      "tv": [
+        "ESPN"
+      ],
+      "status": "scheduled",
+      "seasonType": "playoffs",
+      "extra": {
+        "homeAbbr": "WSH",
+        "awayAbbr": "ATL",
+        "round": "R1"
+      },
+      "localDay": "2026-09-30",
+      "localWeekday": "Wednesday, Sep 30",
+      "localTime": "4:00 PM",
+      "localTimeUser": "4:00 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
+    },
+    {
+      "sport": "wnba",
+      "sportName": "WNBA",
+      "emoji": "🏀",
+      "id": "401918020",
+      "startUtc": "2026-10-01T01:00:00.000Z",
+      "homeLabel": "Dallas Wings",
+      "awayLabel": "Golden State Valkyries",
+      "venue": "College Park Center, Arlington",
+      "tv": [
+        "ESPN"
+      ],
+      "status": "scheduled",
+      "seasonType": "playoffs",
+      "extra": {
+        "homeAbbr": "DAL",
+        "awayAbbr": "GS",
+        "round": "R1"
+      },
+      "localDay": "2026-09-30",
+      "localWeekday": "Wednesday, Sep 30",
+      "localTime": "6:00 PM",
+      "localTimeUser": "6:00 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
+    },
+    {
+      "sport": "wnba",
+      "sportName": "WNBA",
+      "emoji": "🏀",
+      "id": "401918021",
+      "startUtc": "2026-10-01T04:00:00.000Z",
+      "homeLabel": "Minnesota Lynx",
+      "awayLabel": "New York Liberty",
+      "venue": "Target Center, Minneapolis",
+      "tv": [],
+      "status": "scheduled",
+      "seasonType": "playoffs",
+      "extra": {
+        "homeAbbr": "MIN",
+        "awayAbbr": "NY",
+        "round": "R1"
+      },
+      "localDay": "2026-09-30",
+      "localWeekday": "Wednesday, Sep 30",
+      "localTime": "9:00 PM",
+      "localTimeUser": "9:00 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [
+        "Minnesota Lynx",
+        "New York Liberty"
+      ],
+      "followed": true
+    },
+    {
+      "sport": "wnba",
+      "sportName": "WNBA",
+      "emoji": "🏀",
+      "id": "401918022",
+      "startUtc": "2026-10-01T04:00:00.000Z",
+      "homeLabel": "Las Vegas Aces",
+      "awayLabel": "Indiana Fever",
+      "venue": "Michelob ULTRA Arena, Las Vegas",
+      "tv": [],
+      "status": "scheduled",
+      "seasonType": "playoffs",
+      "extra": {
+        "homeAbbr": "LV",
+        "awayAbbr": "IND",
+        "round": "R1"
+      },
+      "localDay": "2026-09-30",
+      "localWeekday": "Wednesday, Sep 30",
+      "localTime": "9:00 PM",
+      "localTimeUser": "9:00 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
+    },
+    {
       "sport": "nfl",
       "sportName": "NFL",
       "emoji": "🏈",
@@ -1095,6 +1378,56 @@
       "localWeekday": "Thursday, Oct 1",
       "localTime": "5:15 PM",
       "localTimeUser": "5:15 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
+    },
+    {
+      "sport": "wnba",
+      "sportName": "WNBA",
+      "emoji": "🏀",
+      "id": "401918293",
+      "startUtc": "2026-10-02T04:00:00.000Z",
+      "homeLabel": "Atlanta Dream",
+      "awayLabel": "Washington Mystics",
+      "venue": "State Farm Arena, Atlanta",
+      "tv": [],
+      "status": "scheduled",
+      "seasonType": "playoffs",
+      "extra": {
+        "homeAbbr": "ATL",
+        "awayAbbr": "WSH",
+        "round": "R1"
+      },
+      "localDay": "2026-10-01",
+      "localWeekday": "Thursday, Oct 1",
+      "localTime": "9:00 PM",
+      "localTimeUser": "9:00 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
+    },
+    {
+      "sport": "wnba",
+      "sportName": "WNBA",
+      "emoji": "🏀",
+      "id": "401918294",
+      "startUtc": "2026-10-02T04:00:00.000Z",
+      "homeLabel": "Golden State Valkyries",
+      "awayLabel": "Dallas Wings",
+      "venue": "Chase Center, San Francisco",
+      "tv": [],
+      "status": "scheduled",
+      "seasonType": "playoffs",
+      "extra": {
+        "homeAbbr": "GS",
+        "awayAbbr": "DAL",
+        "round": "R1"
+      },
+      "localDay": "2026-10-01",
+      "localWeekday": "Thursday, Oct 1",
+      "localTime": "9:00 PM",
+      "localTimeUser": "9:00 PM",
       "tz": "America/Phoenix",
       "followedBy": [],
       "followed": false
