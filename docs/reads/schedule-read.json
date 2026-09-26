@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-09-26T03:46:36.391Z",
+  "generatedAt": "2026-09-26T10:53:10.911Z",
   "tz": "America/Phoenix",
   "window": {
-    "from": "2026-09-25",
-    "to": "2026-10-01",
+    "from": "2026-09-26",
+    "to": "2026-10-02",
     "days": 7,
     "localDays": [
-      "2026-09-25",
       "2026-09-26",
       "2026-09-27",
       "2026-09-28",
       "2026-09-29",
       "2026-09-30",
-      "2026-10-01"
+      "2026-10-01",
+      "2026-10-02"
     ]
   },
   "root": "/home/runner/work/never-miss-a-game/sports-trackers",
@@ -53,7 +53,7 @@
       "nextGameLocalDay": "2026-09-27",
       "nextGameLocal": "Sunday, Sep 27 at 11:00 AM",
       "nextGameLabel": "New York Liberty at Minnesota Lynx",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "note": null
     },
     {
@@ -74,7 +74,7 @@
       "nextGameLocalDay": "2026-09-27",
       "nextGameLocal": "Sunday, Sep 27 at 11:00 AM",
       "nextGameLabel": "New York Liberty at Minnesota Lynx",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "note": null
     },
     {
@@ -110,7 +110,7 @@
       "nextGameLocalDay": "2026-09-27",
       "nextGameLocal": "Sunday, Sep 27 at 1:05 PM",
       "nextGameLabel": "Arizona Cardinals at San Francisco 49ers",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "note": null
     },
     {
@@ -129,7 +129,7 @@
       "nextGameLocalDay": "2026-09-27",
       "nextGameLocal": "Sunday, Sep 27 at 10:00 AM",
       "nextGameLabel": "Seattle Seahawks at Washington Commanders",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "note": null
     },
     {
@@ -148,7 +148,7 @@
       "nextGameLocalDay": "2026-09-27",
       "nextGameLocal": "Sunday, Sep 27 at 1:05 PM",
       "nextGameLabel": "Arizona Cardinals at San Francisco 49ers",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "note": null
     },
     {
@@ -167,7 +167,7 @@
       "nextGameLocalDay": "2026-09-27",
       "nextGameLocal": "Sunday, Sep 27 at 5:20 PM",
       "nextGameLabel": "Los Angeles Rams at Denver Broncos",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "note": null
     },
     {
@@ -184,7 +184,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 8:30 AM",
       "nextGameLabel": "Manchester City at Liverpool",
-      "daysUntilNextGame": 16,
+      "daysUntilNextGame": 15,
       "note": null
     },
     {
@@ -201,7 +201,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 8:30 AM",
       "nextGameLabel": "Manchester City at Liverpool",
-      "daysUntilNextGame": 16,
+      "daysUntilNextGame": 15,
       "note": null
     },
     {
@@ -218,7 +218,7 @@
       "nextGameLocalDay": "2026-10-22",
       "nextGameLocal": "Thursday, Oct 22 at 6:30 PM",
       "nextGameLabel": "Denver Nuggets at Oklahoma City Thunder",
-      "daysUntilNextGame": 27,
+      "daysUntilNextGame": 26,
       "note": null
     },
     {
@@ -235,7 +235,7 @@
       "nextGameLocalDay": "2026-10-20",
       "nextGameLocal": "Tuesday, Oct 20 at 6:30 PM",
       "nextGameLabel": "Oklahoma City Thunder at San Antonio Spurs",
-      "daysUntilNextGame": 25,
+      "daysUntilNextGame": 24,
       "note": null
     }
   ],
@@ -277,7 +277,7 @@
       "nextGameUtc": "2026-09-27T18:00:00.000Z",
       "nextGameLocalDay": "2026-09-27",
       "nextGameLabel": "New York Liberty at Minnesota Lynx",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -317,7 +317,7 @@
       "nextGameUtc": "2026-10-10T11:30:00.000Z",
       "nextGameLocalDay": "2026-10-10",
       "nextGameLabel": "Leeds United at Arsenal",
-      "daysUntilNextGame": 15,
+      "daysUntilNextGame": 14,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -359,7 +359,7 @@
       "nextGameUtc": "2026-09-27T17:00:00.000Z",
       "nextGameLocalDay": "2026-09-27",
       "nextGameLabel": "Carolina Panthers at Cleveland Browns",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -402,7 +402,7 @@
       "nextGameUtc": "2026-10-20T19:00:00.000Z",
       "nextGameLocalDay": "2026-10-20",
       "nextGameLabel": "Boston Celtics at Detroit Pistons",
-      "daysUntilNextGame": 25,
+      "daysUntilNextGame": 24,
       "notes": []
     },
     {
