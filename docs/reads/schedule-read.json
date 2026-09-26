@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T10:53:10.911Z",
+  "generatedAt": "2026-09-26T15:53:27.678Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-26",
@@ -1229,7 +1229,8 @@
       "awayLabel": "Minnesota Lynx",
       "venue": "Barclays Center, Brooklyn",
       "tv": [
-        "USA Net"
+        "USA Net",
+        "CNBC"
       ],
       "status": "scheduled",
       "seasonType": "playoffs",

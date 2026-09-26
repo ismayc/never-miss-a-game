@@ -1,7 +1,7 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Saturday, Sep 26 through Friday, Oct 2 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-09-26T10:53:10.510Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-09-26T15:53:27.084Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
@@ -67,7 +67,7 @@ IN WINDOW: 28 real games, 6 involving a followed team
 
   Tuesday, Sep 29
     3:30 PM  🏀 Las Vegas Aces at Indiana Fever                · Prime Video
-  ★ 5:30 PM  🏀 Minnesota Lynx at New York Liberty             · USA Net
+  ★ 5:30 PM  🏀 Minnesota Lynx at New York Liberty             · USA Net/CNBC
 
   Wednesday, Sep 30
     4:00 PM  🏀 Atlanta Dream at Washington Mystics            · ESPN
