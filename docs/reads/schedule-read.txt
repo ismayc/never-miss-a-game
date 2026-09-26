@@ -1,7 +1,7 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Friday, Sep 25 through Thursday, Oct 1 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-09-25T16:39:57.903Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-09-26T03:46:35.769Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
@@ -11,7 +11,7 @@ SOURCES
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
   🏈 NFL                    In season      16 in window     next game in 2d (2026-09-27 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
-  🏀 NBA                    Starts in 26d  0 in window      next game in 25d (2026-10-20 local)
+  🏀 NBA                    Starts in 25d  0 in window      next game in 25d (2026-10-20 local)
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
@@ -60,7 +60,7 @@ IN WINDOW: 28 real games, 6 involving a followed team
     1:25 PM  🏈 Las Vegas Raiders at New Orleans Saints        · CBS · Week 3
     4:00 PM  🏀 Washington Mystics at Atlanta Dream            · Prime Video
   ★ 5:20 PM  🏈 Los Angeles Rams at Denver Broncos             · NBC · Week 3
-    6:00 PM  🏀 Dallas Wings at Golden State Valkyries         · USA Net
+    6:00 PM  🏀 Dallas Wings at Golden State Valkyries         · USA Net/CNBC
 
   Monday, Sep 28
     5:15 PM  🏈 Philadelphia Eagles at Chicago Bears           · ESPN/ABC · Week 3
