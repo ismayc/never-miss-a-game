@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T11:29:49.044Z",
+  "generatedAt": "2026-09-27T17:23:21.233Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-27",
@@ -125,11 +125,11 @@
       "inWindowGameIds": [
         "401872955"
       ],
-      "nextGameUtc": "2026-09-27T17:00:00.000Z",
-      "nextGameLocalDay": "2026-09-27",
-      "nextGameLocal": "Sunday, Sep 27 at 10:00 AM",
-      "nextGameLabel": "Seattle Seahawks at Washington Commanders",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-04T20:25:00.000Z",
+      "nextGameLocalDay": "2026-10-04",
+      "nextGameLocal": "Sunday, Oct 4 at 1:25 PM",
+      "nextGameLabel": "Los Angeles Chargers at Seattle Seahawks",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -344,10 +344,10 @@
       "counts": {
         "total": 272,
         "final": 33,
-        "scheduled": 239,
+        "scheduled": 230,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 9,
         "inWindow": 16,
         "inWindowReal": 16,
         "inWindowFollowed": 3
@@ -356,9 +356,9 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-09-27T17:00:00.000Z",
+      "nextGameUtc": "2026-09-27T20:05:00.000Z",
       "nextGameLocalDay": "2026-09-27",
-      "nextGameLabel": "Carolina Panthers at Cleveland Browns",
+      "nextGameLabel": "Arizona Cardinals at San Francisco 49ers",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
@@ -678,7 +678,7 @@
       "tv": [
         "FOX"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CLE",
@@ -705,7 +705,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PIT",
@@ -732,7 +732,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IND",
@@ -759,7 +759,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIA",
@@ -786,7 +786,7 @@
       "tv": [
         "FOX"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BUF",
@@ -813,7 +813,7 @@
       "tv": [
         "FOX"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DET",
@@ -840,7 +840,7 @@
       "tv": [
         "FOX"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "WSH",
@@ -869,7 +869,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NYG",
@@ -896,7 +896,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "JAX",
