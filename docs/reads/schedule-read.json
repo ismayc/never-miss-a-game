@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T17:23:21.233Z",
+  "generatedAt": "2026-09-27T20:58:16.713Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-27",
@@ -49,11 +49,11 @@
         "401918017",
         "401918021"
       ],
-      "nextGameUtc": "2026-09-27T18:00:00.000Z",
-      "nextGameLocalDay": "2026-09-27",
-      "nextGameLocal": "Sunday, Sep 27 at 11:00 AM",
-      "nextGameLabel": "New York Liberty at Minnesota Lynx",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-09-30T00:30:00.000Z",
+      "nextGameLocalDay": "2026-09-29",
+      "nextGameLocal": "Tuesday, Sep 29 at 5:30 PM",
+      "nextGameLabel": "Minnesota Lynx at New York Liberty",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -70,11 +70,11 @@
         "401918017",
         "401918021"
       ],
-      "nextGameUtc": "2026-09-27T18:00:00.000Z",
-      "nextGameLocalDay": "2026-09-27",
-      "nextGameLocal": "Sunday, Sep 27 at 11:00 AM",
-      "nextGameLabel": "New York Liberty at Minnesota Lynx",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-09-30T00:30:00.000Z",
+      "nextGameLocalDay": "2026-09-29",
+      "nextGameLocal": "Tuesday, Sep 29 at 5:30 PM",
+      "nextGameLabel": "Minnesota Lynx at New York Liberty",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -106,11 +106,11 @@
       "inWindowGameIds": [
         "401872958"
       ],
-      "nextGameUtc": "2026-09-27T20:05:00.000Z",
-      "nextGameLocalDay": "2026-09-27",
-      "nextGameLocal": "Sunday, Sep 27 at 1:05 PM",
-      "nextGameLabel": "Arizona Cardinals at San Francisco 49ers",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-04T17:00:00.000Z",
+      "nextGameLocalDay": "2026-10-04",
+      "nextGameLocal": "Sunday, Oct 4 at 10:00 AM",
+      "nextGameLabel": "Arizona Cardinals at New York Giants",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -144,11 +144,11 @@
       "inWindowGameIds": [
         "401872958"
       ],
-      "nextGameUtc": "2026-09-27T20:05:00.000Z",
-      "nextGameLocalDay": "2026-09-27",
-      "nextGameLocal": "Sunday, Sep 27 at 1:05 PM",
-      "nextGameLabel": "Arizona Cardinals at San Francisco 49ers",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-04T20:25:00.000Z",
+      "nextGameLocalDay": "2026-10-04",
+      "nextGameLocal": "Sunday, Oct 4 at 1:25 PM",
+      "nextGameLabel": "Denver Broncos at San Francisco 49ers",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -262,10 +262,10 @@
       "counts": {
         "total": 345,
         "final": 332,
-        "scheduled": 12,
+        "scheduled": 10,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 0,
+        "pastUnresolved": 2,
         "inWindow": 12,
         "inWindowReal": 12,
         "inWindowFollowed": 3
@@ -274,9 +274,9 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-10-02T04:00:00.000Z"
       },
-      "nextGameUtc": "2026-09-27T18:00:00.000Z",
+      "nextGameUtc": "2026-09-27T23:00:00.000Z",
       "nextGameLocalDay": "2026-09-27",
-      "nextGameLabel": "New York Liberty at Minnesota Lynx",
+      "nextGameLabel": "Washington Mystics at Atlanta Dream",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -344,10 +344,10 @@
       "counts": {
         "total": 272,
         "final": 33,
-        "scheduled": 230,
+        "scheduled": 226,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 9,
+        "pastUnresolved": 13,
         "inWindow": 16,
         "inWindowReal": 16,
         "inWindowFollowed": 3
@@ -356,9 +356,9 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-09-27T20:05:00.000Z",
+      "nextGameUtc": "2026-09-28T00:20:00.000Z",
       "nextGameLocalDay": "2026-09-27",
-      "nextGameLabel": "Arizona Cardinals at San Francisco 49ers",
+      "nextGameLabel": "Los Angeles Rams at Denver Broncos",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
@@ -923,7 +923,7 @@
       "tv": [
         "ABC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "MIN",
@@ -953,7 +953,7 @@
       "tv": [
         "ABC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "LV",
@@ -980,7 +980,7 @@
       "tv": [
         "FOX"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SF",
@@ -1010,7 +1010,7 @@
       "tv": [
         "FOX"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TB",
@@ -1037,7 +1037,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DAL",
@@ -1065,7 +1065,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NO",
