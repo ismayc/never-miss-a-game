@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T13:02:23.498Z",
+  "generatedAt": "2026-09-28T19:56:51.859Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-28",
@@ -259,11 +259,11 @@
       "commitsScores": true,
       "counts": {
         "total": 345,
-        "final": 333,
+        "final": 336,
         "scheduled": 8,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 3,
+        "pastUnresolved": 0,
         "inWindow": 8,
         "inWindowReal": 8,
         "inWindowFollowed": 2
@@ -341,11 +341,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 42,
+        "final": 47,
         "scheduled": 225,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 5,
+        "pastUnresolved": 0,
         "inWindow": 16,
         "inWindowReal": 16,
         "inWindowFollowed": 4
