@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-09-29T04:29:53.321Z",
+  "generatedAt": "2026-09-29T12:13:29.182Z",
   "tz": "America/Phoenix",
   "window": {
-    "from": "2026-09-28",
-    "to": "2026-10-04",
+    "from": "2026-09-29",
+    "to": "2026-10-05",
     "days": 7,
     "localDays": [
-      "2026-09-28",
       "2026-09-29",
       "2026-09-30",
       "2026-10-01",
       "2026-10-02",
       "2026-10-03",
-      "2026-10-04"
+      "2026-10-04",
+      "2026-10-05"
     ]
   },
   "root": "/home/runner/work/never-miss-a-game/sports-trackers",
@@ -52,7 +52,7 @@
       "nextGameLocalDay": "2026-09-29",
       "nextGameLocal": "Tuesday, Sep 29 at 5:30 PM",
       "nextGameLabel": "Minnesota Lynx at New York Liberty",
-      "daysUntilNextGame": 1,
+      "daysUntilNextGame": 0,
       "note": null
     },
     {
@@ -72,7 +72,7 @@
       "nextGameLocalDay": "2026-09-29",
       "nextGameLocal": "Tuesday, Sep 29 at 5:30 PM",
       "nextGameLabel": "Minnesota Lynx at New York Liberty",
-      "daysUntilNextGame": 1,
+      "daysUntilNextGame": 0,
       "note": null
     },
     {
@@ -108,7 +108,7 @@
       "nextGameLocalDay": "2026-10-04",
       "nextGameLocal": "Sunday, Oct 4 at 10:00 AM",
       "nextGameLabel": "Arizona Cardinals at New York Giants",
-      "daysUntilNextGame": 6,
+      "daysUntilNextGame": 5,
       "note": null
     },
     {
@@ -127,7 +127,7 @@
       "nextGameLocalDay": "2026-10-04",
       "nextGameLocal": "Sunday, Oct 4 at 1:25 PM",
       "nextGameLabel": "Los Angeles Chargers at Seattle Seahawks",
-      "daysUntilNextGame": 6,
+      "daysUntilNextGame": 5,
       "note": null
     },
     {
@@ -146,7 +146,7 @@
       "nextGameLocalDay": "2026-10-04",
       "nextGameLocal": "Sunday, Oct 4 at 1:25 PM",
       "nextGameLabel": "Denver Broncos at San Francisco 49ers",
-      "daysUntilNextGame": 6,
+      "daysUntilNextGame": 5,
       "note": null
     },
     {
@@ -165,7 +165,7 @@
       "nextGameLocalDay": "2026-10-04",
       "nextGameLocal": "Sunday, Oct 4 at 10:00 AM",
       "nextGameLabel": "Los Angeles Rams at Philadelphia Eagles",
-      "daysUntilNextGame": 6,
+      "daysUntilNextGame": 5,
       "note": null
     },
     {
@@ -182,7 +182,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 8:30 AM",
       "nextGameLabel": "Manchester City at Liverpool",
-      "daysUntilNextGame": 13,
+      "daysUntilNextGame": 12,
       "note": null
     },
     {
@@ -199,7 +199,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 8:30 AM",
       "nextGameLabel": "Manchester City at Liverpool",
-      "daysUntilNextGame": 13,
+      "daysUntilNextGame": 12,
       "note": null
     },
     {
@@ -216,7 +216,7 @@
       "nextGameLocalDay": "2026-10-22",
       "nextGameLocal": "Thursday, Oct 22 at 6:30 PM",
       "nextGameLabel": "Denver Nuggets at Oklahoma City Thunder",
-      "daysUntilNextGame": 24,
+      "daysUntilNextGame": 23,
       "note": null
     },
     {
@@ -233,7 +233,7 @@
       "nextGameLocalDay": "2026-10-20",
       "nextGameLocal": "Tuesday, Oct 20 at 6:30 PM",
       "nextGameLabel": "Oklahoma City Thunder at San Antonio Spurs",
-      "daysUntilNextGame": 22,
+      "daysUntilNextGame": 21,
       "note": null
     }
   ],
@@ -275,7 +275,7 @@
       "nextGameUtc": "2026-09-29T22:30:00.000Z",
       "nextGameLocalDay": "2026-09-29",
       "nextGameLabel": "Las Vegas Aces at Indiana Fever",
-      "daysUntilNextGame": 1,
+      "daysUntilNextGame": 0,
       "notes": []
     },
     {
@@ -315,7 +315,7 @@
       "nextGameUtc": "2026-10-10T11:30:00.000Z",
       "nextGameLocalDay": "2026-10-10",
       "nextGameLabel": "Leeds United at Arsenal",
-      "daysUntilNextGame": 12,
+      "daysUntilNextGame": 11,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -357,7 +357,7 @@
       "nextGameUtc": "2026-10-02T00:15:00.000Z",
       "nextGameLocalDay": "2026-10-01",
       "nextGameLabel": "Pittsburgh Steelers at Cleveland Browns",
-      "daysUntilNextGame": 3,
+      "daysUntilNextGame": 2,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -400,7 +400,7 @@
       "nextGameUtc": "2026-10-20T19:00:00.000Z",
       "nextGameLocalDay": "2026-10-20",
       "nextGameLabel": "Boston Celtics at Detroit Pistons",
-      "daysUntilNextGame": 22,
+      "daysUntilNextGame": 21,
       "notes": []
     },
     {
@@ -664,34 +664,6 @@
     "followedGamesInWindow": 6
   },
   "games": [
-    {
-      "sport": "nfl",
-      "sportName": "NFL",
-      "emoji": "🏈",
-      "id": "401872963",
-      "startUtc": "2026-09-29T00:15:00.000Z",
-      "homeLabel": "Chicago Bears",
-      "awayLabel": "Philadelphia Eagles",
-      "venue": "Soldier Field, Chicago",
-      "tv": [
-        "ESPN",
-        "ABC"
-      ],
-      "status": "past-unresolved",
-      "seasonType": "regular",
-      "extra": {
-        "homeAbbr": "CHI",
-        "awayAbbr": "PHI",
-        "week": 3
-      },
-      "localDay": "2026-09-28",
-      "localWeekday": "Monday, Sep 28",
-      "localTime": "5:15 PM",
-      "localTimeUser": "5:15 PM",
-      "tz": "America/Phoenix",
-      "followedBy": [],
-      "followed": false
-    },
     {
       "sport": "wnba",
       "sportName": "WNBA",
@@ -1322,6 +1294,33 @@
       "localWeekday": "Sunday, Oct 4",
       "localTime": "5:20 PM",
       "localTimeUser": "5:20 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
+    },
+    {
+      "sport": "nfl",
+      "sportName": "NFL",
+      "emoji": "🏈",
+      "id": "401872979",
+      "startUtc": "2026-10-06T00:15:00.000Z",
+      "homeLabel": "New Orleans Saints",
+      "awayLabel": "Atlanta Falcons",
+      "venue": "Caesars Superdome, New Orleans",
+      "tv": [
+        "ESPN"
+      ],
+      "status": "scheduled",
+      "seasonType": "regular",
+      "extra": {
+        "homeAbbr": "NO",
+        "awayAbbr": "ATL",
+        "week": 4
+      },
+      "localDay": "2026-10-05",
+      "localWeekday": "Monday, Oct 5",
+      "localTime": "5:15 PM",
+      "localTimeUser": "5:15 PM",
       "tz": "America/Phoenix",
       "followedBy": [],
       "followed": false
