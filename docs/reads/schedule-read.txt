@@ -1,7 +1,7 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Monday, Sep 28 through Sunday, Oct 4 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-09-28T19:56:51.252Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-09-29T04:29:52.775Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
@@ -9,9 +9,10 @@ SOURCES
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
   ⚽ Premier League         Int’l break    0 in window      next game in 12d (2026-10-10 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
-  🏈 NFL                    In season      16 in window     next game today
+  🏈 NFL                    In season      16 in window     next game in 3d (2026-10-01 local)
+      ⚠ 1 past matches with no committed result
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
-  🏀 NBA                    Starts in 23d  0 in window      next game in 22d (2026-10-20 local)
+  🏀 NBA                    Starts in 22d  0 in window      next game in 22d (2026-10-20 local)
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
@@ -52,13 +53,13 @@ IN WINDOW: 24 real games, 6 involving a followed team
   Wednesday, Sep 30
     4:00 PM  🏀 Atlanta Dream at Washington Mystics            · ESPN
     6:00 PM  🏀 Golden State Valkyries at Dallas Wings         · ESPN
-  ★ 9:00 PM  🏀 New York Liberty at Minnesota Lynx            
-    9:00 PM  🏀 Indiana Fever at Las Vegas Aces               
 
   Thursday, Oct 1
+  ★ 4:00 PM  🏀 New York Liberty at Minnesota Lynx            
     5:15 PM  🏈 Pittsburgh Steelers at Cleveland Browns        · Prime Video · Week 4
+    6:00 PM  🏀 Indiana Fever at Las Vegas Aces                · USA Net/CNBC
     9:00 PM  🏀 Washington Mystics at Atlanta Dream           
-    9:00 PM  🏀 Dallas Wings at Golden State Valkyries        
+    9:00 PM  🏀 Dallas Wings at Golden State Valkyries         · ESPN2
 
   Sunday, Oct 4
     6:30 AM  🏈 Indianapolis Colts at Washington Commanders    · NFL Net · Week 4

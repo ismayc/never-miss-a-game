@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T19:56:51.859Z",
+  "generatedAt": "2026-09-29T04:29:53.321Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-28",
@@ -342,10 +342,10 @@
       "counts": {
         "total": 272,
         "final": 47,
-        "scheduled": 225,
+        "scheduled": 224,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 16,
         "inWindowReal": 16,
         "inWindowFollowed": 4
@@ -354,10 +354,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-09-29T00:15:00.000Z",
-      "nextGameLocalDay": "2026-09-28",
-      "nextGameLabel": "Philadelphia Eagles at Chicago Bears",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-02T00:15:00.000Z",
+      "nextGameLocalDay": "2026-10-01",
+      "nextGameLabel": "Pittsburgh Steelers at Cleveland Browns",
+      "daysUntilNextGame": 3,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -370,9 +370,9 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 23d",
+        "label": "Starts in 22d",
         "tone": "soon",
-        "days": 23
+        "days": 22
       },
       "week": {
         "start": "2026-09-27",
@@ -677,7 +677,7 @@
         "ESPN",
         "ABC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHI",
@@ -809,7 +809,7 @@
       "sportName": "WNBA",
       "emoji": "🏀",
       "id": "401918021",
-      "startUtc": "2026-10-01T04:00:00.000Z",
+      "startUtc": "2026-10-01T23:00:00.000Z",
       "homeLabel": "Minnesota Lynx",
       "awayLabel": "New York Liberty",
       "venue": "Target Center, Minneapolis",
@@ -821,41 +821,16 @@
         "awayAbbr": "NY",
         "round": "R1"
       },
-      "localDay": "2026-09-30",
-      "localWeekday": "Wednesday, Sep 30",
-      "localTime": "9:00 PM",
-      "localTimeUser": "9:00 PM",
+      "localDay": "2026-10-01",
+      "localWeekday": "Thursday, Oct 1",
+      "localTime": "4:00 PM",
+      "localTimeUser": "4:00 PM",
       "tz": "America/Phoenix",
       "followedBy": [
         "Minnesota Lynx",
         "New York Liberty"
       ],
       "followed": true
-    },
-    {
-      "sport": "wnba",
-      "sportName": "WNBA",
-      "emoji": "🏀",
-      "id": "401918022",
-      "startUtc": "2026-10-01T04:00:00.000Z",
-      "homeLabel": "Las Vegas Aces",
-      "awayLabel": "Indiana Fever",
-      "venue": "Michelob ULTRA Arena, Las Vegas",
-      "tv": [],
-      "status": "scheduled",
-      "seasonType": "playoffs",
-      "extra": {
-        "homeAbbr": "LV",
-        "awayAbbr": "IND",
-        "round": "R1"
-      },
-      "localDay": "2026-09-30",
-      "localWeekday": "Wednesday, Sep 30",
-      "localTime": "9:00 PM",
-      "localTimeUser": "9:00 PM",
-      "tz": "America/Phoenix",
-      "followedBy": [],
-      "followed": false
     },
     {
       "sport": "nfl",
@@ -880,6 +855,34 @@
       "localWeekday": "Thursday, Oct 1",
       "localTime": "5:15 PM",
       "localTimeUser": "5:15 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
+    },
+    {
+      "sport": "wnba",
+      "sportName": "WNBA",
+      "emoji": "🏀",
+      "id": "401918022",
+      "startUtc": "2026-10-02T01:00:00.000Z",
+      "homeLabel": "Las Vegas Aces",
+      "awayLabel": "Indiana Fever",
+      "venue": "Michelob ULTRA Arena, Las Vegas",
+      "tv": [
+        "USA Net",
+        "CNBC"
+      ],
+      "status": "scheduled",
+      "seasonType": "playoffs",
+      "extra": {
+        "homeAbbr": "LV",
+        "awayAbbr": "IND",
+        "round": "R1"
+      },
+      "localDay": "2026-10-01",
+      "localWeekday": "Thursday, Oct 1",
+      "localTime": "6:00 PM",
+      "localTimeUser": "6:00 PM",
       "tz": "America/Phoenix",
       "followedBy": [],
       "followed": false
@@ -918,7 +921,9 @@
       "homeLabel": "Golden State Valkyries",
       "awayLabel": "Dallas Wings",
       "venue": "Chase Center, San Francisco",
-      "tv": [],
+      "tv": [
+        "ESPN2"
+      ],
       "status": "scheduled",
       "seasonType": "playoffs",
       "extra": {
