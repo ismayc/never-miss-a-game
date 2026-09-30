@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-09-30T04:13:44.974Z",
+  "generatedAt": "2026-09-30T11:59:36.811Z",
   "tz": "America/Phoenix",
   "window": {
-    "from": "2026-09-29",
-    "to": "2026-10-05",
+    "from": "2026-09-30",
+    "to": "2026-10-06",
     "days": 7,
     "localDays": [
-      "2026-09-29",
       "2026-09-30",
       "2026-10-01",
       "2026-10-02",
       "2026-10-03",
       "2026-10-04",
-      "2026-10-05"
+      "2026-10-05",
+      "2026-10-06"
     ]
   },
   "root": "/home/runner/work/never-miss-a-game/sports-trackers",
@@ -43,16 +43,15 @@
       "why": "Olivia Miles, and the offense generally — the most fun team in the league to actually sit and watch.",
       "sourceStatus": "ok",
       "totalThisSeason": 47,
-      "inWindow": 2,
+      "inWindow": 1,
       "inWindowGameIds": [
-        "401918017",
         "401918021"
       ],
       "nextGameUtc": "2026-10-01T23:00:00.000Z",
       "nextGameLocalDay": "2026-10-01",
       "nextGameLocal": "Thursday, Oct 1 at 4:00 PM",
       "nextGameLabel": "New York Liberty at Minnesota Lynx",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "note": null
     },
     {
@@ -63,16 +62,15 @@
       "why": "JJ and Stewie. Two of the best players in the world on the same floor.",
       "sourceStatus": "ok",
       "totalThisSeason": 49,
-      "inWindow": 2,
+      "inWindow": 1,
       "inWindowGameIds": [
-        "401918017",
         "401918021"
       ],
       "nextGameUtc": "2026-10-01T23:00:00.000Z",
       "nextGameLocalDay": "2026-10-01",
       "nextGameLocal": "Thursday, Oct 1 at 4:00 PM",
       "nextGameLabel": "New York Liberty at Minnesota Lynx",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "note": null
     },
     {
@@ -108,7 +106,7 @@
       "nextGameLocalDay": "2026-10-04",
       "nextGameLocal": "Sunday, Oct 4 at 10:00 AM",
       "nextGameLabel": "Arizona Cardinals at New York Giants",
-      "daysUntilNextGame": 5,
+      "daysUntilNextGame": 4,
       "note": null
     },
     {
@@ -127,7 +125,7 @@
       "nextGameLocalDay": "2026-10-04",
       "nextGameLocal": "Sunday, Oct 4 at 1:25 PM",
       "nextGameLabel": "Los Angeles Chargers at Seattle Seahawks",
-      "daysUntilNextGame": 5,
+      "daysUntilNextGame": 4,
       "note": null
     },
     {
@@ -146,7 +144,7 @@
       "nextGameLocalDay": "2026-10-04",
       "nextGameLocal": "Sunday, Oct 4 at 1:25 PM",
       "nextGameLabel": "Denver Broncos at San Francisco 49ers",
-      "daysUntilNextGame": 5,
+      "daysUntilNextGame": 4,
       "note": null
     },
     {
@@ -165,7 +163,7 @@
       "nextGameLocalDay": "2026-10-04",
       "nextGameLocal": "Sunday, Oct 4 at 10:00 AM",
       "nextGameLabel": "Los Angeles Rams at Philadelphia Eagles",
-      "daysUntilNextGame": 5,
+      "daysUntilNextGame": 4,
       "note": null
     },
     {
@@ -182,7 +180,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 8:30 AM",
       "nextGameLabel": "Manchester City at Liverpool",
-      "daysUntilNextGame": 12,
+      "daysUntilNextGame": 11,
       "note": null
     },
     {
@@ -199,7 +197,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 8:30 AM",
       "nextGameLabel": "Manchester City at Liverpool",
-      "daysUntilNextGame": 12,
+      "daysUntilNextGame": 11,
       "note": null
     },
     {
@@ -216,7 +214,7 @@
       "nextGameLocalDay": "2026-10-22",
       "nextGameLocal": "Thursday, Oct 22 at 6:30 PM",
       "nextGameLabel": "Denver Nuggets at Oklahoma City Thunder",
-      "daysUntilNextGame": 23,
+      "daysUntilNextGame": 22,
       "note": null
     },
     {
@@ -233,7 +231,7 @@
       "nextGameLocalDay": "2026-10-20",
       "nextGameLocal": "Tuesday, Oct 20 at 6:30 PM",
       "nextGameLabel": "Oklahoma City Thunder at San Antonio Spurs",
-      "daysUntilNextGame": 21,
+      "daysUntilNextGame": 20,
       "note": null
     }
   ],
@@ -264,9 +262,9 @@
         "placeholder": 0,
         "postponed": 1,
         "pastUnresolved": 2,
-        "inWindow": 8,
-        "inWindowReal": 8,
-        "inWindowFollowed": 2
+        "inWindow": 6,
+        "inWindowReal": 6,
+        "inWindowFollowed": 1
       },
       "dataRange": {
         "first": "2026-05-08T23:30:00.000Z",
@@ -275,7 +273,7 @@
       "nextGameUtc": "2026-09-30T23:00:00.000Z",
       "nextGameLocalDay": "2026-09-30",
       "nextGameLabel": "Atlanta Dream at Washington Mystics",
-      "daysUntilNextGame": 1,
+      "daysUntilNextGame": 0,
       "notes": []
     },
     {
@@ -315,7 +313,7 @@
       "nextGameUtc": "2026-10-10T11:30:00.000Z",
       "nextGameLocalDay": "2026-10-10",
       "nextGameLabel": "Leeds United at Arsenal",
-      "daysUntilNextGame": 11,
+      "daysUntilNextGame": 10,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -357,7 +355,7 @@
       "nextGameUtc": "2026-10-02T00:15:00.000Z",
       "nextGameLocalDay": "2026-10-01",
       "nextGameLabel": "Pittsburgh Steelers at Cleveland Browns",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -400,7 +398,7 @@
       "nextGameUtc": "2026-10-20T19:00:00.000Z",
       "nextGameLocalDay": "2026-10-20",
       "nextGameLabel": "Boston Celtics at Detroit Pistons",
-      "daysUntilNextGame": 21,
+      "daysUntilNextGame": 20,
       "notes": []
     },
     {
@@ -657,71 +655,13 @@
   "counts": {
     "sourcesOk": 10,
     "sourcesMissing": 0,
-    "gamesInWindow": 24,
-    "realGamesInWindow": 24,
+    "gamesInWindow": 22,
+    "realGamesInWindow": 22,
     "placeholdersInWindow": 0,
     "postponedInWindow": 0,
-    "followedGamesInWindow": 6
+    "followedGamesInWindow": 5
   },
   "games": [
-    {
-      "sport": "wnba",
-      "sportName": "WNBA",
-      "emoji": "🏀",
-      "id": "401918018",
-      "startUtc": "2026-09-29T22:30:00.000Z",
-      "homeLabel": "Indiana Fever",
-      "awayLabel": "Las Vegas Aces",
-      "venue": "Gainbridge Fieldhouse, Indianapolis",
-      "tv": [
-        "Prime Video"
-      ],
-      "status": "past-unresolved",
-      "seasonType": "playoffs",
-      "extra": {
-        "homeAbbr": "IND",
-        "awayAbbr": "LV",
-        "round": "R1"
-      },
-      "localDay": "2026-09-29",
-      "localWeekday": "Tuesday, Sep 29",
-      "localTime": "3:30 PM",
-      "localTimeUser": "3:30 PM",
-      "tz": "America/Phoenix",
-      "followedBy": [],
-      "followed": false
-    },
-    {
-      "sport": "wnba",
-      "sportName": "WNBA",
-      "emoji": "🏀",
-      "id": "401918017",
-      "startUtc": "2026-09-30T00:30:00.000Z",
-      "homeLabel": "New York Liberty",
-      "awayLabel": "Minnesota Lynx",
-      "venue": "Barclays Center, Brooklyn",
-      "tv": [
-        "USA Net",
-        "CNBC"
-      ],
-      "status": "past-unresolved",
-      "seasonType": "playoffs",
-      "extra": {
-        "homeAbbr": "NY",
-        "awayAbbr": "MIN",
-        "round": "R1"
-      },
-      "localDay": "2026-09-29",
-      "localWeekday": "Tuesday, Sep 29",
-      "localTime": "5:30 PM",
-      "localTimeUser": "5:30 PM",
-      "tz": "America/Phoenix",
-      "followedBy": [
-        "Minnesota Lynx",
-        "New York Liberty"
-      ],
-      "followed": true
-    },
     {
       "sport": "wnba",
       "sportName": "WNBA",
