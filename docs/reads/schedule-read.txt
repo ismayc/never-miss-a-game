@@ -1,12 +1,11 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Wednesday, Sep 30 through Tuesday, Oct 6 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-09-30T11:59:36.349Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-09-30T17:57:33.679Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
-  🏀 WNBA                   In season      6 in window      next game today
-      ⚠ 2 past matches with no committed result
+  🏀 WNBA                   In season      5 in window      next game today
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
   ⚽ Premier League         Int’l break    0 in window      next game in 10d (2026-10-10 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
@@ -29,8 +28,8 @@ SOURCES
       · Copa América 2024, complete. Uniform -04:00 offset.
 
 FOLLOWED TEAMS
-  Minnesota Lynx           WNBA               1 in window    next in 1d, Thursday, Oct 1 at 4:00 PM local — New York Liberty at Minnesota Lynx
-  New York Liberty         WNBA               1 in window    next in 1d, Thursday, Oct 1 at 4:00 PM local — New York Liberty at Minnesota Lynx
+  Minnesota Lynx           WNBA               0 in window    no future games in committed data (offseason)
+  New York Liberty         WNBA               0 in window    no future games in committed data (offseason)
   Portland Fire            WNBA               0 in window    no future games in committed data (offseason)
   Arizona Cardinals        NFL                1 in window    next in 4d, Sunday, Oct 4 at 10:00 AM local — Arizona Cardinals at New York Giants
   Seattle Seahawks         NFL                1 in window    next in 4d, Sunday, Oct 4 at 1:25 PM local — Los Angeles Chargers at Seattle Seahawks
@@ -41,14 +40,13 @@ FOLLOWED TEAMS
   Denver Nuggets           NBA                0 in window    next in 22d, Thursday, Oct 22 at 6:30 PM local — Denver Nuggets at Oklahoma City Thunder
   San Antonio Spurs        NBA                0 in window    next in 20d, Tuesday, Oct 20 at 6:30 PM local — Oklahoma City Thunder at San Antonio Spurs
 
-IN WINDOW: 22 real games, 5 involving a followed team
+IN WINDOW: 21 real games, 4 involving a followed team
 
   Wednesday, Sep 30
     4:00 PM  🏀 Atlanta Dream at Washington Mystics            · ESPN
     6:00 PM  🏀 Golden State Valkyries at Dallas Wings         · ESPN
 
   Thursday, Oct 1
-  ★ 4:00 PM  🏀 New York Liberty at Minnesota Lynx            
     5:15 PM  🏈 Pittsburgh Steelers at Cleveland Browns        · Prime Video · Week 4
     6:00 PM  🏀 Indiana Fever at Las Vegas Aces                · USA Net/CNBC
     9:00 PM  🏀 Washington Mystics at Atlanta Dream           

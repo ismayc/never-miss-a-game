@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T11:59:36.811Z",
+  "generatedAt": "2026-09-30T17:57:34.283Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-30",
@@ -42,16 +42,14 @@
       "label": "Minnesota Lynx",
       "why": "Olivia Miles, and the offense generally — the most fun team in the league to actually sit and watch.",
       "sourceStatus": "ok",
-      "totalThisSeason": 47,
-      "inWindow": 1,
-      "inWindowGameIds": [
-        "401918021"
-      ],
-      "nextGameUtc": "2026-10-01T23:00:00.000Z",
-      "nextGameLocalDay": "2026-10-01",
-      "nextGameLocal": "Thursday, Oct 1 at 4:00 PM",
-      "nextGameLabel": "New York Liberty at Minnesota Lynx",
-      "daysUntilNextGame": 1,
+      "totalThisSeason": 46,
+      "inWindow": 0,
+      "inWindowGameIds": [],
+      "nextGameUtc": null,
+      "nextGameLocalDay": null,
+      "nextGameLocal": null,
+      "nextGameLabel": null,
+      "daysUntilNextGame": null,
       "note": null
     },
     {
@@ -61,16 +59,14 @@
       "label": "New York Liberty",
       "why": "JJ and Stewie. Two of the best players in the world on the same floor.",
       "sourceStatus": "ok",
-      "totalThisSeason": 49,
-      "inWindow": 1,
-      "inWindowGameIds": [
-        "401918021"
-      ],
-      "nextGameUtc": "2026-10-01T23:00:00.000Z",
-      "nextGameLocalDay": "2026-10-01",
-      "nextGameLocal": "Thursday, Oct 1 at 4:00 PM",
-      "nextGameLabel": "New York Liberty at Minnesota Lynx",
-      "daysUntilNextGame": 1,
+      "totalThisSeason": 48,
+      "inWindow": 0,
+      "inWindowGameIds": [],
+      "nextGameUtc": null,
+      "nextGameLocalDay": null,
+      "nextGameLocal": null,
+      "nextGameLabel": null,
+      "daysUntilNextGame": null,
       "note": null
     },
     {
@@ -256,15 +252,15 @@
       "hour12": true,
       "commitsScores": true,
       "counts": {
-        "total": 345,
-        "final": 336,
-        "scheduled": 6,
+        "total": 344,
+        "final": 338,
+        "scheduled": 5,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 2,
-        "inWindow": 6,
-        "inWindowReal": 6,
-        "inWindowFollowed": 1
+        "pastUnresolved": 0,
+        "inWindow": 5,
+        "inWindowReal": 5,
+        "inWindowFollowed": 0
       },
       "dataRange": {
         "first": "2026-05-08T23:30:00.000Z",
@@ -655,11 +651,11 @@
   "counts": {
     "sourcesOk": 10,
     "sourcesMissing": 0,
-    "gamesInWindow": 22,
-    "realGamesInWindow": 22,
+    "gamesInWindow": 21,
+    "realGamesInWindow": 21,
     "placeholdersInWindow": 0,
     "postponedInWindow": 0,
-    "followedGamesInWindow": 5
+    "followedGamesInWindow": 4
   },
   "games": [
     {
@@ -715,34 +711,6 @@
       "tz": "America/Phoenix",
       "followedBy": [],
       "followed": false
-    },
-    {
-      "sport": "wnba",
-      "sportName": "WNBA",
-      "emoji": "🏀",
-      "id": "401918021",
-      "startUtc": "2026-10-01T23:00:00.000Z",
-      "homeLabel": "Minnesota Lynx",
-      "awayLabel": "New York Liberty",
-      "venue": "Target Center, Minneapolis",
-      "tv": [],
-      "status": "scheduled",
-      "seasonType": "playoffs",
-      "extra": {
-        "homeAbbr": "MIN",
-        "awayAbbr": "NY",
-        "round": "R1"
-      },
-      "localDay": "2026-10-01",
-      "localWeekday": "Thursday, Oct 1",
-      "localTime": "4:00 PM",
-      "localTimeUser": "4:00 PM",
-      "tz": "America/Phoenix",
-      "followedBy": [
-        "Minnesota Lynx",
-        "New York Liberty"
-      ],
-      "followed": true
     },
     {
       "sport": "nfl",
