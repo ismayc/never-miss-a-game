@@ -1,12 +1,11 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Thursday, Oct 1 through Wednesday, Oct 7 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-10-01T12:32:02.756Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-10-01T18:39:38.508Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
-  🏀 WNBA                   In season      3 in window      next game today
-      ⚠ 2 past matches with no committed result
+  🏀 WNBA                   In season      4 in window      next game today
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
   ⚽ Premier League         Int’l break    0 in window      next game in 9d (2026-10-10 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
@@ -30,7 +29,7 @@ SOURCES
 
 FOLLOWED TEAMS
   Minnesota Lynx           WNBA               0 in window    no future games in committed data (offseason)
-  New York Liberty         WNBA               0 in window    no future games in committed data (offseason)
+  New York Liberty         WNBA               2 in window    next in 2d, Saturday, Oct 3 at 9:00 PM local — New York Liberty at Atlanta Dream
   Portland Fire            WNBA               0 in window    no future games in committed data (offseason)
   Arizona Cardinals        NFL                1 in window    next in 3d, Sunday, Oct 4 at 10:00 AM local — Arizona Cardinals at New York Giants
   Seattle Seahawks         NFL                1 in window    next in 3d, Sunday, Oct 4 at 1:25 PM local — Los Angeles Chargers at Seattle Seahawks
@@ -41,13 +40,17 @@ FOLLOWED TEAMS
   Denver Nuggets           NBA                0 in window    next in 21d, Thursday, Oct 22 at 6:30 PM local — Denver Nuggets at Oklahoma City Thunder
   San Antonio Spurs        NBA                0 in window    next in 19d, Tuesday, Oct 20 at 6:30 PM local — Oklahoma City Thunder at San Antonio Spurs
 
-IN WINDOW: 19 real games, 4 involving a followed team
+IN WINDOW: 20 real games, 6 involving a followed team
 
   Thursday, Oct 1
     5:15 PM  🏈 Pittsburgh Steelers at Cleveland Browns        · Prime Video · Week 4
     6:00 PM  🏀 Indiana Fever at Las Vegas Aces                · USA Net/CNBC
-    9:00 PM  🏀 Washington Mystics at Atlanta Dream           
-    9:00 PM  🏀 Dallas Wings at Golden State Valkyries         · ESPN2
+
+  Friday, Oct 2
+    6:00 PM  🏀 Dallas Wings at Golden State Valkyries         · ESPN2
+
+  Saturday, Oct 3
+  ★ 9:00 PM  🏀 New York Liberty at Atlanta Dream             
 
   Sunday, Oct 4
     6:30 AM  🏈 Indianapolis Colts at Washington Commanders    · NFL Net · Week 4
@@ -67,4 +70,7 @@ IN WINDOW: 19 real games, 4 involving a followed team
 
   Monday, Oct 5
     5:15 PM  🏈 Atlanta Falcons at New Orleans Saints          · ESPN · Week 4
+
+  Tuesday, Oct 6
+  ★ 9:00 PM  🏀 New York Liberty at Atlanta Dream             
 

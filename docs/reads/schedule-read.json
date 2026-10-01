@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T12:32:03.334Z",
+  "generatedAt": "2026-10-01T18:39:39.004Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-01",
@@ -59,14 +59,17 @@
       "label": "New York Liberty",
       "why": "JJ and Stewie. Two of the best players in the world on the same floor.",
       "sourceStatus": "ok",
-      "totalThisSeason": 48,
-      "inWindow": 0,
-      "inWindowGameIds": [],
-      "nextGameUtc": null,
-      "nextGameLocalDay": null,
-      "nextGameLocal": null,
-      "nextGameLabel": null,
-      "daysUntilNextGame": null,
+      "totalThisSeason": 53,
+      "inWindow": 2,
+      "inWindowGameIds": [
+        "401918295",
+        "401918297"
+      ],
+      "nextGameUtc": "2026-10-04T04:00:00.000Z",
+      "nextGameLocalDay": "2026-10-03",
+      "nextGameLocal": "Saturday, Oct 3 at 9:00 PM",
+      "nextGameLabel": "New York Liberty at Atlanta Dream",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -252,19 +255,19 @@
       "hour12": true,
       "commitsScores": true,
       "counts": {
-        "total": 344,
-        "final": 338,
-        "scheduled": 3,
+        "total": 348,
+        "final": 340,
+        "scheduled": 7,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 2,
-        "inWindow": 3,
-        "inWindowReal": 3,
-        "inWindowFollowed": 0
+        "pastUnresolved": 0,
+        "inWindow": 4,
+        "inWindowReal": 4,
+        "inWindowFollowed": 2
       },
       "dataRange": {
         "first": "2026-05-08T23:30:00.000Z",
-        "last": "2026-10-02T04:00:00.000Z"
+        "last": "2026-10-14T04:00:00.000Z"
       },
       "nextGameUtc": "2026-10-02T01:00:00.000Z",
       "nextGameLocalDay": "2026-10-01",
@@ -651,11 +654,11 @@
   "counts": {
     "sourcesOk": 10,
     "sourcesMissing": 0,
-    "gamesInWindow": 19,
-    "realGamesInWindow": 19,
+    "gamesInWindow": 20,
+    "realGamesInWindow": 20,
     "placeholdersInWindow": 0,
     "postponedInWindow": 0,
-    "followedGamesInWindow": 4
+    "followedGamesInWindow": 6
   },
   "games": [
     {
@@ -717,33 +720,8 @@
       "sport": "wnba",
       "sportName": "WNBA",
       "emoji": "🏀",
-      "id": "401918293",
-      "startUtc": "2026-10-02T04:00:00.000Z",
-      "homeLabel": "Atlanta Dream",
-      "awayLabel": "Washington Mystics",
-      "venue": "State Farm Arena, Atlanta",
-      "tv": [],
-      "status": "scheduled",
-      "seasonType": "playoffs",
-      "extra": {
-        "homeAbbr": "ATL",
-        "awayAbbr": "WSH",
-        "round": "R1"
-      },
-      "localDay": "2026-10-01",
-      "localWeekday": "Thursday, Oct 1",
-      "localTime": "9:00 PM",
-      "localTimeUser": "9:00 PM",
-      "tz": "America/Phoenix",
-      "followedBy": [],
-      "followed": false
-    },
-    {
-      "sport": "wnba",
-      "sportName": "WNBA",
-      "emoji": "🏀",
       "id": "401918294",
-      "startUtc": "2026-10-02T04:00:00.000Z",
+      "startUtc": "2026-10-03T01:00:00.000Z",
       "homeLabel": "Golden State Valkyries",
       "awayLabel": "Dallas Wings",
       "venue": "Chase Center, San Francisco",
@@ -757,13 +735,40 @@
         "awayAbbr": "DAL",
         "round": "R1"
       },
-      "localDay": "2026-10-01",
-      "localWeekday": "Thursday, Oct 1",
-      "localTime": "9:00 PM",
-      "localTimeUser": "9:00 PM",
+      "localDay": "2026-10-02",
+      "localWeekday": "Friday, Oct 2",
+      "localTime": "6:00 PM",
+      "localTimeUser": "6:00 PM",
       "tz": "America/Phoenix",
       "followedBy": [],
       "followed": false
+    },
+    {
+      "sport": "wnba",
+      "sportName": "WNBA",
+      "emoji": "🏀",
+      "id": "401918295",
+      "startUtc": "2026-10-04T04:00:00.000Z",
+      "homeLabel": "Atlanta Dream",
+      "awayLabel": "New York Liberty",
+      "venue": "Gateway Center, College Park",
+      "tv": [],
+      "status": "scheduled",
+      "seasonType": "playoffs",
+      "extra": {
+        "homeAbbr": "ATL",
+        "awayAbbr": "NY",
+        "round": "SF"
+      },
+      "localDay": "2026-10-03",
+      "localWeekday": "Saturday, Oct 3",
+      "localTime": "9:00 PM",
+      "localTimeUser": "9:00 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [
+        "New York Liberty"
+      ],
+      "followed": true
     },
     {
       "sport": "nfl",
@@ -1178,6 +1183,33 @@
       "tz": "America/Phoenix",
       "followedBy": [],
       "followed": false
+    },
+    {
+      "sport": "wnba",
+      "sportName": "WNBA",
+      "emoji": "🏀",
+      "id": "401918297",
+      "startUtc": "2026-10-07T04:00:00.000Z",
+      "homeLabel": "Atlanta Dream",
+      "awayLabel": "New York Liberty",
+      "venue": "Gateway Center, College Park",
+      "tv": [],
+      "status": "scheduled",
+      "seasonType": "playoffs",
+      "extra": {
+        "homeAbbr": "ATL",
+        "awayAbbr": "NY",
+        "round": "SF"
+      },
+      "localDay": "2026-10-06",
+      "localWeekday": "Tuesday, Oct 6",
+      "localTime": "9:00 PM",
+      "localTimeUser": "9:00 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [
+        "New York Liberty"
+      ],
+      "followed": true
     }
   ],
   "warnings": []
