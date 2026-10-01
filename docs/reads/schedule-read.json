@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T17:57:34.283Z",
+  "generatedAt": "2026-10-01T04:25:17.555Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-09-30",
@@ -254,10 +254,10 @@
       "counts": {
         "total": 344,
         "final": 338,
-        "scheduled": 5,
+        "scheduled": 3,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 0,
+        "pastUnresolved": 2,
         "inWindow": 5,
         "inWindowReal": 5,
         "inWindowFollowed": 0
@@ -266,10 +266,10 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-10-02T04:00:00.000Z"
       },
-      "nextGameUtc": "2026-09-30T23:00:00.000Z",
-      "nextGameLocalDay": "2026-09-30",
-      "nextGameLabel": "Atlanta Dream at Washington Mystics",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-02T01:00:00.000Z",
+      "nextGameLocalDay": "2026-10-01",
+      "nextGameLabel": "Indiana Fever at Las Vegas Aces",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -364,9 +364,9 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 21d",
+        "label": "Starts in 20d",
         "tone": "soon",
-        "days": 21
+        "days": 20
       },
       "week": {
         "start": "2026-09-27",
@@ -670,7 +670,7 @@
       "tv": [
         "ESPN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "WSH",
@@ -697,7 +697,7 @@
       "tv": [
         "ESPN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "DAL",
