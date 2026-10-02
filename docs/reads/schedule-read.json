@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T18:39:39.004Z",
+  "generatedAt": "2026-10-02T04:18:09.218Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-01",
@@ -257,10 +257,10 @@
       "counts": {
         "total": 348,
         "final": 340,
-        "scheduled": 7,
+        "scheduled": 6,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 4,
         "inWindowReal": 4,
         "inWindowFollowed": 2
@@ -269,10 +269,10 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-10-14T04:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-02T01:00:00.000Z",
-      "nextGameLocalDay": "2026-10-01",
-      "nextGameLabel": "Indiana Fever at Las Vegas Aces",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-03T01:00:00.000Z",
+      "nextGameLocalDay": "2026-10-02",
+      "nextGameLabel": "Dallas Wings at Golden State Valkyries",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -339,10 +339,10 @@
       "counts": {
         "total": 272,
         "final": 48,
-        "scheduled": 224,
+        "scheduled": 223,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 16,
         "inWindowReal": 16,
         "inWindowFollowed": 4
@@ -351,10 +351,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-02T00:15:00.000Z",
-      "nextGameLocalDay": "2026-10-01",
-      "nextGameLabel": "Pittsburgh Steelers at Cleveland Browns",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-04T13:30:00.000Z",
+      "nextGameLocalDay": "2026-10-04",
+      "nextGameLabel": "Indianapolis Colts at Washington Commanders",
+      "daysUntilNextGame": 3,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -367,9 +367,9 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 20d",
+        "label": "Starts in 19d",
         "tone": "soon",
-        "days": 20
+        "days": 19
       },
       "week": {
         "start": "2026-09-27",
@@ -673,7 +673,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CLE",
@@ -701,7 +701,7 @@
         "USA Net",
         "CNBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "LV",
