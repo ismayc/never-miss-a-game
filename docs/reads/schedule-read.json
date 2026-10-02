@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-02T04:18:09.218Z",
+  "generatedAt": "2026-10-02T11:57:52.458Z",
   "tz": "America/Phoenix",
   "window": {
-    "from": "2026-10-01",
-    "to": "2026-10-07",
+    "from": "2026-10-02",
+    "to": "2026-10-08",
     "days": 7,
     "localDays": [
-      "2026-10-01",
       "2026-10-02",
       "2026-10-03",
       "2026-10-04",
       "2026-10-05",
       "2026-10-06",
-      "2026-10-07"
+      "2026-10-07",
+      "2026-10-08"
     ]
   },
   "root": "/home/runner/work/never-miss-a-game/sports-trackers",
@@ -60,16 +60,17 @@
       "why": "JJ and Stewie. Two of the best players in the world on the same floor.",
       "sourceStatus": "ok",
       "totalThisSeason": 53,
-      "inWindow": 2,
+      "inWindow": 3,
       "inWindowGameIds": [
         "401918295",
-        "401918297"
+        "401918297",
+        "401918299"
       ],
       "nextGameUtc": "2026-10-04T04:00:00.000Z",
       "nextGameLocalDay": "2026-10-03",
       "nextGameLocal": "Saturday, Oct 3 at 9:00 PM",
       "nextGameLabel": "New York Liberty at Atlanta Dream",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "note": null
     },
     {
@@ -105,7 +106,7 @@
       "nextGameLocalDay": "2026-10-04",
       "nextGameLocal": "Sunday, Oct 4 at 10:00 AM",
       "nextGameLabel": "Arizona Cardinals at New York Giants",
-      "daysUntilNextGame": 3,
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -124,7 +125,7 @@
       "nextGameLocalDay": "2026-10-04",
       "nextGameLocal": "Sunday, Oct 4 at 1:25 PM",
       "nextGameLabel": "Los Angeles Chargers at Seattle Seahawks",
-      "daysUntilNextGame": 3,
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -143,7 +144,7 @@
       "nextGameLocalDay": "2026-10-04",
       "nextGameLocal": "Sunday, Oct 4 at 1:25 PM",
       "nextGameLabel": "Denver Broncos at San Francisco 49ers",
-      "daysUntilNextGame": 3,
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -162,7 +163,7 @@
       "nextGameLocalDay": "2026-10-04",
       "nextGameLocal": "Sunday, Oct 4 at 10:00 AM",
       "nextGameLabel": "Los Angeles Rams at Philadelphia Eagles",
-      "daysUntilNextGame": 3,
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -179,7 +180,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 8:30 AM",
       "nextGameLabel": "Manchester City at Liverpool",
-      "daysUntilNextGame": 10,
+      "daysUntilNextGame": 9,
       "note": null
     },
     {
@@ -196,7 +197,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 8:30 AM",
       "nextGameLabel": "Manchester City at Liverpool",
-      "daysUntilNextGame": 10,
+      "daysUntilNextGame": 9,
       "note": null
     },
     {
@@ -213,7 +214,7 @@
       "nextGameLocalDay": "2026-10-22",
       "nextGameLocal": "Thursday, Oct 22 at 6:30 PM",
       "nextGameLabel": "Denver Nuggets at Oklahoma City Thunder",
-      "daysUntilNextGame": 21,
+      "daysUntilNextGame": 20,
       "note": null
     },
     {
@@ -230,7 +231,7 @@
       "nextGameLocalDay": "2026-10-20",
       "nextGameLocal": "Tuesday, Oct 20 at 6:30 PM",
       "nextGameLabel": "Oklahoma City Thunder at San Antonio Spurs",
-      "daysUntilNextGame": 19,
+      "daysUntilNextGame": 18,
       "note": null
     }
   ],
@@ -263,7 +264,7 @@
         "pastUnresolved": 1,
         "inWindow": 4,
         "inWindowReal": 4,
-        "inWindowFollowed": 2
+        "inWindowFollowed": 3
       },
       "dataRange": {
         "first": "2026-05-08T23:30:00.000Z",
@@ -272,7 +273,7 @@
       "nextGameUtc": "2026-10-03T01:00:00.000Z",
       "nextGameLocalDay": "2026-10-02",
       "nextGameLabel": "Dallas Wings at Golden State Valkyries",
-      "daysUntilNextGame": 1,
+      "daysUntilNextGame": 0,
       "notes": []
     },
     {
@@ -312,7 +313,7 @@
       "nextGameUtc": "2026-10-10T11:30:00.000Z",
       "nextGameLocalDay": "2026-10-10",
       "nextGameLabel": "Leeds United at Arsenal",
-      "daysUntilNextGame": 9,
+      "daysUntilNextGame": 8,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -354,7 +355,7 @@
       "nextGameUtc": "2026-10-04T13:30:00.000Z",
       "nextGameLocalDay": "2026-10-04",
       "nextGameLabel": "Indianapolis Colts at Washington Commanders",
-      "daysUntilNextGame": 3,
+      "daysUntilNextGame": 2,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -397,7 +398,7 @@
       "nextGameUtc": "2026-10-20T19:00:00.000Z",
       "nextGameLocalDay": "2026-10-20",
       "nextGameLabel": "Boston Celtics at Detroit Pistons",
-      "daysUntilNextGame": 19,
+      "daysUntilNextGame": 18,
       "notes": []
     },
     {
@@ -658,64 +659,9 @@
     "realGamesInWindow": 20,
     "placeholdersInWindow": 0,
     "postponedInWindow": 0,
-    "followedGamesInWindow": 6
+    "followedGamesInWindow": 7
   },
   "games": [
-    {
-      "sport": "nfl",
-      "sportName": "NFL",
-      "emoji": "🏈",
-      "id": "401872964",
-      "startUtc": "2026-10-02T00:15:00.000Z",
-      "homeLabel": "Cleveland Browns",
-      "awayLabel": "Pittsburgh Steelers",
-      "venue": "Huntington Bank Field, Cleveland",
-      "tv": [
-        "Prime Video"
-      ],
-      "status": "past-unresolved",
-      "seasonType": "regular",
-      "extra": {
-        "homeAbbr": "CLE",
-        "awayAbbr": "PIT",
-        "week": 4
-      },
-      "localDay": "2026-10-01",
-      "localWeekday": "Thursday, Oct 1",
-      "localTime": "5:15 PM",
-      "localTimeUser": "5:15 PM",
-      "tz": "America/Phoenix",
-      "followedBy": [],
-      "followed": false
-    },
-    {
-      "sport": "wnba",
-      "sportName": "WNBA",
-      "emoji": "🏀",
-      "id": "401918022",
-      "startUtc": "2026-10-02T01:00:00.000Z",
-      "homeLabel": "Las Vegas Aces",
-      "awayLabel": "Indiana Fever",
-      "venue": "Michelob ULTRA Arena, Las Vegas",
-      "tv": [
-        "USA Net",
-        "CNBC"
-      ],
-      "status": "past-unresolved",
-      "seasonType": "playoffs",
-      "extra": {
-        "homeAbbr": "LV",
-        "awayAbbr": "IND",
-        "round": "R1"
-      },
-      "localDay": "2026-10-01",
-      "localWeekday": "Thursday, Oct 1",
-      "localTime": "6:00 PM",
-      "localTimeUser": "6:00 PM",
-      "tz": "America/Phoenix",
-      "followedBy": [],
-      "followed": false
-    },
     {
       "sport": "wnba",
       "sportName": "WNBA",
@@ -1203,6 +1149,60 @@
       },
       "localDay": "2026-10-06",
       "localWeekday": "Tuesday, Oct 6",
+      "localTime": "9:00 PM",
+      "localTimeUser": "9:00 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [
+        "New York Liberty"
+      ],
+      "followed": true
+    },
+    {
+      "sport": "nfl",
+      "sportName": "NFL",
+      "emoji": "🏈",
+      "id": "401872980",
+      "startUtc": "2026-10-09T00:15:00.000Z",
+      "homeLabel": "Dallas Cowboys",
+      "awayLabel": "Tampa Bay Buccaneers",
+      "venue": "AT&T Stadium, Arlington",
+      "tv": [
+        "Prime Video"
+      ],
+      "status": "scheduled",
+      "seasonType": "regular",
+      "extra": {
+        "homeAbbr": "DAL",
+        "awayAbbr": "TB",
+        "week": 5
+      },
+      "localDay": "2026-10-08",
+      "localWeekday": "Thursday, Oct 8",
+      "localTime": "5:15 PM",
+      "localTimeUser": "5:15 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
+    },
+    {
+      "sport": "wnba",
+      "sportName": "WNBA",
+      "emoji": "🏀",
+      "id": "401918299",
+      "startUtc": "2026-10-09T04:00:00.000Z",
+      "homeLabel": "New York Liberty",
+      "awayLabel": "Atlanta Dream",
+      "venue": "Barclays Center, Brooklyn",
+      "tv": [],
+      "status": "scheduled",
+      "seasonType": "playoffs",
+      "extra": {
+        "homeAbbr": "NY",
+        "awayAbbr": "ATL",
+        "round": "SF"
+      },
+      "localDay": "2026-10-08",
+      "localWeekday": "Thursday, Oct 8",
       "localTime": "9:00 PM",
       "localTimeUser": "9:00 PM",
       "tz": "America/Phoenix",
