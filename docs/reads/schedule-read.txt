@@ -1,18 +1,17 @@
 
 GAME-DAY CONCIERGE — schedule read
-Window Friday, Oct 2 through Thursday, Oct 8 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-10-03T04:00:16.094Z
+Window Saturday, Oct 3 through Friday, Oct 9 (7 days) · times in America/Phoenix
+Sources 10/10 readable · hub tooling: reused · generated 2026-10-03T11:11:16.719Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
-  🏀 WNBA                   In season      4 in window      next game in 1d (2026-10-03 local)
-      ⚠ 1 past matches with no committed result
+  🏀 WNBA                   In season      6 in window      next game in 1d (2026-10-04 local)
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
-  ⚽ Premier League         Int’l break    0 in window      next game in 8d (2026-10-10 local)
+  ⚽ Premier League         Int’l break    0 in window      next game in 7d (2026-10-10 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
-  🏈 NFL                    In season      16 in window     next game in 2d (2026-10-04 local)
+  🏈 NFL                    In season      16 in window     next game in 1d (2026-10-04 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
-  🏀 NBA                    Starts in 18d  0 in window      next game in 18d (2026-10-20 local)
+  🏀 NBA                    Starts in 18d  0 in window      next game in 17d (2026-10-20 local)
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
@@ -30,24 +29,18 @@ SOURCES
 
 FOLLOWED TEAMS
   Minnesota Lynx           WNBA               0 in window    no future games in committed data (offseason)
-  New York Liberty         WNBA               3 in window    next in 1d, Saturday, Oct 3 at 9:00 PM local — New York Liberty at Atlanta Dream
+  New York Liberty         WNBA               3 in window    next in 1d, Sunday, Oct 4 at 11:00 AM local — New York Liberty at Atlanta Dream
   Portland Fire            WNBA               0 in window    no future games in committed data (offseason)
-  Arizona Cardinals        NFL                1 in window    next in 2d, Sunday, Oct 4 at 10:00 AM local — Arizona Cardinals at New York Giants
-  Seattle Seahawks         NFL                1 in window    next in 2d, Sunday, Oct 4 at 1:25 PM local — Los Angeles Chargers at Seattle Seahawks
-  San Francisco 49ers      NFL                1 in window    next in 2d, Sunday, Oct 4 at 1:25 PM local — Denver Broncos at San Francisco 49ers
-  Los Angeles Rams         NFL                1 in window    next in 2d, Sunday, Oct 4 at 10:00 AM local — Los Angeles Rams at Philadelphia Eagles
-  Manchester City          Premier League     0 in window    next in 9d, Sunday, Oct 11 at 8:30 AM local — Manchester City at Liverpool
-  Liverpool                Premier League     0 in window    next in 9d, Sunday, Oct 11 at 8:30 AM local — Manchester City at Liverpool
-  Denver Nuggets           NBA                0 in window    next in 20d, Thursday, Oct 22 at 6:30 PM local — Denver Nuggets at Oklahoma City Thunder
-  San Antonio Spurs        NBA                0 in window    next in 18d, Tuesday, Oct 20 at 6:30 PM local — Oklahoma City Thunder at San Antonio Spurs
+  Arizona Cardinals        NFL                1 in window    next in 1d, Sunday, Oct 4 at 10:00 AM local — Arizona Cardinals at New York Giants
+  Seattle Seahawks         NFL                1 in window    next in 1d, Sunday, Oct 4 at 1:25 PM local — Los Angeles Chargers at Seattle Seahawks
+  San Francisco 49ers      NFL                1 in window    next in 1d, Sunday, Oct 4 at 1:25 PM local — Denver Broncos at San Francisco 49ers
+  Los Angeles Rams         NFL                1 in window    next in 1d, Sunday, Oct 4 at 10:00 AM local — Los Angeles Rams at Philadelphia Eagles
+  Manchester City          Premier League     0 in window    next in 8d, Sunday, Oct 11 at 8:30 AM local — Manchester City at Liverpool
+  Liverpool                Premier League     0 in window    next in 8d, Sunday, Oct 11 at 8:30 AM local — Manchester City at Liverpool
+  Denver Nuggets           NBA                0 in window    next in 19d, Thursday, Oct 22 at 6:30 PM local — Denver Nuggets at Oklahoma City Thunder
+  San Antonio Spurs        NBA                0 in window    next in 17d, Tuesday, Oct 20 at 6:30 PM local — Oklahoma City Thunder at San Antonio Spurs
 
-IN WINDOW: 20 real games, 7 involving a followed team
-
-  Friday, Oct 2
-    6:00 PM  🏀 Dallas Wings at Golden State Valkyries         · ESPN2
-
-  Saturday, Oct 3
-  ★ 9:00 PM  🏀 New York Liberty at Atlanta Dream             
+IN WINDOW: 22 real games, 7 involving a followed team
 
   Sunday, Oct 4
     6:30 AM  🏈 Indianapolis Colts at Washington Commanders    · NFL Net · Week 4
@@ -59,6 +52,8 @@ IN WINDOW: 20 real games, 7 involving a followed team
     10:00 AM 🏈 New England Patriots at Buffalo Bills          · CBS · Week 4
     10:00 AM 🏈 New York Jets at Chicago Bears                 · FOX · Week 4
     10:00 AM 🏈 Tennessee Titans at Baltimore Ravens           · CBS · Week 4
+  ★ 11:00 AM 🏀 New York Liberty at Atlanta Dream              · ABC
+    1:00 PM  🏀 Las Vegas Aces at Golden State Valkyries       · NBC
     1:05 PM  🏈 Miami Dolphins at Minnesota Vikings            · FOX · Week 4
   ★ 1:25 PM  🏈 Denver Broncos at San Francisco 49ers          · CBS · Week 4
     1:25 PM  🏈 Kansas City Chiefs at Las Vegas Raiders        · CBS · Week 4
@@ -68,10 +63,14 @@ IN WINDOW: 20 real games, 7 involving a followed team
   Monday, Oct 5
     5:15 PM  🏈 Atlanta Falcons at New Orleans Saints          · ESPN · Week 4
 
-  Tuesday, Oct 6
-  ★ 9:00 PM  🏀 New York Liberty at Atlanta Dream             
+  Wednesday, Oct 7
+  ★ 4:30 PM  🏀 New York Liberty at Atlanta Dream              · ESPN
+    6:30 PM  🏀 Las Vegas Aces at Golden State Valkyries       · Peacock/NBCSN
 
   Thursday, Oct 8
     5:15 PM  🏈 Tampa Bay Buccaneers at Dallas Cowboys         · Prime Video · Week 5
-  ★ 9:00 PM  🏀 Atlanta Dream at New York Liberty             
+
+  Friday, Oct 9
+  ★ 4:30 PM  🏀 Atlanta Dream at New York Liberty              · ESPN2
+    6:30 PM  🏀 Golden State Valkyries at Las Vegas Aces       · Peacock/NBCSN
 
