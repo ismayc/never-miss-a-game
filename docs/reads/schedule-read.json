@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T17:44:51.916Z",
+  "generatedAt": "2026-10-03T04:00:16.600Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-02",
@@ -258,10 +258,10 @@
       "counts": {
         "total": 348,
         "final": 341,
-        "scheduled": 6,
+        "scheduled": 5,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 4,
         "inWindowReal": 4,
         "inWindowFollowed": 3
@@ -270,10 +270,10 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-10-14T04:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-03T01:00:00.000Z",
-      "nextGameLocalDay": "2026-10-02",
-      "nextGameLabel": "Dallas Wings at Golden State Valkyries",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-04T04:00:00.000Z",
+      "nextGameLocalDay": "2026-10-03",
+      "nextGameLabel": "New York Liberty at Atlanta Dream",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -368,9 +368,9 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 19d",
+        "label": "Starts in 18d",
         "tone": "soon",
-        "days": 19
+        "days": 18
       },
       "week": {
         "start": "2026-09-27",
@@ -674,7 +674,7 @@
       "tv": [
         "ESPN2"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "GS",
