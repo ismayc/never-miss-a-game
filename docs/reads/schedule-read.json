@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T11:11:17.124Z",
+  "generatedAt": "2026-10-04T04:33:24.829Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-03",
@@ -368,9 +368,9 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 18d",
+        "label": "Starts in 17d",
         "tone": "soon",
-        "days": 18
+        "days": 17
       },
       "week": {
         "start": "2026-09-27",
@@ -949,7 +949,8 @@
       "awayLabel": "Las Vegas Aces",
       "venue": "Chase Center, San Francisco",
       "tv": [
-        "NBC"
+        "NBC",
+        "Peacock"
       ],
       "status": "scheduled",
       "seasonType": "playoffs",
