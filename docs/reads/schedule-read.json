@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T17:14:12.126Z",
+  "generatedAt": "2026-10-04T20:54:59.945Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-04",
@@ -67,11 +67,11 @@
         "401918299",
         "401918301"
       ],
-      "nextGameUtc": "2026-10-04T18:00:00.000Z",
-      "nextGameLocalDay": "2026-10-04",
-      "nextGameLocal": "Sunday, Oct 4 at 11:00 AM",
+      "nextGameUtc": "2026-10-07T23:30:00.000Z",
+      "nextGameLocalDay": "2026-10-07",
+      "nextGameLocal": "Wednesday, Oct 7 at 4:30 PM",
       "nextGameLabel": "New York Liberty at Atlanta Dream",
-      "daysUntilNextGame": 0,
+      "daysUntilNextGame": 3,
       "note": null
     },
     {
@@ -122,11 +122,11 @@
       "inWindowGameIds": [
         "401872977"
       ],
-      "nextGameUtc": "2026-10-04T20:25:00.000Z",
-      "nextGameLocalDay": "2026-10-04",
-      "nextGameLocal": "Sunday, Oct 4 at 1:25 PM",
-      "nextGameLabel": "Los Angeles Chargers at Seattle Seahawks",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-11T20:25:00.000Z",
+      "nextGameLocalDay": "2026-10-11",
+      "nextGameLocal": "Sunday, Oct 11 at 1:25 PM",
+      "nextGameLabel": "San Francisco 49ers at Seattle Seahawks",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -141,11 +141,11 @@
       "inWindowGameIds": [
         "401872975"
       ],
-      "nextGameUtc": "2026-10-04T20:25:00.000Z",
-      "nextGameLocalDay": "2026-10-04",
-      "nextGameLocal": "Sunday, Oct 4 at 1:25 PM",
-      "nextGameLabel": "Denver Broncos at San Francisco 49ers",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-11T20:25:00.000Z",
+      "nextGameLocalDay": "2026-10-11",
+      "nextGameLocal": "Sunday, Oct 11 at 1:25 PM",
+      "nextGameLabel": "San Francisco 49ers at Seattle Seahawks",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -259,10 +259,10 @@
       "counts": {
         "total": 353,
         "final": 342,
-        "scheduled": 10,
+        "scheduled": 8,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 0,
+        "pastUnresolved": 2,
         "inWindow": 8,
         "inWindowReal": 8,
         "inWindowFollowed": 4
@@ -271,10 +271,10 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-10-14T04:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-04T18:00:00.000Z",
-      "nextGameLocalDay": "2026-10-04",
+      "nextGameUtc": "2026-10-07T23:30:00.000Z",
+      "nextGameLocalDay": "2026-10-07",
       "nextGameLabel": "New York Liberty at Atlanta Dream",
-      "daysUntilNextGame": 0,
+      "daysUntilNextGame": 3,
       "notes": []
     },
     {
@@ -341,10 +341,10 @@
       "counts": {
         "total": 272,
         "final": 49,
-        "scheduled": 214,
+        "scheduled": 210,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 9,
+        "pastUnresolved": 13,
         "inWindow": 16,
         "inWindowReal": 16,
         "inWindowFollowed": 4
@@ -353,9 +353,9 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-04T20:05:00.000Z",
+      "nextGameUtc": "2026-10-05T00:20:00.000Z",
       "nextGameLocalDay": "2026-10-04",
-      "nextGameLabel": "Miami Dolphins at Minnesota Vikings",
+      "nextGameLabel": "Detroit Lions at Carolina Panthers",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
@@ -923,7 +923,7 @@
       "tv": [
         "ABC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "ATL",
@@ -953,7 +953,7 @@
         "NBC",
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "GS",
@@ -980,7 +980,7 @@
       "tv": [
         "FOX"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIN",
@@ -1007,7 +1007,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SF",
@@ -1036,7 +1036,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LV",
@@ -1063,7 +1063,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SEA",
