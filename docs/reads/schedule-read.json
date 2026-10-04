@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T16:30:33.736Z",
+  "generatedAt": "2026-10-04T17:14:12.126Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-04",
@@ -103,11 +103,11 @@
       "inWindowGameIds": [
         "401872966"
       ],
-      "nextGameUtc": "2026-10-04T17:00:00.000Z",
-      "nextGameLocalDay": "2026-10-04",
-      "nextGameLocal": "Sunday, Oct 4 at 10:00 AM",
-      "nextGameLabel": "Arizona Cardinals at New York Giants",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-11T20:25:00.000Z",
+      "nextGameLocalDay": "2026-10-11",
+      "nextGameLocal": "Sunday, Oct 11 at 1:25 PM",
+      "nextGameLabel": "Detroit Lions at Arizona Cardinals",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -160,11 +160,11 @@
       "inWindowGameIds": [
         "401872970"
       ],
-      "nextGameUtc": "2026-10-04T17:00:00.000Z",
-      "nextGameLocalDay": "2026-10-04",
-      "nextGameLocal": "Sunday, Oct 4 at 10:00 AM",
-      "nextGameLabel": "Los Angeles Rams at Philadelphia Eagles",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-13T00:15:00.000Z",
+      "nextGameLocalDay": "2026-10-12",
+      "nextGameLocal": "Monday, Oct 12 at 5:15 PM",
+      "nextGameLabel": "Buffalo Bills at Los Angeles Rams",
+      "daysUntilNextGame": 8,
       "note": null
     },
     {
@@ -341,10 +341,10 @@
       "counts": {
         "total": 272,
         "final": 49,
-        "scheduled": 222,
+        "scheduled": 214,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 9,
         "inWindow": 16,
         "inWindowReal": 16,
         "inWindowFollowed": 4
@@ -353,9 +353,9 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-04T17:00:00.000Z",
+      "nextGameUtc": "2026-10-04T20:05:00.000Z",
       "nextGameLocalDay": "2026-10-04",
-      "nextGameLabel": "Arizona Cardinals at New York Giants",
+      "nextGameLabel": "Miami Dolphins at Minnesota Vikings",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
@@ -703,7 +703,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NYG",
@@ -732,7 +732,7 @@
       "tv": [
         "FOX"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HOU",
@@ -759,7 +759,7 @@
       "tv": [
         "FOX"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TB",
@@ -786,7 +786,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CIN",
@@ -813,7 +813,7 @@
       "tv": [
         "FOX"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
@@ -842,7 +842,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BUF",
@@ -869,7 +869,7 @@
       "tv": [
         "FOX"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHI",
@@ -896,7 +896,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BAL",
