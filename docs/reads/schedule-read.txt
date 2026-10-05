@@ -1,7 +1,7 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Monday, Oct 5 through Sunday, Oct 11 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-10-05T13:44:35.843Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-10-05T21:43:14.621Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
@@ -10,7 +10,6 @@ SOURCES
   ⚽ Premier League         Int’l break    9 in window      next game in 5d (2026-10-10 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
   🏈 NFL                    In season      15 in window     next game today
-      ⚠ 1 past matches with no committed result
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
   🏀 NBA                    Starts in 16d  0 in window      next game in 15d (2026-10-20 local)
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
@@ -64,7 +63,6 @@ IN WINDOW: 30 real games, 6 involving a followed team
     7:00 AM  ⚽ Brentford at Aston Villa                      
     7:00 AM  ⚽ Fulham at Ipswich Town                        
     9:30 AM  ⚽ Tottenham Hotspur at Manchester United        
-  ★ 9:00 PM  🏀 Atlanta Dream at New York Liberty              · ABC
     9:00 PM  🏀 Golden State Valkyries at Las Vegas Aces       · NBC/Peacock
 
   Sunday, Oct 11
@@ -72,16 +70,17 @@ IN WINDOW: 30 real games, 6 involving a followed team
     6:00 AM  ⚽ Nottingham Forest at Crystal Palace           
     6:30 AM  🏈 Philadelphia Eagles at Jacksonville Jaguars    · NFL Net · Week 5
   ★ 8:30 AM  ⚽ Manchester City at Liverpool                  
-    10:00 AM 🏈 Cincinnati Bengals at Miami Dolphins           · FOX · Week 5
+    10:00 AM 🏈 Cincinnati Bengals at Miami Dolphins           · Fox · Week 5
     10:00 AM 🏈 Cleveland Browns at New York Jets              · CBS · Week 5
     10:00 AM 🏈 Houston Texans at Tennessee Titans             · CBS · Week 5
     10:00 AM 🏈 Indianapolis Colts at Pittsburgh Steelers      · CBS · Week 5
     10:00 AM 🏈 Las Vegas Raiders at New England Patriots      · CBS · Week 5
-    10:00 AM 🏈 Minnesota Vikings at New Orleans Saints        · FOX · Week 5
-    10:00 AM 🏈 New York Giants at Washington Commanders       · FOX · Week 5
-    10:00 AM 🏈 Chicago Bears at Green Bay Packers             · FOX · Week 5
+    10:00 AM 🏈 Minnesota Vikings at New Orleans Saints        · Fox · Week 5
+    10:00 AM 🏈 New York Giants at Washington Commanders       · Fox · Week 5
+    10:00 AM 🏈 Chicago Bears at Green Bay Packers             · Fox · Week 5
+  ★ 11:00 AM 🏀 Atlanta Dream at New York Liberty              · ABC
     1:05 PM  🏈 Denver Broncos at Los Angeles Chargers         · CBS · Week 5
-  ★ 1:25 PM  🏈 Detroit Lions at Arizona Cardinals             · FOX · Week 5
-  ★ 1:25 PM  🏈 San Francisco 49ers at Seattle Seahawks        · FOX · Week 5
+  ★ 1:25 PM  🏈 Detroit Lions at Arizona Cardinals             · Fox · Week 5
+  ★ 1:25 PM  🏈 San Francisco 49ers at Seattle Seahawks        · Fox · Week 5
     5:20 PM  🏈 Baltimore Ravens at Atlanta Falcons            · NBC · Week 5
 
