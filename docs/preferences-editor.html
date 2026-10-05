@@ -618,6 +618,14 @@ function whenGenerated() {
       weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' ' + (read.tz || '');
   } catch (e) { return 'generated ' + read.generatedAt; }
 }
+// The workflow publishes a new read at least once a day, because the window moves each
+// morning. A read older than this means the refresh has stopped, so say so beside it.
+const STALE_HOURS = 36;
+function staleNote() {
+  if (!read || !read.generatedAt) return '';
+  const hours = (Date.now() - new Date(read.generatedAt).getTime()) / 36e5;
+  return hours > STALE_HOURS ? ` · this read is ${Math.round(hours)} hours old, so newer changes may be missing` : '';
+}
 // The bridge between the two steps: the teams ticked in step 2 against the week
 // read in step 1. Always on the page, so a beginner sees what it is waiting for.
 function showFollowing() {
@@ -653,7 +661,9 @@ $('read').addEventListener('click', async () => {
     $('readpre').textContent = readText;
     $('readbar').hidden = false;
     const w = read.window ? `${read.window.from} to ${read.window.to}` : '';
-    $('readmeta').textContent = `${whenGenerated()} on GitHub · ${w}`;
+    const stale = staleNote();
+    $('readmeta').textContent = `${whenGenerated()} on GitHub · ${w}${stale}`;
+    $('readmeta').style.color = stale ? 'var(--warn)' : '';
     showFollowing();
     const r = prefs ? followingReport(prefs, read) : null;
     status(r ? r.line.split(':')[0] + ' against the published read' : 'read fetched', 'saved');
