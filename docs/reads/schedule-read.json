@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T21:43:15.214Z",
+  "generatedAt": "2026-10-06T00:10:25.787Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-05",
@@ -370,9 +370,9 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 16d",
+        "label": "Starts in 15d",
         "tone": "soon",
-        "days": 16
+        "days": 15
       },
       "week": {
         "start": "2026-10-04",
