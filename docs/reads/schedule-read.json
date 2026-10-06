@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-06T05:07:09.206Z",
+  "generatedAt": "2026-10-06T12:10:31.434Z",
   "tz": "America/Phoenix",
   "window": {
-    "from": "2026-10-05",
-    "to": "2026-10-11",
+    "from": "2026-10-06",
+    "to": "2026-10-12",
     "days": 7,
     "localDays": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-10",
-      "2026-10-11"
+      "2026-10-11",
+      "2026-10-12"
     ]
   },
   "root": "/home/runner/work/never-miss-a-game/sports-trackers",
@@ -70,7 +70,7 @@
       "nextGameLocalDay": "2026-10-07",
       "nextGameLocal": "Wednesday, Oct 7 at 4:30 PM",
       "nextGameLabel": "New York Liberty at Atlanta Dream",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "note": null
     },
     {
@@ -106,7 +106,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 1:25 PM",
       "nextGameLabel": "Detroit Lions at Arizona Cardinals",
-      "daysUntilNextGame": 6,
+      "daysUntilNextGame": 5,
       "note": null
     },
     {
@@ -125,7 +125,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 1:25 PM",
       "nextGameLabel": "San Francisco 49ers at Seattle Seahawks",
-      "daysUntilNextGame": 6,
+      "daysUntilNextGame": 5,
       "note": null
     },
     {
@@ -144,7 +144,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 1:25 PM",
       "nextGameLabel": "San Francisco 49ers at Seattle Seahawks",
-      "daysUntilNextGame": 6,
+      "daysUntilNextGame": 5,
       "note": null
     },
     {
@@ -155,13 +155,15 @@
       "why": "NFC West — following the whole division keeps the standings picture legible.",
       "sourceStatus": "ok",
       "totalThisSeason": 17,
-      "inWindow": 0,
-      "inWindowGameIds": [],
+      "inWindow": 1,
+      "inWindowGameIds": [
+        "401872994"
+      ],
       "nextGameUtc": "2026-10-13T00:15:00.000Z",
       "nextGameLocalDay": "2026-10-12",
       "nextGameLocal": "Monday, Oct 12 at 5:15 PM",
       "nextGameLabel": "Buffalo Bills at Los Angeles Rams",
-      "daysUntilNextGame": 7,
+      "daysUntilNextGame": 6,
       "note": null
     },
     {
@@ -180,7 +182,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 8:30 AM",
       "nextGameLabel": "Manchester City at Liverpool",
-      "daysUntilNextGame": 6,
+      "daysUntilNextGame": 5,
       "note": null
     },
     {
@@ -199,7 +201,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 8:30 AM",
       "nextGameLabel": "Manchester City at Liverpool",
-      "daysUntilNextGame": 6,
+      "daysUntilNextGame": 5,
       "note": null
     },
     {
@@ -216,7 +218,7 @@
       "nextGameLocalDay": "2026-10-22",
       "nextGameLocal": "Thursday, Oct 22 at 6:30 PM",
       "nextGameLabel": "Denver Nuggets at Oklahoma City Thunder",
-      "daysUntilNextGame": 17,
+      "daysUntilNextGame": 16,
       "note": null
     },
     {
@@ -233,7 +235,7 @@
       "nextGameLocalDay": "2026-10-20",
       "nextGameLocal": "Tuesday, Oct 20 at 6:30 PM",
       "nextGameLabel": "Oklahoma City Thunder at San Antonio Spurs",
-      "daysUntilNextGame": 15,
+      "daysUntilNextGame": 14,
       "note": null
     }
   ],
@@ -275,7 +277,7 @@
       "nextGameUtc": "2026-10-07T23:30:00.000Z",
       "nextGameLocalDay": "2026-10-07",
       "nextGameLabel": "New York Liberty at Atlanta Dream",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -304,8 +306,8 @@
         "placeholder": 0,
         "postponed": 0,
         "pastUnresolved": 0,
-        "inWindow": 9,
-        "inWindowReal": 9,
+        "inWindow": 10,
+        "inWindowReal": 10,
         "inWindowFollowed": 1
       },
       "dataRange": {
@@ -315,7 +317,7 @@
       "nextGameUtc": "2026-10-10T11:30:00.000Z",
       "nextGameLocalDay": "2026-10-10",
       "nextGameLabel": "Leeds United at Arsenal",
-      "daysUntilNextGame": 5,
+      "daysUntilNextGame": 4,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -341,14 +343,14 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 63,
+        "final": 64,
         "scheduled": 208,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 15,
         "inWindowReal": 15,
-        "inWindowFollowed": 2
+        "inWindowFollowed": 3
       },
       "dataRange": {
         "first": "2026-09-10T00:20:00.000Z",
@@ -357,7 +359,7 @@
       "nextGameUtc": "2026-10-09T00:15:00.000Z",
       "nextGameLocalDay": "2026-10-08",
       "nextGameLabel": "Tampa Bay Buccaneers at Dallas Cowboys",
-      "daysUntilNextGame": 3,
+      "daysUntilNextGame": 2,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -400,7 +402,7 @@
       "nextGameUtc": "2026-10-20T19:00:00.000Z",
       "nextGameLocalDay": "2026-10-20",
       "nextGameLabel": "Boston Celtics at Detroit Pistons",
-      "daysUntilNextGame": 15,
+      "daysUntilNextGame": 14,
       "notes": []
     },
     {
@@ -657,40 +659,13 @@
   "counts": {
     "sourcesOk": 10,
     "sourcesMissing": 0,
-    "gamesInWindow": 30,
-    "realGamesInWindow": 30,
+    "gamesInWindow": 31,
+    "realGamesInWindow": 31,
     "placeholdersInWindow": 0,
     "postponedInWindow": 0,
-    "followedGamesInWindow": 6
+    "followedGamesInWindow": 7
   },
   "games": [
-    {
-      "sport": "nfl",
-      "sportName": "NFL",
-      "emoji": "🏈",
-      "id": "401872979",
-      "startUtc": "2026-10-06T00:15:00.000Z",
-      "homeLabel": "New Orleans Saints",
-      "awayLabel": "Atlanta Falcons",
-      "venue": "Caesars Superdome, New Orleans",
-      "tv": [
-        "ESPN"
-      ],
-      "status": "past-unresolved",
-      "seasonType": "regular",
-      "extra": {
-        "homeAbbr": "NO",
-        "awayAbbr": "ATL",
-        "week": 4
-      },
-      "localDay": "2026-10-05",
-      "localWeekday": "Monday, Oct 5",
-      "localTime": "5:15 PM",
-      "localTimeUser": "5:15 PM",
-      "tz": "America/Phoenix",
-      "followedBy": [],
-      "followed": false
-    },
     {
       "sport": "wnba",
       "sportName": "WNBA",
@@ -1464,6 +1439,60 @@
       "tz": "America/Phoenix",
       "followedBy": [],
       "followed": false
+    },
+    {
+      "sport": "epl",
+      "sportName": "Premier League",
+      "emoji": "⚽",
+      "id": "401879267",
+      "startUtc": "2026-10-12T19:00:00.000Z",
+      "homeLabel": "Coventry City",
+      "awayLabel": "Newcastle United",
+      "venue": "Coventry Building Society Arena, Coventry",
+      "tv": [],
+      "status": "scheduled",
+      "seasonType": "regular",
+      "extra": {
+        "homeAbbr": "COV",
+        "awayAbbr": "NEW"
+      },
+      "localDay": "2026-10-12",
+      "localWeekday": "Monday, Oct 12",
+      "localTime": "12:00",
+      "localTimeUser": "12:00 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
+    },
+    {
+      "sport": "nfl",
+      "sportName": "NFL",
+      "emoji": "🏈",
+      "id": "401872994",
+      "startUtc": "2026-10-13T00:15:00.000Z",
+      "homeLabel": "Los Angeles Rams",
+      "awayLabel": "Buffalo Bills",
+      "venue": "SoFi Stadium, Inglewood",
+      "tv": [
+        "ESPN",
+        "ABC"
+      ],
+      "status": "scheduled",
+      "seasonType": "regular",
+      "extra": {
+        "homeAbbr": "LAR",
+        "awayAbbr": "BUF",
+        "week": 5
+      },
+      "localDay": "2026-10-12",
+      "localWeekday": "Monday, Oct 12",
+      "localTime": "5:15 PM",
+      "localTimeUser": "5:15 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [
+        "Los Angeles Rams"
+      ],
+      "followed": true
     }
   ],
   "warnings": []
