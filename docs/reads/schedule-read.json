@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T12:10:26.307Z",
+  "generatedAt": "2026-10-08T00:10:26.321Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-07",
@@ -67,11 +67,11 @@
         "401918301",
         "401918303"
       ],
-      "nextGameUtc": "2026-10-07T23:30:00.000Z",
-      "nextGameLocalDay": "2026-10-07",
-      "nextGameLocal": "Wednesday, Oct 7 at 4:30 PM",
-      "nextGameLabel": "New York Liberty at Atlanta Dream",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-09T23:30:00.000Z",
+      "nextGameLocalDay": "2026-10-09",
+      "nextGameLocal": "Friday, Oct 9 at 4:30 PM",
+      "nextGameLabel": "Atlanta Dream at New York Liberty",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -263,10 +263,10 @@
       "counts": {
         "total": 353,
         "final": 344,
-        "scheduled": 8,
+        "scheduled": 7,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 8,
         "inWindowReal": 8,
         "inWindowFollowed": 4
@@ -275,9 +275,9 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-10-14T04:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-07T23:30:00.000Z",
+      "nextGameUtc": "2026-10-08T01:30:00.000Z",
       "nextGameLocalDay": "2026-10-07",
-      "nextGameLabel": "New York Liberty at Atlanta Dream",
+      "nextGameLabel": "Las Vegas Aces at Golden State Valkyries",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -373,9 +373,9 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 14d",
+        "label": "Starts in 13d",
         "tone": "soon",
-        "days": 14
+        "days": 13
       },
       "week": {
         "start": "2026-10-04",
@@ -679,7 +679,7 @@
       "tv": [
         "ESPN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "ATL",
