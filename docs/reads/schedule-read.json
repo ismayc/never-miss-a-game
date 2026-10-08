@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-08T04:44:41.028Z",
+  "generatedAt": "2026-10-08T12:10:25.105Z",
   "tz": "America/Phoenix",
   "window": {
-    "from": "2026-10-07",
-    "to": "2026-10-13",
+    "from": "2026-10-08",
+    "to": "2026-10-14",
     "days": 7,
     "localDays": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-10",
       "2026-10-11",
       "2026-10-12",
-      "2026-10-13"
+      "2026-10-13",
+      "2026-10-14"
     ]
   },
   "root": "/home/runner/work/never-miss-a-game/sports-trackers",
@@ -60,9 +60,8 @@
       "why": "JJ and Stewie. Two of the best players in the world on the same floor.",
       "sourceStatus": "ok",
       "totalThisSeason": 53,
-      "inWindow": 4,
+      "inWindow": 3,
       "inWindowGameIds": [
-        "401918297",
         "401918299",
         "401918301",
         "401918303"
@@ -71,7 +70,7 @@
       "nextGameLocalDay": "2026-10-09",
       "nextGameLocal": "Friday, Oct 9 at 4:30 PM",
       "nextGameLabel": "Atlanta Dream at New York Liberty",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "note": null
     },
     {
@@ -107,7 +106,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 1:25 PM",
       "nextGameLabel": "Detroit Lions at Arizona Cardinals",
-      "daysUntilNextGame": 4,
+      "daysUntilNextGame": 3,
       "note": null
     },
     {
@@ -126,7 +125,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 1:25 PM",
       "nextGameLabel": "San Francisco 49ers at Seattle Seahawks",
-      "daysUntilNextGame": 4,
+      "daysUntilNextGame": 3,
       "note": null
     },
     {
@@ -145,7 +144,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 1:25 PM",
       "nextGameLabel": "San Francisco 49ers at Seattle Seahawks",
-      "daysUntilNextGame": 4,
+      "daysUntilNextGame": 3,
       "note": null
     },
     {
@@ -164,7 +163,7 @@
       "nextGameLocalDay": "2026-10-12",
       "nextGameLocal": "Monday, Oct 12 at 5:15 PM",
       "nextGameLabel": "Buffalo Bills at Los Angeles Rams",
-      "daysUntilNextGame": 5,
+      "daysUntilNextGame": 4,
       "note": null
     },
     {
@@ -183,7 +182,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 8:30 AM",
       "nextGameLabel": "Manchester City at Liverpool",
-      "daysUntilNextGame": 4,
+      "daysUntilNextGame": 3,
       "note": null
     },
     {
@@ -202,7 +201,7 @@
       "nextGameLocalDay": "2026-10-11",
       "nextGameLocal": "Sunday, Oct 11 at 8:30 AM",
       "nextGameLabel": "Manchester City at Liverpool",
-      "daysUntilNextGame": 4,
+      "daysUntilNextGame": 3,
       "note": null
     },
     {
@@ -219,7 +218,7 @@
       "nextGameLocalDay": "2026-10-22",
       "nextGameLocal": "Thursday, Oct 22 at 6:30 PM",
       "nextGameLabel": "Denver Nuggets at Oklahoma City Thunder",
-      "daysUntilNextGame": 15,
+      "daysUntilNextGame": 14,
       "note": null
     },
     {
@@ -236,7 +235,7 @@
       "nextGameLocalDay": "2026-10-20",
       "nextGameLocal": "Tuesday, Oct 20 at 6:30 PM",
       "nextGameLabel": "Oklahoma City Thunder at San Antonio Spurs",
-      "daysUntilNextGame": 13,
+      "daysUntilNextGame": 12,
       "note": null
     }
   ],
@@ -262,14 +261,14 @@
       "commitsScores": true,
       "counts": {
         "total": 353,
-        "final": 344,
+        "final": 346,
         "scheduled": 6,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 2,
-        "inWindow": 8,
-        "inWindowReal": 8,
-        "inWindowFollowed": 4
+        "pastUnresolved": 0,
+        "inWindow": 6,
+        "inWindowReal": 6,
+        "inWindowFollowed": 3
       },
       "dataRange": {
         "first": "2026-05-08T23:30:00.000Z",
@@ -278,7 +277,7 @@
       "nextGameUtc": "2026-10-09T23:30:00.000Z",
       "nextGameLocalDay": "2026-10-09",
       "nextGameLabel": "Atlanta Dream at New York Liberty",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -318,7 +317,7 @@
       "nextGameUtc": "2026-10-10T11:30:00.000Z",
       "nextGameLocalDay": "2026-10-10",
       "nextGameLabel": "Leeds United at Arsenal",
-      "daysUntilNextGame": 3,
+      "daysUntilNextGame": 2,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -360,7 +359,7 @@
       "nextGameUtc": "2026-10-09T00:15:00.000Z",
       "nextGameLocalDay": "2026-10-08",
       "nextGameLabel": "Tampa Bay Buccaneers at Dallas Cowboys",
-      "daysUntilNextGame": 1,
+      "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -403,7 +402,7 @@
       "nextGameUtc": "2026-10-20T19:00:00.000Z",
       "nextGameLocalDay": "2026-10-20",
       "nextGameLabel": "Boston Celtics at Detroit Pistons",
-      "daysUntilNextGame": 13,
+      "daysUntilNextGame": 12,
       "notes": []
     },
     {
@@ -660,70 +659,13 @@
   "counts": {
     "sourcesOk": 10,
     "sourcesMissing": 0,
-    "gamesInWindow": 33,
-    "realGamesInWindow": 33,
+    "gamesInWindow": 31,
+    "realGamesInWindow": 31,
     "placeholdersInWindow": 0,
     "postponedInWindow": 0,
-    "followedGamesInWindow": 8
+    "followedGamesInWindow": 7
   },
   "games": [
-    {
-      "sport": "wnba",
-      "sportName": "WNBA",
-      "emoji": "🏀",
-      "id": "401918297",
-      "startUtc": "2026-10-07T23:30:00.000Z",
-      "homeLabel": "Atlanta Dream",
-      "awayLabel": "New York Liberty",
-      "venue": "State Farm Arena, Atlanta",
-      "tv": [
-        "ESPN"
-      ],
-      "status": "past-unresolved",
-      "seasonType": "playoffs",
-      "extra": {
-        "homeAbbr": "ATL",
-        "awayAbbr": "NY",
-        "round": "SF"
-      },
-      "localDay": "2026-10-07",
-      "localWeekday": "Wednesday, Oct 7",
-      "localTime": "4:30 PM",
-      "localTimeUser": "4:30 PM",
-      "tz": "America/Phoenix",
-      "followedBy": [
-        "New York Liberty"
-      ],
-      "followed": true
-    },
-    {
-      "sport": "wnba",
-      "sportName": "WNBA",
-      "emoji": "🏀",
-      "id": "401918298",
-      "startUtc": "2026-10-08T01:30:00.000Z",
-      "homeLabel": "Golden State Valkyries",
-      "awayLabel": "Las Vegas Aces",
-      "venue": "Chase Center, San Francisco",
-      "tv": [
-        "Peacock",
-        "NBCSN"
-      ],
-      "status": "past-unresolved",
-      "seasonType": "playoffs",
-      "extra": {
-        "homeAbbr": "GS",
-        "awayAbbr": "LV",
-        "round": "SF"
-      },
-      "localDay": "2026-10-07",
-      "localWeekday": "Wednesday, Oct 7",
-      "localTime": "6:30 PM",
-      "localTimeUser": "6:30 PM",
-      "tz": "America/Phoenix",
-      "followedBy": [],
-      "followed": false
-    },
     {
       "sport": "nfl",
       "sportName": "NFL",
