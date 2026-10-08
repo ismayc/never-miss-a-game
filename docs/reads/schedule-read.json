@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T00:10:26.321Z",
+  "generatedAt": "2026-10-08T04:44:41.028Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-07",
@@ -263,10 +263,10 @@
       "counts": {
         "total": 353,
         "final": 344,
-        "scheduled": 7,
+        "scheduled": 6,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 1,
+        "pastUnresolved": 2,
         "inWindow": 8,
         "inWindowReal": 8,
         "inWindowFollowed": 4
@@ -275,10 +275,10 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-10-14T04:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-08T01:30:00.000Z",
-      "nextGameLocalDay": "2026-10-07",
-      "nextGameLabel": "Las Vegas Aces at Golden State Valkyries",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-09T23:30:00.000Z",
+      "nextGameLocalDay": "2026-10-09",
+      "nextGameLabel": "Atlanta Dream at New York Liberty",
+      "daysUntilNextGame": 2,
       "notes": []
     },
     {
@@ -709,7 +709,7 @@
         "Peacock",
         "NBCSN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "GS",
