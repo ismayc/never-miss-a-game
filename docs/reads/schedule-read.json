@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T17:17:00.792Z",
+  "generatedAt": "2026-10-10T21:13:17.630Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-10",
@@ -298,11 +298,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 50,
+        "final": 55,
         "scheduled": 324,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 6,
+        "pastUnresolved": 1,
         "inWindow": 10,
         "inWindowReal": 10,
         "inWindowFollowed": 1
@@ -676,11 +676,15 @@
         "USA Net",
         "Universo"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ARS",
-        "awayAbbr": "LEE"
+        "awayAbbr": "LEE",
+        "score": [
+          2,
+          1
+        ]
       },
       "localDay": "2026-10-10",
       "localWeekday": "Saturday, Oct 10",
@@ -702,11 +706,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SUN",
-        "awayAbbr": "BHA"
+        "awayAbbr": "BHA",
+        "score": [
+          0,
+          2
+        ]
       },
       "localDay": "2026-10-10",
       "localWeekday": "Saturday, Oct 10",
@@ -728,11 +736,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHE",
-        "awayAbbr": "BOU"
+        "awayAbbr": "BOU",
+        "score": [
+          5,
+          1
+        ]
       },
       "localDay": "2026-10-10",
       "localWeekday": "Saturday, Oct 10",
@@ -755,11 +767,15 @@
         "USA Net",
         "Universo"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "AVL",
-        "awayAbbr": "BRE"
+        "awayAbbr": "BRE",
+        "score": [
+          2,
+          2
+        ]
       },
       "localDay": "2026-10-10",
       "localWeekday": "Saturday, Oct 10",
@@ -781,11 +797,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IPS",
-        "awayAbbr": "FUL"
+        "awayAbbr": "FUL",
+        "score": [
+          2,
+          1
+        ]
       },
       "localDay": "2026-10-10",
       "localWeekday": "Saturday, Oct 10",
