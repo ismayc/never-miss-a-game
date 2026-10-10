@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T11:59:06.492Z",
+  "generatedAt": "2026-10-10T17:17:00.792Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-10",
@@ -299,10 +299,10 @@
       "counts": {
         "total": 380,
         "final": 50,
-        "scheduled": 329,
+        "scheduled": 324,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 6,
         "inWindow": 10,
         "inWindowReal": 10,
         "inWindowFollowed": 1
@@ -311,10 +311,10 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-10T14:00:00.000Z",
-      "nextGameLocalDay": "2026-10-10",
-      "nextGameLabel": "Brighton & Hove Albion at Sunderland",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-11T13:00:00.000Z",
+      "nextGameLocalDay": "2026-10-11",
+      "nextGameLabel": "Everton at Hull City",
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -702,7 +702,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SUN",
@@ -728,7 +728,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHE",
@@ -755,7 +755,7 @@
         "USA Net",
         "Universo"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "AVL",
@@ -781,7 +781,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IPS",
@@ -808,7 +808,7 @@
         "NBC",
         "Tele"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MAN",
