@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T12:10:28.392Z",
+  "generatedAt": "2026-10-10T00:10:25.233Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-09",
@@ -66,11 +66,11 @@
         "401918301",
         "401918303"
       ],
-      "nextGameUtc": "2026-10-09T23:30:00.000Z",
-      "nextGameLocalDay": "2026-10-09",
-      "nextGameLocal": "Friday, Oct 9 at 4:30 PM",
+      "nextGameUtc": "2026-10-11T04:00:00.000Z",
+      "nextGameLocalDay": "2026-10-10",
+      "nextGameLocal": "Saturday, Oct 10 at 9:00 PM",
       "nextGameLabel": "Atlanta Dream at New York Liberty",
-      "daysUntilNextGame": 0,
+      "daysUntilNextGame": 1,
       "note": null
     },
     {
@@ -263,10 +263,10 @@
       "counts": {
         "total": 353,
         "final": 346,
-        "scheduled": 6,
+        "scheduled": 5,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 6,
         "inWindowReal": 6,
         "inWindowFollowed": 3
@@ -275,9 +275,9 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-10-14T04:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-09T23:30:00.000Z",
+      "nextGameUtc": "2026-10-10T01:30:00.000Z",
       "nextGameLocalDay": "2026-10-09",
-      "nextGameLabel": "Atlanta Dream at New York Liberty",
+      "nextGameLabel": "Golden State Valkyries at Las Vegas Aces",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -289,8 +289,8 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Int’l break",
-        "tone": "cold"
+        "label": "In season",
+        "tone": "on"
       },
       "week": {
         "start": "2026-10-05",
@@ -373,9 +373,9 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 12d",
+        "label": "Starts in 11d",
         "tone": "soon",
-        "days": 12
+        "days": 11
       },
       "week": {
         "start": "2026-10-04",
@@ -679,7 +679,7 @@
       "tv": [
         "ESPN2"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "NY",
@@ -882,6 +882,35 @@
       "tz": "America/Phoenix",
       "followedBy": [],
       "followed": false
+    },
+    {
+      "sport": "wnba",
+      "sportName": "WNBA",
+      "emoji": "🏀",
+      "id": "401918301",
+      "startUtc": "2026-10-11T04:00:00.000Z",
+      "homeLabel": "New York Liberty",
+      "awayLabel": "Atlanta Dream",
+      "venue": "Barclays Center, Brooklyn",
+      "tv": [
+        "ABC"
+      ],
+      "status": "scheduled",
+      "seasonType": "playoffs",
+      "extra": {
+        "homeAbbr": "NY",
+        "awayAbbr": "ATL",
+        "round": "SF"
+      },
+      "localDay": "2026-10-10",
+      "localWeekday": "Saturday, Oct 10",
+      "localTime": "9:00 PM",
+      "localTimeUser": "9:00 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [
+        "New York Liberty"
+      ],
+      "followed": true
     },
     {
       "sport": "wnba",
@@ -1237,35 +1266,6 @@
       "tz": "America/Phoenix",
       "followedBy": [],
       "followed": false
-    },
-    {
-      "sport": "wnba",
-      "sportName": "WNBA",
-      "emoji": "🏀",
-      "id": "401918301",
-      "startUtc": "2026-10-11T18:00:00.000Z",
-      "homeLabel": "New York Liberty",
-      "awayLabel": "Atlanta Dream",
-      "venue": "Barclays Center, Brooklyn",
-      "tv": [
-        "ABC"
-      ],
-      "status": "scheduled",
-      "seasonType": "playoffs",
-      "extra": {
-        "homeAbbr": "NY",
-        "awayAbbr": "ATL",
-        "round": "SF"
-      },
-      "localDay": "2026-10-11",
-      "localWeekday": "Sunday, Oct 11",
-      "localTime": "11:00 AM",
-      "localTimeUser": "11:00 AM",
-      "tz": "America/Phoenix",
-      "followedBy": [
-        "New York Liberty"
-      ],
-      "followed": true
     },
     {
       "sport": "nfl",

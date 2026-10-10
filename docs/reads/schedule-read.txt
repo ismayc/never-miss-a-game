@@ -1,17 +1,18 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Friday, Oct 9 through Thursday, Oct 15 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-10-09T12:10:27.976Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-10-10T00:10:24.908Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
   🏀 WNBA                   In season      6 in window      next game today
+      ⚠ 1 past matches with no committed result
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
-  ⚽ Premier League         Int’l break    10 in window     next game in 1d (2026-10-10 local)
+  ⚽ Premier League         In season      10 in window     next game in 1d (2026-10-10 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
   🏈 NFL                    In season      15 in window     next game in 2d (2026-10-11 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
-  🏀 NBA                    Starts in 12d  0 in window      next game in 11d (2026-10-20 local)
+  🏀 NBA                    Starts in 11d  0 in window      next game in 11d (2026-10-20 local)
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
@@ -29,7 +30,7 @@ SOURCES
 
 FOLLOWED TEAMS
   Minnesota Lynx           WNBA               0 in window    no future games in committed data (offseason)
-  New York Liberty         WNBA               3 in window    plays today
+  New York Liberty         WNBA               3 in window    next in 1d, Saturday, Oct 10 at 9:00 PM local — Atlanta Dream at New York Liberty
   Portland Fire            WNBA               0 in window    no future games in committed data (offseason)
   Arizona Cardinals        NFL                1 in window    next in 2d, Sunday, Oct 11 at 1:25 PM local — Detroit Lions at Arizona Cardinals
   Seattle Seahawks         NFL                2 in window    next in 2d, Sunday, Oct 11 at 1:25 PM local — San Francisco 49ers at Seattle Seahawks
@@ -53,6 +54,7 @@ IN WINDOW: 31 real games, 8 involving a followed team
     7:00 AM  ⚽ Brentford at Aston Villa                       · USA Net/Universo
     7:00 AM  ⚽ Fulham at Ipswich Town                         · Peacock
     9:30 AM  ⚽ Tottenham Hotspur at Manchester United         · NBC/Tele
+  ★ 9:00 PM  🏀 Atlanta Dream at New York Liberty              · ABC
     9:00 PM  🏀 Golden State Valkyries at Las Vegas Aces       · NBC/Peacock
 
   Sunday, Oct 11
@@ -68,7 +70,6 @@ IN WINDOW: 31 real games, 8 involving a followed team
     10:00 AM 🏈 Minnesota Vikings at New Orleans Saints        · Fox · Week 5
     10:00 AM 🏈 New York Giants at Washington Commanders       · Fox · Week 5
     10:00 AM 🏈 Chicago Bears at Green Bay Packers             · Fox · Week 5
-  ★ 11:00 AM 🏀 Atlanta Dream at New York Liberty              · ABC
     1:05 PM  🏈 Denver Broncos at Los Angeles Chargers         · CBS · Week 5
   ★ 1:25 PM  🏈 Detroit Lions at Arizona Cardinals             · Fox · Week 5
   ★ 1:25 PM  🏈 San Francisco 49ers at Seattle Seahawks        · Fox · Week 5
