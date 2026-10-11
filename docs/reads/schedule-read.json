@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T21:13:17.630Z",
+  "generatedAt": "2026-10-11T00:10:28.440Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-10",
@@ -298,11 +298,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 55,
+        "final": 56,
         "scheduled": 324,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 10,
         "inWindowReal": 10,
         "inWindowFollowed": 1
@@ -369,9 +369,9 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 11d",
+        "label": "Starts in 10d",
         "tone": "soon",
-        "days": 11
+        "days": 10
       },
       "week": {
         "start": "2026-10-04",
@@ -828,11 +828,15 @@
         "NBC",
         "Tele"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MAN",
-        "awayAbbr": "TOT"
+        "awayAbbr": "TOT",
+        "score": [
+          1,
+          1
+        ]
       },
       "localDay": "2026-10-10",
       "localWeekday": "Saturday, Oct 10",
