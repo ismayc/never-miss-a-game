@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T12:10:21.663Z",
+  "generatedAt": "2026-10-11T13:10:24.204Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-11",
@@ -301,10 +301,10 @@
       "counts": {
         "total": 380,
         "final": 56,
-        "scheduled": 324,
+        "scheduled": 322,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 2,
         "inWindow": 9,
         "inWindowReal": 9,
         "inWindowFollowed": 3
@@ -313,9 +313,9 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-11T13:00:00.000Z",
+      "nextGameUtc": "2026-10-11T15:30:00.000Z",
       "nextGameLocalDay": "2026-10-11",
-      "nextGameLabel": "Everton at Hull City",
+      "nextGameLabel": "Manchester City at Liverpool",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
@@ -677,7 +677,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HUL",
@@ -704,7 +704,7 @@
         "USA Net",
         "Universo"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CRY",
