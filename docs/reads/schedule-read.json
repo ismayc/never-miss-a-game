@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T00:10:18.916Z",
+  "generatedAt": "2026-10-12T04:34:21.365Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-11",
@@ -342,11 +342,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 74,
-        "scheduled": 195,
+        "final": 77,
+        "scheduled": 194,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 3,
+        "pastUnresolved": 1,
         "inWindow": 15,
         "inWindowReal": 15,
         "inWindowFollowed": 4
@@ -355,10 +355,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-12T00:20:00.000Z",
-      "nextGameLocalDay": "2026-10-11",
-      "nextGameLabel": "Baltimore Ravens at Atlanta Falcons",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-13T00:15:00.000Z",
+      "nextGameLocalDay": "2026-10-12",
+      "nextGameLabel": "Buffalo Bills at Los Angeles Rams",
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -1052,12 +1052,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAC",
         "awayAbbr": "DEN",
-        "week": 5
+        "week": 5,
+        "score": [
+          17,
+          23
+        ]
       },
       "localDay": "2026-10-11",
       "localWeekday": "Sunday, Oct 11",
@@ -1079,12 +1083,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ARI",
         "awayAbbr": "DET",
-        "week": 5
+        "week": 5,
+        "score": [
+          21,
+          45
+        ]
       },
       "localDay": "2026-10-11",
       "localWeekday": "Sunday, Oct 11",
@@ -1108,12 +1116,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SEA",
         "awayAbbr": "SF",
-        "week": 5
+        "week": 5,
+        "score": [
+          29,
+          32
+        ]
       },
       "localDay": "2026-10-11",
       "localWeekday": "Sunday, Oct 11",
@@ -1138,7 +1150,7 @@
       "tv": [
         "NBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
