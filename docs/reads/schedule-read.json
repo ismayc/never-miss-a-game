@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T00:10:26.438Z",
+  "generatedAt": "2026-10-13T06:10:35.867Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-12",
@@ -154,11 +154,11 @@
         "401872994",
         "401873004"
       ],
-      "nextGameUtc": "2026-10-13T00:15:00.000Z",
-      "nextGameLocalDay": "2026-10-12",
-      "nextGameLocal": "Monday, Oct 12 at 5:15 PM",
-      "nextGameLabel": "Buffalo Bills at Los Angeles Rams",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-18T20:05:00.000Z",
+      "nextGameLocalDay": "2026-10-18",
+      "nextGameLocal": "Sunday, Oct 18 at 1:05 PM",
+      "nextGameLabel": "Arizona Cardinals at Los Angeles Rams",
+      "daysUntilNextGame": 6,
       "note": null
     },
     {
@@ -296,11 +296,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 59,
+        "final": 60,
         "scheduled": 320,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 10,
         "inWindowReal": 10,
         "inWindowFollowed": 2
@@ -339,10 +339,10 @@
       "counts": {
         "total": 272,
         "final": 78,
-        "scheduled": 194,
+        "scheduled": 193,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 3
@@ -351,10 +351,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-13T00:15:00.000Z",
-      "nextGameLocalDay": "2026-10-12",
-      "nextGameLabel": "Buffalo Bills at Los Angeles Rams",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-16T00:15:00.000Z",
+      "nextGameLocalDay": "2026-10-15",
+      "nextGameLabel": "Seattle Seahawks at Denver Broncos",
+      "daysUntilNextGame": 3,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -673,11 +673,15 @@
       "tv": [
         "USA Net"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "COV",
-        "awayAbbr": "NEW"
+        "awayAbbr": "NEW",
+        "score": [
+          4,
+          1
+        ]
       },
       "localDay": "2026-10-12",
       "localWeekday": "Monday, Oct 12",
@@ -700,7 +704,7 @@
         "ESPN",
         "ABC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAR",
