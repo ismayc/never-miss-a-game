@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-14T00:10:22.118Z",
+  "generatedAt": "2026-10-14T11:17:53.040Z",
   "tz": "America/Phoenix",
   "window": {
-    "from": "2026-10-13",
-    "to": "2026-10-19",
+    "from": "2026-10-14",
+    "to": "2026-10-20",
     "days": 7,
     "localDays": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
       "2026-10-17",
       "2026-10-18",
-      "2026-10-19"
+      "2026-10-19",
+      "2026-10-20"
     ]
   },
   "root": "/home/runner/work/never-miss-a-game/sports-trackers",
@@ -102,7 +102,7 @@
       "nextGameLocalDay": "2026-10-18",
       "nextGameLocal": "Sunday, Oct 18 at 1:05 PM",
       "nextGameLabel": "Arizona Cardinals at Los Angeles Rams",
-      "daysUntilNextGame": 5,
+      "daysUntilNextGame": 4,
       "note": null
     },
     {
@@ -121,7 +121,7 @@
       "nextGameLocalDay": "2026-10-15",
       "nextGameLocal": "Thursday, Oct 15 at 5:15 PM",
       "nextGameLabel": "Seattle Seahawks at Denver Broncos",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "note": null
     },
     {
@@ -140,7 +140,7 @@
       "nextGameLocalDay": "2026-10-19",
       "nextGameLocal": "Monday, Oct 19 at 5:15 PM",
       "nextGameLabel": "Washington Commanders at San Francisco 49ers",
-      "daysUntilNextGame": 6,
+      "daysUntilNextGame": 5,
       "note": null
     },
     {
@@ -159,7 +159,7 @@
       "nextGameLocalDay": "2026-10-18",
       "nextGameLocal": "Sunday, Oct 18 at 1:05 PM",
       "nextGameLabel": "Arizona Cardinals at Los Angeles Rams",
-      "daysUntilNextGame": 5,
+      "daysUntilNextGame": 4,
       "note": null
     },
     {
@@ -178,7 +178,7 @@
       "nextGameLocalDay": "2026-10-17",
       "nextGameLocal": "Saturday, Oct 17 at 7:00 AM",
       "nextGameLabel": "Ipswich Town at Manchester City",
-      "daysUntilNextGame": 4,
+      "daysUntilNextGame": 3,
       "note": null
     },
     {
@@ -197,7 +197,7 @@
       "nextGameLocalDay": "2026-10-17",
       "nextGameLocal": "Saturday, Oct 17 at 7:00 AM",
       "nextGameLabel": "Liverpool at Brentford",
-      "daysUntilNextGame": 4,
+      "daysUntilNextGame": 3,
       "note": null
     },
     {
@@ -214,7 +214,7 @@
       "nextGameLocalDay": "2026-10-22",
       "nextGameLocal": "Thursday, Oct 22 at 6:30 PM",
       "nextGameLabel": "Denver Nuggets at Oklahoma City Thunder",
-      "daysUntilNextGame": 9,
+      "daysUntilNextGame": 8,
       "note": null
     },
     {
@@ -225,13 +225,15 @@
       "why": "Gotta support the Alien.",
       "sourceStatus": "ok",
       "totalThisSeason": 80,
-      "inWindow": 0,
-      "inWindowGameIds": [],
+      "inWindow": 1,
+      "inWindowGameIds": [
+        "401909090"
+      ],
       "nextGameUtc": "2026-10-21T01:30:00.000Z",
       "nextGameLocalDay": "2026-10-20",
       "nextGameLocal": "Tuesday, Oct 20 at 6:30 PM",
       "nextGameLabel": "Oklahoma City Thunder at San Antonio Spurs",
-      "daysUntilNextGame": 7,
+      "daysUntilNextGame": 6,
       "note": null
     }
   ],
@@ -273,7 +275,7 @@
       "nextGameUtc": "2026-10-17T19:30:00.000Z",
       "nextGameLocalDay": "2026-10-17",
       "nextGameLabel": "Atlanta Dream at Golden State Valkyries",
-      "daysUntilNextGame": 4,
+      "daysUntilNextGame": 3,
       "notes": []
     },
     {
@@ -313,7 +315,7 @@
       "nextGameUtc": "2026-10-17T11:30:00.000Z",
       "nextGameLocalDay": "2026-10-17",
       "nextGameLabel": "Chelsea at Everton",
-      "daysUntilNextGame": 4,
+      "daysUntilNextGame": 3,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -355,7 +357,7 @@
       "nextGameUtc": "2026-10-16T00:15:00.000Z",
       "nextGameLocalDay": "2026-10-15",
       "nextGameLabel": "Seattle Seahawks at Denver Broncos",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -387,9 +389,9 @@
         "placeholder": 0,
         "postponed": 0,
         "pastUnresolved": 0,
-        "inWindow": 0,
-        "inWindowReal": 0,
-        "inWindowFollowed": 0
+        "inWindow": 3,
+        "inWindowReal": 3,
+        "inWindowFollowed": 1
       },
       "dataRange": {
         "first": "2026-10-20T19:00:00.000Z",
@@ -398,7 +400,7 @@
       "nextGameUtc": "2026-10-20T19:00:00.000Z",
       "nextGameLocalDay": "2026-10-20",
       "nextGameLabel": "Boston Celtics at Detroit Pistons",
-      "daysUntilNextGame": 7,
+      "daysUntilNextGame": 6,
       "notes": []
     },
     {
@@ -655,11 +657,11 @@
   "counts": {
     "sourcesOk": 10,
     "sourcesMissing": 0,
-    "gamesInWindow": 26,
-    "realGamesInWindow": 26,
+    "gamesInWindow": 29,
+    "realGamesInWindow": 29,
     "placeholdersInWindow": 0,
     "postponedInWindow": 0,
-    "followedGamesInWindow": 5
+    "followedGamesInWindow": 6
   },
   "games": [
     {
@@ -865,7 +867,10 @@
       "homeLabel": "Leeds United",
       "awayLabel": "Manchester United",
       "venue": "Elland Road, Leeds",
-      "tv": [],
+      "tv": [
+        "USA Net",
+        "Tele"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -889,7 +894,9 @@
       "homeLabel": "Brighton & Hove Albion",
       "awayLabel": "Crystal Palace",
       "venue": "American Express Stadium, Falmer",
-      "tv": [],
+      "tv": [
+        "Peacock"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -913,7 +920,9 @@
       "homeLabel": "AFC Bournemouth",
       "awayLabel": "Sunderland",
       "venue": "Vitality Stadium, Bournemouth",
-      "tv": [],
+      "tv": [
+        "Peacock"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -965,7 +974,9 @@
       "homeLabel": "Nottingham Forest",
       "awayLabel": "Arsenal",
       "venue": "The City Ground, Nottingham",
-      "tv": [],
+      "tv": [
+        "Peacock"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1289,7 +1300,10 @@
       "homeLabel": "Tottenham Hotspur",
       "awayLabel": "Coventry City",
       "venue": "Tottenham Hotspur Stadium, London",
-      "tv": [],
+      "tv": [
+        "USA Net",
+        "Universo"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1360,6 +1374,87 @@
       "tz": "America/Phoenix",
       "followedBy": [
         "San Francisco 49ers"
+      ],
+      "followed": true
+    },
+    {
+      "sport": "nba",
+      "sportName": "NBA",
+      "emoji": "🏀",
+      "id": "401909088",
+      "startUtc": "2026-10-20T19:00:00.000Z",
+      "homeLabel": "Detroit Pistons",
+      "awayLabel": "Boston Celtics",
+      "venue": "Little Caesars Arena, Detroit",
+      "tv": [
+        "NBC"
+      ],
+      "status": "scheduled",
+      "seasonType": "regular",
+      "extra": {
+        "homeAbbr": "DET",
+        "awayAbbr": "BOS",
+        "seasonOpener": true
+      },
+      "localDay": "2026-10-20",
+      "localWeekday": "Tuesday, Oct 20",
+      "localTime": "12:00 PM",
+      "localTimeUser": "12:00 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
+    },
+    {
+      "sport": "nba",
+      "sportName": "NBA",
+      "emoji": "🏀",
+      "id": "401909089",
+      "startUtc": "2026-10-20T23:00:00.000Z",
+      "homeLabel": "New York Knicks",
+      "awayLabel": "Philadelphia 76ers",
+      "venue": "Madison Square Garden, New York",
+      "tv": [
+        "NBC"
+      ],
+      "status": "scheduled",
+      "seasonType": "regular",
+      "extra": {
+        "homeAbbr": "NY",
+        "awayAbbr": "PHI"
+      },
+      "localDay": "2026-10-20",
+      "localWeekday": "Tuesday, Oct 20",
+      "localTime": "4:00 PM",
+      "localTimeUser": "4:00 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
+    },
+    {
+      "sport": "nba",
+      "sportName": "NBA",
+      "emoji": "🏀",
+      "id": "401909090",
+      "startUtc": "2026-10-21T01:30:00.000Z",
+      "homeLabel": "San Antonio Spurs",
+      "awayLabel": "Oklahoma City Thunder",
+      "venue": "Frost Bank Center, San Antonio",
+      "tv": [
+        "NBC"
+      ],
+      "status": "scheduled",
+      "seasonType": "regular",
+      "extra": {
+        "homeAbbr": "SA",
+        "awayAbbr": "OKC"
+      },
+      "localDay": "2026-10-20",
+      "localWeekday": "Tuesday, Oct 20",
+      "localTime": "6:30 PM",
+      "localTimeUser": "6:30 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [
+        "San Antonio Spurs"
       ],
       "followed": true
     }
