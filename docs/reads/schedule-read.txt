@@ -1,7 +1,7 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Friday, Oct 16 through Thursday, Oct 22 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-10-16T10:48:21.087Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-10-16T20:33:55.593Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
