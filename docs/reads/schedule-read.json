@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T00:10:26.099Z",
+  "generatedAt": "2026-10-16T03:21:02.208Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-15",
@@ -117,11 +117,11 @@
       "inWindowGameIds": [
         "401872995"
       ],
-      "nextGameUtc": "2026-10-16T00:15:00.000Z",
-      "nextGameLocalDay": "2026-10-15",
-      "nextGameLocal": "Thursday, Oct 15 at 5:15 PM",
-      "nextGameLabel": "Seattle Seahawks at Denver Broncos",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-26T00:20:00.000Z",
+      "nextGameLocalDay": "2026-10-25",
+      "nextGameLocal": "Sunday, Oct 25 at 5:20 PM",
+      "nextGameLabel": "Kansas City Chiefs at Seattle Seahawks",
+      "daysUntilNextGame": 10,
       "note": null
     },
     {
@@ -342,10 +342,10 @@
       "counts": {
         "total": 272,
         "final": 79,
-        "scheduled": 193,
+        "scheduled": 192,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 3
@@ -354,10 +354,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-16T00:15:00.000Z",
-      "nextGameLocalDay": "2026-10-15",
-      "nextGameLabel": "Seattle Seahawks at Denver Broncos",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-18T13:30:00.000Z",
+      "nextGameLocalDay": "2026-10-18",
+      "nextGameLabel": "Houston Texans at Jacksonville Jaguars",
+      "daysUntilNextGame": 3,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -676,7 +676,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DEN",
