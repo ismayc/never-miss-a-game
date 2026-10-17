@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T12:10:18.874Z",
+  "generatedAt": "2026-10-17T15:02:38.934Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-17",
@@ -172,11 +172,11 @@
       "inWindowGameIds": [
         "401879259"
       ],
-      "nextGameUtc": "2026-10-17T14:00:00.000Z",
-      "nextGameLocalDay": "2026-10-17",
-      "nextGameLocal": "Saturday, Oct 17 at 7:00 AM",
-      "nextGameLabel": "Ipswich Town at Manchester City",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-24T11:30:00.000Z",
+      "nextGameLocalDay": "2026-10-24",
+      "nextGameLocal": "Saturday, Oct 24 at 4:30 AM",
+      "nextGameLabel": "Manchester City at Aston Villa",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -191,11 +191,11 @@
       "inWindowGameIds": [
         "401879262"
       ],
-      "nextGameUtc": "2026-10-17T14:00:00.000Z",
-      "nextGameLocalDay": "2026-10-17",
-      "nextGameLocal": "Saturday, Oct 17 at 7:00 AM",
-      "nextGameLabel": "Liverpool at Brentford",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-25T14:00:00.000Z",
+      "nextGameLocalDay": "2026-10-25",
+      "nextGameLocal": "Sunday, Oct 25 at 7:00 AM",
+      "nextGameLabel": "Brighton & Hove Albion at Liverpool",
+      "daysUntilNextGame": 8,
       "note": null
     },
     {
@@ -301,10 +301,10 @@
       "counts": {
         "total": 380,
         "final": 60,
-        "scheduled": 319,
+        "scheduled": 316,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 4,
         "inWindow": 11,
         "inWindowReal": 11,
         "inWindowFollowed": 2
@@ -313,9 +313,9 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-17T14:00:00.000Z",
+      "nextGameUtc": "2026-10-17T16:30:00.000Z",
       "nextGameLocalDay": "2026-10-17",
-      "nextGameLabel": "Hull City at Fulham",
+      "nextGameLabel": "Aston Villa at Newcastle United",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
@@ -704,7 +704,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "FUL",
@@ -731,7 +731,7 @@
         "USA Net",
         "Universo"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MNC",
@@ -759,7 +759,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BRE",
