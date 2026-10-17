@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T10:13:03.315Z",
+  "generatedAt": "2026-10-17T12:10:18.874Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-17",
@@ -301,10 +301,10 @@
       "counts": {
         "total": 380,
         "final": 60,
-        "scheduled": 320,
+        "scheduled": 319,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 11,
         "inWindowReal": 11,
         "inWindowFollowed": 2
@@ -313,9 +313,9 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-17T11:30:00.000Z",
+      "nextGameUtc": "2026-10-17T14:00:00.000Z",
       "nextGameLocalDay": "2026-10-17",
-      "nextGameLabel": "Chelsea at Everton",
+      "nextGameLabel": "Hull City at Fulham",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
@@ -678,7 +678,7 @@
         "USA Net",
         "Universo"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "EVE",
