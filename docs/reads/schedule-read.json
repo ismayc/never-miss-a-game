@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T18:10:18.119Z",
+  "generatedAt": "2026-10-17T20:11:50.969Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-17",
@@ -261,10 +261,10 @@
       "counts": {
         "total": 356,
         "final": 348,
-        "scheduled": 7,
+        "scheduled": 6,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 3,
         "inWindowReal": 3,
         "inWindowFollowed": 0
@@ -273,10 +273,10 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-11-01T00:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-17T19:30:00.000Z",
-      "nextGameLocalDay": "2026-10-17",
+      "nextGameUtc": "2026-10-20T00:00:00.000Z",
+      "nextGameLocalDay": "2026-10-19",
       "nextGameLabel": "Atlanta Dream at Golden State Valkyries",
-      "daysUntilNextGame": 0,
+      "daysUntilNextGame": 2,
       "notes": []
     },
     {
@@ -300,11 +300,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 60,
+        "final": 65,
         "scheduled": 315,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 5,
+        "pastUnresolved": 0,
         "inWindow": 11,
         "inWindowReal": 11,
         "inWindowFollowed": 2
@@ -678,11 +678,15 @@
         "USA Net",
         "Universo"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "EVE",
-        "awayAbbr": "CHE"
+        "awayAbbr": "CHE",
+        "score": [
+          0,
+          2
+        ]
       },
       "localDay": "2026-10-17",
       "localWeekday": "Saturday, Oct 17",
@@ -704,11 +708,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "FUL",
-        "awayAbbr": "HUL"
+        "awayAbbr": "HUL",
+        "score": [
+          1,
+          0
+        ]
       },
       "localDay": "2026-10-17",
       "localWeekday": "Saturday, Oct 17",
@@ -731,11 +739,15 @@
         "USA Net",
         "Universo"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MNC",
-        "awayAbbr": "IPS"
+        "awayAbbr": "IPS",
+        "score": [
+          3,
+          2
+        ]
       },
       "localDay": "2026-10-17",
       "localWeekday": "Saturday, Oct 17",
@@ -759,11 +771,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BRE",
-        "awayAbbr": "LIV"
+        "awayAbbr": "LIV",
+        "score": [
+          1,
+          2
+        ]
       },
       "localDay": "2026-10-17",
       "localWeekday": "Saturday, Oct 17",
@@ -788,11 +804,15 @@
         "NBC",
         "Universo"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NEW",
-        "awayAbbr": "AVL"
+        "awayAbbr": "AVL",
+        "score": [
+          0,
+          1
+        ]
       },
       "localDay": "2026-10-17",
       "localWeekday": "Saturday, Oct 17",
@@ -815,7 +835,7 @@
         "NBC",
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "GS",
