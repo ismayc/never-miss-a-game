@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T18:10:21.916Z",
+  "generatedAt": "2026-10-18T20:10:08.762Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-18",
@@ -98,11 +98,11 @@
       "inWindowGameIds": [
         "401873004"
       ],
-      "nextGameUtc": "2026-10-18T20:05:00.000Z",
-      "nextGameLocalDay": "2026-10-18",
-      "nextGameLocal": "Sunday, Oct 18 at 1:05 PM",
-      "nextGameLabel": "Arizona Cardinals at Los Angeles Rams",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-25T20:05:00.000Z",
+      "nextGameLocalDay": "2026-10-25",
+      "nextGameLocal": "Sunday, Oct 25 at 1:05 PM",
+      "nextGameLabel": "Denver Broncos at Arizona Cardinals",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -153,11 +153,11 @@
       "inWindowGameIds": [
         "401873004"
       ],
-      "nextGameUtc": "2026-10-18T20:05:00.000Z",
-      "nextGameLocalDay": "2026-10-18",
-      "nextGameLocal": "Sunday, Oct 18 at 1:05 PM",
-      "nextGameLabel": "Arizona Cardinals at Los Angeles Rams",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-25T20:25:00.000Z",
+      "nextGameLocalDay": "2026-10-25",
+      "nextGameLocal": "Sunday, Oct 25 at 1:25 PM",
+      "nextGameLabel": "Los Angeles Rams at Las Vegas Raiders",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -300,11 +300,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 65,
+        "final": 69,
         "scheduled": 311,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 4,
+        "pastUnresolved": 0,
         "inWindow": 10,
         "inWindowReal": 10,
         "inWindowFollowed": 1
@@ -342,8 +342,8 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 80,
-        "scheduled": 184,
+        "final": 81,
+        "scheduled": 183,
         "placeholder": 0,
         "postponed": 0,
         "pastUnresolved": 8,
@@ -355,9 +355,9 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-18T20:05:00.000Z",
+      "nextGameUtc": "2026-10-18T20:25:00.000Z",
       "nextGameLocalDay": "2026-10-18",
-      "nextGameLabel": "Arizona Cardinals at Los Angeles Rams",
+      "nextGameLabel": "Buffalo Bills at Las Vegas Raiders",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
@@ -678,11 +678,15 @@
         "USA Net",
         "Tele"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LEE",
-        "awayAbbr": "MAN"
+        "awayAbbr": "MAN",
+        "score": [
+          1,
+          1
+        ]
       },
       "localDay": "2026-10-18",
       "localWeekday": "Sunday, Oct 18",
@@ -704,11 +708,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BHA",
-        "awayAbbr": "CRY"
+        "awayAbbr": "CRY",
+        "score": [
+          5,
+          0
+        ]
       },
       "localDay": "2026-10-18",
       "localWeekday": "Sunday, Oct 18",
@@ -730,11 +738,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BOU",
-        "awayAbbr": "SUN"
+        "awayAbbr": "SUN",
+        "score": [
+          2,
+          0
+        ]
       },
       "localDay": "2026-10-18",
       "localWeekday": "Sunday, Oct 18",
@@ -756,13 +768,17 @@
       "tv": [
         "NFL Net"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "JAX",
         "awayAbbr": "HOU",
         "week": 6,
-        "neutral": true
+        "neutral": true,
+        "score": [
+          31,
+          34
+        ]
       },
       "localDay": "2026-10-18",
       "localWeekday": "Sunday, Oct 18",
@@ -784,11 +800,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NFO",
-        "awayAbbr": "ARS"
+        "awayAbbr": "ARS",
+        "score": [
+          0,
+          1
+        ]
       },
       "localDay": "2026-10-18",
       "localWeekday": "Sunday, Oct 18",
@@ -999,7 +1019,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAR",
