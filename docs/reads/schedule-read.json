@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T16:18:04.442Z",
+  "generatedAt": "2026-10-18T18:10:21.916Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-18",
@@ -343,10 +343,10 @@
       "counts": {
         "total": 272,
         "final": 80,
-        "scheduled": 191,
+        "scheduled": 184,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 8,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 2
@@ -355,9 +355,9 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-18T17:00:00.000Z",
+      "nextGameUtc": "2026-10-18T20:05:00.000Z",
       "nextGameLocalDay": "2026-10-18",
-      "nextGameLabel": "Baltimore Ravens at Cleveland Browns",
+      "nextGameLabel": "Arizona Cardinals at Los Angeles Rams",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
@@ -810,7 +810,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CLE",
@@ -837,7 +837,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
@@ -864,7 +864,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
@@ -891,7 +891,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NYG",
@@ -918,7 +918,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NE",
@@ -945,7 +945,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TB",
@@ -972,7 +972,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IND",
