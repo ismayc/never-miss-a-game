@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T15:26:57.636Z",
+  "generatedAt": "2026-10-18T16:18:04.442Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-18",
@@ -301,10 +301,10 @@
       "counts": {
         "total": 380,
         "final": 65,
-        "scheduled": 312,
+        "scheduled": 311,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 3,
+        "pastUnresolved": 4,
         "inWindow": 10,
         "inWindowReal": 10,
         "inWindowFollowed": 1
@@ -313,10 +313,10 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-18T15:30:00.000Z",
-      "nextGameLocalDay": "2026-10-18",
-      "nextGameLabel": "Arsenal at Nottingham Forest",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-19T19:00:00.000Z",
+      "nextGameLocalDay": "2026-10-19",
+      "nextGameLabel": "Coventry City at Tottenham Hotspur",
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -784,7 +784,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NFO",
