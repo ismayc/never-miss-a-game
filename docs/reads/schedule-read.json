@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T20:10:08.762Z",
+  "generatedAt": "2026-10-19T00:10:21.223Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-18",
@@ -342,11 +342,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 81,
-        "scheduled": 183,
+        "final": 91,
+        "scheduled": 181,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 8,
+        "pastUnresolved": 0,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 2
@@ -355,9 +355,9 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-18T20:25:00.000Z",
+      "nextGameUtc": "2026-10-19T00:20:00.000Z",
       "nextGameLocalDay": "2026-10-18",
-      "nextGameLabel": "Buffalo Bills at Las Vegas Raiders",
+      "nextGameLabel": "Dallas Cowboys at Green Bay Packers",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
@@ -371,9 +371,9 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 3d",
+        "label": "Starts in 2d",
         "tone": "soon",
-        "days": 3
+        "days": 2
       },
       "week": {
         "start": "2026-10-18",
@@ -830,12 +830,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CLE",
         "awayAbbr": "BAL",
-        "week": 6
+        "week": 6,
+        "score": [
+          13,
+          10
+        ]
       },
       "localDay": "2026-10-18",
       "localWeekday": "Sunday, Oct 18",
@@ -857,12 +861,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
         "awayAbbr": "CAR",
-        "week": 6
+        "week": 6,
+        "score": [
+          14,
+          25
+        ]
       },
       "localDay": "2026-10-18",
       "localWeekday": "Sunday, Oct 18",
@@ -884,12 +892,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
         "awayAbbr": "CHI",
-        "week": 6
+        "week": 6,
+        "score": [
+          23,
+          31
+        ]
       },
       "localDay": "2026-10-18",
       "localWeekday": "Sunday, Oct 18",
@@ -911,12 +923,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NYG",
         "awayAbbr": "NO",
-        "week": 6
+        "week": 6,
+        "score": [
+          27,
+          34
+        ]
       },
       "localDay": "2026-10-18",
       "localWeekday": "Sunday, Oct 18",
@@ -938,12 +954,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NE",
         "awayAbbr": "NYJ",
-        "week": 6
+        "week": 6,
+        "score": [
+          26,
+          19
+        ]
       },
       "localDay": "2026-10-18",
       "localWeekday": "Sunday, Oct 18",
@@ -965,12 +985,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TB",
         "awayAbbr": "PIT",
-        "week": 6
+        "week": 6,
+        "score": [
+          19,
+          26
+        ]
       },
       "localDay": "2026-10-18",
       "localWeekday": "Sunday, Oct 18",
@@ -992,12 +1016,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IND",
         "awayAbbr": "TEN",
-        "week": 6
+        "week": 6,
+        "score": [
+          20,
+          26
+        ]
       },
       "localDay": "2026-10-18",
       "localWeekday": "Sunday, Oct 18",
@@ -1019,12 +1047,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAR",
         "awayAbbr": "ARI",
-        "week": 6
+        "week": 6,
+        "score": [
+          16,
+          18
+        ]
       },
       "localDay": "2026-10-18",
       "localWeekday": "Sunday, Oct 18",
@@ -1049,12 +1081,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LV",
         "awayAbbr": "BUF",
-        "week": 6
+        "week": 6,
+        "score": [
+          30,
+          33
+        ]
       },
       "localDay": "2026-10-18",
       "localWeekday": "Sunday, Oct 18",
@@ -1076,12 +1112,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "KC",
         "awayAbbr": "LAC",
-        "week": 6
+        "week": 6,
+        "score": [
+          22,
+          6
+        ]
       },
       "localDay": "2026-10-18",
       "localWeekday": "Sunday, Oct 18",
