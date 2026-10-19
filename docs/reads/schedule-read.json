@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T00:10:21.223Z",
+  "generatedAt": "2026-10-19T03:27:48.136Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-18",
@@ -343,10 +343,10 @@
       "counts": {
         "total": 272,
         "final": 91,
-        "scheduled": 181,
+        "scheduled": 180,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 2
@@ -355,10 +355,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-19T00:20:00.000Z",
-      "nextGameLocalDay": "2026-10-18",
-      "nextGameLabel": "Dallas Cowboys at Green Bay Packers",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-20T00:15:00.000Z",
+      "nextGameLocalDay": "2026-10-19",
+      "nextGameLabel": "Washington Commanders at San Francisco 49ers",
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -1143,7 +1143,7 @@
       "tv": [
         "NBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "GB",
