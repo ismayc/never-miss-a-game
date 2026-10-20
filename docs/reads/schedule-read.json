@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T10:59:30.205Z",
+  "generatedAt": "2026-10-20T21:18:08.448Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-20",
@@ -391,10 +391,10 @@
       "counts": {
         "total": 1200,
         "final": 0,
-        "scheduled": 1200,
+        "scheduled": 1199,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 52,
         "inWindowReal": 52,
         "inWindowFollowed": 6
@@ -403,9 +403,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-20T19:00:00.000Z",
+      "nextGameUtc": "2026-10-20T23:00:00.000Z",
       "nextGameLocalDay": "2026-10-20",
-      "nextGameLabel": "Boston Celtics at Detroit Pistons",
+      "nextGameLabel": "Philadelphia 76ers at New York Knicks",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -682,12 +682,11 @@
       "tv": [
         "NBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DET",
-        "awayAbbr": "BOS",
-        "seasonOpener": true
+        "awayAbbr": "BOS"
       },
       "localDay": "2026-10-20",
       "localWeekday": "Tuesday, Oct 20",
@@ -713,7 +712,8 @@
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NY",
-        "awayAbbr": "PHI"
+        "awayAbbr": "PHI",
+        "seasonOpener": true
       },
       "localDay": "2026-10-20",
       "localWeekday": "Tuesday, Oct 20",
@@ -945,8 +945,7 @@
       "venue": "State Farm Arena, Atlanta",
       "tv": [
         "USA Net",
-        "CNBC",
-        "Peacock"
+        "CNBC"
       ],
       "status": "scheduled",
       "seasonType": "playoffs",
@@ -1595,8 +1594,7 @@
       "awayLabel": "Golden State Valkyries",
       "venue": "State Farm Arena, Atlanta",
       "tv": [
-        "NBC",
-        "Peacock"
+        "NBC"
       ],
       "status": "scheduled",
       "seasonType": "playoffs",
@@ -2631,8 +2629,7 @@
       "venue": "Chase Center, San Francisco",
       "tv": [
         "USA Net",
-        "CNBC",
-        "Peacock"
+        "CNBC"
       ],
       "status": "scheduled",
       "seasonType": "playoffs",
