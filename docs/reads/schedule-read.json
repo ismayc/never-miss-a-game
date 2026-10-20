@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T22:02:05.784Z",
+  "generatedAt": "2026-10-20T00:10:26.329Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-19",
@@ -266,10 +266,10 @@
       "counts": {
         "total": 356,
         "final": 349,
-        "scheduled": 6,
+        "scheduled": 5,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 3,
         "inWindowReal": 3,
         "inWindowFollowed": 0
@@ -278,10 +278,10 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-11-01T00:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-20T00:00:00.000Z",
-      "nextGameLocalDay": "2026-10-19",
-      "nextGameLabel": "Atlanta Dream at Golden State Valkyries",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-22T00:00:00.000Z",
+      "nextGameLocalDay": "2026-10-21",
+      "nextGameLabel": "Golden State Valkyries at Atlanta Dream",
+      "daysUntilNextGame": 2,
       "notes": []
     },
     {
@@ -305,11 +305,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 69,
+        "final": 70,
         "scheduled": 310,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 11,
         "inWindowReal": 11,
         "inWindowFollowed": 2
@@ -376,9 +376,9 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 2d",
+        "label": "Starts in 1d",
         "tone": "soon",
-        "days": 2
+        "days": 1
       },
       "week": {
         "start": "2026-10-18",
@@ -683,11 +683,15 @@
         "USA Net",
         "Universo"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TOT",
-        "awayAbbr": "COV"
+        "awayAbbr": "COV",
+        "score": [
+          3,
+          1
+        ]
       },
       "localDay": "2026-10-19",
       "localWeekday": "Monday, Oct 19",
@@ -712,7 +716,7 @@
         "Peacock",
         "E!"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "GS",
@@ -872,7 +876,8 @@
       "awayLabel": "Milwaukee Bucks",
       "venue": "Capital One Arena, Washington",
       "tv": [
-        "MNMT"
+        "MNMT",
+        "NBA League Pass"
       ],
       "status": "scheduled",
       "seasonType": "regular",
@@ -1098,7 +1103,9 @@
       "homeLabel": "Portland Trail Blazers",
       "awayLabel": "Phoenix Suns",
       "venue": "Moda Center, Portland",
-      "tv": [],
+      "tv": [
+        "NBA League Pass"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1374,7 +1381,8 @@
       "awayLabel": "Toronto Raptors",
       "venue": "Capital One Arena, Washington",
       "tv": [
-        "MNMT"
+        "MNMT",
+        "NBA League Pass"
       ],
       "status": "scheduled",
       "seasonType": "regular",
@@ -1399,7 +1407,9 @@
       "homeLabel": "Miami Heat",
       "awayLabel": "Detroit Pistons",
       "venue": "Kaseya Center, Miami",
-      "tv": [],
+      "tv": [
+        "NBA League Pass"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1499,7 +1509,9 @@
       "homeLabel": "Los Angeles Lakers",
       "awayLabel": "LA Clippers",
       "venue": "crypto.com Arena, Los Angeles",
-      "tv": [],
+      "tv": [
+        "NBA League Pass"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1673,7 +1685,9 @@
       "homeLabel": "Charlotte Hornets",
       "awayLabel": "Miami Heat",
       "venue": "Spectrum Center, Charlotte",
-      "tv": [],
+      "tv": [
+        "NBA League Pass"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1697,7 +1711,9 @@
       "homeLabel": "Cleveland Cavaliers",
       "awayLabel": "Brooklyn Nets",
       "venue": "Rocket Arena, Cleveland",
-      "tv": [],
+      "tv": [
+        "NBA League Pass"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1748,7 +1764,8 @@
       "awayLabel": "Washington Wizards",
       "venue": "United Center, Chicago",
       "tv": [
-        "MNMT"
+        "MNMT",
+        "NBA League Pass"
       ],
       "status": "scheduled",
       "seasonType": "regular",
@@ -2423,7 +2440,9 @@
       "homeLabel": "Philadelphia 76ers",
       "awayLabel": "Detroit Pistons",
       "venue": "Xfinity Mobile Arena, Philadelphia",
-      "tv": [],
+      "tv": [
+        "NBA League Pass"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {

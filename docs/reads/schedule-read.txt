@@ -1,18 +1,18 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Monday, Oct 19 through Sunday, Oct 25 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-10-19T22:02:05.183Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-10-20T00:10:25.746Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
-  🏀 WNBA                   In season      3 in window      next game today
+  🏀 WNBA                   In season      3 in window      next game in 2d (2026-10-21 local)
+      ⚠ 1 past matches with no committed result
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
   ⚽ Premier League         In season      11 in window     next game in 4d (2026-10-23 local)
-      ⚠ 1 past matches with no committed result
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
   🏈 NFL                    In season      14 in window     next game today
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
-  🏀 NBA                    Starts in 2d   43 in window     next game in 1d (2026-10-20 local)
+  🏀 NBA                    Starts in 1d   43 in window     next game in 1d (2026-10-20 local)
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
@@ -55,7 +55,7 @@ IN WINDOW: 71 real games, 12 involving a followed team
 
   Wednesday, Oct 21
     4:00 PM  🏀 Atlanta Hawks at Orlando Magic                
-    4:00 PM  🏀 Milwaukee Bucks at Washington Wizards          · MNMT
+    4:00 PM  🏀 Milwaukee Bucks at Washington Wizards          · MNMT/NBA League Pass
     4:30 PM  🏀 Minnesota Timberwolves at Miami Heat           · ESPN
     4:30 PM  🏀 Charlotte Hornets at Brooklyn Nets            
     4:30 PM  🏀 Chicago Bulls at Toronto Raptors              
@@ -64,7 +64,7 @@ IN WINDOW: 71 real games, 12 involving a followed team
     5:00 PM  🏀 Golden State Valkyries at Atlanta Dream        · USA Net/CNBC
     5:30 PM  🏀 Dallas Mavericks at Houston Rockets           
     7:00 PM  🏀 Golden State Warriors at Los Angeles Lakers    · ESPN
-    7:00 PM  🏀 Phoenix Suns at Portland Trail Blazers        
+    7:00 PM  🏀 Phoenix Suns at Portland Trail Blazers         · NBA League Pass
     7:30 PM  🏀 Sacramento Kings at LA Clippers               
 
   Thursday, Oct 22
@@ -79,12 +79,12 @@ IN WINDOW: 71 real games, 12 involving a followed team
     4:00 PM  🏀 Atlanta Hawks at Charlotte Hornets            
     4:00 PM  🏀 Dallas Mavericks at Indiana Pacers            
     4:00 PM  🏀 Minnesota Timberwolves at Orlando Magic       
-    4:00 PM  🏀 Toronto Raptors at Washington Wizards          · MNMT
-    5:00 PM  🏀 Detroit Pistons at Miami Heat                 
+    4:00 PM  🏀 Toronto Raptors at Washington Wizards          · MNMT/NBA League Pass
+    5:00 PM  🏀 Detroit Pistons at Miami Heat                  · NBA League Pass
   ★ 6:30 PM  🏀 Houston Rockets at San Antonio Spurs           · Prime Video
     6:30 PM  🏀 New Orleans Pelicans at Utah Jazz             
     7:00 PM  🏀 Memphis Grizzlies at Golden State Warriors    
-    7:00 PM  🏀 LA Clippers at Los Angeles Lakers             
+    7:00 PM  🏀 LA Clippers at Los Angeles Lakers              · NBA League Pass
     7:00 PM  🏀 Portland Trail Blazers at Sacramento Kings    
 
   Saturday, Oct 24
@@ -93,10 +93,10 @@ IN WINDOW: 71 real games, 12 involving a followed team
     7:00 AM  ⚽ Fulham at Coventry City                       
     9:30 AM  ⚽ Tottenham Hotspur at Chelsea                  
     10:00 AM 🏀 Golden State Valkyries at Atlanta Dream        · NBC/Peacock
-    3:00 PM  🏀 Miami Heat at Charlotte Hornets               
-    4:30 PM  🏀 Brooklyn Nets at Cleveland Cavaliers          
+    3:00 PM  🏀 Miami Heat at Charlotte Hornets                · NBA League Pass
+    4:30 PM  🏀 Brooklyn Nets at Cleveland Cavaliers           · NBA League Pass
     4:30 PM  🏀 Milwaukee Bucks at Philadelphia 76ers          · NBA TV
-    5:00 PM  🏀 Washington Wizards at Chicago Bulls            · MNMT
+    5:00 PM  🏀 Washington Wizards at Chicago Bulls            · MNMT/NBA League Pass
   ★ 5:00 PM  🏀 San Antonio Spurs at Dallas Mavericks         
     5:30 PM  🏀 Houston Rockets at Atlanta Hawks              
   ★ 6:00 PM  🏀 New Orleans Pelicans at Denver Nuggets        
@@ -124,7 +124,7 @@ IN WINDOW: 71 real games, 12 involving a followed team
     4:00 PM  🏀 Orlando Magic at New York Knicks              
     4:00 PM  🏀 Toronto Raptors at Minnesota Timberwolves      · NBA TV
     4:00 PM  🏀 LA Clippers at Oklahoma City Thunder          
-    4:30 PM  🏀 Detroit Pistons at Philadelphia 76ers         
+    4:30 PM  🏀 Detroit Pistons at Philadelphia 76ers          · NBA League Pass
   ★ 5:20 PM  🏈 Kansas City Chiefs at Seattle Seahawks         · NBC · Week 7
     6:00 PM  🏀 Memphis Grizzlies at Sacramento Kings         
 
