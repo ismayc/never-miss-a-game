@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T11:15:32.862Z",
+  "generatedAt": "2026-10-21T16:41:30.524Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-21",
@@ -758,7 +758,8 @@
       "awayLabel": "Charlotte Hornets",
       "venue": "Barclays Center, Brooklyn",
       "tv": [
-        "NBA League Pass"
+        "NBA League Pass",
+        "DAZN (YES)"
       ],
       "status": "scheduled",
       "seasonType": "regular",
@@ -942,7 +943,10 @@
       "awayLabel": "Phoenix Suns",
       "venue": "Moda Center, Portland",
       "tv": [
-        "NBA League Pass"
+        "NBA League Pass",
+        "KUNP 16",
+        "BlazerVision",
+        "Suns Live"
       ],
       "status": "scheduled",
       "seasonType": "regular",
@@ -968,7 +972,8 @@
       "awayLabel": "Sacramento Kings",
       "venue": "Intuit Dome, Inglewood",
       "tv": [
-        "NBA League Pass"
+        "NBA League Pass",
+        "NBC Sports CA"
       ],
       "status": "scheduled",
       "seasonType": "regular",
@@ -1312,7 +1317,11 @@
       "awayLabel": "New Orleans Pelicans",
       "venue": "Delta Center, Salt Lake City",
       "tv": [
-        "NBA League Pass"
+        "NBA League Pass",
+        "KJZZ-TV",
+        "Jazz+",
+        "GCSEN",
+        "Pelicans.com"
       ],
       "status": "scheduled",
       "seasonType": "regular",
@@ -1338,7 +1347,8 @@
       "awayLabel": "Memphis Grizzlies",
       "venue": "Chase Center, San Francisco",
       "tv": [
-        "NBA League Pass"
+        "NBA League Pass",
+        "NBC Sports BA"
       ],
       "status": "scheduled",
       "seasonType": "regular",
@@ -1390,7 +1400,9 @@
       "awayLabel": "Portland Trail Blazers",
       "venue": "Golden 1 Center, Sacramento",
       "tv": [
-        "NBA League Pass"
+        "NBA League Pass",
+        "KUNP 16",
+        "BlazerVision"
       ],
       "status": "scheduled",
       "seasonType": "regular",
@@ -1740,7 +1752,9 @@
       "awayLabel": "Golden State Warriors",
       "venue": "Mortgage Matchup Center, Phoenix",
       "tv": [
-        "NBA TV"
+        "NBA TV",
+        "Suns Live",
+        "NBC Sports BA"
       ],
       "status": "scheduled",
       "seasonType": "regular",
@@ -2203,7 +2217,9 @@
       "awayLabel": "Los Angeles Lakers",
       "venue": "Delta Center, Salt Lake City",
       "tv": [
-        "NBA League Pass"
+        "NBA League Pass",
+        "Spectrum Sports Net",
+        "Spectrum Sports Net +"
       ],
       "status": "scheduled",
       "seasonType": "regular",
@@ -2545,7 +2561,10 @@
       "awayLabel": "Phoenix Suns",
       "venue": "Paycom Center, Oklahoma City",
       "tv": [
-        "NBA League Pass"
+        "NBA League Pass",
+        "KSBI",
+        "Suns Live",
+        "Arizona's Family 3TV"
       ],
       "status": "scheduled",
       "seasonType": "regular",
@@ -2708,7 +2727,9 @@
       "awayLabel": "Brooklyn Nets",
       "venue": "TD Garden, Boston",
       "tv": [
-        "NBA League Pass"
+        "NBA League Pass",
+        "NBC Sports BO",
+        "DAZN (YES)"
       ],
       "status": "scheduled",
       "seasonType": "regular",
@@ -2788,7 +2809,10 @@
       "awayLabel": "Portland Trail Blazers",
       "venue": "crypto.com Arena, Los Angeles",
       "tv": [
-        "Peacock"
+        "Peacock",
+        "NBC",
+        "Spectrum Sports Net",
+        "Spectrum Sports Net +"
       ],
       "status": "scheduled",
       "seasonType": "regular",
