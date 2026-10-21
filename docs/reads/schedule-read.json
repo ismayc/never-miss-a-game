@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T21:18:08.448Z",
+  "generatedAt": "2026-10-21T00:10:20.624Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-20",
@@ -376,9 +376,8 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "Starts in 1d",
-        "tone": "soon",
-        "days": 1
+        "label": "In season",
+        "tone": "on"
       },
       "week": {
         "start": "2026-10-18",
@@ -390,8 +389,8 @@
       "commitsScores": true,
       "counts": {
         "total": 1200,
-        "final": 0,
-        "scheduled": 1199,
+        "final": 1,
+        "scheduled": 1198,
         "placeholder": 0,
         "postponed": 0,
         "pastUnresolved": 1,
@@ -403,9 +402,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-20T23:00:00.000Z",
+      "nextGameUtc": "2026-10-21T01:30:00.000Z",
       "nextGameLocalDay": "2026-10-20",
-      "nextGameLabel": "Philadelphia 76ers at New York Knicks",
+      "nextGameLabel": "Oklahoma City Thunder at San Antonio Spurs",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -682,11 +681,15 @@
       "tv": [
         "NBC"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DET",
-        "awayAbbr": "BOS"
+        "awayAbbr": "BOS",
+        "score": [
+          121,
+          113
+        ]
       },
       "localDay": "2026-10-20",
       "localWeekday": "Tuesday, Oct 20",
@@ -708,12 +711,11 @@
       "tv": [
         "NBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NY",
-        "awayAbbr": "PHI",
-        "seasonOpener": true
+        "awayAbbr": "PHI"
       },
       "localDay": "2026-10-20",
       "localWeekday": "Tuesday, Oct 20",
