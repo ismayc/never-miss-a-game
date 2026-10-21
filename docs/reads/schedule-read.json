@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T00:10:20.624Z",
+  "generatedAt": "2026-10-21T03:30:31.688Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-20",
@@ -235,11 +235,11 @@
         "401909096",
         "401909858"
       ],
-      "nextGameUtc": "2026-10-21T01:30:00.000Z",
-      "nextGameLocalDay": "2026-10-20",
-      "nextGameLocal": "Tuesday, Oct 20 at 6:30 PM",
-      "nextGameLabel": "Oklahoma City Thunder at San Antonio Spurs",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-24T01:30:00.000Z",
+      "nextGameLocalDay": "2026-10-23",
+      "nextGameLocal": "Friday, Oct 23 at 6:30 PM",
+      "nextGameLabel": "Houston Rockets at San Antonio Spurs",
+      "daysUntilNextGame": 3,
       "note": null
     }
   ],
@@ -390,10 +390,10 @@
       "counts": {
         "total": 1200,
         "final": 1,
-        "scheduled": 1198,
+        "scheduled": 1197,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 2,
         "inWindow": 52,
         "inWindowReal": 52,
         "inWindowFollowed": 6
@@ -402,10 +402,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-21T01:30:00.000Z",
-      "nextGameLocalDay": "2026-10-20",
-      "nextGameLabel": "Oklahoma City Thunder at San Antonio Spurs",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-21T23:00:00.000Z",
+      "nextGameLocalDay": "2026-10-21",
+      "nextGameLabel": "Atlanta Hawks at Orlando Magic",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -737,7 +737,7 @@
       "tv": [
         "NBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SA",
