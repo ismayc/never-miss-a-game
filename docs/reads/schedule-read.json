@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T00:10:21.965Z",
+  "generatedAt": "2026-10-22T03:29:40.761Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-21",
@@ -390,10 +390,10 @@
       "counts": {
         "total": 1200,
         "final": 3,
-        "scheduled": 1190,
+        "scheduled": 1186,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 7,
+        "pastUnresolved": 11,
         "inWindow": 53,
         "inWindowReal": 53,
         "inWindowFollowed": 6
@@ -402,10 +402,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-22T00:30:00.000Z",
-      "nextGameLocalDay": "2026-10-21",
-      "nextGameLabel": "Dallas Mavericks at Houston Rockets",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-22T23:00:00.000Z",
+      "nextGameLocalDay": "2026-10-22",
+      "nextGameLabel": "Cleveland Cavaliers at Philadelphia 76ers",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -904,7 +904,7 @@
         "KFAA-TV",
         "MavsTV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HOU",
@@ -930,7 +930,7 @@
       "tv": [
         "ESPN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAL",
@@ -959,7 +959,7 @@
         "BlazerVision",
         "Suns Live"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "POR",
@@ -987,7 +987,7 @@
         "KTLA",
         "ClipperVision"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAC",
