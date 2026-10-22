@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T21:18:10.860Z",
+  "generatedAt": "2026-10-22T00:10:21.965Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-21",
@@ -266,10 +266,10 @@
       "counts": {
         "total": 356,
         "final": 350,
-        "scheduled": 5,
+        "scheduled": 4,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 3,
         "inWindowReal": 3,
         "inWindowFollowed": 0
@@ -278,10 +278,10 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-11-01T00:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-22T00:00:00.000Z",
-      "nextGameLocalDay": "2026-10-21",
+      "nextGameUtc": "2026-10-24T17:00:00.000Z",
+      "nextGameLocalDay": "2026-10-24",
       "nextGameLabel": "Golden State Valkyries at Atlanta Dream",
-      "daysUntilNextGame": 0,
+      "daysUntilNextGame": 3,
       "notes": []
     },
     {
@@ -390,10 +390,10 @@
       "counts": {
         "total": 1200,
         "final": 3,
-        "scheduled": 1197,
+        "scheduled": 1190,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 7,
         "inWindow": 53,
         "inWindowReal": 53,
         "inWindowFollowed": 6
@@ -402,9 +402,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-21T23:00:00.000Z",
+      "nextGameUtc": "2026-10-22T00:30:00.000Z",
       "nextGameLocalDay": "2026-10-21",
-      "nextGameLabel": "Atlanta Hawks at Orlando Magic",
+      "nextGameLabel": "Dallas Mavericks at Houston Rockets",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -681,7 +681,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ORL",
@@ -710,7 +710,7 @@
         "MyMi",
         "Bucks App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "WSH",
@@ -736,7 +736,7 @@
       "tv": [
         "ESPN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIA",
@@ -763,7 +763,7 @@
         "NBA League Pass",
         "DAZN (YES)"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BKN",
@@ -790,7 +790,7 @@
         "NBA League Pass",
         "CHSN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TOR",
@@ -819,7 +819,7 @@
         "KJZZ-TV",
         "Jazz+"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MEM",
@@ -848,7 +848,7 @@
         "Pelicans.com",
         "DAZN IND"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NO",
@@ -875,7 +875,7 @@
         "USA Net",
         "CNBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "ATL",
@@ -1611,7 +1611,8 @@
       "venue": "Rocket Arena, Cleveland",
       "tv": [
         "NBA League Pass",
-        "DAZN (YES)"
+        "DAZN (YES)",
+        "DAZN CLE"
       ],
       "status": "scheduled",
       "seasonType": "regular",
