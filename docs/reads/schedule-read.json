@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T00:10:26.309Z",
+  "generatedAt": "2026-10-23T03:34:56.151Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-22",
@@ -215,11 +215,11 @@
         "401909876",
         "401909889"
       ],
-      "nextGameUtc": "2026-10-23T01:30:00.000Z",
-      "nextGameLocalDay": "2026-10-22",
-      "nextGameLocal": "Thursday, Oct 22 at 6:30 PM",
-      "nextGameLabel": "Denver Nuggets at Oklahoma City Thunder",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-25T01:00:00.000Z",
+      "nextGameLocalDay": "2026-10-24",
+      "nextGameLocal": "Saturday, Oct 24 at 6:00 PM",
+      "nextGameLabel": "New Orleans Pelicans at Denver Nuggets",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -350,10 +350,10 @@
       "counts": {
         "total": 272,
         "final": 93,
-        "scheduled": 179,
+        "scheduled": 178,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 4
@@ -362,10 +362,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-23T00:15:00.000Z",
-      "nextGameLocalDay": "2026-10-22",
-      "nextGameLabel": "New England Patriots at Chicago Bears",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-25T13:30:00.000Z",
+      "nextGameLocalDay": "2026-10-25",
+      "nextGameLabel": "Pittsburgh Steelers at New Orleans Saints",
+      "daysUntilNextGame": 3,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -392,10 +392,10 @@
       "counts": {
         "total": 1200,
         "final": 14,
-        "scheduled": 1185,
+        "scheduled": 1184,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 2,
         "inWindow": 54,
         "inWindowReal": 54,
         "inWindowFollowed": 8
@@ -404,10 +404,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-23T01:30:00.000Z",
-      "nextGameLocalDay": "2026-10-22",
-      "nextGameLabel": "Denver Nuggets at Oklahoma City Thunder",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-23T20:00:00.000Z",
+      "nextGameLocalDay": "2026-10-23",
+      "nextGameLabel": "Chicago Bulls at Milwaukee Bucks",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -709,7 +709,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHI",
@@ -736,7 +736,7 @@
       "tv": [
         "ESPN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "OKC",
