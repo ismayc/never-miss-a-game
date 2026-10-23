@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T11:05:47.097Z",
+  "generatedAt": "2026-10-23T21:03:02.910Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-23",
@@ -307,10 +307,10 @@
       "counts": {
         "total": 380,
         "final": 70,
-        "scheduled": 310,
+        "scheduled": 309,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 10,
         "inWindowReal": 10,
         "inWindowFollowed": 2
@@ -319,10 +319,10 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-23T19:00:00.000Z",
-      "nextGameLocalDay": "2026-10-23",
-      "nextGameLabel": "Nottingham Forest at Ipswich Town",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-24T11:30:00.000Z",
+      "nextGameLocalDay": "2026-10-24",
+      "nextGameLabel": "Manchester City at Aston Villa",
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -391,10 +391,10 @@
       "counts": {
         "total": 1200,
         "final": 16,
-        "scheduled": 1184,
+        "scheduled": 1183,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 55,
         "inWindowReal": 55,
         "inWindowFollowed": 7
@@ -403,9 +403,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-23T20:00:00.000Z",
+      "nextGameUtc": "2026-10-23T23:00:00.000Z",
       "nextGameLocalDay": "2026-10-23",
-      "nextGameLabel": "Chicago Bulls at Milwaukee Bucks",
+      "nextGameLabel": "New York Knicks at Boston Celtics",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -682,7 +682,7 @@
       "tv": [
         "USA Net"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IPS",
@@ -710,7 +710,7 @@
         "MyMi",
         "Bucks App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIL",
@@ -1092,6 +1092,7 @@
       "awayLabel": "Fulham",
       "venue": "Coventry Building Society Arena, Coventry",
       "tv": [
+        "NBCSN",
         "Peacock"
       ],
       "status": "scheduled",
@@ -1118,6 +1119,7 @@
       "awayLabel": "Tottenham Hotspur",
       "venue": "Stamford Bridge, London",
       "tv": [
+        "NBCSN",
         "Tele",
         "Peacock"
       ],

@@ -1,17 +1,19 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Friday, Oct 23 through Thursday, Oct 29 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-10-23T11:05:46.607Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-10-23T21:03:02.398Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
   🏀 WNBA                   In season      3 in window      next game in 1d (2026-10-24 local)
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
-  ⚽ Premier League         In season      10 in window     next game today
+  ⚽ Premier League         In season      10 in window     next game in 1d (2026-10-24 local)
+      ⚠ 1 past matches with no committed result
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
   🏈 NFL                    In season      14 in window     next game in 2d (2026-10-25 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
   🏀 NBA                    In season      55 in window     next game today
+      ⚠ 1 past matches with no committed result
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
@@ -60,8 +62,8 @@ IN WINDOW: 82 real games, 13 involving a followed team
   Saturday, Oct 24
   ★ 4:30 AM  ⚽ Manchester City at Aston Villa                 · USA Net/Universo
     7:00 AM  ⚽ Everton at Arsenal                             · USA Net/Tele
-    7:00 AM  ⚽ Fulham at Coventry City                        · Peacock
-    9:30 AM  ⚽ Tottenham Hotspur at Chelsea                   · Tele/Peacock
+    7:00 AM  ⚽ Fulham at Coventry City                        · NBCSN/Peacock
+    9:30 AM  ⚽ Tottenham Hotspur at Chelsea                   · NBCSN/Tele
     10:00 AM 🏀 Golden State Valkyries at Atlanta Dream        · NBC
     3:00 PM  🏀 Miami Heat at Charlotte Hornets                · NBA League Pass
     4:30 PM  🏀 Brooklyn Nets at Cleveland Cavaliers           · NBA League Pass/DAZN (YES)
