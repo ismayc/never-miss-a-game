@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T21:03:02.910Z",
+  "generatedAt": "2026-10-24T00:10:21.824Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-23",
@@ -306,11 +306,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 70,
+        "final": 71,
         "scheduled": 309,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 10,
         "inWindowReal": 10,
         "inWindowFollowed": 2
@@ -391,10 +391,10 @@
       "counts": {
         "total": 1200,
         "final": 16,
-        "scheduled": 1183,
+        "scheduled": 1177,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 7,
         "inWindow": 55,
         "inWindowReal": 55,
         "inWindowFollowed": 7
@@ -403,9 +403,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-23T23:00:00.000Z",
+      "nextGameUtc": "2026-10-24T01:30:00.000Z",
       "nextGameLocalDay": "2026-10-23",
-      "nextGameLabel": "New York Knicks at Boston Celtics",
+      "nextGameLabel": "Houston Rockets at San Antonio Spurs",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -682,11 +682,15 @@
       "tv": [
         "USA Net"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IPS",
-        "awayAbbr": "NFO"
+        "awayAbbr": "NFO",
+        "score": [
+          1,
+          1
+        ]
       },
       "localDay": "2026-10-23",
       "localWeekday": "Friday, Oct 23",
@@ -736,7 +740,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BOS",
@@ -762,7 +766,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHA",
@@ -790,7 +794,7 @@
         "KFAA-TV",
         "MavsTV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IND",
@@ -817,7 +821,7 @@
         "NBA League Pass",
         "DAZN MIN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ORL",
@@ -844,7 +848,7 @@
         "MNMT",
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "WSH",
@@ -870,7 +874,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIA",
