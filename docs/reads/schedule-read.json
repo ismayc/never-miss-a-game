@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T00:10:21.824Z",
+  "generatedAt": "2026-10-24T03:28:55.127Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-23",
@@ -236,11 +236,11 @@
         "401909879",
         "401909890"
       ],
-      "nextGameUtc": "2026-10-24T01:30:00.000Z",
-      "nextGameLocalDay": "2026-10-23",
-      "nextGameLocal": "Friday, Oct 23 at 6:30 PM",
-      "nextGameLabel": "Houston Rockets at San Antonio Spurs",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-25T00:00:00.000Z",
+      "nextGameLocalDay": "2026-10-24",
+      "nextGameLocal": "Saturday, Oct 24 at 5:00 PM",
+      "nextGameLabel": "San Antonio Spurs at Dallas Mavericks",
+      "daysUntilNextGame": 1,
       "note": null
     }
   ],
@@ -391,10 +391,10 @@
       "counts": {
         "total": 1200,
         "final": 16,
-        "scheduled": 1177,
+        "scheduled": 1172,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 7,
+        "pastUnresolved": 12,
         "inWindow": 55,
         "inWindowReal": 55,
         "inWindowFollowed": 7
@@ -403,10 +403,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-24T01:30:00.000Z",
-      "nextGameLocalDay": "2026-10-23",
-      "nextGameLabel": "Houston Rockets at San Antonio Spurs",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-24T22:00:00.000Z",
+      "nextGameLocalDay": "2026-10-24",
+      "nextGameLabel": "Miami Heat at Charlotte Hornets",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -900,7 +900,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SA",
@@ -932,7 +932,7 @@
         "GCSEN",
         "Pelicans.com"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "UTAH",
@@ -958,7 +958,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "GS",
@@ -987,7 +987,7 @@
         "Spectrum Sports Net +",
         "ClipperVision"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAL",
@@ -1015,7 +1015,7 @@
         "KUNP 16",
         "BlazerVision"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SAC",
