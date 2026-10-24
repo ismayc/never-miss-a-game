@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T10:22:28.361Z",
+  "generatedAt": "2026-10-24T12:10:24.085Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-24",
@@ -174,11 +174,11 @@
       "inWindowGameIds": [
         "401879256"
       ],
-      "nextGameUtc": "2026-10-24T11:30:00.000Z",
-      "nextGameLocalDay": "2026-10-24",
-      "nextGameLocal": "Saturday, Oct 24 at 4:30 AM",
-      "nextGameLabel": "Manchester City at Aston Villa",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-31T15:00:00.000Z",
+      "nextGameLocalDay": "2026-10-31",
+      "nextGameLocal": "Saturday, Oct 31 at 8:00 AM",
+      "nextGameLabel": "Brighton & Hove Albion at Manchester City",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -307,10 +307,10 @@
       "counts": {
         "total": 380,
         "final": 71,
-        "scheduled": 309,
+        "scheduled": 308,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 9,
         "inWindowReal": 9,
         "inWindowFollowed": 2
@@ -319,9 +319,9 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-24T11:30:00.000Z",
+      "nextGameUtc": "2026-10-24T14:00:00.000Z",
       "nextGameLocalDay": "2026-10-24",
-      "nextGameLabel": "Manchester City at Aston Villa",
+      "nextGameLabel": "Everton at Arsenal",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
@@ -683,7 +683,7 @@
         "USA Net",
         "Universo"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "AVL",
