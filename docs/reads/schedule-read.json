@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T15:27:09.126Z",
+  "generatedAt": "2026-10-24T18:10:24.086Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-24",
@@ -267,10 +267,10 @@
       "counts": {
         "total": 356,
         "final": 351,
-        "scheduled": 4,
+        "scheduled": 3,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 3,
         "inWindowReal": 3,
         "inWindowFollowed": 0
@@ -279,10 +279,10 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-11-01T00:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-24T17:00:00.000Z",
-      "nextGameLocalDay": "2026-10-24",
-      "nextGameLabel": "Golden State Valkyries at Atlanta Dream",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-27T00:00:00.000Z",
+      "nextGameLocalDay": "2026-10-26",
+      "nextGameLabel": "Atlanta Dream at Golden State Valkyries",
+      "daysUntilNextGame": 2,
       "notes": []
     },
     {
@@ -307,10 +307,10 @@
       "counts": {
         "total": 380,
         "final": 71,
-        "scheduled": 306,
+        "scheduled": 305,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 3,
+        "pastUnresolved": 4,
         "inWindow": 9,
         "inWindowReal": 9,
         "inWindowFollowed": 2
@@ -319,10 +319,10 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-24T16:30:00.000Z",
-      "nextGameLocalDay": "2026-10-24",
-      "nextGameLabel": "Tottenham Hotspur at Chelsea",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-25T14:00:00.000Z",
+      "nextGameLocalDay": "2026-10-25",
+      "nextGameLabel": "Brighton & Hove Albion at Liverpool",
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -768,7 +768,7 @@
         "Tele",
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHE",
@@ -794,7 +794,7 @@
       "tv": [
         "NBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "ATL",
