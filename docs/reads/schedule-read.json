@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T18:10:24.086Z",
+  "generatedAt": "2026-10-24T20:18:17.572Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-24",
@@ -306,11 +306,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 71,
+        "final": 75,
         "scheduled": 305,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 4,
+        "pastUnresolved": 0,
         "inWindow": 9,
         "inWindowReal": 9,
         "inWindowFollowed": 2
@@ -683,11 +683,15 @@
         "USA Net",
         "Universo"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "AVL",
-        "awayAbbr": "MNC"
+        "awayAbbr": "MNC",
+        "score": [
+          2,
+          1
+        ]
       },
       "localDay": "2026-10-24",
       "localWeekday": "Saturday, Oct 24",
@@ -713,11 +717,15 @@
         "Tele",
         "Universo"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ARS",
-        "awayAbbr": "EVE"
+        "awayAbbr": "EVE",
+        "score": [
+          2,
+          0
+        ]
       },
       "localDay": "2026-10-24",
       "localWeekday": "Saturday, Oct 24",
@@ -740,11 +748,15 @@
         "NBCSN",
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "COV",
-        "awayAbbr": "FUL"
+        "awayAbbr": "FUL",
+        "score": [
+          0,
+          1
+        ]
       },
       "localDay": "2026-10-24",
       "localWeekday": "Saturday, Oct 24",
@@ -768,11 +780,15 @@
         "Tele",
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHE",
-        "awayAbbr": "TOT"
+        "awayAbbr": "TOT",
+        "score": [
+          0,
+          2
+        ]
       },
       "localDay": "2026-10-24",
       "localWeekday": "Saturday, Oct 24",
