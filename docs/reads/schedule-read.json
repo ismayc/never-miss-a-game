@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T12:10:24.085Z",
+  "generatedAt": "2026-10-24T15:27:09.126Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-24",
@@ -307,10 +307,10 @@
       "counts": {
         "total": 380,
         "final": 71,
-        "scheduled": 308,
+        "scheduled": 306,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 3,
         "inWindow": 9,
         "inWindowReal": 9,
         "inWindowFollowed": 2
@@ -319,9 +319,9 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-24T14:00:00.000Z",
+      "nextGameUtc": "2026-10-24T16:30:00.000Z",
       "nextGameLocalDay": "2026-10-24",
-      "nextGameLabel": "Everton at Arsenal",
+      "nextGameLabel": "Tottenham Hotspur at Chelsea",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
@@ -713,7 +713,7 @@
         "Tele",
         "Universo"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ARS",
@@ -740,7 +740,7 @@
         "NBCSN",
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "COV",
