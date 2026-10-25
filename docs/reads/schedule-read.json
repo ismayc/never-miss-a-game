@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T16:55:48.899Z",
+  "generatedAt": "2026-10-25T18:10:22.775Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-25",
@@ -136,11 +136,11 @@
       "inWindowGameIds": [
         "401873017"
       ],
-      "nextGameUtc": "2026-10-25T17:00:00.000Z",
-      "nextGameLocalDay": "2026-10-25",
-      "nextGameLocal": "Sunday, Oct 25 at 10:00 AM",
-      "nextGameLabel": "San Francisco 49ers at Atlanta Falcons",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-08T21:05:00.000Z",
+      "nextGameLocalDay": "2026-11-08",
+      "nextGameLocal": "Sunday, Nov 8 at 2:05 PM",
+      "nextGameLabel": "Las Vegas Raiders at San Francisco 49ers",
+      "daysUntilNextGame": 14,
       "note": null
     },
     {
@@ -348,10 +348,10 @@
       "counts": {
         "total": 272,
         "final": 94,
-        "scheduled": 177,
+        "scheduled": 170,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 8,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 4
@@ -360,9 +360,9 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-25T17:00:00.000Z",
+      "nextGameUtc": "2026-10-25T20:05:00.000Z",
       "nextGameLocalDay": "2026-10-25",
-      "nextGameLabel": "Cincinnati Bengals at Baltimore Ravens",
+      "nextGameLabel": "Denver Broncos at Arizona Cardinals",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
@@ -842,7 +842,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BAL",
@@ -869,7 +869,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TEN",
@@ -896,7 +896,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIN",
@@ -923,7 +923,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NYJ",
@@ -950,7 +950,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HOU",
@@ -977,7 +977,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
@@ -1006,7 +1006,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CAR",

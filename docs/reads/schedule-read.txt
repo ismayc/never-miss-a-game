@@ -1,7 +1,7 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Sunday, Oct 25 through Saturday, Oct 31 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-10-25T16:55:48.630Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-10-25T18:10:22.267Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
@@ -11,7 +11,7 @@ SOURCES
       ⚠ 5 past matches with no committed result
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
   🏈 NFL                    In season      14 in window     next game today
-      ⚠ 1 past matches with no committed result
+      ⚠ 8 past matches with no committed result
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
   🏀 NBA                    In season      52 in window     next game today
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
@@ -35,7 +35,7 @@ FOLLOWED TEAMS
   Portland Fire            WNBA               0 in window    no future games in committed data (offseason)
   Arizona Cardinals        NFL                1 in window    plays today
   Seattle Seahawks         NFL                1 in window    plays today
-  San Francisco 49ers      NFL                1 in window    plays today
+  San Francisco 49ers      NFL                1 in window    next in 14d, Sunday, Nov 8 at 2:05 PM local — Las Vegas Raiders at San Francisco 49ers
   Los Angeles Rams         NFL                1 in window    plays today
   Manchester City          Premier League     1 in window    next in 6d, Saturday, Oct 31 at 8:00 AM local — Brighton & Hove Albion at Manchester City
   Liverpool                Premier League     1 in window    next in 7d, Sunday, Nov 1 at 9:30 AM local — Arsenal at Liverpool
