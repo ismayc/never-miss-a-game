@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T18:10:22.775Z",
+  "generatedAt": "2026-10-25T20:26:00.564Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-25",
@@ -98,11 +98,11 @@
       "inWindowGameIds": [
         "401873019"
       ],
-      "nextGameUtc": "2026-10-25T20:05:00.000Z",
-      "nextGameLocalDay": "2026-10-25",
-      "nextGameLocal": "Sunday, Oct 25 at 1:05 PM",
-      "nextGameLabel": "Denver Broncos at Arizona Cardinals",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-01T18:00:00.000Z",
+      "nextGameLocalDay": "2026-11-01",
+      "nextGameLocal": "Sunday, Nov 1 at 11:00 AM",
+      "nextGameLabel": "Arizona Cardinals at Dallas Cowboys",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -155,11 +155,11 @@
       "inWindowGameIds": [
         "401873021"
       ],
-      "nextGameUtc": "2026-10-25T20:25:00.000Z",
-      "nextGameLocalDay": "2026-10-25",
-      "nextGameLocal": "Sunday, Oct 25 at 1:25 PM",
-      "nextGameLabel": "Los Angeles Rams at Las Vegas Raiders",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-01T21:05:00.000Z",
+      "nextGameLocalDay": "2026-11-01",
+      "nextGameLocal": "Sunday, Nov 1 at 2:05 PM",
+      "nextGameLabel": "Los Angeles Chargers at Los Angeles Rams",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -305,11 +305,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 75,
+        "final": 80,
         "scheduled": 300,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 5,
+        "pastUnresolved": 0,
         "inWindow": 13,
         "inWindowReal": 13,
         "inWindowFollowed": 2
@@ -347,11 +347,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 94,
-        "scheduled": 170,
+        "final": 95,
+        "scheduled": 167,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 8,
+        "pastUnresolved": 10,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 4
@@ -360,9 +360,9 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-25T20:05:00.000Z",
+      "nextGameUtc": "2026-10-26T00:20:00.000Z",
       "nextGameLocalDay": "2026-10-25",
-      "nextGameLabel": "Denver Broncos at Arizona Cardinals",
+      "nextGameLabel": "Kansas City Chiefs at Seattle Seahawks",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
@@ -681,13 +681,17 @@
       "tv": [
         "NFL Net"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NO",
         "awayAbbr": "PIT",
         "week": 7,
-        "neutral": true
+        "neutral": true,
+        "score": [
+          10,
+          16
+        ]
       },
       "localDay": "2026-10-25",
       "localWeekday": "Sunday, Oct 25",
@@ -709,11 +713,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LIV",
-        "awayAbbr": "BHA"
+        "awayAbbr": "BHA",
+        "score": [
+          2,
+          0
+        ]
       },
       "localDay": "2026-10-25",
       "localWeekday": "Sunday, Oct 25",
@@ -737,11 +745,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HUL",
-        "awayAbbr": "BRE"
+        "awayAbbr": "BRE",
+        "score": [
+          1,
+          1
+        ]
       },
       "localDay": "2026-10-25",
       "localWeekday": "Sunday, Oct 25",
@@ -763,11 +775,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MAN",
-        "awayAbbr": "BOU"
+        "awayAbbr": "BOU",
+        "score": [
+          0,
+          3
+        ]
       },
       "localDay": "2026-10-25",
       "localWeekday": "Sunday, Oct 25",
@@ -790,11 +806,15 @@
         "USA Net",
         "Tele"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CRY",
-        "awayAbbr": "NEW"
+        "awayAbbr": "NEW",
+        "score": [
+          0,
+          2
+        ]
       },
       "localDay": "2026-10-25",
       "localWeekday": "Sunday, Oct 25",
@@ -816,11 +836,15 @@
       "tv": [
         "USA Net"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SUN",
-        "awayAbbr": "LEE"
+        "awayAbbr": "LEE",
+        "score": [
+          0,
+          0
+        ]
       },
       "localDay": "2026-10-25",
       "localWeekday": "Sunday, Oct 25",
@@ -1033,7 +1057,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ARI",
@@ -1062,7 +1086,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DET",
@@ -1089,7 +1113,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LV",
