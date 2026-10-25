@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T20:18:17.572Z",
+  "generatedAt": "2026-10-25T00:10:41.592Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-24",
@@ -236,11 +236,11 @@
         "401909879",
         "401909890"
       ],
-      "nextGameUtc": "2026-10-25T00:00:00.000Z",
-      "nextGameLocalDay": "2026-10-24",
-      "nextGameLocal": "Saturday, Oct 24 at 5:00 PM",
-      "nextGameLabel": "San Antonio Spurs at Dallas Mavericks",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-28T00:00:00.000Z",
+      "nextGameLocalDay": "2026-10-27",
+      "nextGameLocal": "Tuesday, Oct 27 at 5:00 PM",
+      "nextGameLabel": "Sacramento Kings at San Antonio Spurs",
+      "daysUntilNextGame": 3,
       "note": null
     }
   ],
@@ -391,10 +391,10 @@
       "counts": {
         "total": 1200,
         "final": 28,
-        "scheduled": 1172,
+        "scheduled": 1167,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 5,
         "inWindow": 53,
         "inWindowReal": 53,
         "inWindowFollowed": 7
@@ -403,9 +403,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-24T22:00:00.000Z",
+      "nextGameUtc": "2026-10-25T00:30:00.000Z",
       "nextGameLocalDay": "2026-10-24",
-      "nextGameLabel": "Miami Heat at Charlotte Hornets",
+      "nextGameLabel": "Houston Rockets at Atlanta Hawks",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -837,7 +837,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHA",
@@ -865,7 +865,7 @@
         "DAZN (YES)",
         "DAZN CLE"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CLE",
@@ -893,7 +893,7 @@
         "MyMi",
         "Bucks App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
@@ -920,7 +920,7 @@
         "MNMT",
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHI",
@@ -949,7 +949,7 @@
         "MavsTV",
         "DAZN SAS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DAL",
