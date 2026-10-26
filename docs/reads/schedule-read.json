@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T20:26:00.564Z",
+  "generatedAt": "2026-10-26T00:10:22.102Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-25",
@@ -347,11 +347,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 95,
+        "final": 105,
         "scheduled": 167,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 10,
+        "pastUnresolved": 0,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 4
@@ -390,10 +390,10 @@
       "counts": {
         "total": 1200,
         "final": 36,
-        "scheduled": 1164,
+        "scheduled": 1158,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 6,
         "inWindow": 52,
         "inWindowReal": 52,
         "inWindowFollowed": 6
@@ -402,9 +402,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-25T21:00:00.000Z",
+      "nextGameUtc": "2026-10-26T01:00:00.000Z",
       "nextGameLocalDay": "2026-10-25",
-      "nextGameLabel": "Los Angeles Lakers at Utah Jazz",
+      "nextGameLabel": "Memphis Grizzlies at Sacramento Kings",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -866,12 +866,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BAL",
         "awayAbbr": "CIN",
-        "week": 7
+        "week": 7,
+        "score": [
+          13,
+          35
+        ]
       },
       "localDay": "2026-10-25",
       "localWeekday": "Sunday, Oct 25",
@@ -893,12 +897,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TEN",
         "awayAbbr": "CLE",
-        "week": 7
+        "week": 7,
+        "score": [
+          24,
+          27
+        ]
       },
       "localDay": "2026-10-25",
       "localWeekday": "Sunday, Oct 25",
@@ -920,12 +928,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIN",
         "awayAbbr": "IND",
-        "week": 7
+        "week": 7,
+        "score": [
+          16,
+          10
+        ]
       },
       "localDay": "2026-10-25",
       "localWeekday": "Sunday, Oct 25",
@@ -947,12 +959,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NYJ",
         "awayAbbr": "MIA",
-        "week": 7
+        "week": 7,
+        "score": [
+          25,
+          28
+        ]
       },
       "localDay": "2026-10-25",
       "localWeekday": "Sunday, Oct 25",
@@ -974,12 +990,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HOU",
         "awayAbbr": "NYG",
-        "week": 7
+        "week": 7,
+        "score": [
+          21,
+          27
+        ]
       },
       "localDay": "2026-10-25",
       "localWeekday": "Sunday, Oct 25",
@@ -1001,12 +1021,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
         "awayAbbr": "SF",
-        "week": 7
+        "week": 7,
+        "score": [
+          29,
+          20
+        ]
       },
       "localDay": "2026-10-25",
       "localWeekday": "Sunday, Oct 25",
@@ -1030,12 +1054,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CAR",
         "awayAbbr": "TB",
-        "week": 7
+        "week": 7,
+        "score": [
+          13,
+          43
+        ]
       },
       "localDay": "2026-10-25",
       "localWeekday": "Sunday, Oct 25",
@@ -1057,12 +1085,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ARI",
         "awayAbbr": "DEN",
-        "week": 7
+        "week": 7,
+        "score": [
+          16,
+          30
+        ]
       },
       "localDay": "2026-10-25",
       "localWeekday": "Sunday, Oct 25",
@@ -1086,12 +1118,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DET",
         "awayAbbr": "GB",
-        "week": 7
+        "week": 7,
+        "score": [
+          20,
+          17
+        ]
       },
       "localDay": "2026-10-25",
       "localWeekday": "Sunday, Oct 25",
@@ -1113,12 +1149,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LV",
         "awayAbbr": "LAR",
-        "week": 7
+        "week": 7,
+        "score": [
+          21,
+          35
+        ]
       },
       "localDay": "2026-10-25",
       "localWeekday": "Sunday, Oct 25",
@@ -1146,7 +1186,7 @@
         "KJZZ-TV",
         "Jazz+"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "UTAH",
@@ -1174,7 +1214,7 @@
         "DAZN (YES)",
         "DAZN IND"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BKN",
@@ -1200,7 +1240,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NY",
@@ -1227,7 +1267,7 @@
         "NBA TV",
         "DAZN MIN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIN",
@@ -1256,7 +1296,7 @@
         "ClipperVision",
         "Thunder App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "OKC",
@@ -1282,7 +1322,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
