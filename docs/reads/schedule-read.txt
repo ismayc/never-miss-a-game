@@ -1,7 +1,7 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Monday, Oct 26 through Sunday, Nov 1 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-10-26T12:10:25.084Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-10-26T22:20:29.756Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
@@ -76,9 +76,9 @@ IN WINDOW: 75 real games, 10 involving a followed team
     7:30 PM  🏀 Los Angeles Lakers at LA Clippers              · NBA League Pass/Spectrum Sports Net
 
   Thursday, Oct 29
-    4:00 PM  🏀 Cleveland Cavaliers at Atlanta Hawks           · NBA TV
+    9:30 AM  🏀 Golden State Valkyries at Atlanta Dream        · USA Net/Peacock
+    5:00 PM  🏀 Cleveland Cavaliers at Atlanta Hawks           · NBA TV
     5:00 PM  🏀 Sacramento Kings at New Orleans Pelicans       · NBA League Pass/GCSEN
-    5:00 PM  🏀 Golden State Valkyries at Atlanta Dream        · USA Net/CNBC
     5:15 PM  🏈 Carolina Panthers at Green Bay Packers         · Prime Video · Week 8
     7:00 PM  🏀 Memphis Grizzlies at Portland Trail Blazers    · NBA League Pass/KUNP 16
 
