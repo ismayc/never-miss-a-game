@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T00:10:22.102Z",
+  "generatedAt": "2026-10-26T03:27:22.352Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-25",
@@ -117,11 +117,11 @@
       "inWindowGameIds": [
         "401873022"
       ],
-      "nextGameUtc": "2026-10-26T00:20:00.000Z",
-      "nextGameLocalDay": "2026-10-25",
-      "nextGameLocal": "Sunday, Oct 25 at 5:20 PM",
-      "nextGameLabel": "Kansas City Chiefs at Seattle Seahawks",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-03T01:15:00.000Z",
+      "nextGameLocalDay": "2026-11-02",
+      "nextGameLocal": "Monday, Nov 2 at 6:15 PM",
+      "nextGameLabel": "Chicago Bears at Seattle Seahawks",
+      "daysUntilNextGame": 8,
       "note": null
     },
     {
@@ -348,10 +348,10 @@
       "counts": {
         "total": 272,
         "final": 105,
-        "scheduled": 167,
+        "scheduled": 166,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 4
@@ -360,10 +360,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-26T00:20:00.000Z",
-      "nextGameLocalDay": "2026-10-25",
-      "nextGameLabel": "Kansas City Chiefs at Seattle Seahawks",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-27T00:15:00.000Z",
+      "nextGameLocalDay": "2026-10-26",
+      "nextGameLabel": "Dallas Cowboys at Philadelphia Eagles",
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -390,10 +390,10 @@
       "counts": {
         "total": 1200,
         "final": 36,
-        "scheduled": 1158,
+        "scheduled": 1157,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 6,
+        "pastUnresolved": 7,
         "inWindow": 52,
         "inWindowReal": 52,
         "inWindowFollowed": 6
@@ -402,10 +402,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-26T01:00:00.000Z",
-      "nextGameLocalDay": "2026-10-25",
-      "nextGameLabel": "Memphis Grizzlies at Sacramento Kings",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-26T23:00:00.000Z",
+      "nextGameLocalDay": "2026-10-26",
+      "nextGameLabel": "Washington Wizards at Charlotte Hornets",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -1348,7 +1348,7 @@
       "tv": [
         "NBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SEA",
@@ -1378,7 +1378,7 @@
         "NBA League Pass",
         "DAZN MEM"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SAC",
