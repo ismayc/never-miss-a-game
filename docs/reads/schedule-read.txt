@@ -1,17 +1,19 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Monday, Oct 26 through Sunday, Nov 1 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-10-26T22:20:29.756Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-10-27T00:10:23.976Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
-  🏀 WNBA                   In season      3 in window      next game today
+  🏀 WNBA                   In season      3 in window      next game in 3d (2026-10-29 local)
+      ⚠ 1 past matches with no committed result
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
   ⚽ Premier League         In season      9 in window      next game in 5d (2026-10-31 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
   🏈 NFL                    In season      14 in window     next game today
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
   🏀 NBA                    In season      49 in window     next game today
+      ⚠ 6 past matches with no committed result
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
@@ -33,7 +35,7 @@ FOLLOWED TEAMS
   Portland Fire            WNBA               0 in window    no future games in committed data (offseason)
   Arizona Cardinals        NFL                1 in window    next in 6d, Sunday, Nov 1 at 11:00 AM local — Arizona Cardinals at Dallas Cowboys
   Seattle Seahawks         NFL                0 in window    next in 7d, Monday, Nov 2 at 6:15 PM local — Chicago Bears at Seattle Seahawks
-  San Francisco 49ers      NFL                0 in window    next in 13d, Sunday, Nov 8 at 2:05 PM local — Las Vegas Raiders at San Francisco 49ers
+  San Francisco 49ers      NFL                0 in window    next in 13d, Sunday, Nov 8 at 2:25 PM local — Las Vegas Raiders at San Francisco 49ers
   Los Angeles Rams         NFL                1 in window    next in 6d, Sunday, Nov 1 at 2:05 PM local — Los Angeles Chargers at Los Angeles Rams
   Manchester City          Premier League     1 in window    next in 5d, Saturday, Oct 31 at 8:00 AM local — Brighton & Hove Albion at Manchester City
   Liverpool                Premier League     1 in window    next in 6d, Sunday, Nov 1 at 9:30 AM local — Arsenal at Liverpool
@@ -49,7 +51,7 @@ IN WINDOW: 75 real games, 10 involving a followed team
     4:30 PM  🏀 Dallas Mavericks at Miami Heat                 · NBA TV/KFAA-TV
     5:00 PM  🏀 Indiana Pacers at Milwaukee Bucks              · NBA League Pass/MyMi
     5:00 PM  🏀 Phoenix Suns at Oklahoma City Thunder          · NBA League Pass/KSBI
-    5:00 PM  🏀 Atlanta Dream at Golden State Valkyries        · USA Net/CNBC
+    5:00 PM  🏀 Atlanta Dream at Golden State Valkyries        · USA Net/Peacock
     5:15 PM  🏈 Dallas Cowboys at Philadelphia Eagles          · ESPN/ABC · Week 7
     5:30 PM  🏀 Atlanta Hawks at Houston Rockets               · NBA League Pass
     6:00 PM  🏀 Memphis Grizzlies at Utah Jazz                 · NBA League Pass/KJZZ-TV

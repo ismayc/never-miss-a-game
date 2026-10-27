@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T22:20:30.383Z",
+  "generatedAt": "2026-10-27T00:10:24.524Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-26",
@@ -132,9 +132,9 @@
       "totalThisSeason": 17,
       "inWindow": 0,
       "inWindowGameIds": [],
-      "nextGameUtc": "2026-11-08T21:05:00.000Z",
+      "nextGameUtc": "2026-11-08T21:25:00.000Z",
       "nextGameLocalDay": "2026-11-08",
-      "nextGameLocal": "Sunday, Nov 8 at 2:05 PM",
+      "nextGameLocal": "Sunday, Nov 8 at 2:25 PM",
       "nextGameLabel": "Las Vegas Raiders at San Francisco 49ers",
       "daysUntilNextGame": 13,
       "note": null
@@ -262,10 +262,10 @@
       "counts": {
         "total": 356,
         "final": 352,
-        "scheduled": 3,
+        "scheduled": 2,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 3,
         "inWindowReal": 3,
         "inWindowFollowed": 0
@@ -274,10 +274,10 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-11-01T00:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-27T00:00:00.000Z",
-      "nextGameLocalDay": "2026-10-26",
-      "nextGameLabel": "Atlanta Dream at Golden State Valkyries",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-29T16:30:00.000Z",
+      "nextGameLocalDay": "2026-10-29",
+      "nextGameLabel": "Golden State Valkyries at Atlanta Dream",
+      "daysUntilNextGame": 3,
       "notes": []
     },
     {
@@ -386,10 +386,10 @@
       "counts": {
         "total": 1200,
         "final": 43,
-        "scheduled": 1157,
+        "scheduled": 1151,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 6,
         "inWindow": 49,
         "inWindowReal": 49,
         "inWindowFollowed": 6
@@ -398,9 +398,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-26T23:00:00.000Z",
+      "nextGameUtc": "2026-10-27T00:30:00.000Z",
       "nextGameLocalDay": "2026-10-26",
-      "nextGameLabel": "Washington Wizards at Charlotte Hornets",
+      "nextGameLabel": "Atlanta Hawks at Houston Rockets",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -678,7 +678,7 @@
         "MNMT",
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHA",
@@ -705,7 +705,7 @@
         "NBA League Pass",
         "DAZN MIN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CLE",
@@ -731,7 +731,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BOS",
@@ -759,7 +759,7 @@
         "KFAA-TV",
         "MavsTV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIA",
@@ -788,7 +788,7 @@
         "Bucks App",
         "DAZN IND"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIL",
@@ -818,7 +818,7 @@
         "Arizona's Family 3TV",
         "Thunder App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "OKC",
@@ -843,9 +843,10 @@
       "venue": "Chase Center, San Francisco",
       "tv": [
         "USA Net",
+        "Peacock",
         "CNBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "GS",
@@ -1427,7 +1428,8 @@
       "venue": "State Farm Arena, Atlanta",
       "tv": [
         "USA Net",
-        "Peacock"
+        "Peacock",
+        "E!"
       ],
       "status": "scheduled",
       "seasonType": "playoffs",
@@ -2199,7 +2201,8 @@
       "venue": "Chase Center, San Francisco",
       "tv": [
         "USA Net",
-        "CNBC"
+        "CNBC",
+        "Peacock"
       ],
       "status": "scheduled",
       "seasonType": "playoffs",
