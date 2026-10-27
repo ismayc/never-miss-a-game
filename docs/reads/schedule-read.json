@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T00:10:24.524Z",
+  "generatedAt": "2026-10-27T03:54:04.006Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-26",
@@ -210,11 +210,11 @@
         "401909889",
         "401909286"
       ],
-      "nextGameUtc": "2026-10-27T02:00:00.000Z",
-      "nextGameLocalDay": "2026-10-26",
-      "nextGameLocal": "Monday, Oct 26 at 7:00 PM",
-      "nextGameLabel": "Golden State Warriors at Denver Nuggets",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-29T00:00:00.000Z",
+      "nextGameLocalDay": "2026-10-28",
+      "nextGameLocal": "Wednesday, Oct 28 at 5:00 PM",
+      "nextGameLabel": "Denver Nuggets at New Orleans Pelicans",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -344,10 +344,10 @@
       "counts": {
         "total": 272,
         "final": 106,
-        "scheduled": 166,
+        "scheduled": 165,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 2
@@ -356,10 +356,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-27T00:15:00.000Z",
-      "nextGameLocalDay": "2026-10-26",
-      "nextGameLabel": "Dallas Cowboys at Philadelphia Eagles",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-30T00:15:00.000Z",
+      "nextGameLocalDay": "2026-10-29",
+      "nextGameLabel": "Carolina Panthers at Green Bay Packers",
+      "daysUntilNextGame": 3,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -386,10 +386,10 @@
       "counts": {
         "total": 1200,
         "final": 43,
-        "scheduled": 1151,
+        "scheduled": 1148,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 6,
+        "pastUnresolved": 9,
         "inWindow": 49,
         "inWindowReal": 49,
         "inWindowFollowed": 6
@@ -398,10 +398,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-27T00:30:00.000Z",
-      "nextGameLocalDay": "2026-10-26",
-      "nextGameLabel": "Atlanta Hawks at Houston Rockets",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-27T23:30:00.000Z",
+      "nextGameLocalDay": "2026-10-27",
+      "nextGameLabel": "Brooklyn Nets at Boston Celtics",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -875,7 +875,7 @@
         "ABC",
         "Disney+"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
@@ -902,7 +902,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HOU",
@@ -931,7 +931,7 @@
         "Jazz+",
         "DAZN MEM"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "UTAH",
@@ -957,7 +957,7 @@
       "tv": [
         "NBCSN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DEN",
