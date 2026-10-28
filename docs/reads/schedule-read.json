@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T11:40:34.090Z",
+  "generatedAt": "2026-10-28T00:10:23.626Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-27",
@@ -234,11 +234,11 @@
         "401909901",
         "401909917"
       ],
-      "nextGameUtc": "2026-10-28T00:00:00.000Z",
-      "nextGameLocalDay": "2026-10-27",
-      "nextGameLocal": "Tuesday, Oct 27 at 5:00 PM",
-      "nextGameLabel": "Sacramento Kings at San Antonio Spurs",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-29T01:00:00.000Z",
+      "nextGameLocalDay": "2026-10-28",
+      "nextGameLocal": "Wednesday, Oct 28 at 6:00 PM",
+      "nextGameLabel": "San Antonio Spurs at Utah Jazz",
+      "daysUntilNextGame": 1,
       "note": null
     }
   ],
@@ -389,10 +389,10 @@
       "counts": {
         "total": 1200,
         "final": 52,
-        "scheduled": 1148,
+        "scheduled": 1145,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 3,
         "inWindow": 55,
         "inWindowReal": 55,
         "inWindowFollowed": 7
@@ -401,9 +401,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-27T23:30:00.000Z",
+      "nextGameUtc": "2026-10-28T03:00:00.000Z",
       "nextGameLocalDay": "2026-10-27",
-      "nextGameLabel": "Brooklyn Nets at Boston Celtics",
+      "nextGameLabel": "Portland Trail Blazers at Los Angeles Lakers",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -681,7 +681,7 @@
         "NBA League Pass",
         "DAZN (YES)"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BOS",
@@ -707,7 +707,7 @@
       "tv": [
         "NBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NY",
@@ -733,7 +733,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SA",
