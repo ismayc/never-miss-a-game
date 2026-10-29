@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T12:10:26.307Z",
+  "generatedAt": "2026-10-29T00:10:23.537Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-28",
@@ -212,11 +212,11 @@
         "401909286",
         "401909918"
       ],
-      "nextGameUtc": "2026-10-29T00:00:00.000Z",
-      "nextGameLocalDay": "2026-10-28",
-      "nextGameLocal": "Wednesday, Oct 28 at 5:00 PM",
-      "nextGameLabel": "Denver Nuggets at New Orleans Pelicans",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-31T02:00:00.000Z",
+      "nextGameLocalDay": "2026-10-30",
+      "nextGameLocal": "Friday, Oct 30 at 7:00 PM",
+      "nextGameLabel": "Denver Nuggets at Phoenix Suns",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -388,10 +388,10 @@
       "counts": {
         "total": 1200,
         "final": 56,
-        "scheduled": 1144,
+        "scheduled": 1135,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 9,
         "inWindow": 51,
         "inWindowReal": 51,
         "inWindowFollowed": 6
@@ -400,9 +400,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-28T23:00:00.000Z",
+      "nextGameUtc": "2026-10-29T01:00:00.000Z",
       "nextGameLocalDay": "2026-10-28",
-      "nextGameLabel": "Miami Heat at Atlanta Hawks",
+      "nextGameLabel": "San Antonio Spurs at Utah Jazz",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -679,7 +679,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
@@ -707,7 +707,7 @@
         "NBA League Pass",
         "DAZN CLE"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CLE",
@@ -733,7 +733,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DET",
@@ -760,7 +760,7 @@
         "ESPN",
         "DAZN IND"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IND",
@@ -786,7 +786,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TOR",
@@ -812,7 +812,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHI",
@@ -840,7 +840,7 @@
         "MyMi",
         "Bucks App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIL",
@@ -866,7 +866,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIN",
@@ -894,7 +894,7 @@
         "GCSEN",
         "Pelicans.com"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NO",
