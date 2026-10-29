@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T00:10:23.537Z",
+  "generatedAt": "2026-10-29T04:36:17.052Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-28",
@@ -233,11 +233,11 @@
         "401909901",
         "401909917"
       ],
-      "nextGameUtc": "2026-10-29T01:00:00.000Z",
-      "nextGameLocalDay": "2026-10-28",
-      "nextGameLocal": "Wednesday, Oct 28 at 6:00 PM",
-      "nextGameLabel": "San Antonio Spurs at Utah Jazz",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-01T00:00:00.000Z",
+      "nextGameLocalDay": "2026-10-31",
+      "nextGameLocal": "Saturday, Oct 31 at 5:00 PM",
+      "nextGameLabel": "Minnesota Timberwolves at San Antonio Spurs",
+      "daysUntilNextGame": 3,
       "note": null
     }
   ],
@@ -388,10 +388,10 @@
       "counts": {
         "total": 1200,
         "final": 56,
-        "scheduled": 1135,
+        "scheduled": 1132,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 9,
+        "pastUnresolved": 12,
         "inWindow": 51,
         "inWindowReal": 51,
         "inWindowFollowed": 6
@@ -400,10 +400,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-29T01:00:00.000Z",
-      "nextGameLocalDay": "2026-10-28",
-      "nextGameLabel": "San Antonio Spurs at Utah Jazz",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-30T00:00:00.000Z",
+      "nextGameLocalDay": "2026-10-29",
+      "nextGameLabel": "Cleveland Cavaliers at Atlanta Hawks",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -925,7 +925,7 @@
         "Jazz+",
         "DAZN SAS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "UTAH",
@@ -957,7 +957,7 @@
         "MavsTV",
         "Thunder App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DAL",
@@ -987,7 +987,7 @@
         "KTLA",
         "ClipperVision"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAC",

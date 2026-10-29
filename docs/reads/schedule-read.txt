@@ -1,7 +1,7 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Wednesday, Oct 28 through Tuesday, Nov 3 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-10-29T00:10:23.150Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-10-29T04:36:16.498Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
@@ -11,8 +11,8 @@ SOURCES
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
   🏈 NFL                    In season      14 in window     next game in 1d (2026-10-29 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
-  🏀 NBA                    In season      51 in window     next game today
-      ⚠ 9 past matches with no committed result
+  🏀 NBA                    In season      51 in window     next game in 1d (2026-10-29 local)
+      ⚠ 12 past matches with no committed result
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
@@ -39,7 +39,7 @@ FOLLOWED TEAMS
   Manchester City          Premier League     1 in window    next in 3d, Saturday, Oct 31 at 8:00 AM local — Brighton & Hove Albion at Manchester City
   Liverpool                Premier League     1 in window    next in 4d, Sunday, Nov 1 at 9:30 AM local — Arsenal at Liverpool
   Denver Nuggets           NBA                3 in window    next in 2d, Friday, Oct 30 at 7:00 PM local — Denver Nuggets at Phoenix Suns
-  San Antonio Spurs        NBA                3 in window    plays today
+  San Antonio Spurs        NBA                3 in window    next in 3d, Saturday, Oct 31 at 5:00 PM local — Minnesota Timberwolves at San Antonio Spurs
 
 IN WINDOW: 77 real games, 11 involving a followed team
 
