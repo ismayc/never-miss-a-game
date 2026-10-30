@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-30T04:36:07.713Z",
+  "generatedAt": "2026-10-30T12:10:22.788Z",
   "tz": "America/Phoenix",
   "window": {
-    "from": "2026-10-29",
-    "to": "2026-11-04",
+    "from": "2026-10-30",
+    "to": "2026-11-05",
     "days": 7,
     "localDays": [
-      "2026-10-29",
       "2026-10-30",
       "2026-10-31",
       "2026-11-01",
       "2026-11-02",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ]
   },
   "root": "/home/runner/work/never-miss-a-game/sports-trackers",
@@ -102,7 +102,7 @@
       "nextGameLocalDay": "2026-11-01",
       "nextGameLocal": "Sunday, Nov 1 at 11:00 AM",
       "nextGameLabel": "Arizona Cardinals at Dallas Cowboys",
-      "daysUntilNextGame": 3,
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -121,7 +121,7 @@
       "nextGameLocalDay": "2026-11-02",
       "nextGameLocal": "Monday, Nov 2 at 6:15 PM",
       "nextGameLabel": "Chicago Bears at Seattle Seahawks",
-      "daysUntilNextGame": 4,
+      "daysUntilNextGame": 3,
       "note": null
     },
     {
@@ -138,7 +138,7 @@
       "nextGameLocalDay": "2026-11-08",
       "nextGameLocal": "Sunday, Nov 8 at 2:25 PM",
       "nextGameLabel": "Las Vegas Raiders at San Francisco 49ers",
-      "daysUntilNextGame": 10,
+      "daysUntilNextGame": 9,
       "note": null
     },
     {
@@ -157,7 +157,7 @@
       "nextGameLocalDay": "2026-11-01",
       "nextGameLocal": "Sunday, Nov 1 at 2:05 PM",
       "nextGameLabel": "Los Angeles Chargers at Los Angeles Rams",
-      "daysUntilNextGame": 3,
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -176,7 +176,7 @@
       "nextGameLocalDay": "2026-10-31",
       "nextGameLocal": "Saturday, Oct 31 at 8:00 AM",
       "nextGameLabel": "Brighton & Hove Albion at Manchester City",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "note": null
     },
     {
@@ -195,7 +195,7 @@
       "nextGameLocalDay": "2026-11-01",
       "nextGameLocal": "Sunday, Nov 1 at 9:30 AM",
       "nextGameLabel": "Arsenal at Liverpool",
-      "daysUntilNextGame": 3,
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -216,7 +216,7 @@
       "nextGameLocalDay": "2026-10-30",
       "nextGameLocal": "Friday, Oct 30 at 7:00 PM",
       "nextGameLabel": "Denver Nuggets at Phoenix Suns",
-      "daysUntilNextGame": 1,
+      "daysUntilNextGame": 0,
       "note": null
     },
     {
@@ -237,7 +237,7 @@
       "nextGameLocalDay": "2026-10-31",
       "nextGameLocal": "Saturday, Oct 31 at 5:00 PM",
       "nextGameLabel": "Minnesota Timberwolves at San Antonio Spurs",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "note": null
     }
   ],
@@ -268,8 +268,8 @@
         "placeholder": 0,
         "postponed": 1,
         "pastUnresolved": 0,
-        "inWindow": 2,
-        "inWindowReal": 2,
+        "inWindow": 1,
+        "inWindowReal": 1,
         "inWindowFollowed": 0
       },
       "dataRange": {
@@ -279,7 +279,7 @@
       "nextGameUtc": "2026-11-01T00:00:00.000Z",
       "nextGameLocalDay": "2026-10-31",
       "nextGameLabel": "Atlanta Dream at Golden State Valkyries",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -319,7 +319,7 @@
       "nextGameUtc": "2026-10-31T12:30:00.000Z",
       "nextGameLocalDay": "2026-10-31",
       "nextGameLabel": "Manchester United at Chelsea",
-      "daysUntilNextGame": 2,
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -345,11 +345,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 107,
+        "final": 108,
         "scheduled": 164,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 3
@@ -361,7 +361,7 @@
       "nextGameUtc": "2026-11-01T18:00:00.000Z",
       "nextGameLocalDay": "2026-11-01",
       "nextGameLabel": "Arizona Cardinals at Dallas Cowboys",
-      "daysUntilNextGame": 3,
+      "daysUntilNextGame": 2,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -387,13 +387,13 @@
       "commitsScores": true,
       "counts": {
         "total": 1200,
-        "final": 68,
+        "final": 71,
         "scheduled": 1129,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 3,
-        "inWindow": 53,
-        "inWindowReal": 53,
+        "pastUnresolved": 0,
+        "inWindow": 52,
+        "inWindowReal": 52,
         "inWindowFollowed": 6
       },
       "dataRange": {
@@ -403,7 +403,7 @@
       "nextGameUtc": "2026-10-30T23:00:00.000Z",
       "nextGameLocalDay": "2026-10-30",
       "nextGameLabel": "Charlotte Hornets at Washington Wizards",
-      "daysUntilNextGame": 1,
+      "daysUntilNextGame": 0,
       "notes": []
     },
     {
@@ -660,157 +660,13 @@
   "counts": {
     "sourcesOk": 10,
     "sourcesMissing": 0,
-    "gamesInWindow": 79,
-    "realGamesInWindow": 79,
+    "gamesInWindow": 77,
+    "realGamesInWindow": 77,
     "placeholdersInWindow": 0,
     "postponedInWindow": 0,
     "followedGamesInWindow": 11
   },
   "games": [
-    {
-      "sport": "wnba",
-      "sportName": "WNBA",
-      "emoji": "🏀",
-      "id": "401918310",
-      "startUtc": "2026-10-29T16:30:00.000Z",
-      "homeLabel": "Atlanta Dream",
-      "awayLabel": "Golden State Valkyries",
-      "venue": "State Farm Arena, Atlanta",
-      "tv": [
-        "USA Net",
-        "Peacock",
-        "E!",
-        "SYFY"
-      ],
-      "status": "final",
-      "seasonType": "playoffs",
-      "extra": {
-        "homeAbbr": "ATL",
-        "awayAbbr": "GS",
-        "round": "Final",
-        "score": [
-          80,
-          69
-        ]
-      },
-      "localDay": "2026-10-29",
-      "localWeekday": "Thursday, Oct 29",
-      "localTime": "9:30 AM",
-      "localTimeUser": "9:30 AM",
-      "tz": "America/Phoenix",
-      "followedBy": [],
-      "followed": false
-    },
-    {
-      "sport": "nba",
-      "sportName": "NBA",
-      "emoji": "🏀",
-      "id": "401909893",
-      "startUtc": "2026-10-30T00:00:00.000Z",
-      "homeLabel": "Atlanta Hawks",
-      "awayLabel": "Cleveland Cavaliers",
-      "venue": "State Farm Arena, Atlanta",
-      "tv": [
-        "NBA TV"
-      ],
-      "status": "past-unresolved",
-      "seasonType": "regular",
-      "extra": {
-        "homeAbbr": "ATL",
-        "awayAbbr": "CLE"
-      },
-      "localDay": "2026-10-29",
-      "localWeekday": "Thursday, Oct 29",
-      "localTime": "5:00 PM",
-      "localTimeUser": "5:00 PM",
-      "tz": "America/Phoenix",
-      "followedBy": [],
-      "followed": false
-    },
-    {
-      "sport": "nba",
-      "sportName": "NBA",
-      "emoji": "🏀",
-      "id": "401909894",
-      "startUtc": "2026-10-30T00:00:00.000Z",
-      "homeLabel": "New Orleans Pelicans",
-      "awayLabel": "Sacramento Kings",
-      "venue": "Smoothie King Center, New Orleans",
-      "tv": [
-        "NBA League Pass",
-        "GCSEN",
-        "Pelicans.com"
-      ],
-      "status": "past-unresolved",
-      "seasonType": "regular",
-      "extra": {
-        "homeAbbr": "NO",
-        "awayAbbr": "SAC"
-      },
-      "localDay": "2026-10-29",
-      "localWeekday": "Thursday, Oct 29",
-      "localTime": "5:00 PM",
-      "localTimeUser": "5:00 PM",
-      "tz": "America/Phoenix",
-      "followedBy": [],
-      "followed": false
-    },
-    {
-      "sport": "nfl",
-      "sportName": "NFL",
-      "emoji": "🏈",
-      "id": "401873023",
-      "startUtc": "2026-10-30T00:15:00.000Z",
-      "homeLabel": "Green Bay Packers",
-      "awayLabel": "Carolina Panthers",
-      "venue": "Lambeau Field, Green Bay",
-      "tv": [
-        "Prime Video"
-      ],
-      "status": "past-unresolved",
-      "seasonType": "regular",
-      "extra": {
-        "homeAbbr": "GB",
-        "awayAbbr": "CAR",
-        "week": 8
-      },
-      "localDay": "2026-10-29",
-      "localWeekday": "Thursday, Oct 29",
-      "localTime": "5:15 PM",
-      "localTimeUser": "5:15 PM",
-      "tz": "America/Phoenix",
-      "followedBy": [],
-      "followed": false
-    },
-    {
-      "sport": "nba",
-      "sportName": "NBA",
-      "emoji": "🏀",
-      "id": "401909895",
-      "startUtc": "2026-10-30T02:00:00.000Z",
-      "homeLabel": "Portland Trail Blazers",
-      "awayLabel": "Memphis Grizzlies",
-      "venue": "Moda Center, Portland",
-      "tv": [
-        "NBA League Pass",
-        "KUNP 16",
-        "BlazerVision",
-        "DAZN MEM"
-      ],
-      "status": "past-unresolved",
-      "seasonType": "regular",
-      "extra": {
-        "homeAbbr": "POR",
-        "awayAbbr": "MEM"
-      },
-      "localDay": "2026-10-29",
-      "localWeekday": "Thursday, Oct 29",
-      "localTime": "7:00 PM",
-      "localTimeUser": "7:00 PM",
-      "tz": "America/Phoenix",
-      "followedBy": [],
-      "followed": false
-    },
     {
       "sport": "nba",
       "sportName": "NBA",
@@ -2829,6 +2685,86 @@
       "localWeekday": "Wednesday, Nov 4",
       "localTime": "8:30 PM",
       "localTimeUser": "8:30 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
+    },
+    {
+      "sport": "nfl",
+      "sportName": "NFL",
+      "emoji": "🏈",
+      "id": "401873037",
+      "startUtc": "2026-11-06T01:15:00.000Z",
+      "homeLabel": "Baltimore Ravens",
+      "awayLabel": "Jacksonville Jaguars",
+      "venue": "M&T Bank Stadium, Baltimore",
+      "tv": [
+        "Prime Video"
+      ],
+      "status": "scheduled",
+      "seasonType": "regular",
+      "extra": {
+        "homeAbbr": "BAL",
+        "awayAbbr": "JAX",
+        "week": 9
+      },
+      "localDay": "2026-11-05",
+      "localWeekday": "Thursday, Nov 5",
+      "localTime": "6:15 PM",
+      "localTimeUser": "6:15 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
+    },
+    {
+      "sport": "nba",
+      "sportName": "NBA",
+      "emoji": "🏀",
+      "id": "401909936",
+      "startUtc": "2026-11-06T02:00:00.000Z",
+      "homeLabel": "Phoenix Suns",
+      "awayLabel": "Orlando Magic",
+      "venue": "Mortgage Matchup Center, Phoenix",
+      "tv": [
+        "Suns Live",
+        "Arizona's Family 3TV"
+      ],
+      "status": "scheduled",
+      "seasonType": "regular",
+      "extra": {
+        "homeAbbr": "PHX",
+        "awayAbbr": "ORL"
+      },
+      "localDay": "2026-11-05",
+      "localWeekday": "Thursday, Nov 5",
+      "localTime": "7:00 PM",
+      "localTimeUser": "7:00 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [],
+      "followed": false
+    },
+    {
+      "sport": "nba",
+      "sportName": "NBA",
+      "emoji": "🏀",
+      "id": "401909937",
+      "startUtc": "2026-11-06T03:00:00.000Z",
+      "homeLabel": "Golden State Warriors",
+      "awayLabel": "Miami Heat",
+      "venue": "Chase Center, San Francisco",
+      "tv": [
+        "NBA TV"
+      ],
+      "status": "scheduled",
+      "seasonType": "regular",
+      "extra": {
+        "homeAbbr": "GS",
+        "awayAbbr": "MIA"
+      },
+      "localDay": "2026-11-05",
+      "localWeekday": "Thursday, Nov 5",
+      "localTime": "8:00 PM",
+      "localTimeUser": "8:00 PM",
       "tz": "America/Phoenix",
       "followedBy": [],
       "followed": false
