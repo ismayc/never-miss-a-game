@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T18:10:24.379Z",
+  "generatedAt": "2026-10-30T00:10:22.305Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-29",
@@ -263,11 +263,11 @@
       "commitsScores": true,
       "counts": {
         "total": 356,
-        "final": 353,
+        "final": 354,
         "scheduled": 1,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 2,
         "inWindowReal": 2,
         "inWindowFollowed": 0
@@ -388,10 +388,10 @@
       "counts": {
         "total": 1200,
         "final": 68,
-        "scheduled": 1132,
+        "scheduled": 1130,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 2,
         "inWindow": 53,
         "inWindowReal": 53,
         "inWindowFollowed": 6
@@ -400,9 +400,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-30T00:00:00.000Z",
+      "nextGameUtc": "2026-10-30T02:00:00.000Z",
       "nextGameLocalDay": "2026-10-29",
-      "nextGameLabel": "Cleveland Cavaliers at Atlanta Hawks",
+      "nextGameLabel": "Memphis Grizzlies at Portland Trail Blazers",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -682,12 +682,16 @@
         "E!",
         "SYFY"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "ATL",
         "awayAbbr": "GS",
-        "round": "Final"
+        "round": "Final",
+        "score": [
+          80,
+          69
+        ]
       },
       "localDay": "2026-10-29",
       "localWeekday": "Thursday, Oct 29",
@@ -709,7 +713,7 @@
       "tv": [
         "NBA TV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
@@ -737,7 +741,7 @@
         "GCSEN",
         "Pelicans.com"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NO",
