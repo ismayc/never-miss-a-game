@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T12:10:22.788Z",
+  "generatedAt": "2026-10-31T00:10:26.796Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-30",
@@ -388,10 +388,10 @@
       "counts": {
         "total": 1200,
         "final": 71,
-        "scheduled": 1129,
+        "scheduled": 1121,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 8,
         "inWindow": 52,
         "inWindowReal": 52,
         "inWindowFollowed": 6
@@ -400,9 +400,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-30T23:00:00.000Z",
+      "nextGameUtc": "2026-10-31T02:00:00.000Z",
       "nextGameLocalDay": "2026-10-30",
-      "nextGameLabel": "Charlotte Hornets at Washington Wizards",
+      "nextGameLabel": "Los Angeles Lakers at Golden State Warriors",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -680,7 +680,7 @@
         "MNMT",
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "WSH",
@@ -706,7 +706,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BOS",
@@ -733,7 +733,7 @@
         "NBA League Pass",
         "DAZN (YES)"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BKN",
@@ -759,7 +759,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
@@ -785,7 +785,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TOR",
@@ -812,7 +812,7 @@
         "NBA League Pass",
         "DAZN IND"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIA",
@@ -840,7 +840,7 @@
         "KFAA-TV",
         "MavsTV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DAL",
@@ -867,7 +867,7 @@
         "NBA League Pass",
         "ClipperVision"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIN",
