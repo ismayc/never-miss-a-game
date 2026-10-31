@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T11:36:33.303Z",
+  "generatedAt": "2026-10-31T11:45:17.763Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-31",
@@ -387,11 +387,11 @@
       "commitsScores": true,
       "counts": {
         "total": 1200,
-        "final": 71,
+        "final": 81,
         "scheduled": 1119,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 10,
+        "pastUnresolved": 0,
         "inWindow": 51,
         "inWindowReal": 51,
         "inWindowFollowed": 6
@@ -1061,8 +1061,7 @@
       "venue": "Chase Center, San Francisco",
       "tv": [
         "USA Net",
-        "CNBC",
-        "Peacock"
+        "CNBC"
       ],
       "status": "scheduled",
       "seasonType": "playoffs",
