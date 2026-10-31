@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T00:10:26.796Z",
+  "generatedAt": "2026-10-31T04:19:17.573Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-30",
@@ -212,11 +212,11 @@
         "401909918",
         "401909931"
       ],
-      "nextGameUtc": "2026-10-31T02:00:00.000Z",
-      "nextGameLocalDay": "2026-10-30",
-      "nextGameLocal": "Friday, Oct 30 at 7:00 PM",
-      "nextGameLabel": "Denver Nuggets at Phoenix Suns",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-03T02:00:00.000Z",
+      "nextGameLocalDay": "2026-11-02",
+      "nextGameLocal": "Monday, Nov 2 at 7:00 PM",
+      "nextGameLabel": "Portland Trail Blazers at Denver Nuggets",
+      "daysUntilNextGame": 3,
       "note": null
     },
     {
@@ -388,10 +388,10 @@
       "counts": {
         "total": 1200,
         "final": 71,
-        "scheduled": 1121,
+        "scheduled": 1119,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 8,
+        "pastUnresolved": 10,
         "inWindow": 52,
         "inWindowReal": 52,
         "inWindowFollowed": 6
@@ -400,10 +400,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-31T02:00:00.000Z",
-      "nextGameLocalDay": "2026-10-30",
-      "nextGameLabel": "Los Angeles Lakers at Golden State Warriors",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-10-31T19:00:00.000Z",
+      "nextGameLocalDay": "2026-10-31",
+      "nextGameLabel": "Portland Trail Blazers at Utah Jazz",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -893,7 +893,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "GS",
@@ -921,7 +921,7 @@
         "Suns Live",
         "Arizona's Family 3TV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHX",
