@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T18:10:22.168Z",
+  "generatedAt": "2026-10-31T21:02:32.521Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-31",
@@ -303,11 +303,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 80,
-        "scheduled": 293,
+        "final": 86,
+        "scheduled": 292,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 7,
+        "pastUnresolved": 2,
         "inWindow": 11,
         "inWindowReal": 11,
         "inWindowFollowed": 2
@@ -316,10 +316,10 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-31T20:00:00.000Z",
-      "nextGameLocalDay": "2026-10-31",
-      "nextGameLabel": "Fulham at Aston Villa",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-01T16:30:00.000Z",
+      "nextGameLocalDay": "2026-11-01",
+      "nextGameLabel": "Arsenal at Liverpool",
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -388,10 +388,10 @@
       "counts": {
         "total": 1200,
         "final": 81,
-        "scheduled": 1119,
+        "scheduled": 1118,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 51,
         "inWindowReal": 51,
         "inWindowFollowed": 6
@@ -400,9 +400,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-31T19:00:00.000Z",
+      "nextGameUtc": "2026-10-31T22:00:00.000Z",
       "nextGameLocalDay": "2026-10-31",
-      "nextGameLabel": "Portland Trail Blazers at Utah Jazz",
+      "nextGameLabel": "Philadelphia 76ers at Charlotte Hornets",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -680,11 +680,15 @@
         "USA Net",
         "Tele"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHE",
-        "awayAbbr": "MAN"
+        "awayAbbr": "MAN",
+        "score": [
+          2,
+          0
+        ]
       },
       "localDay": "2026-10-31",
       "localWeekday": "Saturday, Oct 31",
@@ -706,11 +710,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HUL",
-        "awayAbbr": "IPS"
+        "awayAbbr": "IPS",
+        "score": [
+          2,
+          2
+        ]
       },
       "localDay": "2026-10-31",
       "localWeekday": "Saturday, Oct 31",
@@ -732,11 +740,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MNC",
-        "awayAbbr": "BHA"
+        "awayAbbr": "BHA",
+        "score": [
+          0,
+          1
+        ]
       },
       "localDay": "2026-10-31",
       "localWeekday": "Saturday, Oct 31",
@@ -760,11 +772,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "COV",
-        "awayAbbr": "SUN"
+        "awayAbbr": "SUN",
+        "score": [
+          3,
+          1
+        ]
       },
       "localDay": "2026-10-31",
       "localWeekday": "Saturday, Oct 31",
@@ -787,11 +803,15 @@
         "USA Net",
         "Universo"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BRE",
-        "awayAbbr": "NFO"
+        "awayAbbr": "NFO",
+        "score": [
+          2,
+          0
+        ]
       },
       "localDay": "2026-10-31",
       "localWeekday": "Saturday, Oct 31",
@@ -813,11 +833,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BOU",
-        "awayAbbr": "LEE"
+        "awayAbbr": "LEE",
+        "score": [
+          2,
+          0
+        ]
       },
       "localDay": "2026-10-31",
       "localWeekday": "Saturday, Oct 31",
@@ -870,7 +894,7 @@
         "KJZZ-TV",
         "Jazz+"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "UTAH",
@@ -894,9 +918,10 @@
       "awayLabel": "Fulham",
       "venue": "Villa Park, Birmingham",
       "tv": [
+        "NBCSN",
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "AVL",
@@ -1115,8 +1140,9 @@
       "awayLabel": "Arsenal",
       "venue": "Anfield, Liverpool",
       "tv": [
-        "Peacock",
-        "Tele"
+        "NBCSN",
+        "Tele",
+        "Peacock"
       ],
       "status": "scheduled",
       "seasonType": "regular",

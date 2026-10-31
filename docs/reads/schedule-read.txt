@@ -1,18 +1,19 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Saturday, Oct 31 through Friday, Nov 6 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-10-31T18:10:21.640Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-10-31T21:02:31.982Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
   🏀 WNBA                   In season      1 in window      next game today
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
-  ⚽ Premier League         In season      11 in window     next game today
-      ⚠ 7 past matches with no committed result
+  ⚽ Premier League         In season      11 in window     next game in 1d (2026-11-01 local)
+      ⚠ 2 past matches with no committed result
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
   🏈 NFL                    In season      14 in window     next game in 1d (2026-11-01 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
   🏀 NBA                    In season      51 in window     next game today
+      ⚠ 1 past matches with no committed result
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
@@ -52,7 +53,7 @@ IN WINDOW: 77 real games, 11 involving a followed team
     8:00 AM  ⚽ Leeds United at AFC Bournemouth                · Peacock
     10:30 AM ⚽ Crystal Palace at Tottenham Hotspur            · NBC/Universo
     12:00 PM 🏀 Portland Trail Blazers at Utah Jazz            · NBA League Pass/KUNP 16
-    1:00 PM  ⚽ Fulham at Aston Villa                          · Peacock
+    1:00 PM  ⚽ Fulham at Aston Villa                          · NBCSN/Peacock
     3:00 PM  🏀 Philadelphia 76ers at Charlotte Hornets        · NBA TV
     4:00 PM  🏀 Atlanta Hawks at New Orleans Pelicans          · NBA League Pass/GCSEN
     5:00 PM  🏀 Sacramento Kings at Memphis Grizzlies          · NBA League Pass/DAZN MEM
@@ -62,7 +63,7 @@ IN WINDOW: 77 real games, 11 involving a followed team
     5:30 PM  🏀 Oklahoma City Thunder at Houston Rockets       · NBA TV/Thunder App
 
   Sunday, Nov 1
-  ★ 9:30 AM  ⚽ Arsenal at Liverpool                           · Peacock/Tele
+  ★ 9:30 AM  ⚽ Arsenal at Liverpool                           · NBCSN/Tele
   ★ 11:00 AM 🏈 Arizona Cardinals at Dallas Cowboys            · Fox · Week 8
     11:00 AM 🏈 Atlanta Falcons at Tampa Bay Buccaneers        · Fox · Week 8
     11:00 AM 🏈 Baltimore Ravens at Buffalo Bills              · CBS · Week 8
