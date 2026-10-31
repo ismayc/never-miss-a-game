@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T13:10:21.840Z",
+  "generatedAt": "2026-10-31T16:53:04.870Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-31",
@@ -172,11 +172,11 @@
       "inWindowGameIds": [
         "401879245"
       ],
-      "nextGameUtc": "2026-10-31T15:00:00.000Z",
-      "nextGameLocalDay": "2026-10-31",
-      "nextGameLocal": "Saturday, Oct 31 at 8:00 AM",
-      "nextGameLabel": "Brighton & Hove Albion at Manchester City",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-07T17:30:00.000Z",
+      "nextGameLocalDay": "2026-11-07",
+      "nextGameLocal": "Saturday, Nov 7 at 10:30 AM",
+      "nextGameLabel": "Manchester City at Nottingham Forest",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -304,10 +304,10 @@
       "counts": {
         "total": 380,
         "final": 80,
-        "scheduled": 299,
+        "scheduled": 294,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 6,
         "inWindow": 11,
         "inWindowReal": 11,
         "inWindowFollowed": 2
@@ -316,9 +316,9 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-31T15:00:00.000Z",
+      "nextGameUtc": "2026-10-31T17:30:00.000Z",
       "nextGameLocalDay": "2026-10-31",
-      "nextGameLabel": "Ipswich Town at Hull City",
+      "nextGameLabel": "Crystal Palace at Tottenham Hotspur",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
@@ -706,7 +706,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HUL",
@@ -732,7 +732,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MNC",
@@ -760,7 +760,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "COV",
@@ -787,7 +787,7 @@
         "USA Net",
         "Universo"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BRE",
@@ -813,7 +813,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BOU",
