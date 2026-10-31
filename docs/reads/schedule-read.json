@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T16:53:04.870Z",
+  "generatedAt": "2026-10-31T18:10:22.168Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-31",
@@ -304,10 +304,10 @@
       "counts": {
         "total": 380,
         "final": 80,
-        "scheduled": 294,
+        "scheduled": 293,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 6,
+        "pastUnresolved": 7,
         "inWindow": 11,
         "inWindowReal": 11,
         "inWindowFollowed": 2
@@ -316,9 +316,9 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-10-31T17:30:00.000Z",
+      "nextGameUtc": "2026-10-31T20:00:00.000Z",
       "nextGameLocalDay": "2026-10-31",
-      "nextGameLabel": "Crystal Palace at Tottenham Hotspur",
+      "nextGameLabel": "Fulham at Aston Villa",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
@@ -840,7 +840,7 @@
         "NBC",
         "Universo"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TOT",
