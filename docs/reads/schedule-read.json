@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T21:02:32.521Z",
+  "generatedAt": "2026-11-01T00:10:24.197Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-31",
@@ -233,11 +233,11 @@
         "401909933",
         "401909295"
       ],
-      "nextGameUtc": "2026-11-01T00:00:00.000Z",
-      "nextGameLocalDay": "2026-10-31",
-      "nextGameLocal": "Saturday, Oct 31 at 5:00 PM",
-      "nextGameLabel": "Minnesota Timberwolves at San Antonio Spurs",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-03T01:30:00.000Z",
+      "nextGameLocalDay": "2026-11-02",
+      "nextGameLocal": "Monday, Nov 2 at 6:30 PM",
+      "nextGameLabel": "Utah Jazz at San Antonio Spurs",
+      "daysUntilNextGame": 2,
       "note": null
     }
   ],
@@ -250,8 +250,8 @@
       "family": "A",
       "status": "ok",
       "phase": {
-        "label": "In season",
-        "tone": "on"
+        "label": "Offseason",
+        "tone": "cold"
       },
       "week": {
         "start": "2026-10-25",
@@ -264,10 +264,10 @@
       "counts": {
         "total": 356,
         "final": 354,
-        "scheduled": 1,
+        "scheduled": 0,
         "placeholder": 0,
         "postponed": 1,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 1,
         "inWindowReal": 1,
         "inWindowFollowed": 0
@@ -276,10 +276,10 @@
         "first": "2026-05-08T23:30:00.000Z",
         "last": "2026-11-01T00:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-01T00:00:00.000Z",
-      "nextGameLocalDay": "2026-10-31",
-      "nextGameLabel": "Atlanta Dream at Golden State Valkyries",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": null,
+      "nextGameLocalDay": null,
+      "nextGameLabel": null,
+      "daysUntilNextGame": null,
       "notes": []
     },
     {
@@ -303,11 +303,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 86,
+        "final": 87,
         "scheduled": 292,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 2,
+        "pastUnresolved": 1,
         "inWindow": 11,
         "inWindowReal": 11,
         "inWindowFollowed": 2
@@ -388,10 +388,10 @@
       "counts": {
         "total": 1200,
         "final": 81,
-        "scheduled": 1118,
+        "scheduled": 1113,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 6,
         "inWindow": 51,
         "inWindowReal": 51,
         "inWindowFollowed": 6
@@ -400,9 +400,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-10-31T22:00:00.000Z",
+      "nextGameUtc": "2026-11-01T00:30:00.000Z",
       "nextGameLocalDay": "2026-10-31",
-      "nextGameLabel": "Philadelphia 76ers at Charlotte Hornets",
+      "nextGameLabel": "Oklahoma City Thunder at Houston Rockets",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -864,11 +864,15 @@
         "NBC",
         "Universo"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TOT",
-        "awayAbbr": "CRY"
+        "awayAbbr": "CRY",
+        "score": [
+          2,
+          0
+        ]
       },
       "localDay": "2026-10-31",
       "localWeekday": "Saturday, Oct 31",
@@ -947,7 +951,7 @@
       "tv": [
         "NBA TV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHA",
@@ -975,7 +979,7 @@
         "GCSEN",
         "Pelicans.com"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NO",
@@ -1002,7 +1006,7 @@
         "NBA League Pass",
         "DAZN MEM"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MEM",
@@ -1031,7 +1035,7 @@
         "Bucks App",
         "DAZN CLE"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIL",
@@ -1059,7 +1063,7 @@
         "DAZN SAS",
         "DAZN MIN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SA",
@@ -1088,7 +1092,7 @@
         "USA Net",
         "CNBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "playoffs",
       "extra": {
         "homeAbbr": "GS",
