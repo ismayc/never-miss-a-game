@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T18:10:24.134Z",
+  "generatedAt": "2026-11-01T21:44:14.799Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-01",
@@ -153,11 +153,11 @@
       "inWindowGameIds": [
         "401873032"
       ],
-      "nextGameUtc": "2026-11-01T21:05:00.000Z",
-      "nextGameLocalDay": "2026-11-01",
-      "nextGameLocal": "Sunday, Nov 1 at 2:05 PM",
-      "nextGameLabel": "Los Angeles Chargers at Los Angeles Rams",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-08T18:00:00.000Z",
+      "nextGameLocalDay": "2026-11-08",
+      "nextGameLocal": "Sunday, Nov 8 at 11:00 AM",
+      "nextGameLabel": "Los Angeles Rams at Washington Commanders",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -347,10 +347,10 @@
       "counts": {
         "total": 272,
         "final": 108,
-        "scheduled": 156,
+        "scheduled": 153,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 8,
+        "pastUnresolved": 11,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 3
@@ -359,9 +359,9 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-01T21:05:00.000Z",
+      "nextGameUtc": "2026-11-02T01:20:00.000Z",
       "nextGameLocalDay": "2026-11-01",
-      "nextGameLabel": "Los Angeles Chargers at Los Angeles Rams",
+      "nextGameLabel": "Philadelphia Eagles at Washington Commanders",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
@@ -389,10 +389,10 @@
       "counts": {
         "total": 1200,
         "final": 88,
-        "scheduled": 1112,
+        "scheduled": 1111,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 51,
         "inWindowReal": 51,
         "inWindowFollowed": 7
@@ -401,9 +401,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-01T20:30:00.000Z",
+      "nextGameUtc": "2026-11-01T22:00:00.000Z",
       "nextGameLocalDay": "2026-11-01",
-      "nextGameLabel": "Boston Celtics at Orlando Magic",
+      "nextGameLabel": "Brooklyn Nets at Indiana Pacers",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -928,7 +928,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ORL",
@@ -954,7 +954,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAR",
@@ -983,7 +983,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DEN",
@@ -1010,7 +1010,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIA",
