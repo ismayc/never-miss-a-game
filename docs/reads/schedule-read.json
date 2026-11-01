@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T00:10:24.197Z",
+  "generatedAt": "2026-11-01T04:39:00.917Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-10-31",
@@ -388,10 +388,10 @@
       "counts": {
         "total": 1200,
         "final": 81,
-        "scheduled": 1113,
+        "scheduled": 1112,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 6,
+        "pastUnresolved": 7,
         "inWindow": 51,
         "inWindowReal": 51,
         "inWindowFollowed": 6
@@ -400,10 +400,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-01T00:30:00.000Z",
-      "nextGameLocalDay": "2026-10-31",
-      "nextGameLabel": "Oklahoma City Thunder at Houston Rockets",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-01T20:30:00.000Z",
+      "nextGameLocalDay": "2026-11-01",
+      "nextGameLabel": "Boston Celtics at Orlando Magic",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -1120,7 +1120,7 @@
         "NBA TV",
         "Thunder App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HOU",
