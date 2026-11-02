@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T00:10:23.041Z",
+  "generatedAt": "2026-11-02T04:41:01.006Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-01",
@@ -346,11 +346,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 117,
-        "scheduled": 153,
+        "final": 119,
+        "scheduled": 152,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 2,
+        "pastUnresolved": 1,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 3
@@ -359,10 +359,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-02T01:20:00.000Z",
-      "nextGameLocalDay": "2026-11-01",
-      "nextGameLabel": "Philadelphia Eagles at Washington Commanders",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-03T01:15:00.000Z",
+      "nextGameLocalDay": "2026-11-02",
+      "nextGameLabel": "Chicago Bears at Seattle Seahawks",
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -389,10 +389,10 @@
       "counts": {
         "total": 1200,
         "final": 88,
-        "scheduled": 1110,
+        "scheduled": 1108,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 2,
+        "pastUnresolved": 4,
         "inWindow": 51,
         "inWindowReal": 51,
         "inWindowFollowed": 7
@@ -401,10 +401,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-02T01:30:00.000Z",
-      "nextGameLocalDay": "2026-11-01",
-      "nextGameLabel": "LA Clippers at Golden State Warriors",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-03T00:00:00.000Z",
+      "nextGameLocalDay": "2026-11-02",
+      "nextGameLabel": "Oklahoma City Thunder at Cleveland Cavaliers",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -1023,12 +1023,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DEN",
         "awayAbbr": "KC",
-        "week": 8
+        "week": 8,
+        "score": [
+          28,
+          24
+        ]
       },
       "localDay": "2026-11-01",
       "localWeekday": "Sunday, Nov 1",
@@ -1050,12 +1054,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIA",
         "awayAbbr": "NE",
-        "week": 8
+        "week": 8,
+        "score": [
+          19,
+          24
+        ]
       },
       "localDay": "2026-11-01",
       "localWeekday": "Sunday, Nov 1",
@@ -1105,7 +1113,7 @@
       "tv": [
         "NBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "WSH",
@@ -1133,7 +1141,7 @@
         "NBA League Pass",
         "ClipperVision"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "GS",
@@ -1161,7 +1169,7 @@
         "Spectrum Sports Net",
         "Spectrum Sports Net +"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAL",
