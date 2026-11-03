@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T00:10:24.164Z",
+  "generatedAt": "2026-11-03T00:34:38.846Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-02",
@@ -392,10 +392,10 @@
       "counts": {
         "total": 1200,
         "final": 92,
-        "scheduled": 1107,
+        "scheduled": 1102,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 6,
         "inWindow": 54,
         "inWindowReal": 54,
         "inWindowFollowed": 7
@@ -404,9 +404,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-03T00:30:00.000Z",
+      "nextGameUtc": "2026-11-03T01:00:00.000Z",
       "nextGameLocalDay": "2026-11-02",
-      "nextGameLabel": "Detroit Pistons at Charlotte Hornets",
+      "nextGameLabel": "Sacramento Kings at Dallas Mavericks",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -736,7 +736,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHA",
@@ -763,7 +763,7 @@
         "NBA League Pass",
         "DAZN IND"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IND",
@@ -790,7 +790,7 @@
         "NBA League Pass",
         "DAZN (YES)"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NY",
@@ -817,7 +817,7 @@
         "MNMT",
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ORL",
@@ -843,7 +843,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
