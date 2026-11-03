@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T00:34:38.846Z",
+  "generatedAt": "2026-11-03T06:10:17.828Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-02",
@@ -118,11 +118,11 @@
         "401873036",
         "401873048"
       ],
-      "nextGameUtc": "2026-11-03T01:15:00.000Z",
-      "nextGameLocalDay": "2026-11-02",
-      "nextGameLocal": "Monday, Nov 2 at 6:15 PM",
-      "nextGameLabel": "Chicago Bears at Seattle Seahawks",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-08T21:25:00.000Z",
+      "nextGameLocalDay": "2026-11-08",
+      "nextGameLocal": "Sunday, Nov 8 at 2:25 PM",
+      "nextGameLabel": "Arizona Cardinals at Seattle Seahawks",
+      "daysUntilNextGame": 6,
       "note": null
     },
     {
@@ -215,11 +215,11 @@
         "401909931",
         "401909938"
       ],
-      "nextGameUtc": "2026-11-03T02:00:00.000Z",
-      "nextGameLocalDay": "2026-11-02",
-      "nextGameLocal": "Monday, Nov 2 at 7:00 PM",
-      "nextGameLabel": "Portland Trail Blazers at Denver Nuggets",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-05T02:00:00.000Z",
+      "nextGameLocalDay": "2026-11-04",
+      "nextGameLocal": "Wednesday, Nov 4 at 7:00 PM",
+      "nextGameLabel": "Toronto Raptors at Denver Nuggets",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -237,11 +237,11 @@
         "401909295",
         "401909944"
       ],
-      "nextGameUtc": "2026-11-03T01:30:00.000Z",
-      "nextGameLocalDay": "2026-11-02",
-      "nextGameLocal": "Monday, Nov 2 at 6:30 PM",
-      "nextGameLabel": "Utah Jazz at San Antonio Spurs",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-05T02:30:00.000Z",
+      "nextGameLocalDay": "2026-11-04",
+      "nextGameLocal": "Wednesday, Nov 4 at 7:30 PM",
+      "nextGameLabel": "Dallas Mavericks at San Antonio Spurs",
+      "daysUntilNextGame": 2,
       "note": null
     }
   ],
@@ -307,11 +307,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 89,
+        "final": 90,
         "scheduled": 290,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 11,
         "inWindowReal": 11,
         "inWindowFollowed": 2
@@ -350,10 +350,10 @@
       "counts": {
         "total": 272,
         "final": 120,
-        "scheduled": 152,
+        "scheduled": 151,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 15,
         "inWindowReal": 15,
         "inWindowFollowed": 4
@@ -362,10 +362,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-03T01:15:00.000Z",
-      "nextGameLocalDay": "2026-11-02",
-      "nextGameLabel": "Chicago Bears at Seattle Seahawks",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-06T01:15:00.000Z",
+      "nextGameLocalDay": "2026-11-05",
+      "nextGameLabel": "Jacksonville Jaguars at Baltimore Ravens",
+      "daysUntilNextGame": 3,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -392,10 +392,10 @@
       "counts": {
         "total": 1200,
         "final": 92,
-        "scheduled": 1102,
+        "scheduled": 1093,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 6,
+        "pastUnresolved": 15,
         "inWindow": 54,
         "inWindowReal": 54,
         "inWindowFollowed": 7
@@ -404,10 +404,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-03T01:00:00.000Z",
-      "nextGameLocalDay": "2026-11-02",
-      "nextGameLabel": "Sacramento Kings at Dallas Mavericks",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-05T00:00:00.000Z",
+      "nextGameLocalDay": "2026-11-04",
+      "nextGameLabel": "Philadelphia 76ers at Detroit Pistons",
+      "daysUntilNextGame": 2,
       "notes": []
     },
     {
@@ -684,11 +684,15 @@
         "USA Net",
         "Universo"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NEW",
-        "awayAbbr": "EVE"
+        "awayAbbr": "EVE",
+        "score": [
+          0,
+          1
+        ]
       },
       "localDay": "2026-11-02",
       "localWeekday": "Monday, Nov 2",
@@ -871,7 +875,7 @@
         "KFAA-TV",
         "MavsTV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DAL",
@@ -899,7 +903,7 @@
         "GCSEN",
         "Pelicans.com"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MEM",
@@ -928,7 +932,7 @@
         "MyMi",
         "Bucks App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIN",
@@ -954,7 +958,7 @@
       "tv": [
         "ESPN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SEA",
@@ -983,7 +987,7 @@
       "tv": [
         "NBA League Pass"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HOU",
@@ -1012,7 +1016,7 @@
         "KJZZ-TV",
         "Jazz+"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SA",
@@ -1043,7 +1047,7 @@
         "BlazerVision",
         "ALT2/KTVD"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DEN",
@@ -1073,7 +1077,7 @@
         "Suns Live",
         "Arizona's Family 3TV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "GS",
@@ -1101,7 +1105,7 @@
         "KTLA",
         "ClipperVision"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAC",
@@ -1129,7 +1133,7 @@
         "Spectrum Sports Net",
         "Spectrum Sports Net +"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAL",
