@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T22:03:45.721Z",
+  "generatedAt": "2026-11-03T00:10:24.164Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-02",
@@ -392,10 +392,10 @@
       "counts": {
         "total": 1200,
         "final": 92,
-        "scheduled": 1108,
+        "scheduled": 1107,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 54,
         "inWindowReal": 54,
         "inWindowFollowed": 7
@@ -404,9 +404,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-03T00:00:00.000Z",
+      "nextGameUtc": "2026-11-03T00:30:00.000Z",
       "nextGameLocalDay": "2026-11-02",
-      "nextGameLabel": "Oklahoma City Thunder at Cleveland Cavaliers",
+      "nextGameLabel": "Detroit Pistons at Charlotte Hornets",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -710,7 +710,7 @@
       "tv": [
         "NBCSN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CLE",
