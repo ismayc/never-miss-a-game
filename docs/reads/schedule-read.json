@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T12:10:18.129Z",
+  "generatedAt": "2026-11-05T00:10:24.698Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-04",
@@ -391,10 +391,10 @@
       "counts": {
         "total": 1200,
         "final": 107,
-        "scheduled": 1093,
+        "scheduled": 1091,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 2,
         "inWindow": 53,
         "inWindowReal": 53,
         "inWindowFollowed": 7
@@ -403,9 +403,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-05T00:00:00.000Z",
+      "nextGameUtc": "2026-11-05T00:30:00.000Z",
       "nextGameLocalDay": "2026-11-04",
-      "nextGameLabel": "Philadelphia 76ers at Detroit Pistons",
+      "nextGameLabel": "Milwaukee Bucks at Boston Celtics",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -682,7 +682,7 @@
       "tv": [
         "ESPN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DET",
@@ -708,7 +708,7 @@
       "tv": [
         "MNMT"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "WSH",
