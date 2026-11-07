@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T22:45:12.232Z",
+  "generatedAt": "2026-11-07T00:10:18.958Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-06",
@@ -306,11 +306,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 90,
+        "final": 91,
         "scheduled": 289,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 10,
         "inWindowReal": 10,
         "inWindowFollowed": 2
@@ -391,10 +391,10 @@
       "counts": {
         "total": 1200,
         "final": 123,
-        "scheduled": 1077,
+        "scheduled": 1075,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 2,
         "inWindow": 51,
         "inWindowReal": 51,
         "inWindowFollowed": 7
@@ -403,9 +403,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-07T00:00:00.000Z",
+      "nextGameUtc": "2026-11-07T00:30:00.000Z",
       "nextGameLocalDay": "2026-11-06",
-      "nextGameLabel": "Washington Wizards at Atlanta Hawks",
+      "nextGameLabel": "Philadelphia 76ers at Cleveland Cavaliers",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -683,11 +683,15 @@
         "USA Net",
         "Universo"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "EVE",
-        "awayAbbr": "COV"
+        "awayAbbr": "COV",
+        "score": [
+          3,
+          1
+        ]
       },
       "localDay": "2026-11-06",
       "localWeekday": "Friday, Nov 6",
@@ -709,7 +713,7 @@
       "tv": [
         "MNMT"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
@@ -733,7 +737,7 @@
       "awayLabel": "Boston Celtics",
       "venue": "Spectrum Center, Charlotte",
       "tv": [],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHA",
