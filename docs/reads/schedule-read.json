@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T00:10:18.958Z",
+  "generatedAt": "2026-11-07T04:50:39.992Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-06",
@@ -236,11 +236,11 @@
         "401909958",
         "401909969"
       ],
-      "nextGameUtc": "2026-11-07T03:00:00.000Z",
-      "nextGameLocalDay": "2026-11-06",
-      "nextGameLocal": "Friday, Nov 6 at 8:00 PM",
-      "nextGameLabel": "San Antonio Spurs at Sacramento Kings",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-08T03:00:00.000Z",
+      "nextGameLocalDay": "2026-11-07",
+      "nextGameLocal": "Saturday, Nov 7 at 8:00 PM",
+      "nextGameLabel": "San Antonio Spurs at Portland Trail Blazers",
+      "daysUntilNextGame": 1,
       "note": null
     }
   ],
@@ -391,10 +391,10 @@
       "counts": {
         "total": 1200,
         "final": 123,
-        "scheduled": 1075,
+        "scheduled": 1068,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 2,
+        "pastUnresolved": 9,
         "inWindow": 51,
         "inWindowReal": 51,
         "inWindowFollowed": 7
@@ -403,10 +403,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-07T00:30:00.000Z",
-      "nextGameLocalDay": "2026-11-06",
-      "nextGameLabel": "Philadelphia 76ers at Cleveland Cavaliers",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-07T22:00:00.000Z",
+      "nextGameLocalDay": "2026-11-07",
+      "nextGameLabel": "Denver Nuggets at Indiana Pacers",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -763,7 +763,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CLE",
@@ -792,7 +792,7 @@
         "KJZZ-TV",
         "Jazz+"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DAL",
@@ -820,7 +820,7 @@
         "DAZN MEM",
         "Thunder App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MEM",
@@ -847,7 +847,7 @@
         "MyMi",
         "Bucks App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIL",
@@ -874,7 +874,7 @@
         "GCSEN",
         "Pelicans.com"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NO",
@@ -902,7 +902,7 @@
         "Spectrum Sports Net",
         "Spectrum Sports Net +"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAL",
@@ -928,7 +928,7 @@
       "tv": [
         "DAZN SAS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SAC",
