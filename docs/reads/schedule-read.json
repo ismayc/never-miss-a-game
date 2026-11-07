@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T12:31:44.989Z",
+  "generatedAt": "2026-11-07T17:55:10.635Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-07",
@@ -174,11 +174,11 @@
       "inWindowGameIds": [
         "401878757"
       ],
-      "nextGameUtc": "2026-11-07T17:30:00.000Z",
-      "nextGameLocalDay": "2026-11-07",
-      "nextGameLocal": "Saturday, Nov 7 at 10:30 AM",
-      "nextGameLabel": "Manchester City at Nottingham Forest",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-21T12:30:00.000Z",
+      "nextGameLocalDay": "2026-11-21",
+      "nextGameLocal": "Saturday, Nov 21 at 5:30 AM",
+      "nextGameLabel": "Fulham at Manchester City",
+      "daysUntilNextGame": 14,
       "note": null
     },
     {
@@ -307,10 +307,10 @@
       "counts": {
         "total": 380,
         "final": 91,
-        "scheduled": 288,
+        "scheduled": 285,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 4,
         "inWindow": 9,
         "inWindowReal": 9,
         "inWindowFollowed": 2
@@ -319,10 +319,10 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-07T15:00:00.000Z",
-      "nextGameLocalDay": "2026-11-07",
-      "nextGameLabel": "Hull City at Arsenal",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-08T14:00:00.000Z",
+      "nextGameLocalDay": "2026-11-08",
+      "nextGameLabel": "AFC Bournemouth at Ipswich Town",
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -710,7 +710,7 @@
         "Peacock",
         "Universo"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ARS",
@@ -737,7 +737,7 @@
         "USA Net",
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "FUL",
@@ -764,7 +764,7 @@
         "NBC",
         "Tele"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NFO",
