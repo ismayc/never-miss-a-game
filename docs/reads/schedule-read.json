@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T21:29:11.648Z",
+  "generatedAt": "2026-11-08T00:10:20.985Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-07",
@@ -214,11 +214,11 @@
         "401909957",
         "401909970"
       ],
-      "nextGameUtc": "2026-11-07T22:00:00.000Z",
-      "nextGameLocalDay": "2026-11-07",
-      "nextGameLocal": "Saturday, Nov 7 at 3:00 PM",
-      "nextGameLabel": "Denver Nuggets at Indiana Pacers",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-10T01:30:00.000Z",
+      "nextGameLocalDay": "2026-11-09",
+      "nextGameLocal": "Monday, Nov 9 at 6:30 PM",
+      "nextGameLabel": "Denver Nuggets at Houston Rockets",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -306,11 +306,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 94,
+        "final": 95,
         "scheduled": 285,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 9,
         "inWindowReal": 9,
         "inWindowFollowed": 2
@@ -391,10 +391,10 @@
       "counts": {
         "total": 1200,
         "final": 132,
-        "scheduled": 1068,
+        "scheduled": 1067,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 51,
         "inWindowReal": 51,
         "inWindowFollowed": 7
@@ -403,9 +403,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-07T22:00:00.000Z",
+      "nextGameUtc": "2026-11-08T00:30:00.000Z",
       "nextGameLocalDay": "2026-11-07",
-      "nextGameLabel": "Denver Nuggets at Indiana Pacers",
+      "nextGameLabel": "Brooklyn Nets at Atlanta Hawks",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -776,11 +776,15 @@
         "NBC",
         "Tele"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NFO",
-        "awayAbbr": "MNC"
+        "awayAbbr": "MNC",
+        "score": [
+          3,
+          1
+        ]
       },
       "localDay": "2026-11-07",
       "localWeekday": "Saturday, Nov 7",
@@ -805,7 +809,7 @@
         "NBA TV",
         "DAZN IND"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IND",

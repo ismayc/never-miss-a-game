@@ -1,18 +1,18 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Saturday, Nov 7 through Friday, Nov 13 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-11-07T21:29:11.102Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-11-08T00:10:20.653Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
   🏀 WNBA                   Offseason      0 in window      no upcoming games in committed data
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
   ⚽ Premier League         In season      9 in window      next game in 1d (2026-11-08 local)
-      ⚠ 1 past matches with no committed result
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
   🏈 NFL                    In season      15 in window     next game in 1d (2026-11-08 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
   🏀 NBA                    In season      51 in window     next game today
+      ⚠ 1 past matches with no committed result
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
@@ -38,7 +38,7 @@ FOLLOWED TEAMS
   Los Angeles Rams         NFL                1 in window    next in 1d, Sunday, Nov 8 at 11:00 AM local — Los Angeles Rams at Washington Commanders
   Manchester City          Premier League     1 in window    next in 14d, Saturday, Nov 21 at 5:30 AM local — Fulham at Manchester City
   Liverpool                Premier League     1 in window    next in 1d, Sunday, Nov 8 at 7:00 AM local — Liverpool at Crystal Palace
-  Denver Nuggets           NBA                3 in window    plays today
+  Denver Nuggets           NBA                3 in window    next in 2d, Monday, Nov 9 at 6:30 PM local — Denver Nuggets at Houston Rockets
   San Antonio Spurs        NBA                4 in window    plays today
 
 IN WINDOW: 75 real games, 12 involving a followed team
