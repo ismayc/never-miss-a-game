@@ -1,18 +1,17 @@
 
 GAME-DAY CONCIERGE — schedule read
-Window Saturday, Nov 7 through Friday, Nov 13 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-11-08T04:42:18.616Z
+Window Sunday, Nov 8 through Saturday, Nov 14 (7 days) · times in America/Phoenix
+Sources 10/10 readable · hub tooling: reused · generated 2026-11-08T12:10:19.196Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
   🏀 WNBA                   Offseason      0 in window      no upcoming games in committed data
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
-  ⚽ Premier League         In season      9 in window      next game in 1d (2026-11-08 local)
+  ⚽ Premier League         In season      5 in window      next game today
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
-  🏈 NFL                    In season      15 in window     next game in 1d (2026-11-08 local)
+  🏈 NFL                    In season      15 in window     next game today
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
-  🏀 NBA                    In season      51 in window     next game in 1d (2026-11-08 local)
-      ⚠ 7 past matches with no committed result
+  🏀 NBA                    In season      49 in window     next game today
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
@@ -32,29 +31,16 @@ FOLLOWED TEAMS
   Minnesota Lynx           WNBA               0 in window    no future games in committed data (offseason)
   New York Liberty         WNBA               0 in window    no future games in committed data (offseason)
   Portland Fire            WNBA               0 in window    no future games in committed data (offseason)
-  Arizona Cardinals        NFL                1 in window    next in 1d, Sunday, Nov 8 at 2:25 PM local — Arizona Cardinals at Seattle Seahawks
-  Seattle Seahawks         NFL                1 in window    next in 1d, Sunday, Nov 8 at 2:25 PM local — Arizona Cardinals at Seattle Seahawks
-  San Francisco 49ers      NFL                1 in window    next in 1d, Sunday, Nov 8 at 2:25 PM local — Las Vegas Raiders at San Francisco 49ers
-  Los Angeles Rams         NFL                1 in window    next in 1d, Sunday, Nov 8 at 11:00 AM local — Los Angeles Rams at Washington Commanders
-  Manchester City          Premier League     1 in window    next in 14d, Saturday, Nov 21 at 5:30 AM local — Fulham at Manchester City
-  Liverpool                Premier League     1 in window    next in 1d, Sunday, Nov 8 at 7:00 AM local — Liverpool at Crystal Palace
-  Denver Nuggets           NBA                3 in window    next in 2d, Monday, Nov 9 at 6:30 PM local — Denver Nuggets at Houston Rockets
-  San Antonio Spurs        NBA                4 in window    next in 2d, Monday, Nov 9 at 7:00 PM local — San Antonio Spurs at Phoenix Suns
+  Arizona Cardinals        NFL                1 in window    plays today
+  Seattle Seahawks         NFL                1 in window    plays today
+  San Francisco 49ers      NFL                1 in window    plays today
+  Los Angeles Rams         NFL                1 in window    plays today
+  Manchester City          Premier League     0 in window    next in 13d, Saturday, Nov 21 at 5:30 AM local — Fulham at Manchester City
+  Liverpool                Premier League     1 in window    plays today
+  Denver Nuggets           NBA                3 in window    next in 1d, Monday, Nov 9 at 6:30 PM local — Denver Nuggets at Houston Rockets
+  San Antonio Spurs        NBA                3 in window    next in 1d, Monday, Nov 9 at 7:00 PM local — San Antonio Spurs at Phoenix Suns
 
-IN WINDOW: 75 real games, 12 involving a followed team
-
-  Saturday, Nov 7
-    5:30 AM  ⚽ Tottenham Hotspur at Leeds United              · USA Net/Universo
-    8:00 AM  ⚽ Hull City at Arsenal                           · Peacock/Universo
-    8:00 AM  ⚽ Newcastle United at Fulham                     · USA Net/Peacock
-  ★ 10:30 AM ⚽ Manchester City at Nottingham Forest           · NBC/Tele
-  ★ 3:00 PM  🏀 Denver Nuggets at Indiana Pacers               · NBA TV/DAZN IND
-    5:30 PM  🏀 Brooklyn Nets at Atlanta Hawks                 · DAZN (YES)
-    6:00 PM  🏀 New York Knicks at Cleveland Cavaliers         · NBA TV/DAZN CLE
-    6:00 PM  🏀 Washington Wizards at Oklahoma City Thunder    · MNMT/KSBI
-    6:30 PM  🏀 Orlando Magic at Golden State Warriors        
-    7:00 PM  🏀 Houston Rockets at Phoenix Suns                · Arizona's Family 3TV/Suns Live
-  ★ 8:00 PM  🏀 San Antonio Spurs at Portland Trail Blazers    · KUNP 16/BlazerVision
+IN WINDOW: 69 real games, 10 involving a followed team
 
   Sunday, Nov 8
     7:00 AM  ⚽ AFC Bournemouth at Ipswich Town                · Peacock
@@ -131,4 +117,11 @@ IN WINDOW: 75 real games, 12 involving a followed team
   ★ 7:30 PM  🏀 Golden State Warriors at San Antonio Spurs     · Prime Video
     8:00 PM  🏀 Portland Trail Blazers at Sacramento Kings     · KUNP 16/BlazerVision
     8:30 PM  🏀 Oklahoma City Thunder at LA Clippers           · KSBI/KTLA
+
+  Saturday, Nov 14
+  ★ 5:00 PM  🏀 Denver Nuggets at New Orleans Pelicans         · GCSEN/Pelicans.com
+    5:30 PM  🏀 Dallas Mavericks at Cleveland Cavaliers        · KFAA-TV/MavsTV
+    6:00 PM  🏀 Detroit Pistons at Miami Heat                  · NBA TV
+    6:00 PM  🏀 Brooklyn Nets at Memphis Grizzlies             · DAZN (YES)/DAZN MEM
+    6:00 PM  🏀 Chicago Bulls at Minnesota Timberwolves        · DAZN MIN
 
