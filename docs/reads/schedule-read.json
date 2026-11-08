@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T18:10:18.823Z",
+  "generatedAt": "2026-11-08T21:44:14.718Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-08",
@@ -98,11 +98,11 @@
       "inWindowGameIds": [
         "401873048"
       ],
-      "nextGameUtc": "2026-11-08T21:25:00.000Z",
-      "nextGameLocalDay": "2026-11-08",
-      "nextGameLocal": "Sunday, Nov 8 at 2:25 PM",
-      "nextGameLabel": "Arizona Cardinals at Seattle Seahawks",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-15T21:05:00.000Z",
+      "nextGameLocalDay": "2026-11-15",
+      "nextGameLocal": "Sunday, Nov 15 at 2:05 PM",
+      "nextGameLabel": "Los Angeles Rams at Arizona Cardinals",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -117,11 +117,11 @@
       "inWindowGameIds": [
         "401873048"
       ],
-      "nextGameUtc": "2026-11-08T21:25:00.000Z",
-      "nextGameLocalDay": "2026-11-08",
-      "nextGameLocal": "Sunday, Nov 8 at 2:25 PM",
-      "nextGameLabel": "Arizona Cardinals at Seattle Seahawks",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-15T21:05:00.000Z",
+      "nextGameLocalDay": "2026-11-15",
+      "nextGameLocal": "Sunday, Nov 15 at 2:05 PM",
+      "nextGameLabel": "Seattle Seahawks at Las Vegas Raiders",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -136,11 +136,11 @@
       "inWindowGameIds": [
         "401873047"
       ],
-      "nextGameUtc": "2026-11-08T21:25:00.000Z",
-      "nextGameLocalDay": "2026-11-08",
-      "nextGameLocal": "Sunday, Nov 8 at 2:25 PM",
-      "nextGameLabel": "Las Vegas Raiders at San Francisco 49ers",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-15T21:25:00.000Z",
+      "nextGameLocalDay": "2026-11-15",
+      "nextGameLocal": "Sunday, Nov 15 at 2:25 PM",
+      "nextGameLabel": "San Francisco 49ers at Dallas Cowboys",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -303,11 +303,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 95,
+        "final": 99,
         "scheduled": 280,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 5,
+        "pastUnresolved": 1,
         "inWindow": 5,
         "inWindowReal": 5,
         "inWindowFollowed": 1
@@ -345,11 +345,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 122,
-        "scheduled": 142,
+        "final": 123,
+        "scheduled": 138,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 8,
+        "pastUnresolved": 11,
         "inWindow": 15,
         "inWindowReal": 15,
         "inWindowFollowed": 3
@@ -358,9 +358,9 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-08T21:05:00.000Z",
+      "nextGameUtc": "2026-11-09T01:20:00.000Z",
       "nextGameLocalDay": "2026-11-08",
-      "nextGameLabel": "Houston Texans at Los Angeles Chargers",
+      "nextGameLabel": "Tampa Bay Buccaneers at Chicago Bears",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
@@ -388,10 +388,10 @@
       "counts": {
         "total": 1200,
         "final": 139,
-        "scheduled": 1061,
+        "scheduled": 1060,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 49,
         "inWindowReal": 49,
         "inWindowFollowed": 6
@@ -400,9 +400,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-08T20:30:00.000Z",
+      "nextGameUtc": "2026-11-08T23:00:00.000Z",
       "nextGameLocalDay": "2026-11-08",
-      "nextGameLabel": "Philadelphia 76ers at Chicago Bulls",
+      "nextGameLabel": "Los Angeles Lakers at Detroit Pistons",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -679,11 +679,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IPS",
-        "awayAbbr": "BOU"
+        "awayAbbr": "BOU",
+        "score": [
+          1,
+          2
+        ]
       },
       "localDay": "2026-11-08",
       "localWeekday": "Sunday, Nov 8",
@@ -706,11 +710,15 @@
         "USA Net",
         "Tele"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SUN",
-        "awayAbbr": "CHE"
+        "awayAbbr": "CHE",
+        "score": [
+          1,
+          0
+        ]
       },
       "localDay": "2026-11-08",
       "localWeekday": "Sunday, Nov 8",
@@ -732,11 +740,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CRY",
-        "awayAbbr": "LIV"
+        "awayAbbr": "LIV",
+        "score": [
+          1,
+          3
+        ]
       },
       "localDay": "2026-11-08",
       "localWeekday": "Sunday, Nov 8",
@@ -760,11 +772,15 @@
       "tv": [
         "Peacock"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BHA",
-        "awayAbbr": "BRE"
+        "awayAbbr": "BRE",
+        "score": [
+          2,
+          0
+        ]
       },
       "localDay": "2026-11-08",
       "localWeekday": "Sunday, Nov 8",
@@ -786,13 +802,17 @@
       "tv": [
         "NFL Net"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
         "awayAbbr": "CIN",
         "week": 9,
-        "neutral": true
+        "neutral": true,
+        "score": [
+          17,
+          34
+        ]
       },
       "localDay": "2026-11-08",
       "localWeekday": "Sunday, Nov 8",
@@ -920,7 +940,7 @@
       "awayLabel": "Detroit Lions",
       "venue": "Hard Rock Stadium, Miami Gardens",
       "tv": [
-        "Fox"
+        "CBS"
       ],
       "status": "past-unresolved",
       "seasonType": "regular",
@@ -1030,7 +1050,7 @@
       "awayLabel": "Philadelphia 76ers",
       "venue": "United Center, Chicago",
       "tv": [],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHI",
@@ -1056,7 +1076,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAC",
@@ -1083,7 +1103,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SF",
@@ -1112,7 +1132,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SEA",
@@ -1142,7 +1162,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NE",

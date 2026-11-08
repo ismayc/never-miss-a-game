@@ -1,19 +1,20 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Sunday, Nov 8 through Saturday, Nov 14 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-11-08T18:10:18.466Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-11-08T21:44:13.422Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
   🏀 WNBA                   Offseason      0 in window      no upcoming games in committed data
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
   ⚽ Premier League         In season      5 in window      next game in 13d (2026-11-21 local)
-      ⚠ 5 past matches with no committed result
+      ⚠ 1 past matches with no committed result
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
   🏈 NFL                    In season      15 in window     next game today
-      ⚠ 8 past matches with no committed result
+      ⚠ 11 past matches with no committed result
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
   🏀 NBA                    In season      49 in window     next game today
+      ⚠ 1 past matches with no committed result
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
@@ -33,9 +34,9 @@ FOLLOWED TEAMS
   Minnesota Lynx           WNBA               0 in window    no future games in committed data (offseason)
   New York Liberty         WNBA               0 in window    no future games in committed data (offseason)
   Portland Fire            WNBA               0 in window    no future games in committed data (offseason)
-  Arizona Cardinals        NFL                1 in window    plays today
-  Seattle Seahawks         NFL                1 in window    plays today
-  San Francisco 49ers      NFL                1 in window    plays today
+  Arizona Cardinals        NFL                1 in window    next in 7d, Sunday, Nov 15 at 2:05 PM local — Los Angeles Rams at Arizona Cardinals
+  Seattle Seahawks         NFL                1 in window    next in 7d, Sunday, Nov 15 at 2:05 PM local — Seattle Seahawks at Las Vegas Raiders
+  San Francisco 49ers      NFL                1 in window    next in 7d, Sunday, Nov 15 at 2:25 PM local — San Francisco 49ers at Dallas Cowboys
   Los Angeles Rams         NFL                1 in window    next in 7d, Sunday, Nov 15 at 2:05 PM local — Los Angeles Rams at Arizona Cardinals
   Manchester City          Premier League     0 in window    next in 13d, Saturday, Nov 21 at 5:30 AM local — Fulham at Manchester City
   Liverpool                Premier League     1 in window    next in 14d, Sunday, Nov 22 at 9:30 AM local — Manchester United at Liverpool
@@ -54,7 +55,7 @@ IN WINDOW: 69 real games, 10 involving a followed team
     11:00 AM 🏈 Cleveland Browns at New Orleans Saints         · CBS · Week 9
     11:00 AM 🏈 Dallas Cowboys at Indianapolis Colts           · Fox · Week 9
     11:00 AM 🏈 Denver Broncos at Carolina Panthers            · CBS · Week 9
-    11:00 AM 🏈 Detroit Lions at Miami Dolphins                · Fox · Week 9
+    11:00 AM 🏈 Detroit Lions at Miami Dolphins                · CBS · Week 9
   ★ 11:00 AM 🏈 Los Angeles Rams at Washington Commanders      · Fox · Week 9
     11:00 AM 🏈 New York Giants at Philadelphia Eagles         · Fox · Week 9
     11:00 AM 🏈 New York Jets at Kansas City Chiefs            · CBS · Week 9
