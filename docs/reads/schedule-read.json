@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T12:10:19.515Z",
+  "generatedAt": "2026-11-08T18:10:18.823Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-08",
@@ -155,11 +155,11 @@
       "inWindowGameIds": [
         "401873043"
       ],
-      "nextGameUtc": "2026-11-08T18:00:00.000Z",
-      "nextGameLocalDay": "2026-11-08",
-      "nextGameLocal": "Sunday, Nov 8 at 11:00 AM",
-      "nextGameLabel": "Los Angeles Rams at Washington Commanders",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-15T21:05:00.000Z",
+      "nextGameLocalDay": "2026-11-15",
+      "nextGameLocal": "Sunday, Nov 15 at 2:05 PM",
+      "nextGameLabel": "Los Angeles Rams at Arizona Cardinals",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -191,11 +191,11 @@
       "inWindowGameIds": [
         "401879243"
       ],
-      "nextGameUtc": "2026-11-08T14:00:00.000Z",
-      "nextGameLocalDay": "2026-11-08",
-      "nextGameLocal": "Sunday, Nov 8 at 7:00 AM",
-      "nextGameLabel": "Liverpool at Crystal Palace",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-22T16:30:00.000Z",
+      "nextGameLocalDay": "2026-11-22",
+      "nextGameLocal": "Sunday, Nov 22 at 9:30 AM",
+      "nextGameLabel": "Manchester United at Liverpool",
+      "daysUntilNextGame": 14,
       "note": null
     },
     {
@@ -304,10 +304,10 @@
       "counts": {
         "total": 380,
         "final": 95,
-        "scheduled": 285,
+        "scheduled": 280,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 5,
         "inWindow": 5,
         "inWindowReal": 5,
         "inWindowFollowed": 1
@@ -316,10 +316,10 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-08T14:00:00.000Z",
-      "nextGameLocalDay": "2026-11-08",
-      "nextGameLabel": "AFC Bournemouth at Ipswich Town",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-21T12:30:00.000Z",
+      "nextGameLocalDay": "2026-11-21",
+      "nextGameLabel": "Fulham at Manchester City",
+      "daysUntilNextGame": 13,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -346,10 +346,10 @@
       "counts": {
         "total": 272,
         "final": 122,
-        "scheduled": 150,
+        "scheduled": 142,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 8,
         "inWindow": 15,
         "inWindowReal": 15,
         "inWindowFollowed": 3
@@ -358,9 +358,9 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-08T14:30:00.000Z",
+      "nextGameUtc": "2026-11-08T21:05:00.000Z",
       "nextGameLocalDay": "2026-11-08",
-      "nextGameLabel": "Cincinnati Bengals at Atlanta Falcons",
+      "nextGameLabel": "Houston Texans at Los Angeles Chargers",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
@@ -679,7 +679,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IPS",
@@ -706,7 +706,7 @@
         "USA Net",
         "Tele"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SUN",
@@ -732,7 +732,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CRY",
@@ -760,7 +760,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BHA",
@@ -786,7 +786,7 @@
       "tv": [
         "NFL Net"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
@@ -815,7 +815,7 @@
         "USA Net",
         "Tele"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MAN",
@@ -841,7 +841,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NO",
@@ -868,7 +868,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IND",
@@ -895,7 +895,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CAR",
@@ -922,7 +922,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIA",
@@ -949,7 +949,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "WSH",
@@ -978,7 +978,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
@@ -1005,7 +1005,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "KC",
