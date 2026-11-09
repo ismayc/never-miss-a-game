@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T00:10:24.257Z",
+  "generatedAt": "2026-11-09T04:52:23.262Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-08",
@@ -345,11 +345,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 129,
-        "scheduled": 138,
+        "final": 134,
+        "scheduled": 137,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 5,
+        "pastUnresolved": 1,
         "inWindow": 15,
         "inWindowReal": 15,
         "inWindowFollowed": 3
@@ -358,10 +358,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-09T01:20:00.000Z",
-      "nextGameLocalDay": "2026-11-08",
-      "nextGameLabel": "Tampa Bay Buccaneers at Chicago Bears",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-10T01:15:00.000Z",
+      "nextGameLocalDay": "2026-11-09",
+      "nextGameLabel": "Buffalo Bills at Minnesota Vikings",
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -388,10 +388,10 @@
       "counts": {
         "total": 1200,
         "final": 139,
-        "scheduled": 1058,
+        "scheduled": 1054,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 3,
+        "pastUnresolved": 7,
         "inWindow": 49,
         "inWindowReal": 49,
         "inWindowFollowed": 6
@@ -400,10 +400,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-09T00:30:00.000Z",
-      "nextGameLocalDay": "2026-11-08",
-      "nextGameLabel": "Brooklyn Nets at Dallas Mavericks",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-10T00:00:00.000Z",
+      "nextGameLocalDay": "2026-11-09",
+      "nextGameLabel": "Los Angeles Lakers at Atlanta Hawks",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -989,12 +989,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "WSH",
         "awayAbbr": "LAR",
-        "week": 9
+        "week": 9,
+        "score": [
+          13,
+          20
+        ]
       },
       "localDay": "2026-11-08",
       "localWeekday": "Sunday, Nov 8",
@@ -1104,12 +1108,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAC",
         "awayAbbr": "HOU",
-        "week": 9
+        "week": 9,
+        "score": [
+          22,
+          44
+        ]
       },
       "localDay": "2026-11-08",
       "localWeekday": "Sunday, Nov 8",
@@ -1131,12 +1139,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SF",
         "awayAbbr": "LV",
-        "week": 9
+        "week": 9,
+        "score": [
+          38,
+          17
+        ]
       },
       "localDay": "2026-11-08",
       "localWeekday": "Sunday, Nov 8",
@@ -1160,12 +1172,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SEA",
         "awayAbbr": "ARI",
-        "week": 9
+        "week": 9,
+        "score": [
+          17,
+          3
+        ]
       },
       "localDay": "2026-11-08",
       "localWeekday": "Sunday, Nov 8",
@@ -1190,12 +1206,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NE",
         "awayAbbr": "GB",
-        "week": 9
+        "week": 9,
+        "score": [
+          27,
+          45
+        ]
       },
       "localDay": "2026-11-08",
       "localWeekday": "Sunday, Nov 8",
@@ -1275,7 +1295,7 @@
         "KFAA-TV",
         "MavsTV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DAL",
@@ -1302,7 +1322,7 @@
         "MyMi",
         "Bucks App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIL",
@@ -1328,7 +1348,7 @@
       "tv": [
         "NBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHI",
@@ -1357,7 +1377,7 @@
         "GCSEN",
         "Pelicans.com"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAC",
@@ -1381,7 +1401,7 @@
       "awayLabel": "Miami Heat",
       "venue": "Golden 1 Center, Sacramento",
       "tv": [],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SAC",
