@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T21:44:14.718Z",
+  "generatedAt": "2026-11-09T00:10:24.257Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-08",
@@ -303,11 +303,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 99,
+        "final": 100,
         "scheduled": 280,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 5,
         "inWindowReal": 5,
         "inWindowFollowed": 1
@@ -345,11 +345,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 123,
+        "final": 129,
         "scheduled": 138,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 11,
+        "pastUnresolved": 5,
         "inWindow": 15,
         "inWindowReal": 15,
         "inWindowFollowed": 3
@@ -388,10 +388,10 @@
       "counts": {
         "total": 1200,
         "final": 139,
-        "scheduled": 1060,
+        "scheduled": 1058,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 3,
         "inWindow": 49,
         "inWindowReal": 49,
         "inWindowFollowed": 6
@@ -400,9 +400,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-08T23:00:00.000Z",
+      "nextGameUtc": "2026-11-09T00:30:00.000Z",
       "nextGameLocalDay": "2026-11-08",
-      "nextGameLabel": "Los Angeles Lakers at Detroit Pistons",
+      "nextGameLabel": "Brooklyn Nets at Dallas Mavericks",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -835,11 +835,15 @@
         "USA Net",
         "Tele"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MAN",
-        "awayAbbr": "AVL"
+        "awayAbbr": "AVL",
+        "score": [
+          4,
+          4
+        ]
       },
       "localDay": "2026-11-08",
       "localWeekday": "Sunday, Nov 8",
@@ -861,12 +865,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NO",
         "awayAbbr": "CLE",
-        "week": 9
+        "week": 9,
+        "score": [
+          23,
+          22
+        ]
       },
       "localDay": "2026-11-08",
       "localWeekday": "Sunday, Nov 8",
@@ -888,12 +896,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IND",
         "awayAbbr": "DAL",
-        "week": 9
+        "week": 9,
+        "score": [
+          23,
+          27
+        ]
       },
       "localDay": "2026-11-08",
       "localWeekday": "Sunday, Nov 8",
@@ -915,12 +927,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CAR",
         "awayAbbr": "DEN",
-        "week": 9
+        "week": 9,
+        "score": [
+          21,
+          26
+        ]
       },
       "localDay": "2026-11-08",
       "localWeekday": "Sunday, Nov 8",
@@ -942,12 +958,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIA",
         "awayAbbr": "DET",
-        "week": 9
+        "week": 9,
+        "score": [
+          9,
+          19
+        ]
       },
       "localDay": "2026-11-08",
       "localWeekday": "Sunday, Nov 8",
@@ -998,12 +1018,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
         "awayAbbr": "NYG",
-        "week": 9
+        "week": 9,
+        "score": [
+          11,
+          19
+        ]
       },
       "localDay": "2026-11-08",
       "localWeekday": "Sunday, Nov 8",
@@ -1025,12 +1049,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "KC",
         "awayAbbr": "NYJ",
-        "week": 9
+        "week": 9,
+        "score": [
+          35,
+          12
+        ]
       },
       "localDay": "2026-11-08",
       "localWeekday": "Sunday, Nov 8",
@@ -1191,7 +1219,7 @@
         "Spectrum Sports Net",
         "Spectrum Sports Net +"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DET",
@@ -1219,7 +1247,7 @@
         "KJZZ-TV",
         "Jazz+"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIN",
