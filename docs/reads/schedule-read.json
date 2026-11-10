@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T01:13:25.563Z",
+  "generatedAt": "2026-11-10T06:10:21.538Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-09",
@@ -210,11 +210,11 @@
         "401909970",
         "401909980"
       ],
-      "nextGameUtc": "2026-11-10T01:30:00.000Z",
-      "nextGameLocalDay": "2026-11-09",
-      "nextGameLocal": "Monday, Nov 9 at 6:30 PM",
-      "nextGameLabel": "Denver Nuggets at Houston Rockets",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-12T01:00:00.000Z",
+      "nextGameLocalDay": "2026-11-11",
+      "nextGameLocal": "Wednesday, Nov 11 at 6:00 PM",
+      "nextGameLabel": "Denver Nuggets at Memphis Grizzlies",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -232,11 +232,11 @@
         "401909302",
         "401909988"
       ],
-      "nextGameUtc": "2026-11-10T02:00:00.000Z",
-      "nextGameLocalDay": "2026-11-09",
-      "nextGameLocal": "Monday, Nov 9 at 7:00 PM",
-      "nextGameLabel": "San Antonio Spurs at Phoenix Suns",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-12T01:00:00.000Z",
+      "nextGameLocalDay": "2026-11-11",
+      "nextGameLocal": "Wednesday, Nov 11 at 6:00 PM",
+      "nextGameLabel": "San Antonio Spurs at Chicago Bulls",
+      "daysUntilNextGame": 2,
       "note": null
     }
   ],
@@ -345,10 +345,10 @@
       "counts": {
         "total": 272,
         "final": 135,
-        "scheduled": 137,
+        "scheduled": 136,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 3
@@ -357,10 +357,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-10T01:15:00.000Z",
-      "nextGameLocalDay": "2026-11-09",
-      "nextGameLabel": "Buffalo Bills at Minnesota Vikings",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-13T01:15:00.000Z",
+      "nextGameLocalDay": "2026-11-12",
+      "nextGameLabel": "Washington Commanders at New York Giants",
+      "daysUntilNextGame": 3,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -387,10 +387,10 @@
       "counts": {
         "total": 1200,
         "final": 146,
-        "scheduled": 1049,
+        "scheduled": 1046,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 5,
+        "pastUnresolved": 8,
         "inWindow": 51,
         "inWindowReal": 51,
         "inWindowFollowed": 7
@@ -399,10 +399,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-10T01:30:00.000Z",
-      "nextGameLocalDay": "2026-11-09",
-      "nextGameLabel": "Denver Nuggets at Houston Rockets",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-11T00:30:00.000Z",
+      "nextGameLocalDay": "2026-11-10",
+      "nextGameLabel": "Milwaukee Bucks at New York Knicks",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -812,7 +812,7 @@
         "ESPN",
         "ABC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIN",
@@ -840,7 +840,7 @@
         "ALT2/KTVD",
         "KUSA-TV (9NEWS)"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HOU",
@@ -870,7 +870,7 @@
         "Suns Live",
         "DAZN SAS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHX",
@@ -900,7 +900,7 @@
         "GCSEN",
         "Pelicans.com"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "GS",
