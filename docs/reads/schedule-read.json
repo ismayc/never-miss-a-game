@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T12:10:19.435Z",
+  "generatedAt": "2026-11-10T00:10:25.273Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-09",
@@ -387,10 +387,10 @@
       "counts": {
         "total": 1200,
         "final": 146,
-        "scheduled": 1054,
+        "scheduled": 1051,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 3,
         "inWindow": 51,
         "inWindowReal": 51,
         "inWindowFollowed": 7
@@ -399,9 +399,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-10T00:00:00.000Z",
+      "nextGameUtc": "2026-11-10T00:30:00.000Z",
       "nextGameLocalDay": "2026-11-09",
-      "nextGameLabel": "Los Angeles Lakers at Atlanta Hawks",
+      "nextGameLabel": "Memphis Grizzlies at Toronto Raptors",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -679,7 +679,7 @@
         "Spectrum Sports Net",
         "Spectrum Sports Net +"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
@@ -705,7 +705,7 @@
       "tv": [
         "DAZN CLE"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHA",
@@ -731,7 +731,7 @@
       "tv": [
         "NBCSN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DET",
