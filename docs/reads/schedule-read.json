@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T12:10:26.765Z",
+  "generatedAt": "2026-11-11T04:53:59.144Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-10",
@@ -386,10 +386,10 @@
       "counts": {
         "total": 1200,
         "final": 154,
-        "scheduled": 1046,
+        "scheduled": 1040,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 6,
         "inWindow": 51,
         "inWindowReal": 51,
         "inWindowFollowed": 6
@@ -398,10 +398,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-11T00:30:00.000Z",
-      "nextGameLocalDay": "2026-11-10",
-      "nextGameLabel": "Milwaukee Bucks at New York Knicks",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-12T00:00:00.000Z",
+      "nextGameLocalDay": "2026-11-11",
+      "nextGameLabel": "Washington Wizards at Indiana Pacers",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -678,7 +678,7 @@
         "MyMi",
         "Bucks App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NY",
@@ -704,7 +704,7 @@
       "tv": [
         "NBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
@@ -732,7 +732,7 @@
         "Arizona's Family 3TV",
         "ClipperVision"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHX",
@@ -759,7 +759,7 @@
         "KJZZ-TV",
         "Jazz+"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "UTAH",
@@ -783,7 +783,7 @@
       "awayLabel": "Orlando Magic",
       "venue": "Golden 1 Center, Sacramento",
       "tv": [],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SAC",
@@ -811,7 +811,7 @@
         "KSBI",
         "Thunder App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "POR",
