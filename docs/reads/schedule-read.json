@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T00:06:24.150Z",
+  "generatedAt": "2026-11-12T06:10:21.955Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-11",
@@ -210,11 +210,11 @@
         "401909980",
         "401910001"
       ],
-      "nextGameUtc": "2026-11-12T01:00:00.000Z",
-      "nextGameLocalDay": "2026-11-11",
-      "nextGameLocal": "Wednesday, Nov 11 at 6:00 PM",
-      "nextGameLabel": "Denver Nuggets at Memphis Grizzlies",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-15T00:00:00.000Z",
+      "nextGameLocalDay": "2026-11-14",
+      "nextGameLocal": "Saturday, Nov 14 at 5:00 PM",
+      "nextGameLabel": "Denver Nuggets at New Orleans Pelicans",
+      "daysUntilNextGame": 3,
       "note": null
     },
     {
@@ -232,11 +232,11 @@
         "401909988",
         "401910004"
       ],
-      "nextGameUtc": "2026-11-12T01:00:00.000Z",
-      "nextGameLocalDay": "2026-11-11",
-      "nextGameLocal": "Wednesday, Nov 11 at 6:00 PM",
-      "nextGameLabel": "San Antonio Spurs at Chicago Bulls",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-14T02:30:00.000Z",
+      "nextGameLocalDay": "2026-11-13",
+      "nextGameLocal": "Friday, Nov 13 at 7:30 PM",
+      "nextGameLabel": "Golden State Warriors at San Antonio Spurs",
+      "daysUntilNextGame": 2,
       "note": null
     }
   ],
@@ -387,10 +387,10 @@
       "counts": {
         "total": 1200,
         "final": 160,
-        "scheduled": 1037,
+        "scheduled": 1030,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 3,
+        "pastUnresolved": 10,
         "inWindow": 50,
         "inWindowReal": 50,
         "inWindowFollowed": 7
@@ -399,10 +399,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-12T01:00:00.000Z",
-      "nextGameLocalDay": "2026-11-11",
-      "nextGameLabel": "San Antonio Spurs at Chicago Bulls",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-13T00:00:00.000Z",
+      "nextGameLocalDay": "2026-11-12",
+      "nextGameLabel": "Toronto Raptors at Philadelphia 76ers",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -755,7 +755,7 @@
       "tv": [
         "DAZN SAS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHI",
@@ -781,7 +781,7 @@
       "awayLabel": "Denver Nuggets",
       "venue": "FedExForum, Memphis",
       "tv": [],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MEM",
@@ -812,7 +812,7 @@
         "MyMi",
         "Bucks App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIL",
@@ -840,7 +840,7 @@
         "GCSEN",
         "Pelicans.com"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NO",
@@ -867,7 +867,7 @@
         "KJZZ-TV",
         "Jazz+"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "UTAH",
@@ -893,7 +893,7 @@
       "tv": [
         "ESPN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HOU",
@@ -922,7 +922,7 @@
         "BlazerVision",
         "Thunder App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "POR",
