@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T00:10:25.448Z",
+  "generatedAt": "2026-11-13T05:18:50.056Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-12",
@@ -344,10 +344,10 @@
       "counts": {
         "total": 272,
         "final": 136,
-        "scheduled": 136,
+        "scheduled": 135,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 3
@@ -356,10 +356,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-13T01:15:00.000Z",
-      "nextGameLocalDay": "2026-11-12",
-      "nextGameLabel": "Washington Commanders at New York Giants",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-15T14:30:00.000Z",
+      "nextGameLocalDay": "2026-11-15",
+      "nextGameLabel": "New England Patriots at Detroit Lions",
+      "daysUntilNextGame": 3,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -386,10 +386,10 @@
       "counts": {
         "total": 1200,
         "final": 170,
-        "scheduled": 1028,
+        "scheduled": 1026,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 2,
+        "pastUnresolved": 4,
         "inWindow": 52,
         "inWindowReal": 52,
         "inWindowFollowed": 6
@@ -398,10 +398,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-13T01:00:00.000Z",
-      "nextGameLocalDay": "2026-11-12",
-      "nextGameLabel": "Dallas Mavericks at Minnesota Timberwolves",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-14T00:00:00.000Z",
+      "nextGameLocalDay": "2026-11-13",
+      "nextGameLabel": "New York Knicks at Indiana Pacers",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -729,7 +729,7 @@
         "KFAA-TV",
         "MavsTV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIN",
@@ -755,7 +755,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NYG",
@@ -783,7 +783,7 @@
         "Suns Live",
         "Arizona's Family 3TV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHX",
