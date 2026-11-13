@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T12:10:23.879Z",
+  "generatedAt": "2026-11-13T00:10:25.448Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-12",
@@ -386,10 +386,10 @@
       "counts": {
         "total": 1200,
         "final": 170,
-        "scheduled": 1030,
+        "scheduled": 1028,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 2,
         "inWindow": 52,
         "inWindowReal": 52,
         "inWindowFollowed": 6
@@ -398,9 +398,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-13T00:00:00.000Z",
+      "nextGameUtc": "2026-11-13T01:00:00.000Z",
       "nextGameLocalDay": "2026-11-12",
-      "nextGameLabel": "Toronto Raptors at Philadelphia 76ers",
+      "nextGameLabel": "Dallas Mavericks at Minnesota Timberwolves",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -675,7 +675,7 @@
       "awayLabel": "Toronto Raptors",
       "venue": "Xfinity Mobile Arena, Philadelphia",
       "tv": [],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
@@ -701,7 +701,7 @@
       "tv": [
         "MNMT"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "WSH",
