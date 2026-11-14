@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T13:01:32.079Z",
+  "generatedAt": "2026-11-14T18:10:30.275Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-14",
@@ -386,11 +386,11 @@
       "commitsScores": true,
       "counts": {
         "total": 1200,
-        "final": 174,
+        "final": 183,
         "scheduled": 1017,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 9,
+        "pastUnresolved": 0,
         "inWindow": 52,
         "inWindowReal": 52,
         "inWindowFollowed": 7
