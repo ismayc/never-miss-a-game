@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T12:10:26.462Z",
+  "generatedAt": "2026-11-14T05:08:31.473Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-13",
@@ -232,11 +232,11 @@
         "401910004",
         "401910022"
       ],
-      "nextGameUtc": "2026-11-14T02:30:00.000Z",
-      "nextGameLocalDay": "2026-11-13",
-      "nextGameLocal": "Friday, Nov 13 at 7:30 PM",
-      "nextGameLabel": "Golden State Warriors at San Antonio Spurs",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-15T22:00:00.000Z",
+      "nextGameLocalDay": "2026-11-15",
+      "nextGameLocal": "Sunday, Nov 15 at 3:00 PM",
+      "nextGameLabel": "San Antonio Spurs at Utah Jazz",
+      "daysUntilNextGame": 2,
       "note": null
     }
   ],
@@ -387,10 +387,10 @@
       "counts": {
         "total": 1200,
         "final": 174,
-        "scheduled": 1026,
+        "scheduled": 1017,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 9,
         "inWindow": 52,
         "inWindowReal": 52,
         "inWindowFollowed": 7
@@ -399,10 +399,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-14T00:00:00.000Z",
-      "nextGameLocalDay": "2026-11-13",
-      "nextGameLabel": "New York Knicks at Indiana Pacers",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-15T00:00:00.000Z",
+      "nextGameLocalDay": "2026-11-14",
+      "nextGameLabel": "Denver Nuggets at New Orleans Pelicans",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -678,7 +678,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IND",
@@ -705,7 +705,7 @@
         "MyMi",
         "Bucks App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ORL",
@@ -731,7 +731,7 @@
       "tv": [
         "DAZN CLE"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIA",
@@ -755,7 +755,7 @@
       "awayLabel": "Atlanta Hawks",
       "venue": "United Center, Chicago",
       "tv": [],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHI",
@@ -783,7 +783,7 @@
         "Pelicans.com",
         "DAZN MEM"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NO",
@@ -810,7 +810,7 @@
         "KJZZ-TV",
         "Jazz+"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HOU",
@@ -836,7 +836,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SA",
@@ -865,7 +865,7 @@
         "KUNP 16",
         "BlazerVision"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SAC",
@@ -894,7 +894,7 @@
         "ClipperVision",
         "Thunder App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAC",
