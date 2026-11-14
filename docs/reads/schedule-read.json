@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T18:10:30.275Z",
+  "generatedAt": "2026-11-14T21:59:58.762Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-14",
@@ -1964,39 +1964,12 @@
       "sport": "nba",
       "sportName": "NBA",
       "emoji": "🏀",
-      "id": "401910015",
-      "startUtc": "2026-11-19T02:00:00.000Z",
-      "homeLabel": "Denver Nuggets",
-      "awayLabel": "Boston Celtics",
-      "venue": "Ball Arena, Denver",
-      "tv": [],
-      "status": "scheduled",
-      "seasonType": "regular",
-      "extra": {
-        "homeAbbr": "DEN",
-        "awayAbbr": "BOS"
-      },
-      "localDay": "2026-11-18",
-      "localWeekday": "Wednesday, Nov 18",
-      "localTime": "7:00 PM",
-      "localTimeUser": "7:00 PM",
-      "tz": "America/Phoenix",
-      "followedBy": [
-        "Denver Nuggets"
-      ],
-      "followed": true
-    },
-    {
-      "sport": "nba",
-      "sportName": "NBA",
-      "emoji": "🏀",
       "id": "401910016",
-      "startUtc": "2026-11-19T02:30:00.000Z",
+      "startUtc": "2026-11-19T01:00:00.000Z",
       "homeLabel": "Dallas Mavericks",
       "awayLabel": "Golden State Warriors",
       "venue": "American Airlines Center, Dallas",
       "tv": [
-        "ESPN",
         "KFAA-TV",
         "MavsTV"
       ],
@@ -2008,11 +1981,39 @@
       },
       "localDay": "2026-11-18",
       "localWeekday": "Wednesday, Nov 18",
-      "localTime": "7:30 PM",
-      "localTimeUser": "7:30 PM",
+      "localTime": "6:00 PM",
+      "localTimeUser": "6:00 PM",
       "tz": "America/Phoenix",
       "followedBy": [],
       "followed": false
+    },
+    {
+      "sport": "nba",
+      "sportName": "NBA",
+      "emoji": "🏀",
+      "id": "401910015",
+      "startUtc": "2026-11-19T02:30:00.000Z",
+      "homeLabel": "Denver Nuggets",
+      "awayLabel": "Boston Celtics",
+      "venue": "Ball Arena, Denver",
+      "tv": [
+        "ESPN"
+      ],
+      "status": "scheduled",
+      "seasonType": "regular",
+      "extra": {
+        "homeAbbr": "DEN",
+        "awayAbbr": "BOS"
+      },
+      "localDay": "2026-11-18",
+      "localWeekday": "Wednesday, Nov 18",
+      "localTime": "7:30 PM",
+      "localTimeUser": "7:30 PM",
+      "tz": "America/Phoenix",
+      "followedBy": [
+        "Denver Nuggets"
+      ],
+      "followed": true
     },
     {
       "sport": "nba",
