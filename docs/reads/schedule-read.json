@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T12:10:21.245Z",
+  "generatedAt": "2026-11-15T18:10:25.671Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-15",
@@ -347,10 +347,10 @@
       "counts": {
         "total": 272,
         "final": 137,
-        "scheduled": 135,
+        "scheduled": 127,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 8,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 3
@@ -359,9 +359,9 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-15T14:30:00.000Z",
+      "nextGameUtc": "2026-11-15T21:05:00.000Z",
       "nextGameLocalDay": "2026-11-15",
-      "nextGameLabel": "New England Patriots at Detroit Lions",
+      "nextGameLabel": "Los Angeles Rams at Arizona Cardinals",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
@@ -389,10 +389,10 @@
       "counts": {
         "total": 1200,
         "final": 188,
-        "scheduled": 1012,
+        "scheduled": 1011,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 53,
         "inWindowReal": 53,
         "inWindowFollowed": 7
@@ -401,9 +401,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-15T18:00:00.000Z",
+      "nextGameUtc": "2026-11-15T21:00:00.000Z",
       "nextGameLocalDay": "2026-11-15",
-      "nextGameLabel": "Indiana Pacers at Philadelphia 76ers",
+      "nextGameLabel": "Los Angeles Lakers at Phoenix Suns",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -680,7 +680,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DET",
@@ -708,7 +708,7 @@
       "tv": [
         "DAZN IND"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
@@ -734,7 +734,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NYJ",
@@ -761,7 +761,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NO",
@@ -788,7 +788,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CLE",
@@ -815,7 +815,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TEN",
@@ -842,7 +842,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
@@ -869,7 +869,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IND",
@@ -896,7 +896,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "GB",
