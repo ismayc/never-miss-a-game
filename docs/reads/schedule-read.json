@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T18:10:25.671Z",
+  "generatedAt": "2026-11-15T22:31:11.199Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-15",
@@ -98,11 +98,11 @@
       "inWindowGameIds": [
         "401873061"
       ],
-      "nextGameUtc": "2026-11-15T21:05:00.000Z",
-      "nextGameLocalDay": "2026-11-15",
-      "nextGameLocal": "Sunday, Nov 15 at 2:05 PM",
-      "nextGameLabel": "Los Angeles Rams at Arizona Cardinals",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-22T18:00:00.000Z",
+      "nextGameLocalDay": "2026-11-22",
+      "nextGameLocal": "Sunday, Nov 22 at 11:00 AM",
+      "nextGameLabel": "Arizona Cardinals at Kansas City Chiefs",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -117,11 +117,11 @@
       "inWindowGameIds": [
         "401873062"
       ],
-      "nextGameUtc": "2026-11-15T21:05:00.000Z",
-      "nextGameLocalDay": "2026-11-15",
-      "nextGameLocal": "Sunday, Nov 15 at 2:05 PM",
-      "nextGameLabel": "Seattle Seahawks at Las Vegas Raiders",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-29T21:25:00.000Z",
+      "nextGameLocalDay": "2026-11-29",
+      "nextGameLocal": "Sunday, Nov 29 at 2:25 PM",
+      "nextGameLabel": "Seattle Seahawks at San Francisco 49ers",
+      "daysUntilNextGame": 14,
       "note": null
     },
     {
@@ -136,11 +136,11 @@
       "inWindowGameIds": [
         "401873063"
       ],
-      "nextGameUtc": "2026-11-15T21:25:00.000Z",
-      "nextGameLocalDay": "2026-11-15",
-      "nextGameLocal": "Sunday, Nov 15 at 2:25 PM",
-      "nextGameLabel": "San Francisco 49ers at Dallas Cowboys",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-23T01:20:00.000Z",
+      "nextGameLocalDay": "2026-11-22",
+      "nextGameLocal": "Sunday, Nov 22 at 6:20 PM",
+      "nextGameLabel": "Minnesota Vikings at San Francisco 49ers",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -155,11 +155,11 @@
       "inWindowGameIds": [
         "401873061"
       ],
-      "nextGameUtc": "2026-11-15T21:05:00.000Z",
-      "nextGameLocalDay": "2026-11-15",
-      "nextGameLocal": "Sunday, Nov 15 at 2:05 PM",
-      "nextGameLabel": "Los Angeles Rams at Arizona Cardinals",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-26T01:00:00.000Z",
+      "nextGameLocalDay": "2026-11-25",
+      "nextGameLocal": "Wednesday, Nov 25 at 6:00 PM",
+      "nextGameLabel": "Green Bay Packers at Los Angeles Rams",
+      "daysUntilNextGame": 10,
       "note": null
     },
     {
@@ -234,11 +234,11 @@
         "401910022",
         "401910027"
       ],
-      "nextGameUtc": "2026-11-15T22:00:00.000Z",
-      "nextGameLocalDay": "2026-11-15",
-      "nextGameLocal": "Sunday, Nov 15 at 3:00 PM",
-      "nextGameLabel": "San Antonio Spurs at Utah Jazz",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-18T01:00:00.000Z",
+      "nextGameLocalDay": "2026-11-17",
+      "nextGameLocal": "Tuesday, Nov 17 at 6:00 PM",
+      "nextGameLabel": "Detroit Pistons at San Antonio Spurs",
+      "daysUntilNextGame": 2,
       "note": null
     }
   ],
@@ -346,11 +346,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 137,
-        "scheduled": 127,
+        "final": 138,
+        "scheduled": 124,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 8,
+        "pastUnresolved": 10,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 3
@@ -359,9 +359,9 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-15T21:05:00.000Z",
+      "nextGameUtc": "2026-11-16T01:20:00.000Z",
       "nextGameLocalDay": "2026-11-15",
-      "nextGameLabel": "Los Angeles Rams at Arizona Cardinals",
+      "nextGameLabel": "Pittsburgh Steelers at Cincinnati Bengals",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
@@ -389,10 +389,10 @@
       "counts": {
         "total": 1200,
         "final": 188,
-        "scheduled": 1011,
+        "scheduled": 1008,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 4,
         "inWindow": 53,
         "inWindowReal": 53,
         "inWindowFollowed": 7
@@ -401,9 +401,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-15T21:00:00.000Z",
+      "nextGameUtc": "2026-11-15T23:00:00.000Z",
       "nextGameLocalDay": "2026-11-15",
-      "nextGameLabel": "Los Angeles Lakers at Phoenix Suns",
+      "nextGameLabel": "Dallas Mavericks at Boston Celtics",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -680,13 +680,17 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DET",
         "awayAbbr": "NE",
         "week": 10,
-        "neutral": true
+        "neutral": true,
+        "score": [
+          35,
+          10
+        ]
       },
       "localDay": "2026-11-15",
       "localWeekday": "Sunday, Nov 15",
@@ -926,7 +930,7 @@
         "Arizona's Family 3TV",
         "Suns Live"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHX",
@@ -952,7 +956,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ARI",
@@ -982,7 +986,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LV",
@@ -1011,7 +1015,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DAL",
@@ -1040,7 +1044,7 @@
       "tv": [
         "ClipperVision"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAC",
@@ -1068,7 +1072,7 @@
         "Jazz+",
         "DAZN SAS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "UTAH",
