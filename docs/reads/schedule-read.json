@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T00:10:18.629Z",
+  "generatedAt": "2026-11-15T05:00:23.485Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-14",
@@ -387,10 +387,10 @@
       "counts": {
         "total": 1200,
         "final": 183,
-        "scheduled": 1016,
+        "scheduled": 1012,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 5,
         "inWindow": 52,
         "inWindowReal": 52,
         "inWindowFollowed": 7
@@ -399,10 +399,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-15T00:30:00.000Z",
-      "nextGameLocalDay": "2026-11-14",
-      "nextGameLabel": "Dallas Mavericks at Cleveland Cavaliers",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-15T18:00:00.000Z",
+      "nextGameLocalDay": "2026-11-15",
+      "nextGameLabel": "Indiana Pacers at Philadelphia 76ers",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -708,7 +708,7 @@
         "KFAA-TV",
         "MavsTV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CLE",
@@ -734,7 +734,7 @@
       "tv": [
         "NBA TV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIA",
@@ -761,7 +761,7 @@
         "DAZN (YES)",
         "DAZN MEM"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MEM",
@@ -787,7 +787,7 @@
       "tv": [
         "DAZN MIN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIN",
