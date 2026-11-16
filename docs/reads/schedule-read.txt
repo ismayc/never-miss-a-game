@@ -1,19 +1,17 @@
 
 GAME-DAY CONCIERGE — schedule read
-Window Sunday, Nov 15 through Saturday, Nov 21 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-11-16T04:59:11.117Z
+Window Monday, Nov 16 through Sunday, Nov 22 (7 days) · times in America/Phoenix
+Sources 10/10 readable · hub tooling: reused · generated 2026-11-16T12:10:27.461Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
   🏀 WNBA                   Offseason      0 in window      no upcoming games in committed data
       · 1 postponed by the league (the repo marks it; not upcoming, not a missing result)
-  ⚽ Premier League         Int’l break    7 in window      next game in 6d (2026-11-21 local)
+  ⚽ Premier League         Int’l break    9 in window      next game in 5d (2026-11-21 local)
       · Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC).
-  🏈 NFL                    In season      14 in window     next game in 1d (2026-11-16 local)
-      ⚠ 1 past matches with no committed result
+  🏈 NFL                    In season      13 in window     next game today
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
-  🏀 NBA                    In season      53 in window     next game in 1d (2026-11-16 local)
-      ⚠ 8 past matches with no committed result
+  🏀 NBA                    In season      51 in window     next game today
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
@@ -33,39 +31,16 @@ FOLLOWED TEAMS
   Minnesota Lynx           WNBA               0 in window    no future games in committed data (offseason)
   New York Liberty         WNBA               0 in window    no future games in committed data (offseason)
   Portland Fire            WNBA               0 in window    no future games in committed data (offseason)
-  Arizona Cardinals        NFL                1 in window    next in 7d, Sunday, Nov 22 at 11:00 AM local — Arizona Cardinals at Kansas City Chiefs
-  Seattle Seahawks         NFL                1 in window    next in 14d, Sunday, Nov 29 at 2:25 PM local — Seattle Seahawks at San Francisco 49ers
-  San Francisco 49ers      NFL                1 in window    next in 7d, Sunday, Nov 22 at 6:20 PM local — Minnesota Vikings at San Francisco 49ers
-  Los Angeles Rams         NFL                1 in window    next in 10d, Wednesday, Nov 25 at 6:00 PM local — Green Bay Packers at Los Angeles Rams
-  Manchester City          Premier League     1 in window    next in 6d, Saturday, Nov 21 at 5:30 AM local — Fulham at Manchester City
-  Liverpool                Premier League     0 in window    next in 7d, Sunday, Nov 22 at 9:30 AM local — Manchester United at Liverpool
-  Denver Nuggets           NBA                3 in window    next in 1d, Monday, Nov 16 at 7:00 PM local — Phoenix Suns at Denver Nuggets
-  San Antonio Spurs        NBA                4 in window    next in 2d, Tuesday, Nov 17 at 6:00 PM local — Detroit Pistons at San Antonio Spurs
+  Arizona Cardinals        NFL                1 in window    next in 6d, Sunday, Nov 22 at 11:00 AM local — Arizona Cardinals at Kansas City Chiefs
+  Seattle Seahawks         NFL                0 in window    next in 13d, Sunday, Nov 29 at 2:25 PM local — Seattle Seahawks at San Francisco 49ers
+  San Francisco 49ers      NFL                1 in window    next in 6d, Sunday, Nov 22 at 6:20 PM local — Minnesota Vikings at San Francisco 49ers
+  Los Angeles Rams         NFL                0 in window    next in 9d, Wednesday, Nov 25 at 6:00 PM local — Green Bay Packers at Los Angeles Rams
+  Manchester City          Premier League     1 in window    next in 5d, Saturday, Nov 21 at 5:30 AM local — Fulham at Manchester City
+  Liverpool                Premier League     1 in window    next in 6d, Sunday, Nov 22 at 9:30 AM local — Manchester United at Liverpool
+  Denver Nuggets           NBA                4 in window    plays today
+  San Antonio Spurs        NBA                3 in window    next in 1d, Tuesday, Nov 17 at 6:00 PM local — Detroit Pistons at San Antonio Spurs
 
-IN WINDOW: 74 real games, 11 involving a followed team
-
-  Sunday, Nov 15
-    7:30 AM  🏈 New England Patriots at Detroit Lions          · Fox · Week 10
-    11:00 AM 🏀 Indiana Pacers at Philadelphia 76ers           · DAZN IND
-    11:00 AM 🏈 Buffalo Bills at New York Jets                 · CBS · Week 10
-    11:00 AM 🏈 Carolina Panthers at New Orleans Saints        · Fox · Week 10
-    11:00 AM 🏈 Houston Texans at Cleveland Browns             · Fox · Week 10
-    11:00 AM 🏈 Jacksonville Jaguars at Tennessee Titans       · Fox · Week 10
-    11:00 AM 🏈 Kansas City Chiefs at Atlanta Falcons          · CBS · Week 10
-    11:00 AM 🏈 Miami Dolphins at Indianapolis Colts           · CBS · Week 10
-    11:00 AM 🏈 Minnesota Vikings at Green Bay Packers         · Fox · Week 10
-    2:00 PM  🏀 Los Angeles Lakers at Phoenix Suns             · Spectrum Sports Net/Spectrum Sports Net +
-  ★ 2:05 PM  🏈 Los Angeles Rams at Arizona Cardinals          · CBS · Week 10
-  ★ 2:05 PM  🏈 Seattle Seahawks at Las Vegas Raiders          · CBS · Week 10
-  ★ 2:25 PM  🏈 San Francisco 49ers at Dallas Cowboys          · Fox · Week 10
-    2:30 PM  🏀 Charlotte Hornets at LA Clippers               · ClipperVision
-  ★ 3:00 PM  🏀 San Antonio Spurs at Utah Jazz                 · KJZZ-TV/Jazz+
-    4:00 PM  🏀 Dallas Mavericks at Boston Celtics             · KFAA-TV/MavsTV
-    4:00 PM  🏀 New York Knicks at Toronto Raptors            
-    5:00 PM  🏀 Houston Rockets at Washington Wizards          · MNMT
-    6:00 PM  🏀 Atlanta Hawks at Milwaukee Bucks               · MyMi/Bucks App
-    6:20 PM  🏈 Pittsburgh Steelers at Cincinnati Bengals      · NBC · Week 10
-    7:00 PM  🏀 Oklahoma City Thunder at Sacramento Kings      · KSBI/Thunder App
+IN WINDOW: 73 real games, 11 involving a followed team
 
   Monday, Nov 16
     5:00 PM  🏀 Orlando Magic at Boston Celtics                · NBCSN
@@ -131,4 +106,26 @@ IN WINDOW: 74 real games, 11 involving a followed team
     6:00 PM  🏀 Memphis Grizzlies at Minnesota Timberwolves    · DAZN MIN/DAZN MEM
   ★ 6:00 PM  🏀 New Orleans Pelicans at San Antonio Spurs      · DAZN SAS/GCSEN
     8:00 PM  🏀 Boston Celtics at Sacramento Kings             · NBA TV
+
+  Sunday, Nov 22
+    7:00 AM  ⚽ Brighton & Hove Albion at Hull City           
+  ★ 9:30 AM  ⚽ Manchester United at Liverpool                
+  ★ 11:00 AM 🏈 Arizona Cardinals at Kansas City Chiefs        · CBS · Week 11
+    11:00 AM 🏈 Baltimore Ravens at Carolina Panthers          · Fox · Week 11
+    11:00 AM 🏈 Miami Dolphins at Buffalo Bills                · CBS · Week 11
+    11:00 AM 🏈 New Orleans Saints at Chicago Bears            · Fox · Week 11
+    11:00 AM 🏈 Tampa Bay Buccaneers at Detroit Lions          · Fox · Week 11
+    11:00 AM 🏈 Tennessee Titans at Dallas Cowboys             · Fox · Week 11
+    11:00 AM 🏈 Pittsburgh Steelers at Philadelphia Eagles     · CBS · Week 11
+    1:30 PM  🏀 Detroit Pistons at Atlanta Hawks              
+    2:05 PM  🏈 New York Jets at Los Angeles Chargers          · Fox · Week 11
+    2:25 PM  🏈 Jacksonville Jaguars at New York Giants        · CBS · Week 11
+    2:25 PM  🏈 Las Vegas Raiders at Denver Broncos            · CBS · Week 11
+    4:00 PM  🏀 Oklahoma City Thunder at Miami Heat            · KSBI/Thunder App
+    5:00 PM  🏀 Orlando Magic at Washington Wizards            · MNMT
+  ★ 5:00 PM  🏀 Denver Nuggets at Chicago Bulls               
+    5:00 PM  🏀 Dallas Mavericks at Utah Jazz                  · KJZZ-TV/Jazz+
+    6:00 PM  🏀 Indiana Pacers at New York Knicks              · DAZN IND
+  ★ 6:20 PM  🏈 Minnesota Vikings at San Francisco 49ers       · NBC · Week 11
+    6:30 PM  🏀 Boston Celtics at Golden State Warriors       
 
