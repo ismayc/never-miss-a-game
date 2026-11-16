@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T22:31:11.199Z",
+  "generatedAt": "2026-11-16T00:10:36.533Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-15",
@@ -346,11 +346,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 138,
+        "final": 146,
         "scheduled": 124,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 10,
+        "pastUnresolved": 2,
         "inWindow": 14,
         "inWindowReal": 14,
         "inWindowFollowed": 3
@@ -388,11 +388,11 @@
       "commitsScores": true,
       "counts": {
         "total": 1200,
-        "final": 188,
-        "scheduled": 1008,
+        "final": 189,
+        "scheduled": 1005,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 4,
+        "pastUnresolved": 6,
         "inWindow": 53,
         "inWindowReal": 53,
         "inWindowFollowed": 7
@@ -401,9 +401,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-15T23:00:00.000Z",
+      "nextGameUtc": "2026-11-16T01:00:00.000Z",
       "nextGameLocalDay": "2026-11-15",
-      "nextGameLabel": "Dallas Mavericks at Boston Celtics",
+      "nextGameLabel": "Atlanta Hawks at Milwaukee Bucks",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -712,11 +712,15 @@
       "tv": [
         "DAZN IND"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
-        "awayAbbr": "IND"
+        "awayAbbr": "IND",
+        "score": [
+          131,
+          124
+        ]
       },
       "localDay": "2026-11-15",
       "localWeekday": "Sunday, Nov 15",
@@ -738,12 +742,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NYJ",
         "awayAbbr": "BUF",
-        "week": 10
+        "week": 10,
+        "score": [
+          12,
+          31
+        ]
       },
       "localDay": "2026-11-15",
       "localWeekday": "Sunday, Nov 15",
@@ -765,12 +773,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NO",
         "awayAbbr": "CAR",
-        "week": 10
+        "week": 10,
+        "score": [
+          17,
+          20
+        ]
       },
       "localDay": "2026-11-15",
       "localWeekday": "Sunday, Nov 15",
@@ -792,12 +804,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CLE",
         "awayAbbr": "HOU",
-        "week": 10
+        "week": 10,
+        "score": [
+          27,
+          24
+        ]
       },
       "localDay": "2026-11-15",
       "localWeekday": "Sunday, Nov 15",
@@ -819,12 +835,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TEN",
         "awayAbbr": "JAX",
-        "week": 10
+        "week": 10,
+        "score": [
+          23,
+          40
+        ]
       },
       "localDay": "2026-11-15",
       "localWeekday": "Sunday, Nov 15",
@@ -846,12 +866,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
         "awayAbbr": "KC",
-        "week": 10
+        "week": 10,
+        "score": [
+          13,
+          35
+        ]
       },
       "localDay": "2026-11-15",
       "localWeekday": "Sunday, Nov 15",
@@ -873,12 +897,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IND",
         "awayAbbr": "MIA",
-        "week": 10
+        "week": 10,
+        "score": [
+          24,
+          22
+        ]
       },
       "localDay": "2026-11-15",
       "localWeekday": "Sunday, Nov 15",
@@ -900,12 +928,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "GB",
         "awayAbbr": "MIN",
-        "week": 10
+        "week": 10,
+        "score": [
+          10,
+          30
+        ]
       },
       "localDay": "2026-11-15",
       "localWeekday": "Sunday, Nov 15",
@@ -956,12 +988,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ARI",
         "awayAbbr": "LAR",
-        "week": 10
+        "week": 10,
+        "score": [
+          6,
+          34
+        ]
       },
       "localDay": "2026-11-15",
       "localWeekday": "Sunday, Nov 15",
@@ -1101,7 +1137,7 @@
         "KFAA-TV",
         "MavsTV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BOS",
@@ -1125,7 +1161,7 @@
       "awayLabel": "New York Knicks",
       "venue": "Scotiabank Arena, Toronto",
       "tv": [],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TOR",
@@ -1151,7 +1187,7 @@
       "tv": [
         "MNMT"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "WSH",
