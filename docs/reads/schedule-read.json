@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T01:38:16.236Z",
+  "generatedAt": "2026-11-17T06:10:22.225Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-16",
@@ -211,11 +211,11 @@
         "401909312",
         "401910032"
       ],
-      "nextGameUtc": "2026-11-17T02:00:00.000Z",
-      "nextGameLocalDay": "2026-11-16",
-      "nextGameLocal": "Monday, Nov 16 at 7:00 PM",
-      "nextGameLabel": "Phoenix Suns at Denver Nuggets",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-19T02:30:00.000Z",
+      "nextGameLocalDay": "2026-11-18",
+      "nextGameLocal": "Wednesday, Nov 18 at 7:30 PM",
+      "nextGameLabel": "Boston Celtics at Denver Nuggets",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -387,10 +387,10 @@
       "counts": {
         "total": 1200,
         "final": 197,
-        "scheduled": 996,
+        "scheduled": 995,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 7,
+        "pastUnresolved": 8,
         "inWindow": 51,
         "inWindowReal": 51,
         "inWindowFollowed": 7
@@ -399,10 +399,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-17T02:00:00.000Z",
-      "nextGameLocalDay": "2026-11-16",
-      "nextGameLabel": "Phoenix Suns at Denver Nuggets",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-18T00:30:00.000Z",
+      "nextGameLocalDay": "2026-11-17",
+      "nextGameLabel": "New York Knicks at Toronto Raptors",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -889,7 +889,7 @@
         "Suns Live",
         "Arizona's Family 3TV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DEN",
