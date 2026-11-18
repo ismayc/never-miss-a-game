@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T00:36:09.200Z",
+  "generatedAt": "2026-11-18T06:10:37.787Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-17",
@@ -232,11 +232,11 @@
         "401910027",
         "401910045"
       ],
-      "nextGameUtc": "2026-11-18T01:00:00.000Z",
-      "nextGameLocalDay": "2026-11-17",
-      "nextGameLocal": "Tuesday, Nov 17 at 6:00 PM",
-      "nextGameLabel": "Detroit Pistons at San Antonio Spurs",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-20T01:00:00.000Z",
+      "nextGameLocalDay": "2026-11-19",
+      "nextGameLocal": "Thursday, Nov 19 at 6:00 PM",
+      "nextGameLabel": "LA Clippers at San Antonio Spurs",
+      "daysUntilNextGame": 2,
       "note": null
     }
   ],
@@ -387,10 +387,10 @@
       "counts": {
         "total": 1200,
         "final": 205,
-        "scheduled": 994,
+        "scheduled": 990,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 5,
         "inWindow": 53,
         "inWindowReal": 53,
         "inWindowFollowed": 7
@@ -399,10 +399,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-18T01:00:00.000Z",
-      "nextGameLocalDay": "2026-11-17",
-      "nextGameLabel": "Portland Trail Blazers at Minnesota Timberwolves",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-19T00:00:00.000Z",
+      "nextGameLocalDay": "2026-11-18",
+      "nextGameLabel": "Memphis Grizzlies at Cleveland Cavaliers",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -703,7 +703,7 @@
         "BlazerVision",
         "DAZN MIN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIN",
@@ -729,7 +729,7 @@
       "tv": [
         "NBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SA",
@@ -759,7 +759,7 @@
         "KJZZ-TV",
         "Jazz+"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAC",
@@ -787,7 +787,7 @@
         "Spectrum Sports Net +",
         "NBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAL",
