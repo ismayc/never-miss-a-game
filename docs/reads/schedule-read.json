@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T18:10:41.240Z",
+  "generatedAt": "2026-11-18T21:02:21.105Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-18",
@@ -1485,7 +1485,9 @@
       "homeLabel": "Chelsea",
       "awayLabel": "Leeds United",
       "venue": "Stamford Bridge, London",
-      "tv": [],
+      "tv": [
+        "Peacock"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
