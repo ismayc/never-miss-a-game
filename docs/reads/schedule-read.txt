@@ -1,7 +1,7 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Wednesday, Nov 18 through Tuesday, Nov 24 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-11-18T12:10:20.910Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-11-18T18:10:40.093Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
@@ -75,13 +75,13 @@ IN WINDOW: 74 real games, 11 involving a followed team
     8:00 PM  🏀 Sacramento Kings at Los Angeles Lakers         · Spectrum Sports Net/Spectrum Sports Net +
 
   Saturday, Nov 21
-  ★ 5:30 AM  ⚽ Fulham at Manchester City                     
-    8:00 AM  ⚽ Ipswich Town at Tottenham Hotspur             
-    8:00 AM  ⚽ Sunderland at Aston Villa                     
-    8:00 AM  ⚽ Crystal Palace at Coventry City               
+  ★ 5:30 AM  ⚽ Fulham at Manchester City                      · USA Net/Universo
+    8:00 AM  ⚽ Ipswich Town at Tottenham Hotspur              · USA Net/Universo
+    8:00 AM  ⚽ Sunderland at Aston Villa                      · Peacock
+    8:00 AM  ⚽ Crystal Palace at Coventry City                · Peacock
     8:00 AM  ⚽ Leeds United at Chelsea                       
-    8:00 AM  ⚽ Nottingham Forest at AFC Bournemouth          
-    10:30 AM ⚽ Arsenal at Newcastle United                   
+    8:00 AM  ⚽ Nottingham Forest at AFC Bournemouth           · Peacock
+    10:30 AM ⚽ Arsenal at Newcastle United                    · USA Net/Tele
     11:00 AM 🏀 Milwaukee Bucks at Philadelphia 76ers          · MyMi/Bucks App
     5:30 PM  🏀 Portland Trail Blazers at New York Knicks      · NBA TV/KUNP 16
     6:00 PM  🏀 LA Clippers at Dallas Mavericks                · KFAA-TV/MavsTV
@@ -90,8 +90,8 @@ IN WINDOW: 74 real games, 11 involving a followed team
     8:00 PM  🏀 Boston Celtics at Sacramento Kings             · NBA TV
 
   Sunday, Nov 22
-    7:00 AM  ⚽ Brighton & Hove Albion at Hull City           
-  ★ 9:30 AM  ⚽ Manchester United at Liverpool                
+    7:00 AM  ⚽ Brighton & Hove Albion at Hull City            · USA Net/Tele
+  ★ 9:30 AM  ⚽ Manchester United at Liverpool                 · USA Net/Tele
   ★ 11:00 AM 🏈 Arizona Cardinals at Kansas City Chiefs        · CBS · Week 11
     11:00 AM 🏈 Baltimore Ravens at Carolina Panthers          · Fox · Week 11
     11:00 AM 🏈 Miami Dolphins at Buffalo Bills                · CBS · Week 11
@@ -112,7 +112,7 @@ IN WINDOW: 74 real games, 11 involving a followed team
     6:30 PM  🏀 Boston Celtics at Golden State Warriors       
 
   Monday, Nov 23
-    1:00 PM  ⚽ Everton at Brentford                          
+    1:00 PM  ⚽ Everton at Brentford                           · USA Net
     5:00 PM  🏀 Memphis Grizzlies at Charlotte Hornets         · DAZN MEM
     5:00 PM  🏀 Portland Trail Blazers at Philadelphia 76ers   · BlazerVision
     5:30 PM  🏀 Oklahoma City Thunder at Indiana Pacers        · KSBI/DAZN IND

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T12:10:21.234Z",
+  "generatedAt": "2026-11-18T18:10:41.240Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-18",
@@ -1377,7 +1377,10 @@
       "homeLabel": "Manchester City",
       "awayLabel": "Fulham",
       "venue": "Etihad Stadium, Manchester",
-      "tv": [],
+      "tv": [
+        "USA Net",
+        "Universo"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1403,7 +1406,10 @@
       "homeLabel": "Tottenham Hotspur",
       "awayLabel": "Ipswich Town",
       "venue": "Tottenham Hotspur Stadium, London",
-      "tv": [],
+      "tv": [
+        "USA Net",
+        "Universo"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1427,7 +1433,9 @@
       "homeLabel": "Aston Villa",
       "awayLabel": "Sunderland",
       "venue": "Villa Park, Birmingham",
-      "tv": [],
+      "tv": [
+        "Peacock"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1451,7 +1459,9 @@
       "homeLabel": "Coventry City",
       "awayLabel": "Crystal Palace",
       "venue": "Coventry Building Society Arena, Coventry",
-      "tv": [],
+      "tv": [
+        "Peacock"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1499,7 +1509,9 @@
       "homeLabel": "AFC Bournemouth",
       "awayLabel": "Nottingham Forest",
       "venue": "Vitality Stadium, Bournemouth",
-      "tv": [],
+      "tv": [
+        "Peacock"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1523,7 +1535,10 @@
       "homeLabel": "Newcastle United",
       "awayLabel": "Arsenal",
       "venue": "St. James' Park, Newcastle-upon-Tyne",
-      "tv": [],
+      "tv": [
+        "USA Net",
+        "Tele"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1713,7 +1728,10 @@
       "homeLabel": "Hull City",
       "awayLabel": "Brighton & Hove Albion",
       "venue": "The MKM Stadium, Hull",
-      "tv": [],
+      "tv": [
+        "USA Net",
+        "Tele"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1737,7 +1755,10 @@
       "homeLabel": "Liverpool",
       "awayLabel": "Manchester United",
       "venue": "Anfield, Liverpool",
-      "tv": [],
+      "tv": [
+        "USA Net",
+        "Tele"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -2247,7 +2268,9 @@
       "homeLabel": "Brentford",
       "awayLabel": "Everton",
       "venue": "Gtech Community Stadium, Brentford",
-      "tv": [],
+      "tv": [
+        "USA Net"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
