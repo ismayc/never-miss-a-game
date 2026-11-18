@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T12:10:28.654Z",
+  "generatedAt": "2026-11-18T00:36:09.200Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-17",
@@ -387,10 +387,10 @@
       "counts": {
         "total": 1200,
         "final": 205,
-        "scheduled": 995,
+        "scheduled": 994,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 53,
         "inWindowReal": 53,
         "inWindowFollowed": 7
@@ -399,9 +399,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-18T00:30:00.000Z",
+      "nextGameUtc": "2026-11-18T01:00:00.000Z",
       "nextGameLocalDay": "2026-11-17",
-      "nextGameLabel": "New York Knicks at Toronto Raptors",
+      "nextGameLabel": "Portland Trail Blazers at Minnesota Timberwolves",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -676,7 +676,7 @@
       "awayLabel": "New York Knicks",
       "venue": "Scotiabank Arena, Toronto",
       "tv": [],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TOR",
