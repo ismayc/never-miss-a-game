@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T21:02:21.105Z",
+  "generatedAt": "2026-11-19T00:10:20.925Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-18",
@@ -387,10 +387,10 @@
       "counts": {
         "total": 1200,
         "final": 210,
-        "scheduled": 990,
+        "scheduled": 986,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 4,
         "inWindow": 51,
         "inWindowReal": 51,
         "inWindowFollowed": 7
@@ -399,9 +399,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-19T00:00:00.000Z",
+      "nextGameUtc": "2026-11-19T00:30:00.000Z",
       "nextGameLocalDay": "2026-11-18",
-      "nextGameLabel": "Memphis Grizzlies at Cleveland Cavaliers",
+      "nextGameLabel": "Chicago Bulls at Brooklyn Nets",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -679,7 +679,7 @@
         "DAZN CLE",
         "DAZN MEM"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CLE",
@@ -705,7 +705,7 @@
       "tv": [
         "DAZN IND"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IND",
@@ -733,7 +733,7 @@
         "MyMi",
         "Bucks App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIA",
@@ -757,7 +757,7 @@
       "awayLabel": "Philadelphia 76ers",
       "venue": "Kia Center, Orlando",
       "tv": [],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ORL",
