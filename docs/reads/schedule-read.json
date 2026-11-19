@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T00:10:20.925Z",
+  "generatedAt": "2026-11-19T06:10:22.787Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-18",
@@ -211,11 +211,11 @@
         "401910032",
         "401909316"
       ],
-      "nextGameUtc": "2026-11-19T02:30:00.000Z",
-      "nextGameLocalDay": "2026-11-18",
-      "nextGameLocal": "Wednesday, Nov 18 at 7:30 PM",
-      "nextGameLabel": "Boston Celtics at Denver Nuggets",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-21T03:00:00.000Z",
+      "nextGameLocalDay": "2026-11-20",
+      "nextGameLocal": "Friday, Nov 20 at 8:00 PM",
+      "nextGameLabel": "Houston Rockets at Denver Nuggets",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -387,10 +387,10 @@
       "counts": {
         "total": 1200,
         "final": 210,
-        "scheduled": 986,
+        "scheduled": 978,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 4,
+        "pastUnresolved": 12,
         "inWindow": 51,
         "inWindowReal": 51,
         "inWindowFollowed": 7
@@ -399,10 +399,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-19T00:30:00.000Z",
-      "nextGameLocalDay": "2026-11-18",
-      "nextGameLabel": "Chicago Bulls at Brooklyn Nets",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-20T01:00:00.000Z",
+      "nextGameLocalDay": "2026-11-19",
+      "nextGameLabel": "Golden State Warriors at Memphis Grizzlies",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -783,7 +783,7 @@
       "tv": [
         "DAZN (YES)"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BKN",
@@ -809,7 +809,7 @@
       "tv": [
         "MNMT"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TOR",
@@ -836,7 +836,7 @@
         "GCSEN",
         "Pelicans.com"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NO",
@@ -863,7 +863,7 @@
         "KSBI",
         "Thunder App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "OKC",
@@ -890,7 +890,7 @@
         "KFAA-TV",
         "MavsTV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DAL",
@@ -916,7 +916,7 @@
       "tv": [
         "ESPN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DEN",
@@ -947,7 +947,7 @@
         "KJZZ-TV",
         "Jazz+"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAL",
@@ -974,7 +974,7 @@
         "Suns Live",
         "Arizona's Family 3TV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SAC",
