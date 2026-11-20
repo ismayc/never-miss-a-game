@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T12:10:26.227Z",
+  "generatedAt": "2026-11-20T20:52:51.627Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-20",
@@ -2187,9 +2187,6 @@
       "awayLabel": "Dallas Mavericks",
       "venue": "Ball Arena, Denver",
       "tv": [
-        "Peacock",
-        "KFAA-TV",
-        "MavsTV",
         "NBC"
       ],
       "status": "scheduled",
