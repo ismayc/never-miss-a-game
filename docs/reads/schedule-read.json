@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T13:10:24.965Z",
+  "generatedAt": "2026-11-21T18:10:25.468Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-21",
@@ -304,11 +304,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 100,
-        "scheduled": 279,
+        "final": 101,
+        "scheduled": 273,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 6,
         "inWindow": 11,
         "inWindowReal": 11,
         "inWindowFollowed": 2
@@ -317,10 +317,10 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-21T15:00:00.000Z",
-      "nextGameLocalDay": "2026-11-21",
-      "nextGameLabel": "Ipswich Town at Tottenham Hotspur",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-22T14:00:00.000Z",
+      "nextGameLocalDay": "2026-11-22",
+      "nextGameLabel": "Brighton & Hove Albion at Hull City",
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -389,10 +389,10 @@
       "counts": {
         "total": 1200,
         "final": 235,
-        "scheduled": 965,
+        "scheduled": 964,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 46,
         "inWindowReal": 46,
         "inWindowFollowed": 7
@@ -401,9 +401,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-21T18:00:00.000Z",
+      "nextGameUtc": "2026-11-22T00:30:00.000Z",
       "nextGameLocalDay": "2026-11-21",
-      "nextGameLabel": "Milwaukee Bucks at Philadelphia 76ers",
+      "nextGameLabel": "Portland Trail Blazers at New York Knicks",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -681,11 +681,15 @@
         "USA Net",
         "Universo"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MNC",
-        "awayAbbr": "FUL"
+        "awayAbbr": "FUL",
+        "score": [
+          1,
+          1
+        ]
       },
       "localDay": "2026-11-21",
       "localWeekday": "Saturday, Nov 21",
@@ -710,7 +714,7 @@
         "USA Net",
         "Universo"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TOT",
@@ -736,7 +740,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "AVL",
@@ -762,7 +766,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "COV",
@@ -788,7 +792,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHE",
@@ -814,7 +818,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BOU",
@@ -841,7 +845,7 @@
         "USA Net",
         "Tele"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NEW",
@@ -868,7 +872,7 @@
         "MyMi",
         "Bucks App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
