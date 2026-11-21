@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T12:10:18.513Z",
+  "generatedAt": "2026-11-21T13:10:24.965Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-21",
@@ -172,11 +172,11 @@
       "inWindowGameIds": [
         "401879233"
       ],
-      "nextGameUtc": "2026-11-21T12:30:00.000Z",
-      "nextGameLocalDay": "2026-11-21",
-      "nextGameLocal": "Saturday, Nov 21 at 5:30 AM",
-      "nextGameLabel": "Fulham at Manchester City",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-29T16:30:00.000Z",
+      "nextGameLocalDay": "2026-11-29",
+      "nextGameLocal": "Sunday, Nov 29 at 9:30 AM",
+      "nextGameLabel": "Manchester City at Arsenal",
+      "daysUntilNextGame": 8,
       "note": null
     },
     {
@@ -305,10 +305,10 @@
       "counts": {
         "total": 380,
         "final": 100,
-        "scheduled": 280,
+        "scheduled": 279,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 11,
         "inWindowReal": 11,
         "inWindowFollowed": 2
@@ -317,9 +317,9 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-21T12:30:00.000Z",
+      "nextGameUtc": "2026-11-21T15:00:00.000Z",
       "nextGameLocalDay": "2026-11-21",
-      "nextGameLabel": "Fulham at Manchester City",
+      "nextGameLabel": "Ipswich Town at Tottenham Hotspur",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
@@ -681,7 +681,7 @@
         "USA Net",
         "Universo"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MNC",
