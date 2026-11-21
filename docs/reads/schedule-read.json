@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T00:10:36.059Z",
+  "generatedAt": "2026-11-21T05:48:58.049Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-20",
@@ -212,11 +212,11 @@
         "401910032",
         "401909316"
       ],
-      "nextGameUtc": "2026-11-21T03:00:00.000Z",
-      "nextGameLocalDay": "2026-11-20",
-      "nextGameLocal": "Friday, Nov 20 at 8:00 PM",
-      "nextGameLabel": "Houston Rockets at Denver Nuggets",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-23T00:00:00.000Z",
+      "nextGameLocalDay": "2026-11-22",
+      "nextGameLocal": "Sunday, Nov 22 at 5:00 PM",
+      "nextGameLabel": "Denver Nuggets at Chicago Bulls",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -388,10 +388,10 @@
       "counts": {
         "total": 1200,
         "final": 226,
-        "scheduled": 973,
+        "scheduled": 965,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 9,
         "inWindow": 44,
         "inWindowReal": 44,
         "inWindowFollowed": 6
@@ -400,10 +400,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-21T00:30:00.000Z",
-      "nextGameLocalDay": "2026-11-20",
-      "nextGameLabel": "Orlando Magic at Brooklyn Nets",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-21T18:00:00.000Z",
+      "nextGameLocalDay": "2026-11-21",
+      "nextGameLabel": "Milwaukee Bucks at Philadelphia 76ers",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -703,7 +703,7 @@
       "tv": [
         "DAZN (YES)"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BKN",
@@ -729,7 +729,7 @@
       "tv": [
         "DAZN CLE"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CLE",
@@ -755,7 +755,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DET",
@@ -781,7 +781,7 @@
       "tv": [
         "MNMT"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHI",
@@ -810,7 +810,7 @@
         "GCSEN",
         "Pelicans.com"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "OKC",
@@ -839,7 +839,7 @@
         "Jazz+",
         "Arizona's Family 3TV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "UTAH",
@@ -865,7 +865,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DEN",
@@ -894,7 +894,7 @@
         "Spectrum Sports Net",
         "Spectrum Sports Net +"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAL",
