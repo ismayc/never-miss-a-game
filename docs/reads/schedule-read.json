@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T18:10:20.040Z",
+  "generatedAt": "2026-11-22T20:05:31.313Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-22",
@@ -301,11 +301,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 107,
+        "final": 109,
         "scheduled": 271,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 2,
+        "pastUnresolved": 0,
         "inWindow": 7,
         "inWindowReal": 7,
         "inWindowFollowed": 1
@@ -678,11 +678,15 @@
         "USA Net",
         "Tele"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HUL",
-        "awayAbbr": "BHA"
+        "awayAbbr": "BHA",
+        "score": [
+          2,
+          0
+        ]
       },
       "localDay": "2026-11-22",
       "localWeekday": "Sunday, Nov 22",
@@ -705,11 +709,15 @@
         "USA Net",
         "Tele"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LIV",
-        "awayAbbr": "MAN"
+        "awayAbbr": "MAN",
+        "score": [
+          4,
+          0
+        ]
       },
       "localDay": "2026-11-22",
       "localWeekday": "Sunday, Nov 22",
