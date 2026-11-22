@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T20:05:31.313Z",
+  "generatedAt": "2026-11-22T23:16:39.384Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-22",
@@ -344,10 +344,10 @@
       "counts": {
         "total": 272,
         "final": 151,
-        "scheduled": 114,
+        "scheduled": 111,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 7,
+        "pastUnresolved": 10,
         "inWindow": 17,
         "inWindowReal": 17,
         "inWindowFollowed": 3
@@ -356,9 +356,9 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-22T21:05:00.000Z",
+      "nextGameUtc": "2026-11-23T01:20:00.000Z",
       "nextGameLocalDay": "2026-11-22",
-      "nextGameLabel": "New York Jets at Los Angeles Chargers",
+      "nextGameLabel": "Minnesota Vikings at San Francisco 49ers",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
@@ -386,10 +386,10 @@
       "counts": {
         "total": 1200,
         "final": 241,
-        "scheduled": 959,
+        "scheduled": 957,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 2,
         "inWindow": 45,
         "inWindowReal": 45,
         "inWindowFollowed": 6
@@ -398,9 +398,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-22T20:30:00.000Z",
+      "nextGameUtc": "2026-11-23T00:00:00.000Z",
       "nextGameLocalDay": "2026-11-22",
-      "nextGameLabel": "Detroit Pistons at Atlanta Hawks",
+      "nextGameLabel": "Orlando Magic at Washington Wizards",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -930,7 +930,7 @@
       "awayLabel": "Detroit Pistons",
       "venue": "State Farm Arena, Atlanta",
       "tv": [],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
@@ -956,7 +956,7 @@
       "tv": [
         "Fox"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAC",
@@ -983,7 +983,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NYG",
@@ -1010,7 +1010,7 @@
       "tv": [
         "CBS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DEN",
@@ -1038,7 +1038,7 @@
         "KSBI",
         "Thunder App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIA",
