@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T00:10:20.442Z",
+  "generatedAt": "2026-11-22T05:20:31.857Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-21",
@@ -234,11 +234,11 @@
         "401909325",
         "401909333"
       ],
-      "nextGameUtc": "2026-11-22T01:00:00.000Z",
-      "nextGameLocalDay": "2026-11-21",
-      "nextGameLocal": "Saturday, Nov 21 at 6:00 PM",
-      "nextGameLabel": "New Orleans Pelicans at San Antonio Spurs",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-24T03:00:00.000Z",
+      "nextGameLocalDay": "2026-11-23",
+      "nextGameLocal": "Monday, Nov 23 at 8:00 PM",
+      "nextGameLabel": "San Antonio Spurs at Sacramento Kings",
+      "daysUntilNextGame": 2,
       "note": null
     }
   ],
@@ -389,10 +389,10 @@
       "counts": {
         "total": 1200,
         "final": 236,
-        "scheduled": 964,
+        "scheduled": 959,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 5,
         "inWindow": 46,
         "inWindowReal": 46,
         "inWindowFollowed": 7
@@ -401,10 +401,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-22T00:30:00.000Z",
-      "nextGameLocalDay": "2026-11-21",
-      "nextGameLabel": "Portland Trail Blazers at New York Knicks",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-22T20:30:00.000Z",
+      "nextGameLocalDay": "2026-11-22",
+      "nextGameLabel": "Detroit Pistons at Atlanta Hawks",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -928,7 +928,7 @@
         "KUNP 16",
         "BlazerVision"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NY",
@@ -956,7 +956,7 @@
         "MavsTV",
         "ClipperVision"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DAL",
@@ -983,7 +983,7 @@
         "DAZN MIN",
         "DAZN MEM"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIN",
@@ -1011,7 +1011,7 @@
         "GCSEN",
         "Pelicans.com"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SA",
@@ -1039,7 +1039,7 @@
       "tv": [
         "NBA TV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SAC",
