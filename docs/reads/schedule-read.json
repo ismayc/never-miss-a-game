@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T19:53:35.802Z",
+  "generatedAt": "2026-11-22T00:10:20.442Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-21",
@@ -304,11 +304,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 106,
+        "final": 107,
         "scheduled": 273,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 11,
         "inWindowReal": 11,
         "inWindowFollowed": 2
@@ -388,11 +388,11 @@
       "commitsScores": true,
       "counts": {
         "total": 1200,
-        "final": 235,
+        "final": 236,
         "scheduled": 964,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 46,
         "inWindowReal": 46,
         "inWindowFollowed": 7
@@ -865,11 +865,15 @@
         "USA Net",
         "Tele"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NEW",
-        "awayAbbr": "ARS"
+        "awayAbbr": "ARS",
+        "score": [
+          2,
+          2
+        ]
       },
       "localDay": "2026-11-21",
       "localWeekday": "Saturday, Nov 21",
@@ -892,11 +896,15 @@
         "MyMi",
         "Bucks App"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
-        "awayAbbr": "MIL"
+        "awayAbbr": "MIL",
+        "score": [
+          132,
+          129
+        ]
       },
       "localDay": "2026-11-21",
       "localWeekday": "Saturday, Nov 21",
