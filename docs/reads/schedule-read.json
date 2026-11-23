@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T00:10:18.619Z",
+  "generatedAt": "2026-11-23T05:58:03.326Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-22",
@@ -134,11 +134,11 @@
       "inWindowGameIds": [
         "401873077"
       ],
-      "nextGameUtc": "2026-11-23T01:20:00.000Z",
-      "nextGameLocalDay": "2026-11-22",
-      "nextGameLocal": "Sunday, Nov 22 at 6:20 PM",
-      "nextGameLabel": "Minnesota Vikings at San Francisco 49ers",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-29T21:25:00.000Z",
+      "nextGameLocalDay": "2026-11-29",
+      "nextGameLocal": "Sunday, Nov 29 at 2:25 PM",
+      "nextGameLabel": "Seattle Seahawks at San Francisco 49ers",
+      "daysUntilNextGame": 7,
       "note": null
     },
     {
@@ -343,11 +343,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 159,
-        "scheduled": 111,
+        "final": 161,
+        "scheduled": 110,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 2,
+        "pastUnresolved": 1,
         "inWindow": 17,
         "inWindowReal": 17,
         "inWindowFollowed": 3
@@ -356,10 +356,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-23T01:20:00.000Z",
-      "nextGameLocalDay": "2026-11-22",
-      "nextGameLabel": "Minnesota Vikings at San Francisco 49ers",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-24T01:15:00.000Z",
+      "nextGameLocalDay": "2026-11-23",
+      "nextGameLabel": "Cincinnati Bengals at Washington Commanders",
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -385,11 +385,11 @@
       "commitsScores": true,
       "counts": {
         "total": 1200,
-        "final": 241,
-        "scheduled": 954,
+        "final": 242,
+        "scheduled": 952,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 5,
+        "pastUnresolved": 6,
         "inWindow": 45,
         "inWindowReal": 45,
         "inWindowFollowed": 6
@@ -398,10 +398,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-23T01:00:00.000Z",
-      "nextGameLocalDay": "2026-11-22",
-      "nextGameLabel": "Indiana Pacers at New York Knicks",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-24T00:00:00.000Z",
+      "nextGameLocalDay": "2026-11-23",
+      "nextGameLabel": "Memphis Grizzlies at Charlotte Hornets",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -958,11 +958,15 @@
       "awayLabel": "Detroit Pistons",
       "venue": "State Farm Arena, Atlanta",
       "tv": [],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ATL",
-        "awayAbbr": "DET"
+        "awayAbbr": "DET",
+        "score": [
+          107,
+          97
+        ]
       },
       "localDay": "2026-11-22",
       "localWeekday": "Sunday, Nov 22",
@@ -1015,12 +1019,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NYG",
         "awayAbbr": "JAX",
-        "week": 11
+        "week": 11,
+        "score": [
+          23,
+          18
+        ]
       },
       "localDay": "2026-11-22",
       "localWeekday": "Sunday, Nov 22",
@@ -1042,12 +1050,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DEN",
         "awayAbbr": "LV",
-        "week": 11
+        "week": 11,
+        "score": [
+          38,
+          24
+        ]
       },
       "localDay": "2026-11-22",
       "localWeekday": "Sunday, Nov 22",
@@ -1177,7 +1189,7 @@
       "tv": [
         "DAZN IND"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NY",
@@ -1203,7 +1215,7 @@
       "tv": [
         "NBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SF",
@@ -1231,7 +1243,7 @@
       "awayLabel": "Boston Celtics",
       "venue": "Chase Center, San Francisco",
       "tv": [],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "GS",
