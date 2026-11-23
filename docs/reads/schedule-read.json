@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T23:16:39.384Z",
+  "generatedAt": "2026-11-23T00:10:18.619Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-22",
@@ -210,11 +210,11 @@
         "401909316",
         "401909334"
       ],
-      "nextGameUtc": "2026-11-23T00:00:00.000Z",
-      "nextGameLocalDay": "2026-11-22",
-      "nextGameLocal": "Sunday, Nov 22 at 5:00 PM",
-      "nextGameLabel": "Denver Nuggets at Chicago Bulls",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-25T03:00:00.000Z",
+      "nextGameLocalDay": "2026-11-24",
+      "nextGameLocal": "Tuesday, Nov 24 at 8:00 PM",
+      "nextGameLabel": "Dallas Mavericks at Denver Nuggets",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -343,11 +343,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 151,
+        "final": 159,
         "scheduled": 111,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 10,
+        "pastUnresolved": 2,
         "inWindow": 17,
         "inWindowReal": 17,
         "inWindowFollowed": 3
@@ -386,10 +386,10 @@
       "counts": {
         "total": 1200,
         "final": 241,
-        "scheduled": 957,
+        "scheduled": 954,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 2,
+        "pastUnresolved": 5,
         "inWindow": 45,
         "inWindowReal": 45,
         "inWindowFollowed": 6
@@ -398,9 +398,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-23T00:00:00.000Z",
+      "nextGameUtc": "2026-11-23T01:00:00.000Z",
       "nextGameLocalDay": "2026-11-22",
-      "nextGameLabel": "Orlando Magic at Washington Wizards",
+      "nextGameLabel": "Indiana Pacers at New York Knicks",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -741,12 +741,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "KC",
         "awayAbbr": "ARI",
-        "week": 11
+        "week": 11,
+        "score": [
+          34,
+          7
+        ]
       },
       "localDay": "2026-11-22",
       "localWeekday": "Sunday, Nov 22",
@@ -770,12 +774,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CAR",
         "awayAbbr": "BAL",
-        "week": 11
+        "week": 11,
+        "score": [
+          35,
+          33
+        ]
       },
       "localDay": "2026-11-22",
       "localWeekday": "Sunday, Nov 22",
@@ -797,12 +805,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BUF",
         "awayAbbr": "MIA",
-        "week": 11
+        "week": 11,
+        "score": [
+          26,
+          9
+        ]
       },
       "localDay": "2026-11-22",
       "localWeekday": "Sunday, Nov 22",
@@ -824,12 +836,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHI",
         "awayAbbr": "NO",
-        "week": 11
+        "week": 11,
+        "score": [
+          21,
+          13
+        ]
       },
       "localDay": "2026-11-22",
       "localWeekday": "Sunday, Nov 22",
@@ -851,12 +867,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DET",
         "awayAbbr": "TB",
-        "week": 11
+        "week": 11,
+        "score": [
+          31,
+          21
+        ]
       },
       "localDay": "2026-11-22",
       "localWeekday": "Sunday, Nov 22",
@@ -878,12 +898,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DAL",
         "awayAbbr": "TEN",
-        "week": 11
+        "week": 11,
+        "score": [
+          51,
+          30
+        ]
       },
       "localDay": "2026-11-22",
       "localWeekday": "Sunday, Nov 22",
@@ -905,12 +929,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
         "awayAbbr": "PIT",
-        "week": 11
+        "week": 11,
+        "score": [
+          19,
+          16
+        ]
       },
       "localDay": "2026-11-22",
       "localWeekday": "Sunday, Nov 22",
@@ -956,12 +984,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAC",
         "awayAbbr": "NYJ",
-        "week": 11
+        "week": 11,
+        "score": [
+          24,
+          27
+        ]
       },
       "localDay": "2026-11-22",
       "localWeekday": "Sunday, Nov 22",
@@ -1064,7 +1096,7 @@
       "tv": [
         "MNMT"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "WSH",
@@ -1088,7 +1120,7 @@
       "awayLabel": "Denver Nuggets",
       "venue": "United Center, Chicago",
       "tv": [],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHI",
@@ -1119,7 +1151,7 @@
         "KFAA-TV",
         "MavsTV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "UTAH",
