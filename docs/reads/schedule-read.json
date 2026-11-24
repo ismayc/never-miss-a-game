@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T00:31:30.001Z",
+  "generatedAt": "2026-11-24T03:51:06.586Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-23",
@@ -236,11 +236,11 @@
         "401909333",
         "401910052"
       ],
-      "nextGameUtc": "2026-11-24T03:00:00.000Z",
-      "nextGameLocalDay": "2026-11-23",
-      "nextGameLocal": "Monday, Nov 23 at 8:00 PM",
-      "nextGameLabel": "San Antonio Spurs at Sacramento Kings",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-26T03:00:00.000Z",
+      "nextGameLocalDay": "2026-11-25",
+      "nextGameLocal": "Wednesday, Nov 25 at 8:00 PM",
+      "nextGameLabel": "San Antonio Spurs at Portland Trail Blazers",
+      "daysUntilNextGame": 2,
       "note": null
     }
   ],
@@ -349,10 +349,10 @@
       "counts": {
         "total": 272,
         "final": 162,
-        "scheduled": 110,
+        "scheduled": 109,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 16,
         "inWindowReal": 16,
         "inWindowFollowed": 3
@@ -361,10 +361,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-24T01:15:00.000Z",
-      "nextGameLocalDay": "2026-11-23",
-      "nextGameLabel": "Cincinnati Bengals at Washington Commanders",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-26T01:00:00.000Z",
+      "nextGameLocalDay": "2026-11-25",
+      "nextGameLabel": "Green Bay Packers at Los Angeles Rams",
+      "daysUntilNextGame": 2,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -391,10 +391,10 @@
       "counts": {
         "total": 1200,
         "final": 248,
-        "scheduled": 947,
+        "scheduled": 942,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 5,
+        "pastUnresolved": 10,
         "inWindow": 48,
         "inWindowReal": 48,
         "inWindowFollowed": 7
@@ -403,10 +403,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-24T01:00:00.000Z",
-      "nextGameLocalDay": "2026-11-23",
-      "nextGameLabel": "Cleveland Cavaliers at Chicago Bulls",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-25T00:00:00.000Z",
+      "nextGameLocalDay": "2026-11-24",
+      "nextGameLabel": "Detroit Pistons at Orlando Magic",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -842,7 +842,7 @@
       "tv": [
         "DAZN CLE"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHI",
@@ -871,7 +871,7 @@
         "Pelicans.com",
         "Arizona's Family 3TV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NO",
@@ -897,7 +897,7 @@
       "tv": [
         "ESPN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "WSH",
@@ -924,7 +924,7 @@
       "tv": [
         "ClipperVision"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HOU",
@@ -954,7 +954,7 @@
         "KJZZ-TV",
         "Jazz+"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAL",
@@ -980,7 +980,7 @@
       "tv": [
         "DAZN SAS"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SAC",
