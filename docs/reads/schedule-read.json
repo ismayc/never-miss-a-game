@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T03:51:06.586Z",
+  "generatedAt": "2026-11-24T06:10:21.426Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-23",
@@ -306,11 +306,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 109,
+        "final": 110,
         "scheduled": 270,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 11,
         "inWindowReal": 11,
         "inWindowFollowed": 2
@@ -390,11 +390,11 @@
       "commitsScores": true,
       "counts": {
         "total": 1200,
-        "final": 248,
+        "final": 256,
         "scheduled": 942,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 10,
+        "pastUnresolved": 2,
         "inWindow": 48,
         "inWindowReal": 48,
         "inWindowFollowed": 7
@@ -682,11 +682,15 @@
       "tv": [
         "USA Net"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BRE",
-        "awayAbbr": "EVE"
+        "awayAbbr": "EVE",
+        "score": [
+          4,
+          0
+        ]
       },
       "localDay": "2026-11-23",
       "localWeekday": "Monday, Nov 23",
@@ -708,11 +712,15 @@
       "tv": [
         "DAZN MEM"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHA",
-        "awayAbbr": "MEM"
+        "awayAbbr": "MEM",
+        "score": [
+          111,
+          117
+        ]
       },
       "localDay": "2026-11-23",
       "localWeekday": "Monday, Nov 23",
@@ -734,11 +742,15 @@
       "tv": [
         "BlazerVision"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
-        "awayAbbr": "POR"
+        "awayAbbr": "POR",
+        "score": [
+          111,
+          128
+        ]
       },
       "localDay": "2026-11-23",
       "localWeekday": "Monday, Nov 23",
@@ -762,11 +774,15 @@
         "DAZN IND",
         "Thunder App"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IND",
-        "awayAbbr": "OKC"
+        "awayAbbr": "OKC",
+        "score": [
+          125,
+          120
+        ]
       },
       "localDay": "2026-11-23",
       "localWeekday": "Monday, Nov 23",
@@ -789,11 +805,15 @@
         "MyMi",
         "Bucks App"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TOR",
-        "awayAbbr": "MIL"
+        "awayAbbr": "MIL",
+        "score": [
+          111,
+          116
+        ]
       },
       "localDay": "2026-11-23",
       "localWeekday": "Monday, Nov 23",
@@ -816,11 +836,15 @@
         "NBCSN",
         "DAZN MIN"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIN",
-        "awayAbbr": "BKN"
+        "awayAbbr": "BKN",
+        "score": [
+          142,
+          116
+        ]
       },
       "localDay": "2026-11-23",
       "localWeekday": "Monday, Nov 23",
@@ -842,11 +866,15 @@
       "tv": [
         "DAZN CLE"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHI",
-        "awayAbbr": "CLE"
+        "awayAbbr": "CLE",
+        "score": [
+          122,
+          108
+        ]
       },
       "localDay": "2026-11-23",
       "localWeekday": "Monday, Nov 23",
@@ -871,11 +899,15 @@
         "Pelicans.com",
         "Arizona's Family 3TV"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NO",
-        "awayAbbr": "PHX"
+        "awayAbbr": "PHX",
+        "score": [
+          119,
+          123
+        ]
       },
       "localDay": "2026-11-23",
       "localWeekday": "Monday, Nov 23",
@@ -924,11 +956,15 @@
       "tv": [
         "ClipperVision"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HOU",
-        "awayAbbr": "LAC"
+        "awayAbbr": "LAC",
+        "score": [
+          116,
+          104
+        ]
       },
       "localDay": "2026-11-23",
       "localWeekday": "Monday, Nov 23",
