@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T12:10:33.071Z",
+  "generatedAt": "2026-11-24T00:10:20.100Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-23",
@@ -307,10 +307,10 @@
       "counts": {
         "total": 380,
         "final": 109,
-        "scheduled": 271,
+        "scheduled": 270,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 11,
         "inWindowReal": 11,
         "inWindowFollowed": 2
@@ -319,10 +319,10 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-23T20:00:00.000Z",
-      "nextGameLocalDay": "2026-11-23",
-      "nextGameLabel": "Everton at Brentford",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-27T20:00:00.000Z",
+      "nextGameLocalDay": "2026-11-27",
+      "nextGameLabel": "Chelsea at Nottingham Forest",
+      "daysUntilNextGame": 4,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -391,10 +391,10 @@
       "counts": {
         "total": 1200,
         "final": 248,
-        "scheduled": 952,
+        "scheduled": 950,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 2,
         "inWindow": 48,
         "inWindowReal": 48,
         "inWindowFollowed": 7
@@ -403,9 +403,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-24T00:00:00.000Z",
+      "nextGameUtc": "2026-11-24T00:30:00.000Z",
       "nextGameLocalDay": "2026-11-23",
-      "nextGameLabel": "Memphis Grizzlies at Charlotte Hornets",
+      "nextGameLabel": "Oklahoma City Thunder at Indiana Pacers",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -682,7 +682,7 @@
       "tv": [
         "USA Net"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BRE",
@@ -708,7 +708,7 @@
       "tv": [
         "DAZN MEM"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHA",
@@ -734,7 +734,7 @@
       "tv": [
         "BlazerVision"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
