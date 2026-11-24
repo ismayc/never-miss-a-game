@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T00:10:20.100Z",
+  "generatedAt": "2026-11-24T00:31:30.001Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-23",
@@ -391,10 +391,10 @@
       "counts": {
         "total": 1200,
         "final": 248,
-        "scheduled": 950,
+        "scheduled": 947,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 2,
+        "pastUnresolved": 5,
         "inWindow": 48,
         "inWindowReal": 48,
         "inWindowFollowed": 7
@@ -403,9 +403,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-24T00:30:00.000Z",
+      "nextGameUtc": "2026-11-24T01:00:00.000Z",
       "nextGameLocalDay": "2026-11-23",
-      "nextGameLabel": "Oklahoma City Thunder at Indiana Pacers",
+      "nextGameLabel": "Cleveland Cavaliers at Chicago Bulls",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -762,7 +762,7 @@
         "DAZN IND",
         "Thunder App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "IND",
@@ -789,7 +789,7 @@
         "MyMi",
         "Bucks App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "TOR",
@@ -816,7 +816,7 @@
         "NBCSN",
         "DAZN MIN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIN",
