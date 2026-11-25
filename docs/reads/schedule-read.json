@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T12:10:32.076Z",
+  "generatedAt": "2026-11-25T00:10:28.301Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-24",
@@ -392,10 +392,10 @@
       "counts": {
         "total": 1200,
         "final": 258,
-        "scheduled": 942,
+        "scheduled": 941,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 45,
         "inWindowReal": 45,
         "inWindowFollowed": 8
@@ -404,9 +404,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-25T00:00:00.000Z",
+      "nextGameUtc": "2026-11-25T01:00:00.000Z",
       "nextGameLocalDay": "2026-11-24",
-      "nextGameLabel": "Detroit Pistons at Orlando Magic",
+      "nextGameLabel": "Boston Celtics at Washington Wizards",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -681,7 +681,7 @@
       "awayLabel": "Detroit Pistons",
       "venue": "Kia Center, Orlando",
       "tv": [],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ORL",
