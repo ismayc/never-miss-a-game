@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T01:56:49.418Z",
+  "generatedAt": "2026-11-25T06:10:30.512Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-24",
@@ -215,11 +215,11 @@
         "401910057",
         "401910062"
       ],
-      "nextGameUtc": "2026-11-25T03:00:00.000Z",
-      "nextGameLocalDay": "2026-11-24",
-      "nextGameLocal": "Tuesday, Nov 24 at 8:00 PM",
-      "nextGameLabel": "Dallas Mavericks at Denver Nuggets",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-28T02:30:00.000Z",
+      "nextGameLocalDay": "2026-11-27",
+      "nextGameLocal": "Friday, Nov 27 at 7:30 PM",
+      "nextGameLabel": "Denver Nuggets at Utah Jazz",
+      "daysUntilNextGame": 3,
       "note": null
     },
     {
@@ -391,8 +391,8 @@
       "commitsScores": true,
       "counts": {
         "total": 1200,
-        "final": 258,
-        "scheduled": 940,
+        "final": 259,
+        "scheduled": 939,
         "placeholder": 0,
         "postponed": 0,
         "pastUnresolved": 2,
@@ -404,10 +404,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-25T03:00:00.000Z",
-      "nextGameLocalDay": "2026-11-24",
-      "nextGameLabel": "Dallas Mavericks at Denver Nuggets",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-25T22:00:00.000Z",
+      "nextGameLocalDay": "2026-11-25",
+      "nextGameLabel": "Miami Heat at Philadelphia 76ers",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -681,11 +681,15 @@
       "awayLabel": "Detroit Pistons",
       "venue": "Kia Center, Orlando",
       "tv": [],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "ORL",
-        "awayAbbr": "DET"
+        "awayAbbr": "DET",
+        "score": [
+          86,
+          104
+        ]
       },
       "localDay": "2026-11-24",
       "localWeekday": "Tuesday, Nov 24",
@@ -735,7 +739,7 @@
         "KFAA-TV",
         "MavsTV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DEN",
@@ -1107,7 +1111,10 @@
       "homeLabel": "Nottingham Forest",
       "awayLabel": "Chelsea",
       "venue": "The City Ground, Nottingham",
-      "tv": [],
+      "tv": [
+        "USA Net",
+        "Universo"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1453,7 +1460,9 @@
       "homeLabel": "Manchester United",
       "awayLabel": "Brentford",
       "venue": "Old Trafford, Manchester",
-      "tv": [],
+      "tv": [
+        "Peacock"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1477,7 +1486,10 @@
       "homeLabel": "Leeds United",
       "awayLabel": "Coventry City",
       "venue": "Elland Road, Leeds",
-      "tv": [],
+      "tv": [
+        "USA Net",
+        "Universo"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1501,7 +1513,10 @@
       "homeLabel": "Ipswich Town",
       "awayLabel": "Aston Villa",
       "venue": "Portman Road, Ipswich",
-      "tv": [],
+      "tv": [
+        "USA Net",
+        "Tele"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1657,7 +1672,10 @@
       "homeLabel": "Everton",
       "awayLabel": "Liverpool",
       "venue": "Hill Dickinson Stadium, Liverpool",
-      "tv": [],
+      "tv": [
+        "USA Net",
+        "Universo"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1683,7 +1701,9 @@
       "homeLabel": "Sunderland",
       "awayLabel": "Tottenham Hotspur",
       "venue": "Stadium of Light, Sunderland",
-      "tv": [],
+      "tv": [
+        "Peacock"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1707,7 +1727,9 @@
       "homeLabel": "Fulham",
       "awayLabel": "AFC Bournemouth",
       "venue": "Craven Cottage, London",
-      "tv": [],
+      "tv": [
+        "Peacock"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1731,7 +1753,9 @@
       "homeLabel": "Crystal Palace",
       "awayLabel": "Hull City",
       "venue": "Selhurst Park, London",
-      "tv": [],
+      "tv": [
+        "Peacock"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1755,7 +1779,10 @@
       "homeLabel": "Brighton & Hove Albion",
       "awayLabel": "Newcastle United",
       "venue": "American Express Stadium, Falmer",
-      "tv": [],
+      "tv": [
+        "USA Net",
+        "Universo"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
@@ -1779,7 +1806,10 @@
       "homeLabel": "Arsenal",
       "awayLabel": "Manchester City",
       "venue": "Emirates Stadium, London",
-      "tv": [],
+      "tv": [
+        "USA Net",
+        "Tele"
+      ],
       "status": "scheduled",
       "seasonType": "regular",
       "extra": {
