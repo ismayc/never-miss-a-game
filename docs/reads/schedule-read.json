@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T12:10:19.589Z",
+  "generatedAt": "2026-11-25T22:05:28.210Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-25",
@@ -391,10 +391,10 @@
       "counts": {
         "total": 1200,
         "final": 261,
-        "scheduled": 939,
+        "scheduled": 938,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 50,
         "inWindowReal": 50,
         "inWindowFollowed": 7
@@ -403,9 +403,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-25T22:00:00.000Z",
+      "nextGameUtc": "2026-11-26T00:00:00.000Z",
       "nextGameLocalDay": "2026-11-25",
-      "nextGameLabel": "Miami Heat at Philadelphia 76ers",
+      "nextGameLabel": "Chicago Bulls at Charlotte Hornets",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -682,7 +682,7 @@
       "tv": [
         "ESPN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
@@ -1456,7 +1456,7 @@
       "awayLabel": "Orlando Magic",
       "venue": "Capital One Arena, Washington",
       "tv": [
-        "MNMT"
+        "MNMT2"
       ],
       "status": "scheduled",
       "seasonType": "regular",

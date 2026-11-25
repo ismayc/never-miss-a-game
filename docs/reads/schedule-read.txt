@@ -1,7 +1,7 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Wednesday, Nov 25 through Tuesday, Dec 1 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-11-25T12:10:19.116Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-11-25T22:05:27.781Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
@@ -12,6 +12,7 @@ SOURCES
   🏈 NFL                    In season      16 in window     next game today
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
   🏀 NBA                    In season      50 in window     next game today
+      ⚠ 1 past matches with no committed result
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
@@ -78,7 +79,7 @@ IN WINDOW: 77 real games, 12 involving a followed team
     8:00 AM  ⚽ Brentford at Manchester United                 · Peacock
     8:00 AM  ⚽ Coventry City at Leeds United                  · USA Net/Universo
     10:30 AM ⚽ Aston Villa at Ipswich Town                    · USA Net/Tele
-    3:00 PM  🏀 Orlando Magic at Washington Wizards            · MNMT
+    3:00 PM  🏀 Orlando Magic at Washington Wizards            · MNMT2
     4:00 PM  🏀 Brooklyn Nets at Charlotte Hornets             · DAZN (YES)
     6:00 PM  🏀 Indiana Pacers at Chicago Bulls                · DAZN IND
     6:00 PM  🏀 Oklahoma City Thunder at Milwaukee Bucks       · MyMi/Bucks App
