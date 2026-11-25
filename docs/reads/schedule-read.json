@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T00:10:28.301Z",
+  "generatedAt": "2026-11-25T01:56:49.418Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-24",
@@ -392,10 +392,10 @@
       "counts": {
         "total": 1200,
         "final": 258,
-        "scheduled": 941,
+        "scheduled": 940,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 2,
         "inWindow": 45,
         "inWindowReal": 45,
         "inWindowFollowed": 8
@@ -404,9 +404,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-25T01:00:00.000Z",
+      "nextGameUtc": "2026-11-25T03:00:00.000Z",
       "nextGameLocalDay": "2026-11-24",
-      "nextGameLabel": "Boston Celtics at Washington Wizards",
+      "nextGameLabel": "Dallas Mavericks at Denver Nuggets",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -707,7 +707,7 @@
       "tv": [
         "NBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "WSH",
