@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T01:37:34.200Z",
+  "generatedAt": "2026-11-26T06:10:18.803Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-25",
@@ -236,11 +236,11 @@
         "401910052",
         "401910066"
       ],
-      "nextGameUtc": "2026-11-26T03:00:00.000Z",
-      "nextGameLocalDay": "2026-11-25",
-      "nextGameLocal": "Wednesday, Nov 25 at 8:00 PM",
-      "nextGameLabel": "San Antonio Spurs at Portland Trail Blazers",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-28T02:30:00.000Z",
+      "nextGameLocalDay": "2026-11-27",
+      "nextGameLocal": "Friday, Nov 27 at 7:30 PM",
+      "nextGameLabel": "Los Angeles Lakers at San Antonio Spurs",
+      "daysUntilNextGame": 2,
       "note": null
     }
   ],
@@ -390,11 +390,11 @@
       "commitsScores": true,
       "counts": {
         "total": 1200,
-        "final": 261,
-        "scheduled": 932,
+        "final": 262,
+        "scheduled": 930,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 7,
+        "pastUnresolved": 8,
         "inWindow": 50,
         "inWindowReal": 50,
         "inWindowFollowed": 7
@@ -403,10 +403,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-26T03:00:00.000Z",
-      "nextGameLocalDay": "2026-11-25",
-      "nextGameLabel": "Sacramento Kings at Golden State Warriors",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-28T00:00:00.000Z",
+      "nextGameLocalDay": "2026-11-27",
+      "nextGameLabel": "Miami Heat at New York Knicks",
+      "daysUntilNextGame": 2,
       "notes": []
     },
     {
@@ -682,11 +682,15 @@
       "tv": [
         "ESPN"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHI",
-        "awayAbbr": "MIA"
+        "awayAbbr": "MIA",
+        "score": [
+          111,
+          104
+        ]
       },
       "localDay": "2026-11-25",
       "localWeekday": "Wednesday, Nov 25",
@@ -892,7 +896,7 @@
       "awayLabel": "Sacramento Kings",
       "venue": "Chase Center, San Francisco",
       "tv": [],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "GS",
@@ -920,7 +924,7 @@
         "KUNP 16",
         "BlazerVision"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "POR",
