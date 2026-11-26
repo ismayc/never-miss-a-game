@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T22:05:28.210Z",
+  "generatedAt": "2026-11-26T00:10:25.372Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-25",
@@ -391,10 +391,10 @@
       "counts": {
         "total": 1200,
         "final": 261,
-        "scheduled": 938,
+        "scheduled": 937,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 2,
         "inWindow": 50,
         "inWindowReal": 50,
         "inWindowFollowed": 7
@@ -403,9 +403,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-26T00:00:00.000Z",
+      "nextGameUtc": "2026-11-26T00:30:00.000Z",
       "nextGameLocalDay": "2026-11-25",
-      "nextGameLabel": "Chicago Bulls at Charlotte Hornets",
+      "nextGameLabel": "Cleveland Cavaliers at New York Knicks",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -706,7 +706,7 @@
       "awayLabel": "Chicago Bulls",
       "venue": "Spectrum Center, Charlotte",
       "tv": [],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "CHA",
