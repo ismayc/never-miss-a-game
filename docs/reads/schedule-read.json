@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T00:10:25.372Z",
+  "generatedAt": "2026-11-26T01:37:34.200Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-25",
@@ -155,11 +155,11 @@
       "inWindowGameIds": [
         "401873079"
       ],
-      "nextGameUtc": "2026-11-26T01:00:00.000Z",
-      "nextGameLocalDay": "2026-11-25",
-      "nextGameLocal": "Wednesday, Nov 25 at 6:00 PM",
-      "nextGameLabel": "Green Bay Packers at Los Angeles Rams",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-12-04T01:15:00.000Z",
+      "nextGameLocalDay": "2026-12-03",
+      "nextGameLocal": "Thursday, Dec 3 at 6:15 PM",
+      "nextGameLabel": "Kansas City Chiefs at Los Angeles Rams",
+      "daysUntilNextGame": 8,
       "note": null
     },
     {
@@ -349,10 +349,10 @@
       "counts": {
         "total": 272,
         "final": 163,
-        "scheduled": 109,
+        "scheduled": 108,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 16,
         "inWindowReal": 16,
         "inWindowFollowed": 3
@@ -361,10 +361,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-26T01:00:00.000Z",
-      "nextGameLocalDay": "2026-11-25",
-      "nextGameLabel": "Green Bay Packers at Los Angeles Rams",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-26T18:00:00.000Z",
+      "nextGameLocalDay": "2026-11-26",
+      "nextGameLabel": "Chicago Bears at Detroit Lions",
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -391,10 +391,10 @@
       "counts": {
         "total": 1200,
         "final": 261,
-        "scheduled": 937,
+        "scheduled": 932,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 2,
+        "pastUnresolved": 7,
         "inWindow": 50,
         "inWindowReal": 50,
         "inWindowFollowed": 7
@@ -403,9 +403,9 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-26T00:30:00.000Z",
+      "nextGameUtc": "2026-11-26T03:00:00.000Z",
       "nextGameLocalDay": "2026-11-25",
-      "nextGameLabel": "Cleveland Cavaliers at New York Knicks",
+      "nextGameLabel": "Sacramento Kings at Golden State Warriors",
       "daysUntilNextGame": 0,
       "notes": []
     },
@@ -732,7 +732,7 @@
       "tv": [
         "DAZN CLE"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NY",
@@ -758,7 +758,7 @@
       "tv": [
         "ESPN"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "OKC",
@@ -784,7 +784,7 @@
       "tv": [
         "ClipperVision"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MEM",
@@ -812,7 +812,7 @@
         "MyMi",
         "Bucks App"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIL",
@@ -838,7 +838,7 @@
       "tv": [
         "Netflix"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAR",
@@ -868,7 +868,7 @@
         "Suns Live",
         "Arizona's Family 3TV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "HOU",
