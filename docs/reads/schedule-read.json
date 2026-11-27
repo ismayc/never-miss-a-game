@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T01:31:28.168Z",
+  "generatedAt": "2026-11-27T06:10:33.276Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-26",
@@ -348,11 +348,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 164,
+        "final": 166,
         "scheduled": 105,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 3,
+        "pastUnresolved": 1,
         "inWindow": 15,
         "inWindowReal": 15,
         "inWindowFollowed": 2
@@ -682,12 +682,16 @@
       "tv": [
         "CBS"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DET",
         "awayAbbr": "CHI",
-        "week": 12
+        "week": 12,
+        "score": [
+          35,
+          39
+        ]
       },
       "localDay": "2026-11-26",
       "localWeekday": "Thursday, Nov 26",
@@ -709,12 +713,16 @@
       "tv": [
         "Fox"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "DAL",
         "awayAbbr": "PHI",
-        "week": 12
+        "week": 12,
+        "score": [
+          38,
+          39
+        ]
       },
       "localDay": "2026-11-26",
       "localWeekday": "Thursday, Nov 26",
