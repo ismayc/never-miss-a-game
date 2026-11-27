@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T12:10:20.299Z",
+  "generatedAt": "2026-11-27T21:46:17.717Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-27",
@@ -310,10 +310,10 @@
       "counts": {
         "total": 380,
         "final": 110,
-        "scheduled": 270,
+        "scheduled": 269,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 20,
         "inWindowReal": 20,
         "inWindowFollowed": 4
@@ -322,10 +322,10 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-27T20:00:00.000Z",
-      "nextGameLocalDay": "2026-11-27",
-      "nextGameLabel": "Chelsea at Nottingham Forest",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-28T15:00:00.000Z",
+      "nextGameLocalDay": "2026-11-28",
+      "nextGameLabel": "Brentford at Manchester United",
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
       ]
@@ -352,10 +352,10 @@
       "counts": {
         "total": 272,
         "final": 167,
-        "scheduled": 105,
+        "scheduled": 104,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 1,
         "inWindow": 13,
         "inWindowReal": 13,
         "inWindowFollowed": 3
@@ -364,10 +364,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-27T20:00:00.000Z",
-      "nextGameLocalDay": "2026-11-27",
-      "nextGameLabel": "Denver Broncos at Pittsburgh Steelers",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-29T18:00:00.000Z",
+      "nextGameLocalDay": "2026-11-29",
+      "nextGameLabel": "Atlanta Falcons at Minnesota Vikings",
+      "daysUntilNextGame": 2,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -686,7 +686,7 @@
         "USA Net",
         "Universo"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NFO",
@@ -712,7 +712,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PIT",
