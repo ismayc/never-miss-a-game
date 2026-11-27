@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T22:03:41.294Z",
+  "generatedAt": "2026-11-27T01:31:28.168Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-26",
@@ -349,10 +349,10 @@
       "counts": {
         "total": 272,
         "final": 164,
-        "scheduled": 106,
+        "scheduled": 105,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 2,
+        "pastUnresolved": 3,
         "inWindow": 15,
         "inWindowReal": 15,
         "inWindowFollowed": 2
@@ -361,10 +361,10 @@
         "first": "2026-09-10T00:20:00.000Z",
         "last": "2027-01-10T05:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-27T01:20:00.000Z",
-      "nextGameLocalDay": "2026-11-26",
-      "nextGameLabel": "Kansas City Chiefs at Buffalo Bills",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-27T20:00:00.000Z",
+      "nextGameLocalDay": "2026-11-27",
+      "nextGameLabel": "Denver Broncos at Pittsburgh Steelers",
+      "daysUntilNextGame": 1,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC)."
       ]
@@ -736,7 +736,7 @@
       "tv": [
         "NBC"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "BUF",
