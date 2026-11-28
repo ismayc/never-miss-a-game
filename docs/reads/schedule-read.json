@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T12:10:23.326Z",
+  "generatedAt": "2026-11-28T15:07:17.600Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-28",
@@ -309,10 +309,10 @@
       "counts": {
         "total": 380,
         "final": 111,
-        "scheduled": 269,
+        "scheduled": 267,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 0,
+        "pastUnresolved": 2,
         "inWindow": 19,
         "inWindowReal": 19,
         "inWindowFollowed": 4
@@ -321,9 +321,9 @@
         "first": "2026-08-21T19:00:00.000Z",
         "last": "2027-05-30T15:00:00.000Z"
       },
-      "nextGameUtc": "2026-11-28T15:00:00.000Z",
+      "nextGameUtc": "2026-11-28T17:30:00.000Z",
       "nextGameLocalDay": "2026-11-28",
-      "nextGameLabel": "Brentford at Manchester United",
+      "nextGameLabel": "Aston Villa at Ipswich Town",
       "daysUntilNextGame": 0,
       "notes": [
         "Scores are committed by the repo's own ESPN refresh, twice a day (06:15 and 18:15 UTC)."
@@ -684,7 +684,7 @@
       "tv": [
         "Peacock"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MAN",
@@ -711,7 +711,7 @@
         "USA Net",
         "Universo"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LEE",
