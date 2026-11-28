@@ -1,7 +1,7 @@
 
 GAME-DAY CONCIERGE — schedule read
 Window Friday, Nov 27 through Thursday, Dec 3 (7 days) · times in America/Phoenix
-Sources 10/10 readable · hub tooling: reused · generated 2026-11-28T00:10:31.896Z
+Sources 10/10 readable · hub tooling: reused · generated 2026-11-28T01:09:54.635Z
 Following 11: Minnesota Lynx, New York Liberty, Portland Fire, Arizona Cardinals, Seattle Seahawks, San Francisco 49ers, Los Angeles Rams, Manchester City, Liverpool, Denver Nuggets, San Antonio Spurs
 
 SOURCES
@@ -14,7 +14,7 @@ SOURCES
       ⚠ 1 past matches with no committed result
       · Scores are committed by the repo's own ESPN refresh, twice a day (09:15 and 19:15 UTC).
   🏀 NBA                    In season      55 in window     next game today
-      ⚠ 1 past matches with no committed result
+      ⚠ 5 past matches with no committed result
   🏀 Men's March Madness    Offseason      0 in window      no upcoming games in committed data
   🏀 Women's March Madness  Offseason      0 in window      no upcoming games in committed data
   ⚽ World Cup              Offseason      0 in window      no upcoming games in committed data
