@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T01:09:55.088Z",
+  "generatedAt": "2026-11-28T06:10:27.281Z",
   "tz": "America/Phoenix",
   "window": {
     "from": "2026-11-27",
@@ -217,11 +217,11 @@
         "401910062",
         "401910077"
       ],
-      "nextGameUtc": "2026-11-28T02:30:00.000Z",
-      "nextGameLocalDay": "2026-11-27",
-      "nextGameLocal": "Friday, Nov 27 at 7:30 PM",
-      "nextGameLabel": "Denver Nuggets at Utah Jazz",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-29T23:00:00.000Z",
+      "nextGameLocalDay": "2026-11-29",
+      "nextGameLocal": "Sunday, Nov 29 at 4:00 PM",
+      "nextGameLabel": "Denver Nuggets at Toronto Raptors",
+      "daysUntilNextGame": 2,
       "note": null
     },
     {
@@ -239,11 +239,11 @@
         "401910066",
         "401910088"
       ],
-      "nextGameUtc": "2026-11-28T02:30:00.000Z",
-      "nextGameLocalDay": "2026-11-27",
-      "nextGameLocal": "Friday, Nov 27 at 7:30 PM",
-      "nextGameLabel": "Los Angeles Lakers at San Antonio Spurs",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-29T21:00:00.000Z",
+      "nextGameLocalDay": "2026-11-29",
+      "nextGameLocal": "Sunday, Nov 29 at 2:00 PM",
+      "nextGameLabel": "Boston Celtics at San Antonio Spurs",
+      "daysUntilNextGame": 2,
       "note": null
     }
   ],
@@ -309,11 +309,11 @@
       "commitsScores": true,
       "counts": {
         "total": 380,
-        "final": 110,
+        "final": 111,
         "scheduled": 269,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 20,
         "inWindowReal": 20,
         "inWindowFollowed": 4
@@ -351,11 +351,11 @@
       "commitsScores": true,
       "counts": {
         "total": 272,
-        "final": 167,
+        "final": 168,
         "scheduled": 104,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 1,
+        "pastUnresolved": 0,
         "inWindow": 13,
         "inWindowReal": 13,
         "inWindowFollowed": 3
@@ -394,10 +394,10 @@
       "counts": {
         "total": 1200,
         "final": 270,
-        "scheduled": 925,
+        "scheduled": 919,
         "placeholder": 0,
         "postponed": 0,
-        "pastUnresolved": 5,
+        "pastUnresolved": 11,
         "inWindow": 55,
         "inWindowReal": 55,
         "inWindowFollowed": 8
@@ -406,10 +406,10 @@
         "first": "2026-10-20T19:00:00.000Z",
         "last": "2027-04-12T00:30:00.000Z"
       },
-      "nextGameUtc": "2026-11-28T01:30:00.000Z",
-      "nextGameLocalDay": "2026-11-27",
-      "nextGameLabel": "Memphis Grizzlies at Minnesota Timberwolves",
-      "daysUntilNextGame": 0,
+      "nextGameUtc": "2026-11-28T22:00:00.000Z",
+      "nextGameLocalDay": "2026-11-28",
+      "nextGameLabel": "Orlando Magic at Washington Wizards",
+      "daysUntilNextGame": 1,
       "notes": []
     },
     {
@@ -686,11 +686,15 @@
         "USA Net",
         "Universo"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "NFO",
-        "awayAbbr": "CHE"
+        "awayAbbr": "CHE",
+        "score": [
+          3,
+          2
+        ]
       },
       "localDay": "2026-11-27",
       "localWeekday": "Friday, Nov 27",
@@ -712,12 +716,16 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "past-unresolved",
+      "status": "final",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PIT",
         "awayAbbr": "DEN",
-        "week": 12
+        "week": 12,
+        "score": [
+          27,
+          5
+        ]
       },
       "localDay": "2026-11-27",
       "localWeekday": "Friday, Nov 27",
@@ -867,7 +875,7 @@
         "DAZN MIN",
         "DAZN MEM"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "MIN",
@@ -896,7 +904,7 @@
         "KFAA-TV",
         "MavsTV"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "PHX",
@@ -922,7 +930,7 @@
       "tv": [
         "Prime Video"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "SA",
@@ -951,7 +959,7 @@
         "KJZZ-TV",
         "Jazz+"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "UTAH",
@@ -981,7 +989,7 @@
         "GCSEN",
         "Pelicans.com"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "LAC",
@@ -1008,7 +1016,7 @@
         "KUNP 16",
         "BlazerVision"
       ],
-      "status": "scheduled",
+      "status": "past-unresolved",
       "seasonType": "regular",
       "extra": {
         "homeAbbr": "POR",
